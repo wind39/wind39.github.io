@@ -160,6 +160,11 @@ hr {
 	color: #FFFFFF;
 }
 
+#menu a.current {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
 /* Search */
 
 #search {
@@ -331,4 +336,8 @@ hr {
 
 #footer .credit {
 	float: right;
+}
+
+table td {
+    padding: 5px;
 }
