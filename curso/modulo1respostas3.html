@@ -203,6 +203,66 @@ Console.ReadKey();
    </strong>
    , baseado na nota média informada pelo usuário. A nota deve estar entre 0,0 e 10,0, se não estiver, informe um erro e encerre o programa. A média para estar aprovado é 7,0.
   </p>
+  <pre><code>string nome;
+int idade;
+char sexo;
+double nota;
+
+Console.Write("Digite o nome do aluno: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade do aluno: ");
+idade = Int32.Parse(Console.ReadLine());
+
+Console.Write("Digite o sexo do aluno (M ou F): ");
+sexo = Char.Parse(Console.ReadLine());
+
+// verificando se o usuário digitou um sexo válido
+if (sexo == 'M' || sexo == 'm' || sexo == 'F' || sexo == 'f') // sexo válido
+{
+    Console.Write("Digite a média final do aluno no curso: ");
+    nota = Double.Parse(Console.ReadLine());
+
+    // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+    if (nota &gt;= 0 &amp;&amp; nota &lt;= 10) // nota válida
+    {
+        // como sexo é uma variável do tipo char, precisa comparar usando aspas simples '
+        // aspas duplas apenas para o caso de string.
+        if (sexo == 'M' || sexo == 'm') // tratando caso de sexo masculino
+        {
+            if (nota &gt;= 7) // aprovado
+            {
+                Console.WriteLine("O aluno " + nome + " tem " + idade + " anos, é do sexo masculino e obteve a nota final = " + nota + ", situação aprovado.");
+            }
+            else // reprovado
+            {
+                Console.WriteLine("O aluno " + nome + " tem " + idade + " anos, é do sexo masculino e obteve a nota final = " + nota + ", situação reprovado.");
+            }
+                }
+                else // tratando caso de sexo feminino
+                {
+            if (nota &gt;= 7) // aprovada
+            {
+                Console.WriteLine("A aluna " + nome + " tem " + idade + " anos, é do sexo feminino, e obteve a nota final = " + nota + ", situação aprovada.");
+            }
+            else // reprovada
+            {
+                Console.WriteLine("A aluna " + nome + " tem " + idade + " anos, é do sexo feminino, e obteve a nota final = " + nota + ", situação reprovada.");
+            }
+        }
+    }
+    else // nota inválida
+    {
+        Console.WriteLine("ERRO! Nota " + nota + " inválida.");
+    }
+}
+else // sexo inválido
+{
+    Console.WriteLine("ERRO! Sexo " + sexo + " inválido.");
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    7) Modifique o programa acima para, ao invés de solicitar a nota média ao usuário, solicitar as
    <strong>
@@ -214,6 +274,95 @@ Console.ReadKey();
    </strong>
    das notas em cada uma das 3 provas.
   </p>
+  <pre><code>string nome;
+int idade;
+char sexo;
+string sexoporextenso; // conterá "masculino" ou "feminino"
+double nota1, nota2, nota3, media;
+string situacao; // conterá "aprovado" ou "reprovado"
+
+Console.Write("Digite o nome do aluno: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade do aluno: ");
+idade = Int32.Parse(Console.ReadLine());
+
+Console.Write("Digite o sexo do aluno (M ou F): ");
+sexo = Char.Parse(Console.ReadLine());
+
+// verificando se o usuário digitou um sexo válido
+if (sexo == 'M' || sexo == 'm' || sexo == 'F' || sexo == 'f') // sexo válido
+{
+    // obtendo notas das 3 provas
+
+    Console.Write("Digite a nota da prova 1: ");
+    nota1 = Double.Parse(Console.ReadLine());
+
+    // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+    if (nota1 &gt;= 0 &amp;&amp; nota1 &lt;= 10) // nota1 entre 0 e 10
+    {
+        Console.Write("Digite a nota da prova 2: ");
+        nota2 = Double.Parse(Console.ReadLine());
+
+        // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+        if (nota2 &gt;= 0 &amp;&amp; nota2 &lt;= 10) // nota2 entre 0 e 10
+        {
+            Console.Write("Digite a nota da prova 3: ");
+            nota3 = Double.Parse(Console.ReadLine());
+
+            // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+            if (nota3 &gt;= 0 &amp;&amp; nota3 &lt;= 10) // nota3 entre 0 e 10
+            {
+                // USUARIO DIGITOU TODAS AS NOTAS CORRETAMENTE!!!
+
+                // calculando a media
+                media = (nota1 + nota2 + nota3) / 3.0;
+
+                // sexo por extenso
+                if (sexo == 'M' || sexo == 'm')
+                {
+                    sexoporextenso = "masculino";
+                }
+                else
+                {
+                    sexoporextenso = "feminino";
+                }
+
+                // situacao por extenso
+                if (media &gt;= 7)
+                {
+                    situacao = "aprovado";
+                }
+                else
+                {
+                    situacao = "reprovado";
+                }
+
+                // MENSAGEM FINAL QUE SÓ ACONTECE SE TUDO ESTIVER CERTO!!
+                Console.WriteLine("O aluno {0} tem {1} anos, é do sexo {2} e obteve a nota final = {3}, situação {4}.", nome, idade, sexoporextenso, media, situacao);
+            }
+            else // nota3 inválida
+            {
+                Console.WriteLine("ERRO! Nota {0} inválida.", nota3);
+            }
+        }
+        else // nota2 inválida
+        {
+            Console.WriteLine("ERRO! Nota {0} inválida.", nota2);
+        }
+    }
+    else // nota1 inválida
+    {
+        Console.WriteLine("ERRO! Nota {0} inválida.", nota1);
+    }
+}
+else // sexo inválido
+{
+    Console.WriteLine("ERRO! Sexo {0} inválido.", sexo);
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    8) Modifique o programa acima para considerar, ao invés de média aritmética,
    <strong>
