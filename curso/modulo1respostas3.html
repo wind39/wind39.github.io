@@ -370,6 +370,95 @@ Console.ReadKey();
    </strong>
    . A P1 tem peso 1, a P2 tem peso 2 e a P3 tem peso 3.
   </p>
+  <pre><code>string nome;
+int idade;
+char sexo;
+string sexoporextenso; // conterá "masculino" ou "feminino"
+double nota1, nota2, nota3, media;
+string situacao; // conterá "aprovado" ou "reprovado"
+
+Console.Write("Digite o nome do aluno: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade do aluno: ");
+idade = Int32.Parse(Console.ReadLine());
+
+Console.Write("Digite o sexo do aluno (M ou F): ");
+sexo = Char.Parse(Console.ReadLine());
+
+// verificando se o usuário digitou um sexo válido
+if (sexo == 'M' || sexo == 'm' || sexo == 'F' || sexo == 'f') // sexo válido
+{
+    // obtendo notas das 3 provas
+
+    Console.Write("Digite a nota da prova 1: ");
+    nota1 = Double.Parse(Console.ReadLine());
+
+    // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+    if (nota1 &gt;= 0 &amp;&amp; nota1 &lt;= 10) // nota1 entre 0 e 10
+    {
+        Console.Write("Digite a nota da prova 2: ");
+        nota2 = Double.Parse(Console.ReadLine());
+
+        // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+        if (nota2 &gt;= 0 &amp;&amp; nota2 &lt;= 10) // nota2 entre 0 e 10
+        {
+            Console.Write("Digite a nota da prova 3: ");
+            nota3 = Double.Parse(Console.ReadLine());
+
+            // verificando se o usuário digitou uma nota válida (entre 0 e 10)
+            if (nota3 &gt;= 0 &amp;&amp; nota3 &lt;= 10) // nota3 entre 0 e 10
+            {
+                // USUARIO DIGITOU TODAS AS NOTAS CORRETAMENTE!!!
+
+                // calculando a media ponderada
+                media = ((1 * nota1) + (2 * nota2) + (3 * nota3)) / 6.0;
+
+                // sexo por extenso
+                if (sexo == 'M' || sexo == 'm')
+                {
+                    sexoporextenso = "masculino";
+                }
+                else
+                {
+                    sexoporextenso = "feminino";
+                }
+
+                // situacao por extenso
+                if (media &gt;= 7)
+                {
+                    situacao = "aprovado";
+                }
+                else
+                {
+                    situacao = "reprovado";
+                }
+
+                // MENSAGEM FINAL QUE SÓ ACONTECE SE TUDO ESTIVER CERTO!!
+                Console.WriteLine("O aluno {0} tem {1} anos, é do sexo {2} e obteve a nota final = {3}, situação {4}.", nome, idade, sexoporextenso, media, situacao);
+            }
+            else // nota3 inválida
+            {
+                Console.WriteLine("ERRO! Nota {0} inválida.", nota3);
+            }
+        }
+        else // nota2 inválida
+        {
+            Console.WriteLine("ERRO! Nota {0} inválida.", nota2);
+        }
+    }
+    else // nota1 inválida
+    {
+        Console.WriteLine("ERRO! Nota {0} inválida.", nota1);
+    }
+}
+else // sexo inválido
+{
+    Console.WriteLine("ERRO! Sexo {0} inválido.", sexo);
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    9) Solicite duas frações a/b e c/d, e imprima a fração e/f resultante do
    <strong>
@@ -377,6 +466,50 @@ Console.ReadKey();
    </strong>
    .
   </p>
+  <pre><code>int a, b; // primeira fracao a/b
+int c, d; // segunda fracao c/d
+int e, f; // fracao resultado e/f
+
+// obtendo primeira fracao
+Console.Write("Digite o valor A, numerador da primeira fração: ");
+a = Int32.Parse(Console.ReadLine());
+Console.Write("Digite o valor B, denominador da primeira fração: ");
+b = Int32.Parse(Console.ReadLine());
+
+// validando primeira fração, denominador não pode ser igual a 0
+if (b != 0)
+{
+    // O USUARIO DIGITOU A PRIMEIRA FRACAO VALIDA!
+
+    // obtendo a segunda fracao
+    Console.Write("Digite o valor C, numerador da segunda fração: ");
+    c = Int32.Parse(Console.ReadLine());
+    Console.Write("Digite o valor D, denominador da segunda fração: ");
+    d = Int32.Parse(Console.ReadLine());
+
+    // validando segunda fração, denominador não pode ser igual a 0
+    if (d != 0)
+    {
+        // O USUARIO DIGITOU A SEGUNDA FRACAO VALIDA!
+
+        // multiplicando as duas frações
+        e = a * c; // numerador
+        f = b * d; // denominador
+
+        Console.WriteLine("A multiplicação entre {0}/{1} e {2}/{3} = {4}/{5}.", a, b, c, d, e, f);
+    }
+    else // segunda fração inválida!
+    {
+        Console.WriteLine("ERRO! Fração {0}/{1} inválida!!", c, d);
+    }
+}
+else // primeira fração inválida!
+{
+    Console.WriteLine("ERRO! Fração {0}/{1} inválida!!", a, b);
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    10) Solicite duas frações a/b e c/d, e imprima a fração e/f resultante da
    <strong>
@@ -384,6 +517,60 @@ Console.ReadKey();
    </strong>
    .
   </p>
+  <pre><code>int a, b; // primeira fracao a/b
+int c, d; // segunda fracao c/d
+int e, f; // fracao resultado e/f
+
+// obtendo primeira fracao
+Console.Write("Digite o valor A, numerador da primeira fração: ");
+a = Int32.Parse(Console.ReadLine());
+Console.Write("Digite o valor B, denominador da primeira fração: ");
+b = Int32.Parse(Console.ReadLine());
+
+// validando primeira fração, denominador não pode ser igual a 0
+if (b != 0)
+{
+    // O USUARIO DIGITOU A PRIMEIRA FRACAO VALIDA!
+
+    // obtendo a segunda fracao
+    Console.Write("Digite o valor C, numerador da segunda fração: ");
+    c = Int32.Parse(Console.ReadLine());
+    Console.Write("Digite o valor D, denominador da segunda fração: ");
+    d = Int32.Parse(Console.ReadLine());
+
+    // validando segunda fração, denominador não pode ser igual a 0
+    if (d != 0)
+    {
+        // O USUARIO DIGITOU A SEGUNDA FRACAO VALIDA!
+
+        // somando as duas frações
+        if (b == d) // os dois denominadores são iguais
+        {
+            e = a + c;
+            f = b;
+        }
+        else // os dois denominadores são diferentes
+        {
+            // O CORRETO SERIA FAZER M.M.C. DOS DENOMINADORES!!
+
+            f = b * d;
+            e = (d * a) + (b * c);
+        }
+
+        Console.WriteLine("A multiplicação entre {0}/{1} e {2}/{3} = {4}/{5}.", a, b, c, d, e, f);
+    }
+    else // segunda fração inválida!
+    {
+        Console.WriteLine("ERRO! Fração {0}/{1} inválida!!", c, d);
+    }
+}
+else // primeira fração inválida!
+{
+    Console.WriteLine("ERRO! Fração {0}/{1} inválida!!", a, b);
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    11) Junte os programas
    <strong>
@@ -403,6 +590,44 @@ Console.ReadKey();
    </strong>
    em um só programa. O usuário precisa entrar com dois números e também um char para informar qual é a operação desejada.
   </p>
+  <pre><code>double a, b;
+double resultado;
+char operacao;
+
+Console.Write("Digite o valor de A: ");
+a = Double.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor de B: ");
+b = Double.Parse(Console.ReadLine());
+
+Console.Write("Digite a operação: ");
+operacao = Char.Parse(Console.ReadLine());
+
+switch (operacao)
+{
+    case '+':
+        resultado = a + b;
+        Console.WriteLine("{0} + {1} = {2}", a, b, resultado);
+        break;
+    case '-':
+        resultado = a - b;
+        Console.WriteLine("{0} - {1} = {2}", a, b, resultado);
+        break;
+    case '*':
+        resultado = a * b;
+        Console.WriteLine("{0} * {1} = {2}", a, b, resultado);
+        break;
+    case '/':
+        resultado = a / b;
+        Console.WriteLine("{0} / {1} = {2}", a, b, resultado);
+        break;
+    default:
+        Console.WriteLine("Operação {0} inválida!", operacao);
+        break;
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    12) Modifique o programa acima para utilizar uma variável do tipo
    <em>
@@ -410,6 +635,58 @@ Console.ReadKey();
    </em>
    ao invés de um char.
   </p>
+  <pre><code>enum Operacao
+{
+    soma,
+    subtracao,
+    multiplicacao,
+    divisao
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double a, b;
+        double resultado;
+        Operacao operacao;
+
+        Console.Write("Digite o valor de A: ");
+        a = Double.Parse(Console.ReadLine());
+
+        Console.Write("Digite o valor de B: ");
+        b = Double.Parse(Console.ReadLine());
+
+        Console.Write("Digite a operação: ");
+        operacao = (Operacao)Enum.Parse(typeof(Operacao), Console.ReadLine());
+
+        switch (operacao)
+        {
+            case Operacao.soma:
+                resultado = a + b;
+                Console.WriteLine("{0} + {1} = {2}", a, b, resultado);
+                break;
+            case Operacao.subtracao:
+                resultado = a - b;
+                Console.WriteLine("{0} - {1} = {2}", a, b, resultado);
+                break;
+            case Operacao.multiplicacao:
+                resultado = a * b;
+                Console.WriteLine("{0} * {1} = {2}", a, b, resultado);
+                break;
+            case Operacao.divisao:
+                resultado = a / b;
+                Console.WriteLine("{0} / {1} = {2}", a, b, resultado);
+                break;
+            default:
+                Console.WriteLine("Operação {0} inválida!", operacao);
+                break;
+        }
+
+        Console.ReadKey();
+    }
+}
+</code></pre>
   <p>
    13) Modifique o
    <strong>
