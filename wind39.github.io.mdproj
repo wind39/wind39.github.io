@@ -44,5 +44,7 @@
     <None Include="sobremim.html" />
     <None Include="style.css" />
     <None Include="william.png" />
+    <None Include="spartacus\Spartacus-0.30.0.zip" />
+    <None Include="spartacus.html" />
   </ItemGroup>
 </Project>
