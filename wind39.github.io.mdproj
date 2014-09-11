@@ -9,6 +9,40 @@
     <ProjectGuid>{DB1A2EB1-3314-4558-A80B-671C7463F947}</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
-    <OutputPath>.\</OutputPath>
+    <OutputPath>.</OutputPath>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="curso\modulo1capitulo1.pptx" />
+    <None Include="curso\modulo1capitulo2.pptx" />
+    <None Include="curso\modulo1capitulo3.pptx" />
+    <None Include="curso\modulo1capitulo4.pptx" />
+    <None Include="curso\modulo1lista2.html" />
+    <None Include="curso\modulo1lista3.html" />
+    <None Include="curso\modulo1lista4.html" />
+    <None Include="curso\modulo1respostas2.html" />
+    <None Include="curso\modulo1respostas3.html" />
+    <None Include="curso\modulo1respostas4.html" />
+    <None Include="images\.directory" />
+    <None Include="images\img01.gif" />
+    <None Include="images\img02.jpg" />
+    <None Include="images\img03.gif" />
+    <None Include="images\img04.jpg" />
+    <None Include="images\img05.gif" />
+    <None Include="images\img06.jpg" />
+    <None Include="images\img07.gif" />
+    <None Include="images\img08.jpg" />
+    <None Include="images\img09.gif" />
+    <None Include="images\img10.jpg" />
+    <None Include="artigos.html" />
+    <None Include="curso.html" />
+    <None Include="index.html" />
+    <None Include="modulo1.html" />
+    <None Include="modulo2.html" />
+    <None Include="modulo3.html" />
+    <None Include="projetos.html" />
+    <None Include="recomendacoes.html" />
+    <None Include="sobremim.html" />
+    <None Include="style.css" />
+    <None Include="william.png" />
+  </ItemGroup>
 </Project>
