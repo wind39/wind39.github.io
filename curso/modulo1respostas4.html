@@ -195,6 +195,35 @@ Console.ReadKey();
   <p>
    4) Dada uma coleção de números naturais terminada por 0, imprimir seus quadrados.
   </p>
+  <pre><code>int n;
+
+Console.WriteLine("Digite números para obter seus quadrados.");
+Console.WriteLine("Quando quiser parar, digite 0.");
+
+do
+{
+    // solicitando o número ao usuário
+    n = Int32.Parse(Console.ReadLine());
+
+    if (n &gt; 0)
+    {
+        // imprimindo o quadrado
+        Console.WriteLine("O quadrado de {0} é {1}.", n, (n * n));
+    }
+    else
+    {
+        if (n &lt; 0)
+        {
+    // informando erro
+    Console.WriteLine("Erro! O número deve ser positivo.");
+        }
+    }
+}
+while (n != 0);
+
+Console.WriteLine("Pressione qualquer tecla para encerrar.");
+Console.ReadKey();
+</code></pre>
   <p>
    5) Dado
    <em>
@@ -206,6 +235,28 @@ Console.ReadKey();
    </em>
    primeiros números naturais.
   </p>
+  <pre><code>int n;
+int soma;
+
+// solicitando ao usuário o valor de n
+Console.Write("Digite o valor de N: ");
+n = Int32.Parse(Console.ReadLine());
+
+// Exemplos:
+// - Para N = 1: 0                 = 0
+// - Para N = 2: 0 + 1             = 1
+// - Para N = 3: 0 + 1 + 2         = 3
+// - Para N = 4: 0 + 1 + 2 + 3     = 6
+// - Para N = 5: 0 + 1 + 2 + 3 + 4 = 10
+
+soma = 0;
+
+for (int i = 0; i &lt; n; i++)
+    soma += i;
+
+Console.WriteLine("A soma dos {0} primeiros números naturais é igual a {1}", n, soma);
+Console.ReadKey();
+</code></pre>
   <p>
    6) Dado
    <em>
@@ -221,9 +272,53 @@ Console.ReadKey();
    </em>
    = 4, a saída deverá ser 1, 3, 5, 7.
   </p>
+  <pre><code>int n;
+int impar;
+int soma;
+
+// solicitando N ao usuário
+Console.Write("Digite o valor de N: ");
+n = Int32.Parse(Console.ReadLine());
+
+soma = 1;
+
+impar = 1;
+Console.Write("{0}", impar);
+impar += 2;
+
+for (int i = 1; i &lt; n; i++)
+{
+    Console.Write(", {0}", impar);
+    soma += impar;
+    impar += 2;
+}
+
+Console.WriteLine();
+Console.WriteLine("A soma dos {0} primeiros números ímpares é igual a {1}.", n, soma);
+Console.ReadKey();
+</code></pre>
   <p>
    7) Durante os 30 dias do mês de abril foram tomadas as temperaturas médias diárias de Euclides da Cunha (BA). Determinar o número de dias desse mês com temperaturas abaixo de zero.
   </p>
+  <pre><code>int temperatura; // temperatura média diária informada pelo usuário
+int numdias; // numero de dias com temperatura média abaixo de zero
+
+numdias = 0;
+
+for (int i = 1; i &lt;= 30; i++)
+{
+    // solicitando ao usuário a temperatura do dia
+    Console.Write("Digite a temperatura do dia {0}: ", i);
+    temperatura = Int32.Parse(Console.ReadLine());
+
+    // verificando se a temperatura é abaixo de zero
+    if (temperatura &lt; 0)
+        numdias++;
+}
+
+Console.WriteLine("O número de dias com temperatura média abaixo de zero foi {0}.", numdias);
+Console.ReadKey();
+</code></pre>
   <p>
    8) Dados
    <em>
@@ -242,9 +337,63 @@ Console.ReadKey();
    </em>
    .
   </p>
+  <pre><code>int x;
+int n;
+int resultado;
+
+// solicitando o valor de x
+Console.Write("Digite o valor de X: ");
+x = Int32.Parse(Console.ReadLine());
+
+// solicitando o valor de n
+do
+{
+    Console.Write("Digite o valor de N: ");
+    n = Int32.Parse(Console.ReadLine());
+
+    if (n &lt; 0)
+        Console.WriteLine("ERRO! N não pode ser negativo.");
+}
+while (n &lt; 0);
+
+resultado = 1;
+
+for (int i = 0; i &lt; n; i++)
+    resultado *= x;
+
+Console.WriteLine("{0} elevado a {1} é igual a {2}.", x, n, resultado);
+Console.ReadKey();
+</code></pre>
   <p>
    9) Uma loja de discos anota diariamente durante o mês de março a quantidade de discos vendidos. Determinar em que dia desse mês ocorreu a maior venda e qual foi a quantidade de discos vendida nesse dia.
   </p>
+  <pre><code>int venda;
+int maiorvenda;
+int diamaiorvenda;
+
+// solicitando ao usuário o valor da venda do primeiro dia
+Console.Write("Digite a quantidade de discos vendidos no dia 1: ");
+venda = Int32.Parse(Console.ReadLine());
+
+maiorvenda = venda;
+diamaiorvenda = 1;
+
+for (int i = 2; i &lt;= 31; i++)
+{
+    // solicitando ao usuário o valor da venda do primeiro dia
+    Console.Write("Digite a quantidade de discos vendidos no dia {0}: ", i);
+    venda = Int32.Parse(Console.ReadLine());
+
+    if (venda &gt; maiorvenda)
+    {
+        maiorvenda = venda;
+        diamaiorvenda = i;
+    }
+}
+
+Console.WriteLine("A maior venda ocorreu no dia {0}, e o número de discos vendidos nesse dia foi {1}.", diamaiorvenda, maiorvenda);
+Console.ReadKey();
+</code></pre>
   <p>
    10) Dados o número
    <em>
