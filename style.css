@@ -215,6 +215,11 @@ hr {
 	width: 603px;
 }
 
+#widecontent {
+    float: left;
+    width: 940px;
+}
+
 .post {
 }
 
