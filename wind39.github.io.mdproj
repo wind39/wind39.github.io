@@ -47,5 +47,6 @@
     <None Include="spartacus\Spartacus-0.30.0.zip" />
     <None Include="spartacus.html" />
     <None Include="spartacus\Spartacus-0.30.0.pdf" />
+    <None Include="CNAME" />
   </ItemGroup>
 </Project>
