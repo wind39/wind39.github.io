@@ -48,5 +48,7 @@
     <None Include="spartacus.html" />
     <None Include="spartacus\Spartacus-0.30.0.pdf" />
     <None Include="CNAME" />
+    <None Include="logo.png" />
+    <None Include="favicon.ico" />
   </ItemGroup>
 </Project>
