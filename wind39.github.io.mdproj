@@ -50,5 +50,6 @@
     <None Include="CNAME" />
     <None Include="logo.png" />
     <None Include="logo.ico" />
+    <None Include="curso\euclides.png" />
   </ItemGroup>
 </Project>
