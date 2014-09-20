@@ -52,5 +52,6 @@
     <None Include="logo.ico" />
     <None Include="curso\euclides.png" />
     <None Include="sitemap.xml" />
+    <None Include="curso\modulo1lista5.html" />
   </ItemGroup>
 </Project>
