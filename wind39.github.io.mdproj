@@ -53,5 +53,12 @@
     <None Include="curso\euclides.png" />
     <None Include="sitemap.xml" />
     <None Include="curso\modulo1lista5.html" />
+    <None Include="curso\lista2.txt" />
+    <None Include="curso\lista3.txt" />
+    <None Include="curso\lista4.txt" />
+    <None Include="curso\lista4_respostas.txt" />
+    <None Include="curso\lista5.txt" />
+    <None Include="curso\modulo1capitulo5.pptx" />
+    <None Include="curso_csharp.png" />
   </ItemGroup>
 </Project>

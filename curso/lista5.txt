@@ -1,0 +1,25 @@
+#Curso de Programação C# 
+## William Ivanski
+
+###Lista de Exercícios Capítulo 5
+---
+
+1) Dada uma sequência de _N_ números, imprimi-la na ordem inversa.
+
+2) Dado um número _N_, imprimi-lo como uma soma de múltiplos de 10 mais a sua unidade.
+Exemplo: 472 = 400 + 70 + 2
+
+3) Números _palíndromos_ são aqueles que são lidos da direita para a esquerda da mesma maneira que da esquerda para a direita.
+Exemplo: o número 12321 é palíndromo, enquanto 123 não é.
+Dado um número _N_, informar se ele é palíndromo ou não.
+
+4) Imprimir todos os números palíndromos entre 1 e 1000.
+
+5) Tentando descobrir se um dado era viciado, um dono de cassino honesto (ha! ha! ha! ha!) o lançou _N_ vezes. Dados os _N_ resultados dos lançamentos, determinar o número de ocorrências de cada face.
+
+6) Dados dois vetores _X_ e _Y_, ambos com _n_ elementos, determinar o produto escalar desses vetores.
+
+7) São dados dois números inteiros positivos _p_ e _q_, sendo que o número de dígitos de _p_ é menor ou igual ao número de dígitos de _q_. Verificar se _p_ é um _subnúmero_ de _q_.
+Exemplos:
+- _p_ = 23, _q_ = 57238, _p_ é subnúmero de _q_.
+- _p_ = 23, _q_ = 258347, _p_ não é subnúmero de _q_.
