@@ -61,6 +61,12 @@
     <None Include="curso\modulo1capitulo5.pptx" />
     <None Include="curso_csharp.png" />
     <None Include="spartacus\ex01\basecadastro.db" />
+    <None Include="spartacus\ex01\imagem01.png" />
+    <None Include="spartacus\ex01\imagem02.png" />
+    <None Include="spartacus\ex01\imagem03.png" />
+    <None Include="spartacus\ex01\imagem04.png" />
+    <None Include="spartacus\ex01\imagem05.png" />
+    <None Include="spartacus\ex01\imagem06.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
