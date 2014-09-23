@@ -60,5 +60,9 @@
     <None Include="curso\lista5.txt" />
     <None Include="curso\modulo1capitulo5.pptx" />
     <None Include="curso_csharp.png" />
+    <None Include="spartacus\ex01\basecadastro.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="spartacus\ex01\" />
   </ItemGroup>
 </Project>
