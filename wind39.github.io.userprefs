@@ -1,19 +1,15 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="spartacus/ex01/artigo01.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="index.html">
     <Files>
-      <File FileName="spartacus/ex01/artigo01.txt" Line="3" Column="63" />
+      <File FileName="index.html" Line="108" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Option id="ShowAllFiles" value="True" />
           <Node name="wind39.github.io" expanded="True">
-            <Node name="spartacus" expanded="True">
-              <Node name="ex01" expanded="True">
-                <Node name="artigo01.txt" selected="True" />
-              </Node>
-            </Node>
+            <Node name="curso" expanded="True" />
+            <Node name="index.html" selected="True" />
           </Node>
         </State>
       </Pad>
