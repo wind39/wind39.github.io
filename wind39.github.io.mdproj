@@ -68,6 +68,7 @@
     <None Include="spartacus\ex01\imagem05.png" />
     <None Include="spartacus\ex01\imagem06.png" />
     <None Include="artigos\vulnerabilidade_bash.png" />
+    <None Include="curso\modulo1respostas5.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <title>
-   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Lista 5
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Respostas 5
   </title>
   <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
@@ -14,8 +14,9 @@
   <style type="text/css">
    body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
   </style>
-  
- <script>
+ </head>
+
+<script>
  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,7 +28,6 @@
  <script src="https://apis.google.com/js/platform.js" async defer>
    {lang: 'pt-BR'}
  </script>
- </head>
  <body>
   <h1>Curso de Programação C#</h1>
   <h2>William Ivanski</h2>
@@ -36,11 +36,89 @@
   <p>
    1) Dada uma sequência de <em>N</em> números, imprimi-la na ordem inversa.
   </p>
+  <pre><code>int[] sequencia; // vetor de inteiros
+int n; // tamanho do vetor de inteiros (número de elementos)
+
+// solicitando o valor de N
+Console.Write("Quantos elementos a sequência precisa ter? ");
+n = Int32.Parse(Console.ReadLine());
+
+// alocando N elementos para o vetor de inteiros
+sequencia = new int[n];
+
+// solicitar ao usuário digitar o valor de todos os elementos do vetor
+// estamos percorrendo os N elementos, para o usuário digitar o valor de cada elemento
+for (int i = 0; i &lt; n; i++)
+{
+    // solicitando ao usuário digitar o valor para armazenar na posição i
+    Console.Write("Digite o valor para ser armazenado na posição {0}: ", i+1);
+    sequencia[i] = Int32.Parse(Console.ReadLine());
+}
+Console.WriteLine();
+
+// imprimindo todos os elementos do vetor na ordem inversa
+for (int i = n-1; i &gt;= 0; i--)
+    Console.WriteLine("Posição {0}, valor {1}", i+1, sequencia[i]);
+
+Console.ReadKey();</code></pre>
   <p>
    2) Dado um número <em>N</em>, imprimi-lo como uma soma de múltiplos de 10 mais a sua unidade.
    <br/>
    Exemplo: 472 = 400 + 70 + 2
   </p>
+  <pre><code>int numero; // numero que o usuário vai digitar
+int[] casasdecimais; // numero representado em casas decimais
+int divisor, resto;
+int numcasasdecimais;
+int multiplicador;
+int i;
+
+// solicitando ao usuário para digitar o número
+Console.Write("Digite um número: ");
+numero = Int32.Parse(Console.ReadLine());
+
+// descobrindo qual é o número de casas decimais do número digitado pelo usuário
+divisor = numero;
+numcasasdecimais = 0;
+while (divisor &gt; 0)
+{
+    resto = divisor % 10;
+    divisor /= 10;
+    numcasasdecimais++;
+}
+
+// alocando o vetor com o tamanho igual ao número de casas decimais
+casasdecimais = new int[numcasasdecimais];
+
+// calculando multiplicador
+multiplicador = (int) Math.Pow(10, numcasasdecimais-1);
+
+Console.Write("{0} = ", numero);
+
+divisor = numero;
+i = 0;
+while (multiplicador &gt; 0)
+{
+    if (multiplicador == 1)
+        Console.Write("{0}", (divisor / multiplicador) * multiplicador);
+    else
+        Console.Write("{0} + ", (divisor / multiplicador) * multiplicador);
+
+    // armazenando casa decimal atual na posicao i do vetor
+    casasdecimais[i] = divisor / multiplicador;
+
+    divisor %= multiplicador;
+    multiplicador /= 10;
+    i++;
+}
+Console.WriteLine();
+
+// imprimindo os elementos do vetor
+Console.WriteLine();
+for (i = 0; i < numcasasdecimais; i++)
+    System.Console.WriteLine("Posição {0}, valor {1}", i, casasdecimais[i]);
+
+Console.ReadKey();</code></pre>
   <p>
    3) Números <em>palíndromos</em> são aqueles que são lidos da direita para a esquerda da mesma maneira que da esquerda para a direita.
    <br/>
