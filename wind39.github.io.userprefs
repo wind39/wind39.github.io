@@ -1,8 +1,11 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="index.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="curso/modulo1lista5.html">
     <Files>
       <File FileName="index.html" Line="110" Column="35" />
+      <File FileName="curso/modulo1respostas5.html" Line="136" Column="72" />
+      <File FileName="modulo1.html" Line="134" Column="84" />
+      <File FileName="curso/modulo1lista5.html" Line="58" Column="72" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

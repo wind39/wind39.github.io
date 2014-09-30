@@ -126,12 +126,193 @@ Console.ReadKey();</code></pre>
    <br/>
    Dado um número <em>N</em>, informar se ele é palíndromo ou não.
   </p>
+  <pre><code>int numero; // variável que o usuário digita
+int[] casasdecimais; // numero representado em casas decimais
+int[] inverso; // inverso do número que o usuário digita
+int numcasasdecimais; // numero de casas decimais do número digitado pelo usuário
+int divisor;
+int resto;
+int multiplicador;
+int i;
+int j;
+bool palindromo;
+
+// solicitando ao usuário para digitar o número
+Console.Write("Digite um número: ");
+numero = Int32.Parse(Console.ReadLine());
+
+// descobrindo qual é o número de casas decimais do número digitado pelo usuário
+divisor = numero;
+numcasasdecimais = 0;
+while (divisor &gt; 0)
+{
+    resto = divisor % 10;
+    divisor /= 10;
+    numcasasdecimais++;
+}
+// nesse ponto o programa sabe o número de casas decimais
+
+// alocando o vetor com o tamanho igual ao número de casas decimais
+casasdecimais = new int[numcasasdecimais];
+
+// calculando multiplicador
+multiplicador = (int) Math.Pow(10, numcasasdecimais-1);
+
+divisor = numero;
+i = 0;
+while (multiplicador &gt; 0)
+{
+    // armazenando casa decimal atual na posicao i do vetor
+    casasdecimais[i] = divisor / multiplicador;
+
+    divisor %= multiplicador;
+    multiplicador /= 10;
+    i++;
+}
+
+// DAQUI PRA BAIXO ESTAMOS RESOLVENDO O PROBLEMA DO PALINDROMO
+
+// construindo o inverso do vetor "casasdecimais"
+inverso = new int[numcasasdecimais];
+
+j = 0;
+for (i = numcasasdecimais-1; i &gt;= 0; i--)
+{
+    inverso [j] = casasdecimais [i];
+
+    j++;
+}
+
+// verificando se o número é palíndromo
+palindromo = true;
+i = 0;
+while (palindromo && i &lt; numcasasdecimais)
+{
+    if (inverso [i] == casasdecimais [i])
+        i++;
+    else
+        palindromo = false;
+}
+
+if (palindromo)
+    Console.WriteLine("O número {0} é palíndromo.", numero);
+else
+    Console.WriteLine("O número {0} não é palíndromo.", numero);
+
+Console.ReadKey();</code></pre>
   <p>
    4) Imprimir todos os números palíndromos entre 1 e 1000.
   </p>
+  <pre><code>int numero;
+int[] casasdecimais; // numero representado em casas decimais
+int[] inverso; // inverso do número que o usuário digita
+int numcasasdecimais; // numero de casas decimais do número digitado pelo usuário
+int divisor;
+int resto;
+int multiplicador;
+int i;
+int j;
+bool palindromo;
+int contador;
+
+contador = 0;
+
+for (numero = 2; numero &lt; 1000; numero++)
+{
+    // descobrindo qual é o número de casas decimais do número digitado pelo usuário
+    divisor = numero;
+    numcasasdecimais = 0;
+    while (divisor &gt; 0)
+    {
+        resto = divisor % 10;
+        divisor /= 10;
+        numcasasdecimais++;
+    }
+    // nesse ponto o programa sabe o número de casas decimais
+
+    // alocando o vetor com o tamanho igual ao número de casas decimais
+    casasdecimais = new int[numcasasdecimais];
+
+    // calculando multiplicador
+    multiplicador = (int)Math.Pow(10, numcasasdecimais - 1);
+
+    divisor = numero;
+    i = 0;
+    while (multiplicador &gt; 0)
+    {
+        // armazenando casa decimal atual na posicao i do vetor
+        casasdecimais [i] = divisor / multiplicador;
+
+        divisor %= multiplicador;
+        multiplicador /= 10;
+        i++;
+    }
+
+    // DAQUI PRA BAIXO ESTAMOS RESOLVENDO O PROBLEMA DO PALINDROMO
+
+    // construindo o inverso do vetor "casasdecimais"
+    inverso = new int[numcasasdecimais];
+
+    j = 0;
+    for (i = numcasasdecimais-1; i &gt;= 0; i--)
+    {
+        inverso [j] = casasdecimais [i];
+
+        j++;
+    }
+
+    // verificando se o número é palíndromo
+    palindromo = true;
+    i = 0;
+    while (palindromo && i &lt; numcasasdecimais)
+    {
+        if (inverso [i] == casasdecimais [i])
+            i++;
+        else
+            palindromo = false;
+    }
+
+    if (palindromo)
+    {
+        Console.WriteLine(numero);
+        contador++;
+    }
+}
+
+Console.WriteLine("O número de palíndromos entre 1 e 1000 é {0}", contador);
+
+Console.ReadKey();</code></pre>
   <p>
    5) Tentando descobrir se um dado era viciado, um dono de cassino honesto (ha! ha! ha! ha!) o lançou <em>N</em> vezes. Dados os <em>N</em> resultados dos lançamentos, determinar o número de ocorrências de cada face.
   </p>
+  <pre><code>int n; // numero de vezes que o dado será lançado
+int lancamento; // resultado do lançamento atual
+int[] ocorrencias;
+
+// solicitando ao usuário o número de vezes
+Console.Write("Quantas vezes o dado será lançado? ");
+n = Int32.Parse(Console.ReadLine());
+
+// alocando vetor de ocorrências
+ocorrencias = new int[6];
+
+for (int i = 1; i &lt;= n; i++)
+{
+    // solicitando ao usuário o valor da face atual
+    Console.Write("Digite a face: ");
+    lancamento = Int32.Parse(Console.ReadLine());
+
+    ocorrencias [lancamento - 1]++;
+}
+
+Console.WriteLine("O número de vezes que saiu a face 1 foi {0}", ocorrencias[0]);
+Console.WriteLine("O número de vezes que saiu a face 2 foi {0}", ocorrencias[1]);
+Console.WriteLine("O número de vezes que saiu a face 3 foi {0}", ocorrencias[2]);
+Console.WriteLine("O número de vezes que saiu a face 4 foi {0}", ocorrencias[3]);
+Console.WriteLine("O número de vezes que saiu a face 5 foi {0}", ocorrencias[4]);
+Console.WriteLine("O número de vezes que saiu a face 6 foi {0}", ocorrencias[5]);
+
+Console.ReadKey();</code></pre>
   <p>
    6) Dados dois vetores <em>X</em> e <em>Y</em>, ambos com <em>n</em> elementos, determinar o produto escalar desses vetores.
   </p>
