@@ -1,13 +1,16 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modulo1.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="curso/modulo1exemplos5.html">
     <Files>
-      <File FileName="modulo1.html" Line="134" Column="1" />
+      <File FileName="modulo1.html" Line="178" Column="64" />
+      <File FileName="curso/modulo1exemplos5.html" Line="235" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True" selected="True">
-          <Node name="wind39.github.io" expanded="True" />
+          <Node name="wind39.github.io" expanded="True">
+            <Node name="curso" expanded="True" />
+          </Node>
         </State>
       </Pad>
       <Pad Id="ClassPad">
