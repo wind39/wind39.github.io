@@ -227,11 +227,182 @@ Console.ReadKey();</code></pre>
  <p>
   5) Inserção Ordenada
  </p>
+ <pre><code>int[] original; // vetor original
+int[] temporario; // vetor temporario ou auxiliar
+int n; // tamanho do vetor
+int valor; // valor a ser inserido
+int k;
+
+n = 0;
+original = new int[n];
+temporario = new int[n];
+
+do
+{
+    Console.WriteLine("Digite um valor a ser inserido no vetor.");
+    Console.Write("Para parar de inserir valores no vetor, digite 0: ");
+    valor = Int32.Parse(Console.ReadLine());
+
+    if (valor != 0)
+    {
+        // ALGORITMO DE INSERÇÃO EM VETOR ESTÁTICO
+        // INSERE ORDENADAMENTE
+
+        // para alocar o vetor temporário, é necessário que N &gt;= 1
+        if (n &gt;= 1)
+        {
+            // alocando o vetor temporário
+            temporario = new int[n];
+
+            // copiando os dados do vetor original para o vetor temporário
+            for (int i = 0; i &lt; n; i++)
+                temporario [i] = original [i];
+        }
+
+        // realocando vetor original
+        original = new int[n + 1];
+
+        // para copiar os dados do vetor temporário para o original, é necessário que N &gt;= 1
+        if (n &gt;= 1)
+        {
+            // 1) copiando os dados do vetor temporario para o vetor original
+            //    enquanto os elementos forem menores do que o elemento a ser inserido
+            // OBS.: aqui foi utilizado o conceito de "shortcut", para testar o tamanho antes do valor do elemento
+            k = 0;
+            while (k &lt; n && temporario[k] &lt; valor)
+            {
+                original[k] = temporario[k];
+                k++;
+            }
+
+            // 2) inserindo na posição atual o valor que o usuário digitou
+            original[k] = valor;
+
+            // 3) copiando o restante do vetor temporario de volta para o vetor original
+            for (int i = k; i &lt; n; i++)
+                original[i+1] = temporario[i];
+        }
+        else
+            original [n] = valor;
+
+        // o vetor tem uma posição a mais
+        n++;
+
+        // imprimindo todas as posições do vetor para conferência
+        Console.WriteLine();
+        for (int i = 0; i &lt; n; i++)
+            Console.WriteLine("{0} {1}", i, original [i]);
+        Console.WriteLine();
+    }
+}
+while (valor != 0);
+
+Console.ReadKey();</code></pre>
  <p>
   6) Remoção
  </p>
+ <pre><code>int[] original;
+int[] temporario;
+int n;
+int valor;
+int k;
+bool achou;
+int j;
+
+n = 10;
+original = new int[n];
+temporario = new int[0];
+
+// armazenando valores dentro do vetor
+original [0] = 50;
+original [1] = 150;
+original [2] = 250;
+original [3] = 350;
+original [4] = 450;
+original [5] = 550;
+original [6] = 650;
+original [7] = 750;
+original [8] = 850;
+original [9] = 950;
+
+// imprimindo todas as posições do vetor para conferência
+Console.WriteLine();
+for (int i = 0; i &lt; n; i++)
+    Console.WriteLine("{0} {1}", i, original [i]);
+Console.WriteLine();
+
+do
+{
+    Console.WriteLine("Digite um valor a ser removido do vetor.");
+    Console.Write("Para parar de remover valores, digite 0: ");
+    valor = Int32.Parse(Console.ReadLine());
+
+    // BUSCANDO ELEMENTO A SER REMOVIDO
+
+    achou = false; // você assume que o valor não está no vetor
+    k = 0; // o primeiro índice como sendo a primeira posição do vetor
+    while (k &lt; n && ! achou) // enquanto não percorreu todos os elementos do vetor e não achou
+    {
+        if (original [k] == valor) // se a posição atual do vetor contém um valor igual ao valor buscado
+            achou = true; // marca que achou e sai do while
+        else
+            k++; // senão, incrementa o índice para continuar o while na próxima posição
+    }
+
+    if (achou)
+    {
+        Console.WriteLine("Valor {0} encontrado na posição {1}", valor, k);
+
+        // para alocar o vetor temporário, é necessário que N &gt;= 1
+        if (n &gt;= 1)
+        {
+            // alocando o vetor temporário
+            temporario = new int[n];
+
+            // copiando os dados do vetor original para o vetor temporário
+            for (int i = 0; i &lt; n; i++)
+                temporario [i] = original [i];
+        }
+
+        // realocando vetor original
+        original = new int[n - 1];
+
+        // para copiar os dados do vetor temporário para o original, é necessário que N &gt;= 1
+        if (n &gt;= 1)
+        {
+            // copiando de volta os dados do vetor temporário para o vetor original
+            // pulando a posição k
+            j = 0;
+            for (int i = 0; i &lt; n; i++)
+            {
+                if (i != k) // se a posição do vetor temporário for diferente da posição do elemento a ser removido
+                {
+                    original [j] = temporario [i];
+                    j++;
+                }
+            }
+        }
+
+        // o vetor tem uma posição a menos
+        n--;
+
+        // imprimindo todas as posições do vetor para conferência
+        Console.WriteLine();
+        for (int i = 0; i &lt; n; i++)
+            Console.WriteLine("{0} {1}", i, original [i]);
+        Console.WriteLine();
+    }
+    else
+    {
+        Console.WriteLine("Impossível remover, valor {0} não existe no vetor", valor);
+        Console.WriteLine();
+    }
+}
+while (valor != 0);
+
+Console.ReadKey();</code></pre>
  <p>
-  7) Ordenação
+  7) Ordenação (Bubble Sort)
  </p>
  </body>
 </html>
