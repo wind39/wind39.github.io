@@ -1,6 +1,9 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="modulo1.html">
+    <Files>
+      <File FileName="modulo1.html" Line="190" Column="60" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True" selected="True">
