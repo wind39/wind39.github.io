@@ -46,7 +46,39 @@
         
             <!-- start content -->
             <div id="content">
-            
+
+                <div class="post">
+                    <h2 class="title">
+                        Lan&ccedil;ada vers&atilde;o 0.32.0 da Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/spartacus.html"></div></br>
+                    </h2>
+                    <div class="entry">
+                        <p>Estou disponibilizando para <a href="spartacus/Spartacus-0.32.0.zip">download</a> a <b>Spartacus 0.32.0</b>, bem como sua <a href="spartacus/Spartacus-0.32.0.pdf">documenta&ccedil;&atilde;o</a>.</p>
+                        <p>Muita coisa mudou desde a &uacute;ltima vers&atilde;o que eu disponibilizei aqui no site, 0.30.0. Note que a vers&atilde;o 0.31.0 n&atilde;o chegou a ser publicada aqui. O motivo disso &eacute; que a vers&atilde;o 0.31.0 foi utilizada em produ&ccedil;&atilde;o, mas foram descobertos alguns problemas e eu n&atilde;o julguei est&aacute;vel o suficiente para disponibilizar para voc&ecirc;s.</p>
+                        <p>Segue lista de mudan&ccedil;as:</p>
+                        <ul>
+                            <li>Removida depend&ecirc;ncia de <b>Mono.Security.dll</b>, que causava problemas ao utilizar <b>WebClient</b>;</li>
+                            <li>Implementada funcionalidade <b>BulkInsert</b> para <b>Spartacus.Database</b>, para inserir dados em massa em bancos de dados;</li>
+                            <li>Adicionada classe <b>Spartacus.Utils.ErrorEvent</b>, para tratar eventos de erro em seu aplicativo;</li>
+                            <li>Exce&ccedil;&otilde;es padronizadas e agora mostram <b>stacktrace</b>, para facilitar a depura&ccedil;&atilde;o do seu c&oacute;digo;</li>
+                            <li>Removida depend&ecirc;ncia de <b>ICSharpCode.SharpZipLib</b>, cuja licen&ccedil;a n&atilde;o era boa para projetos comerciais. Agora foi incorporado o c&oacute;digo da <b>ZipStorer</b>, que permite compactar e descompactar arquivos zip;</li>
+                            <li>Removida depend&ecirc;ncia de <b>EPPlus</b>. Ao inv&eacute;s disso, foi incorporado o c&oacute;digo da <b>SejExcel</b>, que consegue ler e escrever arquivos XLSX 100 vezes mais r&aacute;pido do que a EPPlus (&eacute; verdade, eu testei!);</li>
+                            <li>Criado namespace <b>Spartacus.ThirdParty</b>, para armazenar c&oacute;digos de bibliotecas de terceiros;</li>
+                            <li>Mesclada classe <b>Spartacus.Utils.CSVTable</b> dentro da classe <b>Spartacus.Utils.Excel</b>;</li>
+                            <li>Diversas corre&ccedil;&otilde;es de bugs e otimiza&ccedil;&otilde;es de uso de mem&oacute;ria.</li>
+                        </ul>
+                    </div>
+                    <p class="meta">Curitiba, 23 de outubro de 2014.</p>
+                    <script src="https://apis.google.com/js/plusone.js">
+                    </script>
+                    <g:comments
+                        href="http://williamivanski.com.br/spartacus.html"
+                        width="642"
+                        first_party_property="BLOGGER"
+                        view_type="FILTERED_POSTMOD">
+                    </g:comments>
+                </div>
+
                 <div class="post">
                     <h2 class="title">
                         Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
@@ -100,6 +132,8 @@
                         <h2><a href="spartacus.html">Biblioteca Spartacus</a></h2>
                         <ul>
                             <li><a href="https://github.com/wind39/spartacus">Projeto no GitHub</a></li>
+                            <li><a href="spartacus/Spartacus-0.32.0.zip">Download vers&atilde;o 0.32.0</a></li>
+                            <li><a href="spartacus/Spartacus-0.32.0.pdf">Documenta&ccedil;&atilde;o vers&atilde;o 0.32.0</a></li>
                             <li><a href="spartacus/Spartacus-0.30.0.zip">Download vers&atilde;o 0.30.0</a></li>
                             <li><a href="spartacus/Spartacus-0.30.0.pdf">Documenta&ccedil;&atilde;o vers&atilde;o 0.30.0</a></li>
                         </ul>

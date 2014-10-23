@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ItemType>GenericProject</ItemType>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DB1A2EB1-3314-4558-A80B-671C7463F947}</ProjectGuid>
   </PropertyGroup>
@@ -65,6 +65,8 @@
     <None Include="artigos\vulnerabilidade_bash.png" />
     <None Include="curso\modulo1respostas5.html" />
     <None Include="curso\modulo1exemplos5.html" />
+    <None Include="spartacus\Spartacus-0.32.0.pdf" />
+    <None Include="spartacus\Spartacus-0.32.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
