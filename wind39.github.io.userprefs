@@ -1,24 +1,10 @@
 ﻿<Properties GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="modulo1.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../work/projects/Repositories/wind39.github.io/spartacus.html">
     <Files>
-      <File FileName="modulo1.html" Line="193" Column="49" />
+      <File FileName="../../../../../work/projects/Repositories/wind39.github.io/modulo1.html" Line="28" Column="28" />
+      <File FileName="../../../../../work/projects/Repositories/wind39.github.io/spartacus.html" Line="132" Column="132" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="wind39.github.io" expanded="True">
-            <Node name="curso" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="ConnectionManagerPad">
-        <State selected="True" />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
