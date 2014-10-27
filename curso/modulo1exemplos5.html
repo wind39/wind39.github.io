@@ -404,5 +404,46 @@ Console.ReadKey();</code></pre>
  <p>
   7) Ordenação (Bubble Sort)
  </p>
+ <pre><code>int[] vetor; // declaração
+int tmp; // variável temporária usada somente na troca
+int n;
+
+n = 5; // número de elmentos do vetor
+
+vetor = new int[n]; // alocação
+
+// inicialização
+vetor [0] = 4;
+vetor [1] = 7;
+vetor [2] = 10;
+vetor [3] = 1;
+vetor [4] = 5;
+
+// imprimindo vetor inicial
+Console.WriteLine("O vetor desordenado é: ");
+for (int i = 0; i &lt; n; i++)
+    Console.WriteLine("{0} {1}", i, vetor[i]);
+
+// ALGORITMO DA BOLHA
+for (int i = 0; i &lt; n-1; i++) // ancorando N-1 elementos, começando em 0
+{
+    for (int j = i + 1; j &lt; n; j++) // percorrendo todos os elementos à direita da âncora
+    {
+        if (vetor [i] &gt; vetor [j]) // valor da âncora é maior do que o valor atual à direita
+        {
+            // trocando os valores entre as duas posições
+            tmp = vetor [i];
+            vetor [i] = vetor [j];
+            vetor [j] = tmp;
+        }
+    }
+}
+
+// imprimindo vetor resultante
+Console.WriteLine("O vetor ordenado é: ");
+for (int i = 0; i &lt; n; i++)
+    Console.WriteLine("{0} {1}", i, vetor[i]);
+
+Console.ReadKey();</code></pre>
  </body>
 </html>
