@@ -67,8 +67,10 @@
     <None Include="curso\modulo1exemplos5.html" />
     <None Include="spartacus\Spartacus-0.32.0.pdf" />
     <None Include="spartacus\Spartacus-0.32.0.zip" />
+    <None Include="spartacus\ex02\basecadastro.mdb" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
+    <Folder Include="spartacus\ex02\" />
   </ItemGroup>
 </Project>
