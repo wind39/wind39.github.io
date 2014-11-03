@@ -68,6 +68,7 @@
     <None Include="spartacus\Spartacus-0.32.0.pdf" />
     <None Include="spartacus\Spartacus-0.32.0.zip" />
     <None Include="spartacus\ex02\basecadastro.mdb" />
+    <None Include="spartacus\ex02\imagem01.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
