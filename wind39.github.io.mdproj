@@ -69,6 +69,9 @@
     <None Include="spartacus\Spartacus-0.32.0.zip" />
     <None Include="spartacus\ex02\basecadastro.mdb" />
     <None Include="spartacus\ex02\imagem01.png" />
+    <None Include="curso\modulo1capitulo6.pptx" />
+    <None Include="curso\modulo1lista6.html" />
+    <None Include="curso\modulo1respostas6.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

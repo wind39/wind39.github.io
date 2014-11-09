@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Lista 6
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios Capítulo 6 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Dada uma matriz real <em>A</em> com <em>m</em> linhas e <em>n</em> colunas e um vetor real <em>V</em> com <em>n</em> elementos, determinar o produto de <em>A</em> por <em>V</em>.
+  </p>
+  <p>
+   2) Um vetor real <em>X</em> com <em>n</em> elementos é apresentado como resultado de um sistema de equações lineares <em>Ax = B</em> cujos coeficientes são representados em uma matriz real <em>A<sub>mxn</sub></em> e os lados direitos das equações em um vetor real <em>B</em> de <em>m</em> elementos. Verificar se o vetor <em>X</em> é realmente solução do sistema dado.
+  </p>
+  <p>
+   3) Dadas duas matrizes reais <em>A<sub>mxn</sub></em> e <em>B<sub>mxn</sub></em>, calcular a soma de <em>A</em> por <em>B</em>.
+  </p>
+  <p>
+   4) Dadas duas matrizes reais <em>A<sub>mxn</sub></em> e <em>B<sub>nxp</sub></em>, calcular o produto de <em>A</em> por <em>B</em>.
+  </p>
+  <p>
+   5) Dada uma matriz real <em>A<sub>mxn</sub></em>, verificar se existem elementos repetidos em <em>A</em>.
+  </p>
+  <p>
+   6) Dizemos que uma matriz inteira <em>A<sub>nxn</sub></em> é uma <b>matriz de permutação</b> se em cada linha e em cada coluna houver <em>n-1</em> elementos nulos e um único elemento igual a 1. <br/>
+   Dada uma matriz inteira <em>A<sub>nxn</sub></em>, verificar se <em>A</em> é de permutação.
+  </p>
+  <p>
+   7) Dada uma matriz <em>A<sub>mxn</sub></em>, imprimir o número de linhas e o número de colunas nulas (somente zeros) da matriz.
+  </p>
+  <p>
+   8) Dizemos que uma matriz quadrada inteira é um <b>quadrado mágico</b> se a soma dos elementos de cada linha, a soma dos elementos de cada coluna e a soma dos elementos das diagonais principal e secundária são todas iguais. <br/>
+   Dada uma matriz quadrada <em>A<sub>nxn</sub></em>, verificar se <em>A</em> é um quadrado mágico.
+  </p>
+  <p>
+   9) Imprimir as <em>N</em> primeiras linhas do <b>triângulo de Pascal</b>.
+  </p>
+  <p>
+   10) Imprimir as <em>N</em> primeiras linhas do <b>triângulo de Pascal</b> usando apenas um vetor.
+  </p>
+  <p>
+   11) Faça um programa que leia <em>N</em> sequências de inteiros, não necessariamente contendo a mesma quantidade de números, ordene-os, e em seguida imprima todos os números ordenados em ordem crescente.
+  </p>
+  <p>
+   12) Os elementos <em>a<sub>ij</sub></em> de uma matriz inteira <em>A<sub>nxn</sub></em> representam os custos de transporte da cidade <em>i</em> para a cidade <em>j</em>. Dados <em>n</em> itinerários, cada um com <em>k</em> cidades, calcular o custo total para cada itinerário.
+  </p>
+ </body>
+</html>
