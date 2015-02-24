@@ -70,4 +70,8 @@
       <loc>http://williamivanski.com.br/spartacus.html</loc>
       <changefreq>weekly</changefreq>
    </url>
+   <url>
+      <loc>http://williamivanski.com.br/riddler.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
 </urlset>

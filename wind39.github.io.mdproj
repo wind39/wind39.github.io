@@ -74,9 +74,12 @@
     <None Include="curso\modulo1respostas6.html" />
     <None Include="spartacus\Spartacus-0.35.2.pdf" />
     <None Include="spartacus\Spartacus-0.35.2.zip" />
+    <None Include="riddler.html" />
+    <None Include="riddler\Riddler-0.1.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
     <Folder Include="spartacus\ex02\" />
+    <Folder Include="riddler\" />
   </ItemGroup>
 </Project>
