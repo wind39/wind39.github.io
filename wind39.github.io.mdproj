@@ -75,6 +75,8 @@
     <None Include="spartacus\Spartacus-0.35.2.zip" />
     <None Include="riddler.html" />
     <None Include="riddler\Riddler-0.1.0.zip" />
+    <None Include="curso\background.png" />
+    <None Include="images\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
