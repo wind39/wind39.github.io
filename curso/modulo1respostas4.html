@@ -418,6 +418,54 @@ Console.ReadKey();
    </strong>
    e suas notas da primeira prova, determinar a maior e a menor nota obtidas por essa turma (nota máxima = 100 e nota mínima = 0).
   </p>
+<pre><code>int n;
+int notaatual;
+int maiornota, menornota;
+int maioraluno, menoraluno;
+
+// 1) Perguntar ao usuario quantos alunos
+// N é o número de alunos
+Console.Write("Digite o número de alunos: ");
+n = int.Parse(Console.ReadLine());
+
+// 2) Para cada aluno, perguntar ao usuário qual foi sua nota
+maiornota = -1;
+menornota = 101;
+maioraluno = 0;
+menoraluno = 0;
+for (int i = 1; i &lt;= n; i++)
+{
+    //TODO: tratar caso em que o usuário digita uma nota fora do limite de 0 a 100.
+
+    do
+    {
+        Console.Write("Digite a nota do aluno {0}: ", i);
+        notaatual = int.Parse(Console.ReadLine());
+
+        if (notaatual &lt; 0 || notaatual &gt; 100)
+            Console.WriteLine("ERRO! Nota precisa estar entre 0 e 100.");
+    }
+    while (notaatual &lt; 0 || notaatual &gt; 100);
+
+    if (notaatual &gt;= maiornota)
+    {
+        maiornota = notaatual;
+        maioraluno = i;
+    }
+
+    if (notaatual &lt;= menornota)
+    {
+        menornota = notaatual;
+        menoraluno = i;
+    }
+}
+
+// 3) Mostrar ao usuário qual é a maior e a menor nota
+Console.WriteLine("A maior nota da turma foi {0}, e a menor nota da turma foi {1}.", maiornota, menornota);
+Console.WriteLine("O aluno que tirou a maior nota foi {0}, e o aluno que tirou a menor nota foi {1}.", maioraluno, menoraluno);
+
+Console.ReadKey();
+</code></pre>
   <p>
    11) Dados
    <em>
