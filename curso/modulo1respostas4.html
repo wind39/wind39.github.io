@@ -477,6 +477,34 @@ Console.ReadKey();
    </em>
    números inteiros, determinar a soma dos números pares.
   </p>
+<pre><code>int n;
+int valor;
+int soma;
+
+// 1) Perguntar ao usuário o valor de N.
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+// 2) Pedir ao usuário o valor de N números, e verificar se cada um deles é par.
+//    Se for par, armazenar o valor em uma variável acumuladora.
+soma = 0;
+for (int i = 1; i &lt;= n; i++)
+{
+    // Pedindo ao usuário o i-ésimo número
+    Console.Write("Digite o valor do elemento {0}: ", i);
+    valor = int.Parse(Console.ReadLine());
+
+    // Verificando se o valor digitado é par
+    if (valor % 2 == 0)
+        // somar na variavel acumuladora
+        soma += valor;
+}
+
+// 3) Mostrar ao usuário a soma dos números pares.
+Console.WriteLine("A soma dos números pares é {0}.", soma);
+
+Console.ReadKey();
+</code></pre>
   <p>
    12) Dado
    <em>
@@ -488,6 +516,44 @@ Console.ReadKey();
    </em>
    .
   </p>
+<pre><code>// Exemplos de Fatorial
+// 3! = 3 * 2 * 1 = 6
+// 4! = 4 * 3 * 2 * 1 = 24
+// 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+int n;
+int fatorial;
+
+// 1) Pedir ao usuário o valor de N
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+if (n &lt; 0)
+    Console.WriteLine("ERRO! Número não pode ser negativo.");
+else
+{
+    // 2) Calcular o Fatorial de N
+    // algoritmo 1
+    fatorial = 1;
+    for (int i = n; i &gt; 0; i--)
+        fatorial *= i;
+
+    // algoritmo 2
+    //if (n == 0)
+    //    fatorial = 1;
+    //else
+    //{
+    //    fatorial = n;
+    //    for (int i = 2; i < n; i++)
+    //        fatorial *= i; // 3! executa 1 só vez
+    //}
+
+    // 3) Mostrar o resultado ao usuário
+    Console.WriteLine("{0}! = {1}", n, fatorial);
+}
+
+Console.ReadKey();
+</code></pre>
   <p>
    13) Dado
    <em>
