@@ -43,9 +43,7 @@
     <None Include="sobremim.html" />
     <None Include="style.css" />
     <None Include="william.png" />
-    <None Include="spartacus\Spartacus-0.30.0.zip" />
     <None Include="spartacus.html" />
-    <None Include="spartacus\Spartacus-0.30.0.pdf" />
     <None Include="CNAME" />
     <None Include="logo.png" />
     <None Include="logo.ico" />
@@ -64,19 +62,16 @@
     <None Include="artigos\vulnerabilidade_bash.png" />
     <None Include="curso\modulo1respostas5.html" />
     <None Include="curso\modulo1exemplos5.html" />
-    <None Include="spartacus\Spartacus-0.32.0.pdf" />
-    <None Include="spartacus\Spartacus-0.32.0.zip" />
     <None Include="spartacus\ex02\basecadastro.mdb" />
     <None Include="spartacus\ex02\imagem01.png" />
     <None Include="curso\modulo1capitulo6.pptx" />
     <None Include="curso\modulo1lista6.html" />
     <None Include="curso\modulo1respostas6.html" />
-    <None Include="spartacus\Spartacus-0.35.2.pdf" />
-    <None Include="spartacus\Spartacus-0.35.2.zip" />
     <None Include="riddler.html" />
     <None Include="riddler\Riddler-0.1.0.zip" />
     <None Include="curso\background.png" />
     <None Include="images\background.jpg" />
+    <None Include="spartacus\Spartacus-0.36.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
