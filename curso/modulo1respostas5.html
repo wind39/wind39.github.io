@@ -316,6 +316,46 @@ Console.ReadKey();</code></pre>
   <p>
    6) Dados dois vetores <em>X</em> e <em>Y</em>, ambos com <em>n</em> elementos, determinar o produto escalar desses vetores.
   </p>
+  <pre><code>int n;
+int[] x;
+int[] y;
+int soma;
+
+// 1) solicitar ao usuário o número N de elementos
+Console.Write("Digite o número de elementos: ");
+n = int.Parse(Console.ReadLine());
+
+x = new int[n];
+y = new int[n];
+
+// 2) solicitar ao usuário os elementos do vetor X
+Console.WriteLine();
+Console.WriteLine("Agora você vai digitar os elementos do vetor X.");
+for (int i = 0; i &lt; n; i++)
+{
+    Console.Write("Digite o elemento {0}: ", i);
+    x[i] = int.Parse(Console.ReadLine());
+}
+
+// 3) solicitar ao usuário os elementos do vetor Y
+Console.WriteLine();
+Console.WriteLine("Agora você vai digitar os elementos do vetor Y.");
+for (int i = 0; i &lt; n; i++)
+{
+    Console.Write("Digite o elemento {0}: ", i);
+    y[i] = int.Parse(Console.ReadLine());
+}
+
+// 4) multiplicar os elementos do vetor X pelos elementos do vetor Y
+soma = 0;
+for (int i = 0; i &lt; n; i++)
+    soma += x[i] * y[i];
+
+// 5) mostrar ao usuário o produto escalar
+Console.WriteLine();
+Console.WriteLine("O produto escalar entre os vetores X e Y é igual a {0}", soma);
+
+Console.ReadLine();</code></pre>
   <p>
    7) São dados dois números inteiros positivos <em>p</em> e <em>q</em>, sendo que o número de dígitos de <em>p</em> é menor ou igual ao número de dígitos de <em>q</em>. Verificar se <em>p</em> é um <em>subnúmero</em> de <em>q</em>.
    <br/>
@@ -325,6 +365,45 @@ Console.ReadKey();</code></pre>
    <br/>
    - <em>p</em> = 23, <em>q</em> = 258347, <em>p</em> não é subnúmero de <em>q</em>.
   </p>
+  <pre><code>string p, q;
+uint x;
+bool conv;
+
+// 1) solicitar ao usuário o número P
+do
+{
+    Console.Write("Digite o número P: ");
+    p = Console.ReadLine();
+
+    // tentando converter
+    conv = uint.TryParse(p, out x);
+
+    if (!conv)
+        Console.WriteLine("Erro! Necessário digitar um número inteiro positivo.");
+}
+while (!conv);
+
+// 2) solicitar ao usuário o número Q
+do
+{
+    Console.Write("Digite o número P: ");
+    q = Console.ReadLine();
+
+    // tentando converter
+    conv = uint.TryParse(p, out x);
+
+    if (!conv)
+        Console.WriteLine("Erro! Necessário digitar um número inteiro positivo.");
+}
+while (!conv);
+
+// 3) verificar se P está contido em Q e mostrar a resposta ao usuário
+if (q.Contains(p))
+    Console.WriteLine("P é subnúmero de Q");
+else
+    Console.WriteLine("P não é subnúmero de Q");
+
+Console.ReadKey();</code></pre>
   <p>
    8) Dados dois números naturais <em>M</em> e <em>N</em>, uma frase com <em>M</em> letras e uma palavra com <em>N</em> letras, determine o número de vezes que a palavra ocorre na frase.
    <br/>
