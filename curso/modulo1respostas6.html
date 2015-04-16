@@ -36,6 +36,70 @@
   <p>
    1) Dada uma matriz real <em>A</em> com <em>m</em> linhas e <em>n</em> colunas e um vetor real <em>V</em> com <em>n</em> elementos, determinar o produto de <em>A</em> por <em>V</em>.
   </p>
+  <pre><code>// 1) Dada uma matriz real A com m linhas e n colunas e um vetor real V com n elementos, determinar o produto de A por V.
+
+// float  - variável que representa número real de 32 bits
+// double - variável que representa número real de 64 bits
+
+double[,] a;
+double[] v;
+double[] r;
+int m, n;
+
+//TODO: melhorar forma de solicitação da variável ao usuário
+Console.Write("Quantas linhas terá a matriz A: ");
+m = int.Parse(Console.ReadLine());
+
+//TODO: melhorar forma de solicitação da variável ao usuário
+Console.Write("Quantas colunas terá a matriz A (o vetor V terá o mesmo número de elementos): ");
+n = int.Parse(Console.ReadLine());
+
+a = new double[m,n];
+v = new double[n];
+r = new double[m];
+
+// solicitando ao usuário os valores da matriz A
+Console.WriteLine();
+Console.WriteLine("Preencha agora a matriz A");
+for (int i = 0; i &lt; m; i++)
+    for (int j = 0; j &lt; n; j++)
+    {
+        Console.Write("Digite o valor do elemento A[{0},{1}]: ", i, j);
+        a[i,j] = double.Parse(Console.ReadLine());
+    }
+
+// solicitando ao usuário os valores do vetor V
+Console.WriteLine();
+Console.WriteLine("Preencha agora o vetor V");
+for (int j = 0; j &lt; n; j++)
+{
+    Console.Write("Digite o valor do elemento V[{0}]: ", j);
+    v[j] = double.Parse(Console.ReadLine());
+}
+
+// m é o número de linhas
+// n é o número de colunas
+
+for (int i = 0; i &lt; m; i++) // percorrendo todas as linhas
+{
+    // i é a linha atual
+
+    r[i] = 0.0;
+
+    for (int j = 0; j &lt; n; j++) // percorrendo todas as colunas
+    {
+        // j é a coluna atual
+
+        r[i] += a[i, j] * v[j];
+    }
+}
+
+Console.WriteLine();
+for (int i = 0; i &lt; m; i++)
+    Console.WriteLine("r[{0}] = {1}", i, r[i]);
+
+Console.ReadKey();
+  </code></pre>
   <p>
    2) Um vetor real <em>X</em> com <em>n</em> elementos é apresentado como resultado de um sistema de equações lineares <em>Ax = B</em> cujos coeficientes são representados em uma matriz real <em>A<sub>mxn</sub></em> e os lados direitos das equações em um vetor real <em>B</em> de <em>m</em> elementos. Verificar se o vetor <em>X</em> é realmente solução do sistema dado.
   </p>
