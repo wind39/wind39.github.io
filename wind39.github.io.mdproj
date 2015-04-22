@@ -72,6 +72,9 @@
     <None Include="curso\background.png" />
     <None Include="images\background.jpg" />
     <None Include="spartacus\Spartacus-0.36.0.zip" />
+    <None Include="curso\modulo1capitulo7.pptx" />
+    <None Include="curso\modulo1lista7.html" />
+    <None Include="curso\modulo1respostas7.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
