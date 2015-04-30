@@ -36,8 +36,7 @@
   <p>
    1) Dada uma matriz real <em>A</em> com <em>m</em> linhas e <em>n</em> colunas e um vetor real <em>V</em> com <em>n</em> elementos, determinar o produto de <em>A</em> por <em>V</em>.
   </p>
-  <pre><code>// 1) Dada uma matriz real A com m linhas e n colunas e um vetor real V com n elementos, determinar o produto de A por V.
-
+  <pre><code>
 // float  - variável que representa número real de 32 bits
 // double - variável que representa número real de 64 bits
 
@@ -109,6 +108,83 @@ Console.ReadKey();
   <p>
    4) Dadas duas matrizes reais <em>A<sub>mxn</sub></em> e <em>B<sub>nxp</sub></em>, calcular o produto de <em>A</em> por <em>B</em>.
   </p>
+  <pre><code>
+// Matriz A:
+// m linhas (i é a variável de incremento)
+// n colunas (j é a variável de incremento)
+
+// Matriz B:
+// n linhas (j é a variável de incremento)
+// p colunas (k é a variável de incremento)
+
+// Matriz R:
+// m linhas (i é a variável de incremento)
+// p colunas (k é a variável de incremento)
+
+double[,] a;
+double[,] b;
+double[,] r;
+int m, n, p;
+
+Console.Write("Quantas linhas terá a matriz A: ");
+m = int.Parse(Console.ReadLine());
+
+Console.Write("Quantas colunas terá a matriz A (esse será o número de linhas da matriz B): ");
+n = int.Parse(Console.ReadLine());
+
+Console.Write("Quantas colunas terá a matriz B: ");
+p = int.Parse(Console.ReadLine());
+
+a = new double[m,n];
+b = new double[n,p];
+r = new double[m,p];
+
+// solicitando ao usuário os valores da matriz A
+Console.WriteLine();
+Console.WriteLine("Preencha agora a matriz A");
+for (int i = 0; i &lt; m; i++)
+    for (int j = 0; j &lt; n; j++)
+    {
+        Console.Write("Digite o valor do elemento A[{0},{1}]: ", i, j);
+        a[i,j] = double.Parse(Console.ReadLine());
+    }
+
+// solicitando ao usuário os valores da matriz B
+Console.WriteLine();
+Console.WriteLine("Preencha agora a matriz B");
+for (int j = 0; j &lt; n; j++)
+    for (int k = 0; k &lt; p; k++)
+    {
+        Console.Write("Digite o valor do elemento A[{0},{1}]: ", j, k);
+        b[j,k] = double.Parse(Console.ReadLine());
+    }
+
+// Rmxp = Amxn * Bnxp
+// r[i,k] = a[i,j] * b[j,k]
+
+for (int i = 0; i &lt; m; i++) // percorrendo todas as linhas de A
+{
+    for (int k = 0; k &lt; p; k++) // percorrendo todas as colunas de B
+    {
+        r[i, k] = 0.0;
+
+        for (int j = 0; j &lt; n; j++) // percorrendo todas as colunas de A e todas as linhas de B
+        {
+            r[i, k] += a[i, j] * b[j, k];
+        }
+    }
+}
+
+Console.WriteLine();
+for (int i = 0; i &lt; m; i++)
+{
+    for (int k = 0; k &lt; p; k++)
+        Console.Write("{0}  ", r[i, k]);
+    Console.WriteLine();
+}
+
+Console.ReadKey();
+  </code></pre>
   <p>
    5) Dada uma matriz real <em>A<sub>mxn</sub></em>, verificar se existem elementos repetidos em <em>A</em>.
   </p>
