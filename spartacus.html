@@ -53,6 +53,66 @@
 
                 <div class="post">
                     <h2 class="title">
+                        Lan&ccedil;ada vers&atilde;o 0.38.0 da Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/spartacus.html"></div></br>
+                    </h2>
+                    <div class="entry">
+                        <p>O desenvolvimento da Spartacus est&aacute; tomando propor&ccedil;&otilde;es cada vez maiores. J&aacute; ultrapassamos 160 mil linhas de c&oacute;digo. Voc&ecirc; poder&aacute; fazer download da Spartacus 0.38.0 clicando <a href="spartacus/Spartacus-0.38.0.zip">nesse link</a>.</p>
+                        <p>Para ajudar a organizar o desenvolvimento e a corre&ccedil;&atilde;o de bugs, criamos um <a href="https://trello.com/b/qIQ5id41/spartacus">Trello Board p&uacute;blico</a>, onde voc&ecirc; poder&aacute; ver quais s&aacute;o alguns de meus planos para essa biblioteca, e tamb&eacute;m acompanhar o progresso de cada tarefa.</p>
+                        <p>Toda a documenta&ccedil;o das classes agora poder ser acessada online atrav&eacute;s <a href="spartacus/html/index.html">desse link</a>. Tamb&eacute;m comecei a centralizar os artigos e manuais explicativos da Spartacus na <a href="https://github.com/wind39/spartacus/wiki">wiki do projeto no GitHub</a>.</p>
+                        <p>Segue lista de mudan&ccedil;as:</p>
+                        <ul>
+                            <li><b>Spartacus.Net.Cryptor:</b></li>
+                                <ul>
+                                    <li>Implementada fun&ccedil;&atilde;o para obter strings aleat&oacute;rias para diversos prop&oacute;sitos.</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Database:</b></li>
+                                <ul>
+                                    <li>Suporte ao Mono 4.0;</li>
+                                    <li>Sobrecarga para a fun&ccedil;&atilde;o Query, que agora consegue buscar dados em blocos. Isso reduz o uso de mem&oacute;ria quando h&aacute; muitos dados para trazer do banco.</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Utils.Excel:</b></li>
+                                <ul>
+                                    <li>Suporte a mais f&oacute;rmulas;</li>
+                                    <li>Tabelas din&acirc;micas agora podem ser agrupadas por mais de uma coluna;</li>
+                                    <li>Suporte &agrave; op&ccedil;&atilde;o "Quebrar texto automaticamente";</li>
+                                    <li>Suporte a coment&aacute;rios nas c&eacute;lulas;</li>
+                                    <li>Formata&ccedil;&atilde;o condicional para linhas baseado no valor de uma coluna;</li>
+                                    <li>Incorporado c&oacute;digo-fonte da EPPlus 4.0.4 para corrigir um bug NullReferenceException na classe ExcelRangeBase.</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Reporting:</b></li>
+                                <ul>
+                                    <li>Suporte a bordas no cabe&ccedil;alho e rodap&eacute; do relat&oacute;rio;</li>
+                                    <li>Objetos de texto agora podem ser centralizados;</li>
+                                    <li>Caracteres acentuados agora s&aacute;o renderizados corretamente. Se os dados do banco vierem com HTML Encoding, a convers&aacute;o &eacute; autom&aacute;tica;</li>
+                                    <li>Incorporado c&oacute;digo-fonte da PDFjet 5.28, e com isso n&oacute;s:</li>
+                                    <ul>
+                                        <li>Removemos a depend&ecirc;ncia da Windows Forms para cortar o texto para caber na c&eacute;lula;</li>
+                                        <li>Reduzido uso de mem&oacute;ria em aproximadamente 50% para renderizar relat&oacute;rios em PDF;</li>
+                                        <li>Reduzido tempo de processamento em aproximadamente 75% para renderizar relat&oacute;rios em PDF;</li>
+                                        <li>Agora um relat&oacute;rio com aproximadamente 350 mil registros e 10 mil p&aacute;ginas &eacute; renderizado em menos de 15 minutos em uma m&aacute;quina modesta de 32 bits, um &uacute;nico processador e 3 GB RAM.</li>
+                                    </ul>
+                                </ul>
+                            <br/>
+                            <li>E muito mais otimiza&ccedil;&otilde;es e corre&ccedil;&otilde;es de bugs.</li>
+                        </ul>
+                    </div>
+                    <p class="meta">Curitiba, 6 de maio de 2015.</p>
+                    <script src="https://apis.google.com/js/plusone.js">
+                    </script>
+                    <g:comments
+                        href="http://williamivanski.com.br/spartacus.html"
+                        width="642"
+                        first_party_property="BLOGGER"
+                        view_type="FILTERED_POSTMOD">
+                    </g:comments>
+                </div>
+
+                <div class="post">
+                    <h2 class="title">
                         Lan&ccedil;ada vers&atilde;o 0.36.0 da Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
                         <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/spartacus.html"></div></br>
                     </h2>
@@ -66,7 +126,7 @@
                             <li>Diversas otimiza&ccedil;&otilde;es e corre&ccedil;&otilde;es de bugs.</li>
                         </ul>
                     </div>
-                    <p class="meta">Curitiba, 19 de mar&ccedil;o de 2014.</p>
+                    <p class="meta">Curitiba, 19 de mar&ccedil;o de 2015.</p>
                     <script src="https://apis.google.com/js/plusone.js">
                     </script>
                     <g:comments
@@ -96,7 +156,7 @@
                             <li>Gera&ccedil;&atilde;o de relat&oacute;rios em Excel e PDF agora possuem evento de progresso, em que &eacute; poss&iacute;vel acompanhar o percentual de renderiza&ccedil;&atilde;o de cada relat&oacute;rio.</li>
                         </ul>
                     </div>
-                    <p class="meta">Curitiba, 18 de fevereiro de 2014.</p>
+                    <p class="meta">Curitiba, 18 de fevereiro de 2015.</p>
                     <script src="https://apis.google.com/js/plusone.js">
                     </script>
                     <g:comments
@@ -180,27 +240,14 @@
                 <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/113434597235835606932" data-rel="author"></div></br></br></br>
                 <ul>
                     <li>
-                        <h2><a href="curso.html">Curso de Programa&ccedil;&atilde;o C#</a></h2>
-                        <ul>
-                            <li><a target="_blank" href="https://plus.google.com/u/0/communities/102417267229322909418">Comunidade no Google+</a></li>
-                            <li><a href="modulo1.html">M&oacute;dulo I</a></li>
-                            <li><a href="modulo2.html">M&oacute;dulo II</a></li>
-                            <li><a href="modulo3.html">M&oacute;dulo III</a></li>
-                        </ul>
-                    </li>
-                    <li>
                         <h2><a href="spartacus.html">Biblioteca Spartacus</a></h2>
                         <ul>
                             <li><a href="https://github.com/wind39/spartacus">Projeto no GitHub</a></li>
-                            <li><a href="https://github.com/wind39/spartacus">Todas as Releases no GitHub</a></li>
-                            <li><a href="spartacus/Spartacus-0.36.0.zip">Download vers&atilde;o 0.36.0</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2><a href="riddler.html">Riddler (Criptografia)</a></h2>
-                        <ul>
-                            <li><a href="https://github.com/wind39/riddler">Projeto no GitHub</a></li>
-                            <li><a href="riddler/Riddler-0.1.0.zip">Download vers&atilde;o 0.1.0</a></li>
+                            <li><a href="https://github.com/wind39/spartacus/releases">Todas as Releases no GitHub</a></li>
+                            <li><a href="spartacus/Spartacus-0.38.0.zip">Download vers&atilde;o 0.38.0</a></li>
+                            <li><a href="https://github.com/wind39/spartacus/wiki">Wiki no GitHub</a></li>
+                            <li><a href="https://trello.com/b/qIQ5id41/spartacus">Trello Board</a></li>
+                            <li><a href="spartacus/html/index.html">Documenta&ccedil;&atilde;o Online</a></li>
                         </ul>
                     </li>
                 </ul>
