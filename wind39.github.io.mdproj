@@ -33,13 +33,11 @@
     <None Include="images\img08.jpg" />
     <None Include="images\img09.gif" />
     <None Include="images\img10.jpg" />
-    <None Include="artigos.html" />
     <None Include="curso.html" />
     <None Include="index.html" />
     <None Include="modulo1.html" />
     <None Include="modulo2.html" />
     <None Include="modulo3.html" />
-    <None Include="projetos.html" />
     <None Include="sobremim.html" />
     <None Include="style.css" />
     <None Include="william.png" />
@@ -59,7 +57,6 @@
     <None Include="spartacus\ex01\imagem04.png" />
     <None Include="spartacus\ex01\imagem05.png" />
     <None Include="spartacus\ex01\imagem06.png" />
-    <None Include="artigos\vulnerabilidade_bash.png" />
     <None Include="curso\modulo1respostas5.html" />
     <None Include="curso\modulo1exemplos5.html" />
     <None Include="spartacus\ex02\basecadastro.mdb" />
@@ -67,8 +64,6 @@
     <None Include="curso\modulo1capitulo6.pptx" />
     <None Include="curso\modulo1lista6.html" />
     <None Include="curso\modulo1respostas6.html" />
-    <None Include="riddler.html" />
-    <None Include="riddler\Riddler-0.1.0.zip" />
     <None Include="curso\background.png" />
     <None Include="images\background.jpg" />
     <None Include="curso\modulo1capitulo7.pptx" />
@@ -480,6 +475,5 @@
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
     <Folder Include="spartacus\ex02\" />
-    <Folder Include="riddler\" />
   </ItemGroup>
 </Project>

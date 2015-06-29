@@ -7,10 +7,6 @@
       <priority>1.0</priority>
    </url>
    <url>
-      <loc>http://williamivanski.com.br/artigos.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
       <loc>http://williamivanski.com.br/curso.html</loc>
       <changefreq>weekly</changefreq>
    </url>
@@ -63,15 +59,7 @@
       <changefreq>daily</changefreq>
    </url>
    <url>
-      <loc>http://williamivanski.com.br/projetos.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
       <loc>http://williamivanski.com.br/spartacus.html</loc>
-      <changefreq>weekly</changefreq>
-   </url>
-   <url>
-      <loc>http://williamivanski.com.br/riddler.html</loc>
       <changefreq>weekly</changefreq>
    </url>
 </urlset>
