@@ -471,7 +471,6 @@
     <None Include="spartacus\html\tab_s.png" />
     <None Include="spartacus\html\tabs.css" />
     <None Include="curso\modulo2capitulo1.pptx" />
-    <None Include="curso\modulo2exemplos1.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
