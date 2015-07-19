@@ -474,6 +474,8 @@
     <None Include="modulo4.html" />
     <None Include="curso\modulo2lista1.html" />
     <None Include="curso\modulo2respostas1.html" />
+    <None Include="curso\motivation.pdf" />
+    <None Include="curso\apostila.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
