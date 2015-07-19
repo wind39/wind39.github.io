@@ -1,0 +1,276 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo II Lista 1
+  </title>
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo II Capítulo 1 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Escreva um programa orientado a objetos com as seguintes características:
+  </p>
+  <ul>
+    <li>Uma classe <b><tt>Pessoa</tt></b>, com atributos <tt>nome</tt> e <tt>idade</tt>, e métodos <tt>Cumprimentar</tt> e <tt>DizerIdade</tt>;</li>
+    <li>Uma classe <b><tt>Aluno</tt></b> derivada da classe <b><tt>Pessoa</tt></b>, com um método <tt>IrParaEscola</tt>;</li>
+    <li>Uma classe <b><tt>Professor</tt></b> derivada da classe <b><tt>Pessoa</tt></b>, com um método <tt>Explicar</tt> que recebe como parâmetro um <em>assunto</em>;</li>
+    <li>Na classe principal:</li>
+    <ul>
+        <li>Crie uma <b><tt>Pessoa</tt></b> e faça ela <tt>Cumprimentar</tt> e <tt>DizerIdade</tt>;</li>
+        <li>Crie um <b><tt>Aluno</tt></b> de 21 anos, e faça ele <tt>IrParaEscola</tt>, <tt>Cumprimentar</tt> e <tt>DizerIdade</tt>;</li>
+        <li>Crie um <b><tt>Professor</tt></b> de 30 anos, e faça ele <tt>Cumprimentar</tt>, <tt>DizerIdade</tt> e <tt>Explicar</tt> sobre um determinado <em>assunto</em>.</li>
+    </ul>
+  </ul>
+  <pre><code>// Pessoa.cs
+using System;
+
+namespace Exercicio01
+{
+    public class Pessoa
+    {
+        public string nome;
+        public int idade;
+
+        public Pessoa()
+        {   
+        }
+
+        public Pessoa(string pnome, int pidade)
+        {
+            this.nome = pnome;
+            this.idade = pidade;
+        }
+
+        public void Cumprimentar()
+        {
+            Console.WriteLine("Olá, meu nome é {0}.", this.nome);
+        }
+
+        public void DizerIdade()
+        {
+            Console.WriteLine("Tenho {0} anos de idade.", this.idade);
+        }
+    }
+}
+
+// Aluno.cs
+using System;
+
+namespace Exercicio01
+{
+    public class Aluno : Pessoa
+    {
+        public Aluno()
+        {
+        }
+
+        public Aluno(string pnome, int pidade) : base(pnome, pidade)
+        {
+        }
+
+        public void IrParaEscola()
+        {
+            Console.WriteLine("O aluno {0} está indo para escola.", this.nome);
+        }
+    }
+}
+
+// Professor.cs
+using System;
+
+namespace Exercicio01
+{
+    public class Professor : Pessoa
+    {
+        public Professor()
+        {
+        }
+
+        public Professor(string pnome, int pidade) : base(pnome, pidade)
+        {
+        }
+
+        public void Explicar(string assunto)
+        {
+            Console.WriteLine("O professor {0} está explicando sobre {1}.", this.nome, assunto);
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Exercicio01
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Pessoa p;
+            Aluno aluno;
+            Professor prof;
+
+            // primeira parte
+            p = new Pessoa("William", 27);
+            p.Cumprimentar();
+            p.DizerIdade();
+            Console.WriteLine();
+
+            // segunda parte
+            aluno = new Aluno("José", 21);
+            aluno.IrParaEscola();
+            aluno.Cumprimentar();
+            aluno.DizerIdade();
+            Console.WriteLine();
+
+            // terceira parte
+            prof = new Professor("Marcos", 35);
+            prof.Cumprimentar();
+            prof.DizerIdade();
+            prof.Explicar("programação em C#");
+
+            Console.ReadKey();
+        }
+    }
+}</code></pre>
+  <hr/>
+  <p>
+   2) Escreva um programa orientado a objetos com as seguintes características:
+  </p>
+  <ul>
+    <li>Uma classe <b><tt>Porta</tt></b> com um atributo <tt>cor</tt> (string) e um método <tt>Mostrar</tt> que imprime na tela "Eu sou uma porta, minha cor é marrom" (ou qualquer cor que seja);</li>
+    <li>Uma classe <b><tt>Habitacao</tt></b> com um atributo <tt>area</tt> e um construtor para atribuir o valor desse atributo. Cada habitação também terá uma porta (classe <b><tt>Porta</tt></b>). A habitação também terá um método <tt>Mostrar</tt>, que imprimirá na tela "Eu sou uma habitacao, minha area eh X m2, e a cor da minha porta é tal";</li>
+    <li>Uma classe <b><tt>Apartamento</tt></b> é uma classe derivada da classe <b><tt>Habitacao</tt></b>, com <tt>area</tt> atribuída na instanciação igual a 50 m<sup>2</sup></li>
+    <li>Uma classe <b><tt>Morador</tt></b> derivada da classe <b><tt>Pessoa</tt></b> do exercício anterior, mas que possua uma habitação. Escreva também um método <tt>Mostrar</tt> que mostre as informações do morador e da habitação;</li>
+    <li>Na classe principal, crie um apartamento, uma pessoa para morar nele, e mostre as informações.</li>
+  </ul>
+  <hr/>
+  <p>
+   3) Crie uma classe <b><tt>Retangulo</tt></b>, com altura e largura passadas como argumento no método construtor. Também deve ter um método <tt>Mostrar</tt> que imprime a altura e a largura do retângulo. Crie um array contendo 10 retângulos, solicite ao usuário suas dimensões e depois as mostre na tela.
+  </p>
+  <hr/>
+  <p>
+   4) Crie uma classe <b><tt>Ponto3D</tt></b> que representa um ponto em um espaço tridimensional, com coordenadas <em>X</em>, <em>Y</em> e <em>Z</em>. Deve conter os seguintes métodos:
+  <p>
+   <ul>
+    <li><tt>Mostrar</tt>, que mostrará as coordenadas do ponto, por exemplo "(3, 5, -2)";</li>
+    <li><tt>MoverPara</tt>, que mudará as coordenadas do ponto;</li>
+    <li><tt>Distancia(Ponto3D p2)</tt>, que calculará a distância do ponto até outro ponto <em>p2</em>;</li>
+   </ul>
+  <p>Use propriedades para resolver este exercício. Seu programa deve criar um array de <em>N</em> pontos e solicitar as coordenadas de todos eles ao usuário. Após isso, deve calcular e mostrar entre o primeiro ponto e os demais pontos.</p>
+  <hr/>
+  <p>
+   5) Crie um programa orientado a objetos com as seguintes características:
+  </p>
+  <ul>
+    <li>Crie uma classe <b><tt>AlbumDeFotos</tt></b> com uma propriedade <em>numeroTotalDePaginas</em>;</li>
+    <li>Crie outra propriedade somente leitura chamada <em>numeroTotalDeFotos</em> baseada na propriedade <em>numetoTotalDePaginas</em>, sabendo que cada página pode conter no máximo 2 fotos;</li>
+    <li>Crie uma terceira propriedade chamada <em>numeroDeFotos</em>, cujo método <tt>set</tt> deve mostrar uma mensagem de erro caso o usuário ultrapasse o <em>numeroTotalDeFotos</em>;</li>
+    <li>Crie um programa para testar a classe <b><tt>AlbumDeFotos</tt></b>. Simule um exemplo em que atribuir um valor à propriedade <em>numeroDeFotos</em> mostra uma mensagem de erro, e outro exemplo em que não mostra.</li>
+  </ul>
+  <hr/>
+  <p>
+   6) Crie um catálogo para armazenar informações sobre arquivos de músicas e filmes.
+  </p>
+   <ul>
+    <li>Para cada item, deve armazenar o código, nome, categoria e tamanho hipotético do arquivo em disco;</li>
+    <li>Para filmes deve ter também o nome do diretor, nome do ator principal e nome da atriz principal;</li>
+    <li>Para arquivos de música também deve ter o artista e o tamanho em segundos;</li>
+    <li>Arquivos de filme e música devem ter um método <tt>Play</tt> (ainda não implementado) e também um método <tt>RetrieveInformation</tt>, que vai (em uma futura versão) conectar com um servidor na Internet para buscar informações sobre a música ou o filme;</li>
+    <li>Use herança se necessário. Na função <tt>Main</tt>, crie arrays para cada tipo de objeto, e os alimente com pelo menos 3 arquivos de cada tipo.</li>
+   </ul>
+  <hr/>
+  <p>
+   7) Altere o exercício anterior para mostrar ao usuário um menu em modo texto, que permita entrar com novas informações e também mostrar os dados armazenados em arrays.
+  </p>
+  <hr/>
+  <p>
+   8) Deseja-se atualizar as contas correntes dos clientes de uma agência bancária. É dado o cadastro de <em>N</em> clientes, contendo para cada cliente o número de sua conta e o seu saldo; o cadastro está ordenado pelo número da conta. Em seguida, é dado o número de operações efetuadas no dia e, para cada operação, o número da conta, uma letra <em>C</em> ou <em>D</em> indicando se a operação é de crédito ou débito e o valor da operação. Emitir o cadastro de clientes atualizado.
+  </p>
+  <hr/>
+  <p>
+   9) Altere o exercício anterior para mostrar ao usuário um menu em modo texto, que permita entrar com novas informações e também mostrar os dados armazenados em arrays. Também implemente um facilitador ao usuário para os casos de operações de transferência, para que ele digite apenas o número da conta de origem, número da conta de destino e o valor transferido.
+  </p>
+  <hr/>
+  <p>
+   10) Deseja-se fazer a emissão da folha de pagamentos de uma empresa. Para cada um dos <em>NF</em> funcionários da empresa são dadas as seguintes informações:
+  </p>
+  <ul>
+   <li>NOME</li>
+   <li>SAL (salário)</li>
+   <li>HED (horas extras diurnas)</li>
+   <li>HEN (horas extras noturnas)</li>
+   <li>ND (número de dependentes)</li>
+   <li>FAL (faltas em horas)</li>
+   <li>DE (descontos eventuais)</li>
+   <li>REF (gastos com refeições feitas na empresa)</li>
+   <li>VAL (vales retirados durante o mês)</li>
+  </ul>
+  <p>Emitir as seguintes informações:</p>
+  <ul>
+   <li>nome,</li>
+   <li>salário,</li>
+   <li>horas extras = HED * SAL/160 + HEN * 1.2 * SAL/160,</li>
+   <li>salário família = ND * 0.05 * salário mínimo vigente,</li>
+   <li>salário bruto = salário + horas extras + salário família.</li>
+  </ul>
+  <p>Descontos efetuados:</p>
+  <ul>
+   <li>INAMPS = 0.08 * SAL,</li>
+   <li>faltas = FAL * SAL/160,</li>
+   <li>refeições,</li>
+   <li>vales,</li>
+   <li>descontos eventuais,</li>
+   <li>imposto de renda = 0.08 * salário bruto.</li>
+  </ul>
+  <p>Salário líquido = salário bruto - desconto total.</p>
+  <hr/>
+  <p>
+   11) Um campeonato de futebol foi disputado por <em>N</em> times identificados pelos seus nomes. Para cada time são considerados os seguintes dados:
+  </p>
+   <ul>
+    <li>PG - número de pontos ganhos (2 por vitória, 1 por empate e 0 por derrota)</li>
+    <li>GM - número de gols marcados</li>
+    <li>GS - número de gols sofridos (gols difíceis de marcar)</li>
+    <li>S - saldo de gols (GM - GS)</li>
+    <li>V - número de vitórias</li>
+    <li>GA - goal average (GM / GS se GS != 0, GM se GS = 0)</li>
+   </ul>
+   <p>
+    a) Dados os resultados de <em>M</em> jogos, imprima uma tabela com todos os dados (nome do time, PG, GM, GS, S, V, GA, igual àquela que sai no jornal) dos <em>N</em> times. Cada resultado é representado na forma <em>(T1, T2, G1, g2)</em> cuja interpretação é a seguinte: no jogo <em>T1 x T2</em> o resultado foi <em>G1 x G2</em>. Exemplo: (Corinthians, São Paulo, 1, 0).
+   </p>
+   <p>
+    b) Com os mesmos dados do item (a), imprima a classificação dos times do campeonato (do primeiro para o último). A classificação é pelo número de pontos ganhos (PG) e em segundo lugar pelo saldo de gols (S). Se houver empate segundo os dois critérios, classifique pelo número de vitórias, número de gols marcados e até mesmo por ordem alfabética do nome do time.
+   </p>
+   <hr/>
+   <p>
+    12) Com o auxílio de um programa de geração automática de diagramas de classes a partir do executável (recomendo o <a target="_blank" href="http://nclass.sourceforge.net/downloads.html">NClass</a>), crie e estude os diagramas de classes de todos os exercícios acima. O que os diagramas apresentam? O que significam as setas?
+   </p>
+ </body>
+</html>

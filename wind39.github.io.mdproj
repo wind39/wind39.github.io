@@ -473,6 +473,7 @@
     <None Include="curso\modulo2capitulo1.pptx" />
     <None Include="modulo4.html" />
     <None Include="curso\modulo2lista1.html" />
+    <None Include="curso\modulo2respostas1.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

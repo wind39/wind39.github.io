@@ -35,264 +35,62 @@
    William Ivanski
   </h2>
   <h3>
-   Lista de Exercícios Capítulo 2 (Respostas)
+   Lista de Exercícios Módulo I Capítulo 2 (Respostas)
   </h3>
   <hr/>
   <p>
-   1) Solicite dois números ao usuário e imprima a
-   <strong>
-    soma
-   </strong>
-   dos dois números.
+   1) Solicite dois números ao usuário e imprima a <strong>soma</strong> dos dois números.
   </p>
   <pre><code>// declarar 3 variaveis, a, b, e c
 int a, b, c;
 
 // pedir para o usuario digitar o valor da variavel A
 Console.Write("Digite o valor da variavel A: ");
-a = Int32.Parse(Console.ReadLine());
+a = int.Parse(Console.ReadLine());
 
 // pedir para o usuario digitar o valor da variavel B
 Console.Write("Digite o valor da variavel B: ");
-b = Int32.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
 
 // calcular a operação e jogar o resultado em C
 c = a + b;
 
 // mostrar o valor de C para o usuario
-Console.WriteLine("A soma de A e B = " + c);
+Console.WriteLine("A soma de A e B = {0}", c);
 Console.ReadKey();
 </code></pre>
   <p>
-   2) Solicite dois números ao usuário e imprima a
-   <strong>
-    subtração
-   </strong>
-   dos dois números.
-  </p>
-  <pre><code>int a, b, c;
-
-Console.Write("Digite o valor da variavel A: ");
-a = Int32.Parse(Console.ReadLine());
-
-Console.Write("Digite o valor da variavel B: ");
-b = Int32.Parse(Console.ReadLine());
-
-c = a - b;
-
-Console.WriteLine("A subtração de A e B = " + c);
-Console.ReadKey();
-</code></pre>
-  <p>
-   3) Solicite dois números ao usuário e imprima a
-   <strong>
-    multiplicação
-   </strong>
-   dos dois números.
-  </p>
-  <pre><code>int a, b, c;
-
-Console.Write("Digite o valor da variavel A: ");
-a = Int32.Parse(Console.ReadLine());
-
-Console.Write("Digite o valor da variavel B: ");
-b = Int32.Parse(Console.ReadLine());
-
-c = a * b;
-
-Console.WriteLine("A multiplicação de A e B = " + c);
-Console.ReadKey();
-</code></pre>
-  <p>
-   4) Solicite dois números ao usuário e imprima a
-   <strong>
-    divisão
-   </strong>
-   dos dois números.
-  </p>
-  <pre><code>int a, b;
-double c;
-
-Console.Write("Digite o valor da variavel A: ");
-a = Int32.Parse(Console.ReadLine());
-
-Console.Write("Digite o valor da variavel B: ");
-b = Int32.Parse(Console.ReadLine());
-
-c = (double) a / (double) b;
-
-Console.WriteLine("A divisão de A e B = " + c);
-Console.ReadKey();
-</code></pre>
-  <p>
-   5) Solicite um número ao usuário e imprima o seu
-   <strong>
-    dobro
-   </strong>
-   .
-  </p>
-  <pre><code>int var, dobro;
-
-Console.Write("Digite um número inteiro: ");
-var = Int32.Parse(Console.ReadLine());
-
-dobro = var * 2;
-
-Console.WriteLine("O dobro do número que você digitou é: " + dobro);
-Console.ReadKey();
-</code></pre>
-  <p>
-   6) Solicite um número ao usuário e imprima o seu
-   <strong>
-    quadrado
-   </strong>
-   .
-  </p>
-  <pre><code>int var, quadrado;
-
-Console.Write("Digite um número inteiro: ");
-var = Int32.Parse(Console.ReadLine());
-
-dobro = var * var;
-
-Console.WriteLine("O quadrado do número que você digitou é: " + quadrado);
-Console.ReadKey();
-</code></pre>
-  <p>
-   7)
-   <strong>
-    Cadastro de aluno
-   </strong>
-   . Solicite ao usuário e imprima os seguintes valores:
+   2) Solicite dois números ao usuário e imprima a <strong>subtração</strong> dos dois números.
   </p>
   <p>
-   Nome (string)
-   <br/>
-   Idade (int)
-   <br/>
-   Sexo (char)
-   <br/>
-   Nota média final (double)
+   3) Solicite dois números ao usuário e imprima a <strong>multiplicação</strong> dos dois números.
   </p>
-  <pre><code>string nome;
-int idade;
-char sexo;
-double nota;
-
-Console.Write("Digite o nome do aluno: ");
-nome = Console.ReadLine();
-
-Console.Write("Digite a idade do aluno: ");
-idade = Int32.Parse(Console.ReadLine());
-
-Console.Write("Digite o sexo do aluno (M ou F): ");
-sexo = Char.Parse(Console.ReadLine());
-
-Console.Write("Digite a média final do aluno no curso: ");
-nota = Double.Parse(Console.ReadLine());
-
-Console.WriteLine("O aluno " + nome + " tem " + idade + " anos, é do sexo " + sexo + ", e obteve a nota final = " + nota + ".");
-Console.ReadKey();
-</code></pre>
   <p>
-   8)
-   <strong>
-    Conversor de tempo
-   </strong>
-   . Solicite ao usuário o total em segundos, e imprima o correspondente em horas, minutos e segundos.
+   4) Solicite dois números ao usuário e imprima a <strong>divisão</strong> dos dois números.
   </p>
-  <pre><code>int segundos;
-int minutos;
-int horas;
-
-Console.Write("Digite o total em segundos: ");
-segundos = Int32.Parse(Console.ReadLine());
-
-horas = segundos / 3600;
-segundos = segundos - (horas * 3600);
-
-minutos = segundos / 60;
-segundos = segundos - (minutos * 60);
-
-Console.WriteLine(horas + " horas, " + minutos + " minutos e " + totalsegundos + " segundos");
-Console.ReadKey();
-</code></pre>
+  <p>
+   5) Solicite um número ao usuário e imprima o seu <strong>dobro</strong>.
+  </p>
+  <p>
+   6) Solicite um número ao usuário e imprima o seu <strong>quadrado</strong>.
+  </p>
+  <p>
+   7) <strong>Cadastro de aluno</strong>. Solicite ao usuário e imprima os seguintes valores:
+  </p>
+  <ul>
+    <li>Nome (string)</li>
+    <li>Idade (int)</li>
+    <li>Gênero (char)</li>
+    <li>Nota média final (double)</li>
+  </ul>
+  <p>
+   8) <strong>Conversor de tempo</strong>. Solicite ao usuário o total em segundos, e imprima o correspondente em horas, minutos e segundos.
+  </p>
   <p>
    9) Imprimir sequências de inteiros.
   </p>
-  <pre><code>int x;
-
-x = 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-x = x + 1;
-Console.WriteLine(x);
-
-Console.ReadKey();
-</code></pre>
   <p>
    10) Imprimir tabuadas.
   </p>
-  <pre><code>int x, tabuada;
-
-Console.Write("Digite a tabuada desejada: ");
-tabuada = Int32.Parse(Console.ReadLine());
-
-x = 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-x = x + 1;
-Console.WriteLine(tabuada + " x " + x + " = " + (tabuada * x));
-
-Console.ReadKey();
-</code></pre>
  </body>
 </html>
