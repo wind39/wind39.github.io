@@ -14,14 +14,8 @@
   <ItemGroup>
     <None Include="curso\modulo1capitulo1.pptx" />
     <None Include="curso\modulo1capitulo2.pptx" />
-    <None Include="curso\modulo1capitulo3.pptx" />
-    <None Include="curso\modulo1capitulo4.pptx" />
     <None Include="curso\modulo1lista2.html" />
-    <None Include="curso\modulo1lista3.html" />
-    <None Include="curso\modulo1lista4.html" />
     <None Include="curso\modulo1respostas2.html" />
-    <None Include="curso\modulo1respostas3.html" />
-    <None Include="curso\modulo1respostas4.html" />
     <None Include="images\.directory" />
     <None Include="images\img01.gif" />
     <None Include="images\img02.jpg" />
@@ -47,8 +41,6 @@
     <None Include="logo.ico" />
     <None Include="curso\euclides.png" />
     <None Include="sitemap.xml" />
-    <None Include="curso\modulo1lista5.html" />
-    <None Include="curso\modulo1capitulo5.pptx" />
     <None Include="curso_csharp.png" />
     <None Include="spartacus\ex01\basecadastro.db" />
     <None Include="spartacus\ex01\imagem01.png" />
@@ -57,18 +49,10 @@
     <None Include="spartacus\ex01\imagem04.png" />
     <None Include="spartacus\ex01\imagem05.png" />
     <None Include="spartacus\ex01\imagem06.png" />
-    <None Include="curso\modulo1respostas5.html" />
-    <None Include="curso\modulo1exemplos5.html" />
     <None Include="spartacus\ex02\basecadastro.mdb" />
     <None Include="spartacus\ex02\imagem01.png" />
-    <None Include="curso\modulo1capitulo6.pptx" />
-    <None Include="curso\modulo1lista6.html" />
-    <None Include="curso\modulo1respostas6.html" />
     <None Include="curso\background.png" />
     <None Include="images\background.jpg" />
-    <None Include="curso\modulo1capitulo7.pptx" />
-    <None Include="curso\modulo1lista7.html" />
-    <None Include="curso\modulo1respostas7.html" />
     <None Include="spartacus\html\annotated.html" />
     <None Include="spartacus\html\arrowdown.png" />
     <None Include="spartacus\html\arrowright.png" />
@@ -476,6 +460,22 @@
     <None Include="curso\modulo2respostas1.html" />
     <None Include="curso\motivation.pdf" />
     <None Include="curso\apostila.pdf" />
+    <None Include="curso\modulo1capitulo3-off.pptx" />
+    <None Include="curso\modulo1capitulo4-off.pptx" />
+    <None Include="curso\modulo1capitulo5-off.pptx" />
+    <None Include="curso\modulo1capitulo6-off.pptx" />
+    <None Include="curso\modulo1capitulo7-off.pptx" />
+    <None Include="curso\modulo1exemplos5-off.html" />
+    <None Include="curso\modulo1lista3-off.html" />
+    <None Include="curso\modulo1lista4-off.html" />
+    <None Include="curso\modulo1lista5-off.html" />
+    <None Include="curso\modulo1lista6-off.html" />
+    <None Include="curso\modulo1lista7-off.html" />
+    <None Include="curso\modulo1respostas3-off.html" />
+    <None Include="curso\modulo1respostas4-off.html" />
+    <None Include="curso\modulo1respostas5-off.html" />
+    <None Include="curso\modulo1respostas6-off.html" />
+    <None Include="curso\modulo1respostas7-off.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
