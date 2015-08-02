@@ -62,18 +62,74 @@ Console.ReadKey();
   <p>
    2) Solicite dois números ao usuário e imprima a <strong>subtração</strong> dos dois números.
   </p>
+  <pre><code>int a, b, c;
+
+Console.Write("Digite o valor da variavel A: ");
+a = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor da variavel B: ");
+b = int.Parse(Console.ReadLine());
+
+c = a - b;
+
+Console.WriteLine("A subtração de A e B = {0}", c);
+Console.ReadKey();</code></pre>
   <p>
    3) Solicite dois números ao usuário e imprima a <strong>multiplicação</strong> dos dois números.
   </p>
+  <pre><code>int a, b, c;
+
+Console.Write("Digite o valor da variavel A: ");
+a = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor da variavel B: ");
+b = int.Parse(Console.ReadLine());
+
+c = a * b;
+
+Console.WriteLine("A multiplicação de A e B = {0}", c);
+Console.ReadKey();</code></pre>
   <p>
    4) Solicite dois números ao usuário e imprima a <strong>divisão</strong> dos dois números.
   </p>
+  <pre><code>int a, b, c;
+
+Console.Write("Digite o valor da variavel A: ");
+a = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor da variavel B: ");
+b = int.Parse(Console.ReadLine());
+
+c = a / b;
+
+Console.WriteLine("A divisão de A e B = {0}", c);
+Console.ReadKey();</code></pre>
   <p>
    5) Solicite um número ao usuário e imprima o seu <strong>dobro</strong>.
   </p>
+  <pre><code>int a, b;
+
+Console.Write("Digite o valor da variavel A: ");
+a = int.Parse(Console.ReadLine());
+
+b = a * 2;
+
+Console.WriteLine("O dobro de A = {0}", b);
+
+Console.ReadKey();</code></pre>
   <p>
    6) Solicite um número ao usuário e imprima o seu <strong>quadrado</strong>.
   </p>
+  <pre><code>int a, b;
+
+Console.Write("Digite o valor da variavel A: ");
+a = int.Parse(Console.ReadLine());
+
+b = a * a;
+
+Console.WriteLine("O quadrado de A = {0}", b);
+
+Console.ReadKey();</code></pre>
   <p>
    7) <strong>Cadastro de aluno</strong>. Solicite ao usuário e imprima os seguintes valores:
   </p>
@@ -83,14 +139,148 @@ Console.ReadKey();
     <li>Gênero (char)</li>
     <li>Nota média final (double)</li>
   </ul>
+  <pre><code>string nome;
+int idade;
+char genero;
+double nota;
+
+Console.Write("Digite o nome: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade: ");
+idade = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o gênero: ");
+genero = char.Parse(Console.ReadLine());
+
+Console.Write("Digite a nota: ");
+nota = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Nome = {0}", nome);
+Console.WriteLine("Idade = {0}", idade);
+Console.WriteLine("Gênero = {0}", genero);
+Console.WriteLine("Nota = {0}", nota);
+
+Console.ReadKey();</code></pre>
   <p>
    8) <strong>Conversor de tempo</strong>. Solicite ao usuário o total em segundos, e imprima o correspondente em horas, minutos e segundos.
   </p>
+  <pre><code>int totalsegundos;
+int segundos;
+int minutos;
+int horas;
+
+Console.Write("Digite o total em segundos: ");
+totalsegundos = int.Parse(Console.ReadLine());
+
+segundos = totalsegundos;
+
+horas = segundos / 3600;
+segundos = segundos - (3600 * horas);
+
+minutos = segundos / 60;
+segundos = segundos - (60 * minutos);
+
+Console.WriteLine("{0} segundos é equivalente a {1} horas, {2} minutos e {3} segundos", totalsegundos, horas, minutos, segundos);
+Console.ReadKey();</code></pre>
   <p>
    9) Imprimir sequências de inteiros.
   </p>
+  <pre><code>int x;
+
+x = 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.WriteLine(x);
+x = x + 1;
+
+Console.ReadKey();</code></pre>
   <p>
    10) Imprimir tabuadas.
   </p>
+  <pre><code>int tabuada, x;
+
+Console.Write("Qual tabuada? ");
+tabuada = int.Parse(Console.ReadLine());
+
+x = 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+x = x + 1;
+Console.WriteLine("{0} x {1} = {2}", tabuada, x, (tabuada * x));
+
+Console.ReadKey();</code></pre>
+  <p>
+   11) <strong>Equação do segundo grau</strong>. Solicite três inteiros <em>a</em>, <em>b</em> e <em>c</em> e imprima as raízes da equação do segundo grau, que tem a forma <em>ax<sup>2</sup> + bx + c = 0</em>.
+  </p>
+  <pre><code>int a, b, c;
+double x1, x2;
+
+Console.Write("Digite o valor de A: ");
+a = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor de B: ");
+b = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o valor de C: ");
+c = int.Parse(Console.ReadLine());
+
+x1 = ((-1 * b) + Math.Sqrt((b * b) - (4 * a * c))) / (2 * a);
+x2 = ((-1 * b) - Math.Sqrt((b * b) - (4 * a * c))) / (2 * a);
+
+Console.WriteLine("X1 = {0}", x1);
+Console.WriteLine("X2 = {0}", x2);
+
+Console.ReadKey();</code></pre>
  </body>
 </html>

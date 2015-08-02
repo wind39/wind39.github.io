@@ -170,10 +170,188 @@ namespace Exercicio01
     <li>Uma classe <b><tt>Morador</tt></b> derivada da classe <b><tt>Pessoa</tt></b> do exercício anterior, mas que possua uma habitação. Escreva também um método <tt>Mostrar</tt> que mostre as informações do morador e da habitação;</li>
     <li>Na classe principal, crie um apartamento, uma pessoa para morar nele, e mostre as informações.</li>
   </ul>
+  <pre><code>// Porta.cs
+using System;
+
+namespace Exercicio02
+{
+    public class Porta
+    {
+        public string cor;
+
+        public Porta(string p_cor)
+        {
+            this.cor = p_cor;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine("Eu sou uma porta, minha cor é {0}.", this.cor);
+        }
+    }
+}
+
+// Habitacao.cs
+using System;
+
+namespace Exercicio02
+{
+    public class Habitacao
+    {
+        public int area;
+        public Porta porta;
+
+        public Habitacao(int p_area, Porta p_porta)
+        {
+            this.area = p_area;
+            this.porta = p_porta;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine("Eu sou uma habitação, minha área é {0} m2, e a cor da minha porta é {1}.", this.area, this.porta.cor);
+        }
+    }
+}
+
+// Apartamento.cs
+using System;
+
+namespace Exercicio02
+{
+    public class Apartamento : Habitacao
+    {
+        public Apartamento(Porta p_porta) : base(50, p_porta)
+        {
+        }
+    }
+}
+
+// Morador.cs
+using System;
+
+namespace Exercicio02
+{
+    public class Morador : Pessoa
+    {
+        public Habitacao hab;
+
+        public Morador(string p_nome, int p_idade, Habitacao p_hab) : base(p_nome, p_idade)
+        {
+            this.hab = p_hab;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine(
+                "Sou um morador, meu nome é {0}, tenho {1} anos, minha habitação tem {2} m2, e a cor da porta é {3}.",
+                this.nome,
+                this.idade,
+                this.hab.area,
+                this.hab.porta.cor
+            );
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Exercicio02
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Morador m;
+
+            m = new Morador("William", 27, new Apartamento(new Porta("marrom")));
+            m.Mostrar();
+
+            Console.ReadKey();
+        }
+    }
+}</code></pre>
   <hr/>
   <p>
    3) Crie uma classe <b><tt>Retangulo</tt></b>, com altura e largura passadas como argumento no método construtor. Também deve ter um método <tt>Mostrar</tt> que imprime a altura e a largura do retângulo. Crie um array contendo 10 retângulos, solicite ao usuário suas dimensões e depois as mostre na tela.
   </p>
+  <pre><code>// Retangulo.cs
+using System;
+
+namespace Exercicio03
+{
+    public class Retangulo
+    {
+        public int altura, largura;
+
+        public Retangulo()
+        {
+        }
+
+        public Retangulo(int p_altura, int p_largura)
+        {
+            this.altura = p_altura;
+            this.largura = p_largura;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine("Altura = {0}, largura = {1}", this.altura, this.largura);
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Exercicio03
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            System.Collections.Generic.List<Retangulo> vetor;
+
+            vetor = new System.Collections.Generic.List<Retangulo>();
+
+            // alimentando o vetor
+            for (int i = 0; i &lt; 10; i++)
+            {
+                Console.WriteLine("Preenchimento do retângulo {0}", i+1);
+
+                vetor.Add(LeRetangulo());
+
+                Console.WriteLine();
+            }
+
+            // mostrando todos os retangulos do vetor
+            for (int i = 0; i &lt; vetor.Count; i++)
+            {
+                Console.Write("Retângulo {0}: ", i+1);
+
+                vetor[i].Mostrar();
+            }
+
+            Console.ReadKey();
+        }
+
+        public static Retangulo LeRetangulo()
+        {
+            Retangulo r;
+
+            r = new Retangulo();
+
+            Console.Write("Digite a altura: ");
+            r.altura = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a largura: ");
+            r.largura = int.Parse(Console.ReadLine());
+
+            return r;
+        }
+    }
+}</code></pre>
   <hr/>
   <p>
    4) Crie uma classe <b><tt>Ponto3D</tt></b> que representa um ponto em um espaço tridimensional, com coordenadas <em>X</em>, <em>Y</em> e <em>Z</em>. Deve conter os seguintes métodos:
