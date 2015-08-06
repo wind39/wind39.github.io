@@ -41,7 +41,6 @@
     <None Include="logo.ico" />
     <None Include="curso\euclides.png" />
     <None Include="sitemap.xml" />
-    <None Include="curso_csharp.png" />
     <None Include="spartacus\ex01\basecadastro.db" />
     <None Include="spartacus\ex01\imagem01.png" />
     <None Include="spartacus\ex01\imagem02.png" />
@@ -476,6 +475,7 @@
     <None Include="curso\modulo1respostas5-off.html" />
     <None Include="curso\modulo1respostas6-off.html" />
     <None Include="curso\modulo1respostas7-off.html" />
+    <None Include="logo_curso.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
