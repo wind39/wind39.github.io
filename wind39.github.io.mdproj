@@ -459,13 +459,11 @@
     <None Include="curso\modulo2respostas1.html" />
     <None Include="curso\motivation.pdf" />
     <None Include="curso\apostila.pdf" />
-    <None Include="curso\modulo1capitulo3-off.pptx" />
     <None Include="curso\modulo1capitulo4-off.pptx" />
     <None Include="curso\modulo1capitulo5-off.pptx" />
     <None Include="curso\modulo1capitulo6-off.pptx" />
     <None Include="curso\modulo1capitulo7-off.pptx" />
     <None Include="curso\modulo1exemplos5-off.html" />
-    <None Include="curso\modulo1lista3-off.html" />
     <None Include="curso\modulo1lista4-off.html" />
     <None Include="curso\modulo1lista5-off.html" />
     <None Include="curso\modulo1lista6-off.html" />
@@ -476,6 +474,8 @@
     <None Include="curso\modulo1respostas6-off.html" />
     <None Include="curso\modulo1respostas7-off.html" />
     <None Include="logo_curso.png" />
+    <None Include="curso\modulo1lista3.html" />
+    <None Include="curso\modulo1capitulo3.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

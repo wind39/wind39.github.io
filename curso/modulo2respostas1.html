@@ -362,6 +362,93 @@ namespace Exercicio03
     <li><tt>Distancia(Ponto3D p2)</tt>, que calculará a distância do ponto até outro ponto <em>p2</em>;</li>
    </ul>
   <p>Use propriedades para resolver este exercício. Seu programa deve criar um array de <em>N</em> pontos e solicitar as coordenadas de todos eles ao usuário. Após isso, deve calcular e mostrar a distância entre o primeiro ponto e os demais pontos.</p>
+  <pre><code>// Ponto3D.cs
+using System;
+
+namespace Exercicio04
+{
+    public class Ponto3D
+    {
+        public int x { get; set; }
+        public int y { get; set; }
+        public int z { get; set; }
+
+        public Ponto3D()
+        {
+        }
+
+        public Ponto3D(int p_x, int p_y, int p_z)
+        {
+            this.x = p_x;
+            this.y = p_y;
+            this.z = p_z;
+        }
+
+        public void Mostrar()
+        {
+            Console.WriteLine("({0},{1},{2})", this.x, this.y, this.z);
+        }
+
+        public void MoverPara(int p_x, int p_y, int p_z)
+        {
+            this.x = p_x;
+            this.y = p_y;
+            this.z = p_z;
+        }
+
+        public double Distancia(Ponto3D p2)
+        {
+            return Math.Sqrt(((p2.x - this.x) * (p2.x - this.x)) + ((p2.y - this.y) * (p2.y - this.y)) + ((p2.z - this.z) * (p2.z - this.z)));
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Exercicio04
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            System.Collections.Generic.List&lt;Ponto3D&gt; vetor;
+            Ponto3D p;
+            int n;
+
+            vetor = new System.Collections.Generic.List&lt;Ponto3D&gt;();
+
+            Console.Write("Quantos pontos serão criados? ");
+            n = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i &lt; n; i++)
+            {
+                p = new Ponto3D();
+
+                Console.Write("Digite o valor X do ponto {0}: ", i);
+                p.x = int.Parse(Console.ReadLine());
+
+                Console.Write("Digite o valor Y do ponto {0}: ", i);
+                p.y = int.Parse(Console.ReadLine());
+
+                Console.Write("Digite o valor Z do ponto {0}: ", i);
+                p.z = int.Parse(Console.ReadLine());
+
+                vetor.Add(p);
+
+                Console.Write("O ponto que você digitou foi: ");
+                vetor[i].Mostrar();
+
+                Console.WriteLine();
+            }
+
+            for (int i = 1; i &lt; n; i++)
+                Console.WriteLine("A distância entre o ponto 0 e o ponto {0} é {1}", i, vetor[0].Distancia(vetor[i]));
+
+            Console.ReadKey();
+        }
+    }
+}</code></pre>
   <hr/>
   <p>
    5) Crie um programa orientado a objetos com as seguintes características:
@@ -373,6 +460,73 @@ namespace Exercicio03
     <li>Crie um programa para testar a classe <b><tt>AlbumDeFotos</tt></b>. Simule um exemplo em que atribuir um valor à propriedade <em>numeroDeFotos</em> mostra uma mensagem de erro, e outro exemplo em que não mostra.</li>
   </ul>
   <hr/>
+  <pre><code>// AlbumDeFotos.cs
+using System;
+
+namespace Exercicio05
+{
+    public class AlbumDeFotos
+    {
+        public int numeroTotalDePaginas { get; set; }
+
+        public int numeroTotalDeFotos
+        {
+            get
+            {
+                return this.numeroTotalDePaginas * 2;
+            }
+        }
+
+        private int _numeroDeFotos;
+        public int numeroDeFotos
+        {
+            get
+            {
+                return this._numeroDeFotos;
+            }
+            set
+            {
+                if (value > this.numeroTotalDeFotos)
+                    Console.WriteLine("ERRO: O número de fotos não deve exceder {0}.", this.numeroTotalDeFotos);
+                else
+                    this._numeroDeFotos = value;
+            }
+        }
+
+        public AlbumDeFotos(int p_numeroTotalDePaginas)
+        {
+            this.numeroTotalDePaginas = p_numeroTotalDePaginas;
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Exercicio05
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            AlbumDeFotos a;
+
+            a = new AlbumDeFotos(80);
+
+            Console.WriteLine("O exemplo abaixo não causa erro:");
+            a.numeroDeFotos = 100;
+            Console.WriteLine("Número atual de fotos = {0}", a.numeroDeFotos);
+
+            Console.WriteLine();
+
+            Console.WriteLine("O exemplo abaixo causa erro:");
+            a.numeroDeFotos = 200;
+            Console.WriteLine("Número atual de fotos = {0}", a.numeroDeFotos);
+
+            Console.ReadKey();
+        }
+    }
+}</code></pre>
   <p>
    6) Crie um catálogo para armazenar informações sobre arquivos de músicas e filmes.
   </p>
