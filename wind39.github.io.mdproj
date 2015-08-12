@@ -476,6 +476,7 @@
     <None Include="logo_curso.png" />
     <None Include="curso\modulo1lista3.html" />
     <None Include="curso\modulo1capitulo3.pptx" />
+    <None Include="curso\modulo2lista2-off.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
