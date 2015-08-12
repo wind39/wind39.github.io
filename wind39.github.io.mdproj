@@ -457,8 +457,6 @@
     <None Include="modulo4.html" />
     <None Include="curso\modulo2lista1.html" />
     <None Include="curso\modulo2respostas1.html" />
-    <None Include="curso\motivation.pdf" />
-    <None Include="curso\apostila.pdf" />
     <None Include="curso\modulo1capitulo4-off.pptx" />
     <None Include="curso\modulo1capitulo5-off.pptx" />
     <None Include="curso\modulo1capitulo6-off.pptx" />
@@ -479,6 +477,31 @@
     <None Include="curso\modulo2lista2-off.html" />
     <None Include="github.min.css" />
     <None Include="highlight.min.js" />
+    <None Include="curso\books\bd_carmem_hara\banco_treinamento.dmp" />
+    <None Include="curso\books\bd_carmem_hara\banco_treinamento.log" />
+    <None Include="curso\books\bd_carmem_hara\exercicio_locadora.pdf" />
+    <None Include="curso\books\bd_carmem_hara\exercicio_modelagem.pdf" />
+    <None Include="curso\books\bd_carmem_hara\exercicio2.pdf" />
+    <None Include="curso\books\bd_carmem_hara\exercicio3.pdf" />
+    <None Include="curso\books\bd_carmem_hara\lista1.pdf" />
+    <None Include="curso\books\bd_carmem_hara\lista2.pdf" />
+    <None Include="curso\books\bd_carmem_hara\lista3.pdf" />
+    <None Include="curso\books\bd_carmem_hara\m1_introducao.pdf" />
+    <None Include="curso\books\bd_carmem_hara\m2_algebra_relacional.pdf" />
+    <None Include="curso\books\bd_carmem_hara\m3_consultas.pdf" />
+    <None Include="curso\books\bd_carmem_hara\m4_agregacao.pdf" />
+    <None Include="curso\books\bd_carmem_hara\m5_modelagem.pdf" />
+    <None Include="curso\books\ajax_tutorial.pdf" />
+    <None Include="curso\books\apostila_alg1.pdf" />
+    <None Include="curso\books\apostila_sql.pdf" />
+    <None Include="curso\books\asp.net_tutorial.pdf" />
+    <None Include="curso\books\csharp_tutorial.pdf" />
+    <None Include="curso\books\css_tutorial.pdf" />
+    <None Include="curso\books\git_tutorial.pdf" />
+    <None Include="curso\books\motivation.pdf" />
+    <None Include="curso\books\plsql_tutorial.pdf" />
+    <None Include="curso\books\sql_tutorial.pdf" />
+    <None Include="curso\books\sqlite_tutorial.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
