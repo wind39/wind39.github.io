@@ -477,6 +477,8 @@
     <None Include="curso\modulo1lista3.html" />
     <None Include="curso\modulo1capitulo3.pptx" />
     <None Include="curso\modulo2lista2-off.html" />
+    <None Include="github.min.css" />
+    <None Include="highlight.min.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
