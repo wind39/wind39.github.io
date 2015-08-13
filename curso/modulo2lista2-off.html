@@ -40,13 +40,25 @@
   </p>
   <hr/>
   <p>
-   2) Dada uma coleção de números inteiros digitada pelo usuário em uma única linha, imprimi-la na ordem inversa.
+   2) Faça um programa que pergunta ao usuário a sua data de nascimento, e imprime quantos anos ele tem.
+   <br/>
+   <b>Dica:</b> Use as classes <tt>DateTime</tt> e <tt>TimeSpan</tt>.
+  </p>
+  <hr/>
+  <p>
+   3) Faça um programa que mostra quantos dias falta para o próximo natal.
+   <br/>
+   <b>Dica:</b> Use as classes <tt>DateTime</tt> e <tt>TimeSpan</tt>.
+  </p>
+  <hr/>
+  <p>
+   4) Dada uma coleção de números inteiros digitada pelo usuário em uma única linha, imprimi-la na ordem inversa.
    <br/>
    <b>Dica:</b> Use o método <tt>string.Split()</tt>.
   </p>
   <hr/>
   <p>
-   3) Dado um número <em>N</em>, imprimi-lo como uma soma de múltiplos de 10 mais a sua unidade.
+   5) Dado um número <em>N</em>, imprimi-lo como uma soma de múltiplos de 10 mais a sua unidade.
    <br/>
    Exemplo: 472 = 400 + 70 + 2
    <br/>
@@ -54,7 +66,7 @@
   </p>
   <hr/>
   <p>
-   4) Números <em>palíndromos</em> são aqueles que são lidos da direita para a esquerda da mesma maneira que da esquerda para a direita.
+   6) Números <em>palíndromos</em> são aqueles que são lidos da direita para a esquerda da mesma maneira que da esquerda para a direita.
    <br/>
    Exemplo: o número 12321 é palíndromo, enquanto 123 não é.
    <br/>
@@ -64,19 +76,19 @@
   </p>
   <hr/>
   <p>
-   5) Faça um programa que, a cada número <em>N</em> digitado pelo usuário, gere e imprima um número aleatório contido entre 0 e <em>N</em>. O programa acaba quando o usuário digitar 0.
+   7) Faça um programa que, a cada número <em>N</em> digitado pelo usuário, gere e imprima um número aleatório contido entre 0 e <em>N</em>. O programa acaba quando o usuário digitar 0.
    <br/>
    <b>Dica:</b> Use a classe <tt>System.Random</tt>.
   </p>
   <hr/>
   <p>
-   6) Peça para o usuário alimentar um vetor com <em>N</em> cores. Depois o programa deve imprimir <i>"Minha cor favorita é "</i> e escolher aleatoriamente uma cor do vetor.
+   8) Peça para o usuário alimentar um vetor com <em>N</em> cores. Depois o programa deve imprimir <i>"Minha cor favorita é "</i> e escolher aleatoriamente uma cor do vetor.
    <br/>
    <b>Dica:</b> Use a classe <tt>System.Random</tt>.
   </p>
   <hr/>
   <p>
-   7) Crie uma biblioteca chamada <b>Calculadora.dll</b> com uma classe <b><tt>Calculadora</tt></b> com os seguintes métodos:
+   9) Crie uma biblioteca chamada <b>Calculadora.dll</b> com uma classe <b><tt>Calculadora</tt></b> com os seguintes métodos:
   </p>
    <ul>
     <li><tt>double Soma(double a, double b)</tt></li>
@@ -89,18 +101,19 @@
   </p>
   <hr/>
   <p>
-   8) Crie uma biblioteca chamada <b>EntradaDeDados.dll</b> com uma classe <b><tt>Variaveis</tt></b> com os seguintes métodos:
+   10) Crie uma biblioteca chamada <b>EntradaDeDados.dll</b> com uma classe <b><tt>Variaveis</tt></b> com os seguintes métodos:
   </p>
    <ul>
     <li><tt>int LeInt()</tt></li>
     <li><tt>double LeDouble()</tt></li>
     <li><tt>char LeChar()</tt></li>
     <li><tt>string LeString()</tt></li>
+    <li><tt>DateTime LeDateTime()</tt></li>
    </ul>
   <p>
    Cada método solicita ao usuário um valor de um determinado tipo. Caso o usuário digitar o valor incorretamente, o método deverá solicitar novamente, até que o usuário digite corretamente.
    <br/>
-   <b>Dica:</b> Use os métodos <tt>int.TryParse()</tt>, <tt>double.TryParse()</tt> e <tt>char.TryParse()</tt>.
+   <b>Dica:</b> Use os métodos <tt>int.TryParse()</tt>, <tt>double.TryParse()</tt>, <tt>char.TryParse()</tt> e <tt>DateTime.TryParse()</tt>.
    <br/>
    <br/>
    A sua biblioteca <b>EntradaDeDados.dll</b> também deverá ter uma classe <b><tt>Vetores</tt></b> com os seguintes métodos:
@@ -110,10 +123,12 @@
     <li><tt>double[] LeVetorEstaticoDouble()</tt></li>
     <li><tt>char[] LeVetorEstaticoChar()</tt></li>
     <li><tt>string[] LeVetorEstaticoString()</tt></li>
+    <li><tt>DateTime[] LeVetorEstaticoDateTime()</tt></li>
     <li><tt>System.Collections.Generic.List&lt;int&gt; LeVetorDinamicoInt()</tt></li>
     <li><tt>System.Collections.Generic.List&lt;double&gt; LeVetorDinamicoDouble()</tt></li>
     <li><tt>System.Collections.Generic.List&lt;char&gt; LeVetorDinamicoChar()</tt></li>
     <li><tt>System.Collections.Generic.List&lt;string&gt; LeVetorDinamicoString()</tt></li>
+    <li><tt>System.Collections.Generic.List&lt;DateTime&gt; LeVetorDinamicoDateTime()</tt></li>
    </ul>
   <p>
    Cada método da classe <b><tt>Vetores</tt></b> deve primeiramente perguntar ao usuário o número de elementos do vetor, e depois ler cada elemento usando a classe <b><tt>Variaveis</tt></b>.

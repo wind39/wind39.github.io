@@ -502,6 +502,7 @@
     <None Include="curso\books\plsql_tutorial.pdf" />
     <None Include="curso\books\sql_tutorial.pdf" />
     <None Include="curso\books\sqlite_tutorial.pdf" />
+    <None Include="curso\modulo2capitulo2.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
