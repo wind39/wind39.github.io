@@ -466,7 +466,6 @@
     <None Include="curso\modulo1lista5-off.html" />
     <None Include="curso\modulo1lista6-off.html" />
     <None Include="curso\modulo1lista7-off.html" />
-    <None Include="curso\modulo1respostas3-off.html" />
     <None Include="curso\modulo1respostas4-off.html" />
     <None Include="curso\modulo1respostas5-off.html" />
     <None Include="curso\modulo1respostas6-off.html" />
@@ -474,7 +473,6 @@
     <None Include="logo_curso.png" />
     <None Include="curso\modulo1lista3.html" />
     <None Include="curso\modulo1capitulo3.pptx" />
-    <None Include="curso\modulo2lista2-off.html" />
     <None Include="github.min.css" />
     <None Include="highlight.min.js" />
     <None Include="curso\books\bd_carmem_hara\banco_treinamento.dmp" />
@@ -502,7 +500,9 @@
     <None Include="curso\books\plsql_tutorial.pdf" />
     <None Include="curso\books\sql_tutorial.pdf" />
     <None Include="curso\books\sqlite_tutorial.pdf" />
-    <None Include="curso\modulo2capitulo2.pptx" />
+    <None Include="curso\modulo2lista2.html" />
+    <None Include="curso\modulo1respostas3.html" />
+    <None Include="curso\modulo2capitulo2-off.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

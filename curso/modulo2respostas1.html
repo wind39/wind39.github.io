@@ -50,7 +50,7 @@
   <pre><code>// Pessoa.cs
 using System;
 
-namespace Exercicio01
+namespace Lista1Exercicio01
 {
     public class Pessoa
     {
@@ -82,7 +82,7 @@ namespace Exercicio01
 // Aluno.cs
 using System;
 
-namespace Exercicio01
+namespace Lista1Exercicio01
 {
     public class Aluno : Pessoa
     {
@@ -104,7 +104,7 @@ namespace Exercicio01
 // Professor.cs
 using System;
 
-namespace Exercicio01
+namespace Lista1Exercicio01
 {
     public class Professor : Pessoa
     {
@@ -126,7 +126,7 @@ namespace Exercicio01
 // Program.cs
 using System;
 
-namespace Exercicio01
+namespace Lista1Exercicio01
 {
     class MainClass
     {
@@ -173,7 +173,7 @@ namespace Exercicio01
   <pre><code>// Porta.cs
 using System;
 
-namespace Exercicio02
+namespace Lista1Exercicio02
 {
     public class Porta
     {
@@ -194,7 +194,7 @@ namespace Exercicio02
 // Habitacao.cs
 using System;
 
-namespace Exercicio02
+namespace Lista1Exercicio02
 {
     public class Habitacao
     {
@@ -217,7 +217,7 @@ namespace Exercicio02
 // Apartamento.cs
 using System;
 
-namespace Exercicio02
+namespace Lista1Exercicio02
 {
     public class Apartamento : Habitacao
     {
@@ -227,10 +227,42 @@ namespace Exercicio02
     }
 }
 
+// Pessoa.cs
+using System;
+
+namespace Lista1Exercicio02
+{
+    public class Pessoa
+    {
+        public string nome;
+        public int idade;
+
+        public Pessoa()
+        {   
+        }
+
+        public Pessoa(string pnome, int pidade)
+        {
+            this.nome = pnome;
+            this.idade = pidade;
+        }
+
+        public void Cumprimentar()
+        {
+            Console.WriteLine("Olá, meu nome é {0}.", this.nome);
+        }
+
+        public void DizerIdade()
+        {
+            Console.WriteLine("Tenho {0} anos de idade.", this.idade);
+        }
+    }
+}
+
 // Morador.cs
 using System;
 
-namespace Exercicio02
+namespace Lista1Exercicio02
 {
     public class Morador : Pessoa
     {
@@ -257,7 +289,7 @@ namespace Exercicio02
 // Program.cs
 using System;
 
-namespace Exercicio02
+namespace Lista1Exercicio02
 {
     class MainClass
     {
@@ -279,7 +311,7 @@ namespace Exercicio02
   <pre><code>// Retangulo.cs
 using System;
 
-namespace Exercicio03
+namespace Lista1Exercicio03
 {
     public class Retangulo
     {
@@ -305,7 +337,7 @@ namespace Exercicio03
 // Program.cs
 using System;
 
-namespace Exercicio03
+namespace Lista1Exercicio03
 {
     class MainClass
     {
@@ -365,7 +397,7 @@ namespace Exercicio03
   <pre><code>// Ponto3D.cs
 using System;
 
-namespace Exercicio04
+namespace Lista1Exercicio04
 {
     public class Ponto3D
     {
@@ -406,7 +438,7 @@ namespace Exercicio04
 // Program.cs
 using System;
 
-namespace Exercicio04
+namespace Lista1Exercicio04
 {
     class MainClass
     {
@@ -463,7 +495,7 @@ namespace Exercicio04
   <pre><code>// AlbumDeFotos.cs
 using System;
 
-namespace Exercicio05
+namespace Lista1Exercicio05
 {
     public class AlbumDeFotos
     {
@@ -503,7 +535,7 @@ namespace Exercicio05
 // Program.cs
 using System;
 
-namespace Exercicio05
+namespace Lista1Exercicio05
 {
     class MainClass
     {

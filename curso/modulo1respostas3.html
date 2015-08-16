@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Respostas 3
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}blockquote{font-size:border-left:4px solid #ddd;color:#777}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px; background-color:lightgray}
+  </style>
+  
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios Módulo I Capítulo 3 (Respostas)</h3>
+  <hr/>
+  <p>
+    1) Solicite um número ao usuário e informe se é par ou ímpar.
+  </p>
+  <pre><code>int x;
+
+Console.Write("Digite o valor de X: ");
+x = int.Parse(Console.ReadLine());
+
+if (x % 2 == 0)
+    Console.WriteLine("{0} é par.", x);
+else
+    Console.WriteLine("{0} é ímpar.", x);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+    2) Solicite um número ao usuário e compare com zero de todas as formas possíveis (==, !=, &lt;, &gt;, &lt;= ou &gt;=).
+  </p>
+  <pre><code>int x;
+
+Console.Write("Digite o valor de X: ");
+x = int.Parse(Console.ReadLine());
+
+if (x == 0)
+    Console.WriteLine("{0} é igual a zero.", x);
+
+if (x != 0)
+    Console.WriteLine("{0} é diferente de zero.", x);
+
+if (x &gt; 0)
+    Console.WriteLine("{0} é maior que zero.", x);
+
+if (x &lt;= 0)
+    Console.WriteLine("{0} é menor ou igual a zero.", x);
+
+if (x &lt; 0)
+    Console.WriteLine("{0} é menor que zero.", x);
+
+if (x &gt;= 0)
+    Console.WriteLine("{0} é maior ou igual a zero.", x);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+    3) Solicite um número ao usuário, e informe em qual dezena ele se encontra (de 1 a 10, de 11 a 20, etc).
+  </p>
+  <pre><code>int x;
+
+Console.Write("Digite o valor de X: ");
+x = int.Parse(Console.ReadLine());
+
+if (x &lt;= 0 || x &gt; 100)
+    Console.WriteLine("{0} não está no intervalo entre 1 e 100.", x);
+else
+{
+    if (x &gt;= 1 && x &lt;= 10)
+        Console.WriteLine("{0} está entre 1 e 10.", x);
+
+    if (x &gt;= 11 && x &lt;= 20)
+        Console.WriteLine("{0} está entre 11 e 20.", x);
+
+    if (x &gt;= 21 && x &lt;= 30)
+        Console.WriteLine("{0} está entre 21 e 30.", x);
+
+    if (x &gt;= 31 && x &lt;= 40)
+        Console.WriteLine("{0} está entre 31 e 40.", x);
+
+    if (x &gt;= 41 && x &lt;= 50)
+        Console.WriteLine("{0} está entre 41 e 50.", x);
+
+    if (x &gt;= 51 && x &lt;= 60)
+        Console.WriteLine("{0} está entre 51 e 60.", x);
+
+    if (x &gt;= 61 && x &lt;= 70)
+        Console.WriteLine("{0} está entre 61 e 70.", x);
+
+    if (x &gt;= 71 && x &lt;= 80)
+        Console.WriteLine("{0} está entre 71 e 80.", x);
+
+    if (x &gt;= 81 && x &lt;= 90)
+        Console.WriteLine("{0} está entre 81 e 90.", x);
+
+    if (x &gt;= 91 && x &lt;= 100)
+        Console.WriteLine("{0} está entre 91 e 100.", x);
+}
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+    4) Solicite um número ao usuário e imprima a sua <strong>raiz quadrada</strong>.
+  </p>
+  <pre><code>double x;
+
+Console.Write("Digite o valor de X: ");
+x = double.Parse(Console.ReadLine());
+
+if (x &gt;= 0)
+    Console.WriteLine("A raiz quadrada de {0} é {1}.", x, Math.Sqrt(x));
+else
+    Console.WriteLine("Não existe raiz quadrada de números negativos entre os números reais.");
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+    5) Modifique o <strong>programa 2.7</strong> (cadastro de aluno), para escrever o sexo por extenso ('masculino' para 'M' e 'feminino' para 'F'). Se o usuário digitar um sexo inválido, informe um erro e encerre o programa.
+  </p>
+  <pre><code>string nome;
+int idade;
+string genero;
+double nota;
+
+Console.Write("Digite o nome: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade: ");
+idade = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o gênero: ");
+genero = Console.ReadLine();
+
+if (genero.ToLower() != "m" && genero.ToLower() != "f" && genero.ToLower() != "masculino" && genero.ToLower() != "feminino")
+{
+    Console.WriteLine("ERRO: Gênero incorreto, pode ser apenas M/m ou F/f, ou por extenso, masculino ou feminino.");
+    Console.WriteLine("O programa será encerrado.");
+}
+else
+{
+    Console.Write("Digite a nota: ");
+    nota = double.Parse(Console.ReadLine());
+
+    Console.WriteLine();
+    Console.WriteLine("Nome = {0}", nome);
+    Console.WriteLine("Idade = {0}", idade);
+    if (genero.ToLower() == "m" || genero.ToLower() == "masculino")
+        Console.WriteLine("Gênero = Masculino");
+    else
+        Console.WriteLine("Gênero = Feminino");
+    Console.WriteLine("Nota = {0}", nota);
+}
+
+Console.ReadKey();</code></pre>
+  <p>
+    6) Modifique o programa acima para dizer se o aluno foi <strong>aprovado ou reprovado</strong>, baseado na nota média informada pelo usuário. A nota deve estar entre 0,0 e 10,0, se não estiver, informe um erro e encerre o programa. A média para estar aprovado é 7,0.
+  </p>
+  <p>
+    7) Modifique o programa acima para, ao invés de solicitar a nota média ao usuário, solicitar as <strong>notas de 3 provas</strong>, P1, P2 e P3. A informação de se está aprovado ou não deve se basear na <strong>média aritmética</strong> das notas em cada uma das 3 provas.
+  </p>
+  <p>
+    8) Modifique o programa acima para considerar, ao invés de média aritmética, <strong>média ponderada</strong>. A P1 tem peso 1, a P2 tem peso 2 e a P3 tem peso 3.
+  </p>
+  <p>
+    9) Solicite duas frações a/b e c/d, e imprima a fração e/f resultante do <strong>produto entre as duas frações</strong>.
+  </p>
+  <p>
+    10) Solicite duas frações a/b e c/d, e imprima a fração e/f resultante da <strong>soma entre as duas frações</strong>.
+  </p>
+  <p>
+    11) Junte os programas <strong>soma</strong>, <strong>subtração</strong>, <strong>multiplicação</strong> e <strong>divisão</strong> em um só programa. O usuário precisa entrar com dois números e também um char para informar qual é a operação desejada.
+  </p>
+  <p>
+    12) Modifique o programa 3.8 acima para que exista uma variável chamada <strong>situacao</strong> do aluno, podendo assumir os valores APROVADO ou REPROVADO.
+  </p>
+ </body>
+</html>
