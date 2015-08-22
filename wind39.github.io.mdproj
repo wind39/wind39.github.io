@@ -457,12 +457,10 @@
     <None Include="modulo4.html" />
     <None Include="curso\modulo2lista1.html" />
     <None Include="curso\modulo2respostas1.html" />
-    <None Include="curso\modulo1capitulo4-off.pptx" />
     <None Include="curso\modulo1capitulo5-off.pptx" />
     <None Include="curso\modulo1capitulo6-off.pptx" />
     <None Include="curso\modulo1capitulo7-off.pptx" />
     <None Include="curso\modulo1exemplos5-off.html" />
-    <None Include="curso\modulo1lista4-off.html" />
     <None Include="curso\modulo1lista5-off.html" />
     <None Include="curso\modulo1lista6-off.html" />
     <None Include="curso\modulo1lista7-off.html" />
@@ -697,6 +695,8 @@
     <None Include="curso\Modulo2\Modulo2\Program.cs" />
     <None Include="curso\Modulo2\Modulo2.sln" />
     <None Include="curso\Modulo2\Modulo2.userprefs" />
+    <None Include="curso\modulo1capitulo4.pptx" />
+    <None Include="curso\modulo1lista4.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
