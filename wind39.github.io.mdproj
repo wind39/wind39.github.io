@@ -500,7 +500,6 @@
     <None Include="curso\books\sqlite_tutorial.pdf" />
     <None Include="curso\modulo2lista2.html" />
     <None Include="curso\modulo1respostas3.html" />
-    <None Include="curso\modulo2capitulo2-off.pptx" />
     <None Include="curso\Modulo1\Capitulo2\bin\Debug\Capitulo2.exe" />
     <None Include="curso\Modulo1\Capitulo2\bin\Debug\Capitulo2.exe.mdb" />
     <None Include="curso\Modulo1\Capitulo2\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
@@ -681,9 +680,6 @@
     <None Include="curso\Modulo2\Lista1Exercicio05\AlbumDeFotos.cs" />
     <None Include="curso\Modulo2\Lista1Exercicio05\Lista1Exercicio05.csproj" />
     <None Include="curso\Modulo2\Lista1Exercicio05\Program.cs" />
-    <None Include="curso\Modulo2\Lista1Exercicio06\Properties\AssemblyInfo.cs" />
-    <None Include="curso\Modulo2\Lista1Exercicio06\Lista1Exercicio06.csproj" />
-    <None Include="curso\Modulo2\Lista1Exercicio06\Program.cs" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Modulo2.exe" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Modulo2.exe.mdb" />
     <None Include="curso\Modulo2\Modulo2\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
@@ -697,6 +693,19 @@
     <None Include="curso\Modulo2\Modulo2.userprefs" />
     <None Include="curso\modulo1capitulo4.pptx" />
     <None Include="curso\modulo1lista4.html" />
+    <None Include="curso\modulo2capitulo2.pptx" />
+    <None Include="curso\Modulo1\Capitulo4\bin\Debug\Capitulo4.exe" />
+    <None Include="curso\Modulo1\Capitulo4\bin\Debug\Capitulo4.exe.mdb" />
+    <None Include="curso\Modulo1\Capitulo4\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Capitulo4\Capitulo4.csproj" />
+    <None Include="curso\Modulo1\Capitulo4\Program.cs" />
+    <None Include="curso\Modulo2\Calculadora\bin\Debug\Calculadora.dll" />
+    <None Include="curso\Modulo2\Calculadora\bin\Debug\Calculadora.dll.mdb" />
+    <None Include="curso\Modulo2\Calculadora\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo2\Calculadora\Calculadora.cs" />
+    <None Include="curso\Modulo2\Calculadora\Calculadora.csproj" />
+    <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll" />
+    <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

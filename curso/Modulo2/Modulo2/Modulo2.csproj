@@ -38,4 +38,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Calculadora\Calculadora.csproj">
+      <Project>{BF2149A1-AC8E-4497-B719-DE3795F701CC}</Project>
+      <Name>Calculadora</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

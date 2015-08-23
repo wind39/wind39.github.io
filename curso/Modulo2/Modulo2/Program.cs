@@ -1,4 +1,5 @@
 ﻿using System;
+using MinhaBiblioteca;
 
 namespace Modulo2
 {
@@ -6,18 +7,21 @@ namespace Modulo2
     {
         public static void Main(string[] args)
         {
-            DateTime d1, d2;
-            TimeSpan t;
+            Calculadora c;
+            double a, b;
 
-            d2 = DateTime.Now;
-            Console.WriteLine("Data/Hora atual: {0}", d2);
+            Console.Write("Digite o valor de A: ");
+            a = double.Parse(Console.ReadLine());
 
-            Console.Write("Qual a sua data de nascimento? ");
-            d1 = DateTime.Parse(Console.ReadLine());
+            Console.Write("Digite o valor de B: ");
+            b = double.Parse(Console.ReadLine());
 
-            t = d2 - d1;
-            Console.WriteLine("Você tem {0} anos.", t.Days / 365);
-            Console.WriteLine("Ou, mais especificamente, você tem {0} anos.", t.TotalDays / 365);
+            c = new Calculadora();
+
+            Console.WriteLine("A soma de A e B = {0}", c.Soma(a, b));
+            Console.WriteLine("A subtração de A e B = {0}", c.Subtracao(a, b));
+            Console.WriteLine("A multiplicação de A e B = {0}", c.Multiplicacao(a, b));
+            Console.WriteLine("A divisão de A e B = {0}", c.Divisao(a, b));
 
             Console.ReadKey();
         }
