@@ -706,6 +706,8 @@
     <None Include="curso\Modulo2\Calculadora\Calculadora.csproj" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
+    <None Include="curso\modulo2lista3-off.html" />
+    <None Include="curso\modulo2capitulo3-off.pptx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
