@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Lista 4
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios Módulo I Capítulo 4 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Modifique o exercício <strong>2.9</strong> (sequências de inteiros) para imprimir <em>N</em> inteiros, sendo <em>N</em> um número informado pelo usuário.
+  </p>
+  <pre><code>int n;
+
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i &lt;= n; i++)
+    Console.WriteLine(i);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   2) Utilize <em>while</em> no exercício <strong>2.10</strong> (tabuadas).
+  </p>
+  <pre><code>int tabuada, n;
+
+Console.Write("Digite a tabuada desejada: ");
+tabuada = int.Parse(Console.ReadLine());
+
+Console.Write("Digite o número de vezes: ");
+n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i &lt;= n; i++)
+    Console.WriteLine("{0} x {1} = {2}", tabuada, i, (tabuada * i));
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   3) Modifique o exercício <strong>3.8</strong> (cadastro de aluno) para tratar para, caso o usuário digite valores inválidos no sexo e na nota das provas, o programar informar o erro e solicitar o valor novamente, até que o usuário digite um valor válido.
+  </p>
+  <pre><code>string nome;
+int idade;
+char sexo;
+string sexoporextenso;
+double nota1, nota2, nota3, media;
+string situacao;
+
+Console.Write("Digite o nome do aluno: ");
+nome = Console.ReadLine();
+
+Console.Write("Digite a idade do aluno: ");
+idade = int.Parse(Console.ReadLine());
+
+do
+{
+    Console.Write("Digite o sexo do aluno (M ou F): ");
+    sexo = Char.Parse(Console.ReadLine());
+
+    if (char.ToUpper(sexo) != 'M' && char.ToUpper(sexo) != 'F')
+        Console.WriteLine("ERRO! Sexo {0} inválido.", sexo);
+}
+while (char.ToUpper(sexo) != 'M' && char.ToUpper(sexo) != 'F');
+
+do
+{
+    Console.Write("Digite a nota da prova 1: ");
+    nota1 = double.Parse(Console.ReadLine());
+
+    if (nota1 &lt; 0 || nota1 &gt; 10)
+        Console.WriteLine("ERRO! Nota {0} inválida.", nota1);
+}
+while (nota1 &lt; 0 || nota1 &gt; 10);
+
+do
+{
+    Console.Write("Digite a nota da prova 2: ");
+    nota2 = double.Parse(Console.ReadLine());
+
+    if (nota2 &lt; 0 || nota2 &gt; 10)
+        Console.WriteLine("ERRO! Nota {0} inválida.", nota2);
+}
+while (nota2 &lt; 0 || nota2 &gt; 10);
+
+do
+{
+    Console.Write("Digite a nota da prova 3: ");
+    nota3 = double.Parse(Console.ReadLine());
+
+    if (nota3 &lt; 0 || nota3 &gt; 10)
+        Console.WriteLine("ERRO! Nota {0} inválida.", nota3);
+}
+while (nota3 &lt; 0 || nota3 &gt; 10);
+
+media = ((1 * nota1) + (2 * nota2) + (3 * nota3)) / 6.0;
+
+if (char.ToUpper(sexo) == 'M')
+    sexoporextenso = "masculino";
+else
+    sexoporextenso = "feminino";
+
+if (media &gt;= 7)
+    situacao = "aprovado";
+else
+    situacao = "reprovado";
+
+Console.WriteLine("O aluno {0} tem {1} anos, é do sexo {2} e obteve a nota final = {3}, situação {4}.", nome, idade, sexoporextenso, media, situacao);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   4) Dada uma coleção de números naturais terminada por 0, imprimir seus quadrados.
+  </p>
+  <pre><code>int n;
+
+Console.WriteLine("Digite números para obter seus quadrados.");
+Console.WriteLine("Quando quiser parar, digite 0.");
+
+do
+{
+    n = int.Parse(Console.ReadLine());
+
+    if (n != 0)
+        Console.WriteLine("O quadrado de {0} é {1}.", n, (n * n));
+}
+while (n != 0);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   5) Dado <em>N</em>, calcular a soma dos <em>N</em> primeiros números naturais.
+  </p>
+  <pre><code>int n, soma;
+
+do
+{
+    Console.Write("Digite N maior ou igual a zero: ");
+    n = int.Parse(Console.ReadLine());
+
+    if (n &lt; 0)
+        Console.WriteLine("Erro! N precisa ser maior ou igual a zero.");
+}
+while (n &lt; 0);
+
+soma = 0;
+for (int i = 0; i &lt; n; i++)
+    soma += i;
+
+Console.WriteLine("A soma dos {0} primeiros números naturais é igual a {1}.", n, soma);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   6) Dado <em>N</em>, imprimir os <em>N</em> primeiros naturais ímpares. Exemplo, para <em>N</em> = 4, a saída deverá ser 1, 3, 5, 7.
+  </p>
+  <pre><code>int n, j;
+
+do
+{
+    Console.Write("Digite N maior ou igual a zero: ");
+    n = int.Parse(Console.ReadLine());
+
+    if (n &lt; 0)
+        Console.WriteLine("Erro! N precisa ser maior ou igual a zero.");
+}
+while (n &lt; 0);
+
+Console.Write("{0}", 1);
+j = 3;
+for (int i = 1; i &lt; n; i++)
+{
+    Console.Write(",{0}", j);
+    j += 2;
+}
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   7) Durante os 30 dias do mês de abril foram tomadas as temperaturas médias diárias de Euclides da Cunha (BA). Determinar o número de dias desse mês com temperaturas abaixo de zero.
+  </p>
+  <pre><code>double t;
+int dias;
+
+dias = 0;
+for (int i = 1; i &lt;= 30; i++)
+{
+    Console.Write("Digite a temperatura média no dia {0}: ", i);
+    t = double.Parse(Console.ReadLine());
+
+    if (t &lt; 0)
+        dias++;
+}
+
+Console.WriteLine("O número de dias com temperatura abaixo de zero foi {0}.", dias);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   8) Dados <em>x</em> inteiro e <em>n</em> natural, calcular <em>x<sup>n</sup></em>.
+  </p>
+  <pre><code>int x, n;
+int potencia;
+
+Console.Write("Digite um inteiro X: ");
+x = int.Parse(Console.ReadLine());
+
+do
+{
+    Console.Write("Digite N maior ou igual a zero: ");
+    n = int.Parse(Console.ReadLine());
+
+    if (n &lt; 0)
+        Console.WriteLine("Erro! N precisa ser maior ou igual a zero.");
+}
+while (n &lt; 0);
+
+potencia = 1;
+for (int i = 0; i &lt; n; i++)
+    potencia *= x;
+
+Console.WriteLine("{0} elevado a {1} é igual a {2}", x, n, potencia);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   9) Uma loja de discos anota diariamente durante o mês de março a quantidade de discos vendidos. Determinar em que dia desse mês ocorreu a maior venda e qual foi a quantidade de discos vendida nesse dia.
+  </p>
+  <pre><code>int q, maior, dia;
+
+maior = 0;
+dia = 0;
+for (int i = 1; i &lt;= 31; i++)
+{
+    Console.Write("Quantos discos foram vendidos no dia {0}? ", i);
+    q = int.Parse(Console.ReadLine());
+
+    if (q &gt; maior)
+    {
+        maior = q;
+        dia = i;
+    }
+}
+
+Console.WriteLine("O recorde de vendas foi no dia {0}, com {1} discos vendidos.", dia, maior);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   10) Dados o número <em>N</em> de alunos de uma turma de <strong>Programação em C#</strong> e suas notas da primeira prova, determinar a maior e a menor nota obtidas por essa turma (nota máxima = 100 e nota mínima = 0).
+  </p>
+  <pre><code>int n;
+int maiornota, menornota, nota;
+int maioraluno, menoraluno;
+
+Console.Write("Quantos alunos estão estudando no curso atualmente: ");
+n = int.Parse(Console.ReadLine());
+
+maiornota = -1;
+menornota = 101;
+maioraluno = 0;
+menoraluno = 0;
+for (int i = 1; i &lt;= n; i++)
+{
+    do
+    {
+        Console.Write("Qual é a nota do aluno {0}? ", i);
+        nota = int.Parse(Console.ReadLine());
+
+        if (nota &lt; 0 || nota &gt; 100)
+            Console.WriteLine("Erro! Nota deve estar entre 0 e 100.");
+    }
+    while (nota &lt; 0 || nota &gt; 100);
+
+    if (nota &gt; maiornota)
+    {
+        maiornota = nota;
+        maioraluno = i;
+    }
+
+    if (nota &lt; menornota)
+    {
+        menornota = nota;
+        menoraluno = i;
+    }
+}
+
+Console.WriteLine("O aluno {0} obteve a maior nota, que foi {1}.", maioraluno, maiornota);
+Console.WriteLine("O aluno {0} obteve a menor nota, que foi {1}.", menoraluno, menornota);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   11) Dados <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar a soma dos números pares.
+  </p>
+  <p>
+   12) Dado <em>n</em> natural, determinar <em>n!</em>.
+  </p>
+  <p>
+   13) Dado <em>N</em> e dois números naturais <em>i</em> e <em>j</em> diferentes de 0, imprimir em ordem crescente os <em>N</em> primeiros naturais que são múltiplos de <em>i</em> ou de <em>j</em> ou de ambos. Exemplo, para <em>N</em> = 6, <em>i</em> = 2 e <em>j</em> = 3, a saída deverá ser: 0, 2, 3, 4, 6, 8.
+  </p>
+  <p>
+   14) Dizemos que um número natural é <em>triangular</em> se ele é produto de três números naturais consecutivos. Exemplo, 120 é triangular, pois 4.5.6 = 120. Dado <em>N</em> natural, verificar se <em>N</em> é triangular.
+  </p>
+  <p>
+   15) Dizemos que um número natural é <em>primo</em> se ele é divisível apenas por 1 e por ele mesmo. Dado <em>p</em> natural, verificar se <em>p</em> é primo.
+  </p>
+  <p>
+   16) Dados dois números inteiros positivos, determinar o máximo divisor comum entre eles usando o algoritmo de Euclides. Exemplo:
+  </p>
+  <p>
+   <img alt="" src="euclides.png"/>
+  </p>
+  <p>
+   O mdc entre 1128 e 336 é 24.
+  </p>
+  <p>
+   17) Dado <em>N</em> inteiro positivo, dizemos que <em>N</em> é <em>perfeito</em> se for igual à soma de seus divisores positivos diferentes de <em>N</em>.
+   <br/>
+   Exemplo: 6 é perfeito, pois 1 + 2 + 3 = 6.
+   <br/>
+   Verificar se um dado número inteiro positivo é perfeito.
+  </p>
+  <p>
+   18) Um matemático italiano da Idade Média conseguiu estudar o número de galhos em um certo nível de uma árvore através de uma sequência de números naturais que passou a ser conhecida como <strong>sequência de Fibonacci</strong>. O <em>n-ésimo</em> número da sequência de Fibonacci <em>F<sub>n</sub></em> é dado pela seguinte fórmula de recorrência:
+   <br/>
+   <em>F<sub>1</sub></em> = 1
+   <br/>
+   <em>F<sub>2</sub></em> = 1
+   <br/>
+   <em>F<sub>i</sub></em> = <em>F<sub>i-1</sub></em> + <em>F<sub>i-2</sub></em> para i &gt;= 3.
+   <br/>
+   Faça um programa que dado <em>n</em> calcule <em>F<sub>n</sub></em>.
+  </p>
+  <p>
+   19) Dizemos que um número <em>i</em> é congruente módulo <em>m</em> a <em>j</em> se <em>i</em> mod <em>m</em> = <em>j</em> mod <em>m</em>.
+   <br/>
+   Exemplo: 35 é congruente módulo 4 a 39, pois 35 mod 4 = 3 = 39 mod 4.
+   <br/>
+   Dados <em>N</em>, <em>j</em> e <em>m</em> naturais não nulos, imprimir os <em>N</em> primeiros naturais congruentes a <em>j</em> módulo <em>m</em>.
+  </p>
+  <p>
+   20) Dado um número natural na base binária, transformá-lo para a base decimal.
+   <br/>
+   Exemplo, dado 10010 a saída será 18, pois 1.2<sup>4</sup>+0.2<sup>3</sup>+0.2<sup>2</sup>+1.2<sup>1</sup>+0.2<sup>0</sup> = 18.
+  </p>
+  <p>
+   21) Dado um número natural na base decimal, transformá-lo para a base binária.
+   <br/>
+   Exemplo, dado 18 a saída deverá ser 10010.
+  </p>
+  <p>
+   22) Dados três números naturais, verificar se eles formam os lados de um triângulo retângulo.
+  </p>
+  <p>
+   23) Dados três números, imprimi-los em ordem crescente.
+  </p>
+  <p>
+   24) Qualquer número natural de quatro algarismos pode ser dividido em duas dezenas formadas pelos seus dois primeiros e dois últimos dígitos.
+   <br/>
+   Exemplos: 1297 (12 e 97) e 5314 (53 e 14).
+   <br/>
+   Escreva um programa que imprima todos os milhares (4 algarismos) cuja raiz quadrada seja a soma das dezenas formadas pela divisão acima.
+   <br/>
+   Exemplo: raiz de 9801 = 99 = 98 + 01. Portanto, 9801 é um dos números a ser impresso.
+  </p>
+  <p>
+   25) Dados <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar quantos segmentos iguais consecutivos compõem essa sequência.
+   <br/>
+   Exemplo: a sequência 5,2,2,3,4,4,4,4,1,1 é formada por 5 segmentos de números iguais.
+  </p>
+  <p>
+   26) Dados um inteiro positivo <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar o comprimento de um segmento crescente de comprimento máximo.
+   <br/>
+   Exemplos:
+   <br/>
+   - Na sequência 5,10,3,<strong>2,4,7,9</strong>,8,5 o comprimento do segmento crescente máximo é 4.
+   <br/>
+   - Na sequência 10,8,7,5,2 o comprimento de um segmento crescente máximo é 1.
+  </p>
+  <p>
+   27) Simule a execução do programa abaixo destacando a sua saída:
+  </p>
+  <pre><code>int a, b, total, soma, termo;
+
+a = int.Parse(Console.ReadLine());
+b = int.Parse(Console.ReadLine());
+
+Console.WriteLine("({0},{1})", a, b);
+
+total = 0;
+soma = 0;
+
+while (a != 0)
+{
+    total++;
+    termo = 1;
+
+    for (int i = 1; i &lt;= b; i++)
+        termo *= a;
+
+    Console.WriteLine("Resp = {0}", termo);
+
+    soma += termo;
+
+    Console.WriteLine("Soma = {0}", soma);
+
+    a = int.Parse(Console.ReadLine());
+    b = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("({0},{1})", a, b);
+}
+
+Console.WriteLine("Total de pares = {0}", total);
+Console.ReadKey();
+</code></pre>
+  <p>
+   Dados:
+   <br/>
+   2 3
+   <br/>
+   5 2
+   <br/>
+   7 1
+   <br/>
+   0 5
+   <br/>
+   3 2
+  </p>
+ </body>
+</html>

@@ -1,8 +1,8 @@
-﻿<Properties StartupItem="Capitulo4/Capitulo4.csproj">
+﻿<Properties StartupItem="Lista4Exercicio10/Lista4Exercicio10.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Capitulo4/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lista4Exercicio10/Program.cs">
     <Files>
-      <File FileName="Capitulo4/Program.cs" Line="19" Column="16" />
+      <File FileName="Lista4Exercicio10/Program.cs" Line="8" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

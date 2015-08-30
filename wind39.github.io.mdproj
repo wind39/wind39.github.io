@@ -464,7 +464,6 @@
     <None Include="curso\modulo1lista5-off.html" />
     <None Include="curso\modulo1lista6-off.html" />
     <None Include="curso\modulo1lista7-off.html" />
-    <None Include="curso\modulo1respostas4-off.html" />
     <None Include="curso\modulo1respostas5-off.html" />
     <None Include="curso\modulo1respostas6-off.html" />
     <None Include="curso\modulo1respostas7-off.html" />
@@ -708,6 +707,93 @@
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
     <None Include="curso\modulo2lista3-off.html" />
     <None Include="curso\modulo2capitulo3-off.pptx" />
+    <None Include="curso\modulo2respostas2.html" />
+    <None Include="curso\modulo1respostas4.html" />
+    <None Include="curso\Modulo1\Lista4Exercicio01\bin\Debug\Lista4Exercicio01.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio01\bin\Debug\Lista4Exercicio01.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio01\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio01\Lista4Exercicio01.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio01\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio02\bin\Debug\Lista4Exercicio02.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio02\bin\Debug\Lista4Exercicio02.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio02\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio02\Lista4Exercicio02.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio02\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio03\bin\Debug\Lista4Exercicio03.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio03\bin\Debug\Lista4Exercicio03.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio03\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio03\Lista4Exercicio03.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio03\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio04\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio04\Lista4Exercicio04.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio04\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\bin\Debug\Lista4Exercicio05.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\bin\Debug\Lista4Exercicio05.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\obj\x86\Debug\Lista4Exercicio05.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\obj\x86\Debug\Lista4Exercicio05.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\obj\x86\Debug\Lista4Exercicio05.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\Lista4Exercicio05.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio05\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\bin\Debug\Lista4Exercicio06.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\bin\Debug\Lista4Exercicio06.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\obj\x86\Debug\Lista4Exercicio06.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\obj\x86\Debug\Lista4Exercicio06.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\obj\x86\Debug\Lista4Exercicio06.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\Lista4Exercicio06.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio06\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\bin\Debug\Lista4Exercicio07.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\bin\Debug\Lista4Exercicio07.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\obj\x86\Debug\Lista4Exercicio07.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\obj\x86\Debug\Lista4Exercicio07.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\obj\x86\Debug\Lista4Exercicio07.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\Lista4Exercicio07.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio07\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\bin\Debug\Lista4Exercicio08.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\bin\Debug\Lista4Exercicio08.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\obj\x86\Debug\Lista4Exercicio08.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\obj\x86\Debug\Lista4Exercicio08.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\obj\x86\Debug\Lista4Exercicio08.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\Lista4Exercicio08.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio08\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\bin\Debug\Lista4Exercicio09.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\bin\Debug\Lista4Exercicio09.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\obj\x86\Debug\Lista4Exercicio09.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\obj\x86\Debug\Lista4Exercicio09.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\obj\x86\Debug\Lista4Exercicio09.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\Lista4Exercicio09.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio09\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\bin\Debug\Lista4Exercicio10.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\bin\Debug\Lista4Exercicio10.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\obj\x86\Debug\Lista4Exercicio10.csproj.FilesWrittenAbsolute.txt" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\obj\x86\Debug\Lista4Exercicio10.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\obj\x86\Debug\Lista4Exercicio10.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\Lista4Exercicio10.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio10\Program.cs" />
+    <None Include="curso\Modulo1\Testes\bin\Debug\Testes.exe" />
+    <None Include="curso\Modulo1\Testes\bin\Debug\Testes.exe.mdb" />
+    <None Include="curso\Modulo1\Testes\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Testes\Program.cs" />
+    <None Include="curso\Modulo1\Testes\Testes.csproj" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Calculadora.dll" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Calculadora.dll.mdb" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Lista2Exercicio09.exe" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Lista2Exercicio09.exe.mdb" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\Lista2Exercicio09.csproj" />
+    <None Include="curso\Modulo2\Lista2Exercicio09\Program.cs" />
+    <None Include="curso\Modulo2\Modulo2\NumeroNegativoException.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
