@@ -499,24 +499,6 @@
     <None Include="curso\books\sqlite_tutorial.pdf" />
     <None Include="curso\modulo2lista2.html" />
     <None Include="curso\modulo1respostas3.html" />
-    <None Include="curso\Modulo1\Capitulo2\bin\Debug\Capitulo2.exe" />
-    <None Include="curso\Modulo1\Capitulo2\bin\Debug\Capitulo2.exe.mdb" />
-    <None Include="curso\Modulo1\Capitulo2\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
-    <None Include="curso\Modulo1\Capitulo2\obj\x86\Debug\Capitulo2.csproj.FilesWrittenAbsolute.txt" />
-    <None Include="curso\Modulo1\Capitulo2\obj\x86\Debug\Capitulo2.exe" />
-    <None Include="curso\Modulo1\Capitulo2\obj\x86\Debug\Capitulo2.exe.mdb" />
-    <None Include="curso\Modulo1\Capitulo2\Properties\AssemblyInfo.cs" />
-    <None Include="curso\Modulo1\Capitulo2\Capitulo2.csproj" />
-    <None Include="curso\Modulo1\Capitulo2\Program.cs" />
-    <None Include="curso\Modulo1\Capitulo3\bin\Debug\Capitulo3.exe" />
-    <None Include="curso\Modulo1\Capitulo3\bin\Debug\Capitulo3.exe.mdb" />
-    <None Include="curso\Modulo1\Capitulo3\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
-    <None Include="curso\Modulo1\Capitulo3\obj\x86\Debug\Capitulo3.csproj.FilesWrittenAbsolute.txt" />
-    <None Include="curso\Modulo1\Capitulo3\obj\x86\Debug\Capitulo3.exe" />
-    <None Include="curso\Modulo1\Capitulo3\obj\x86\Debug\Capitulo3.exe.mdb" />
-    <None Include="curso\Modulo1\Capitulo3\Properties\AssemblyInfo.cs" />
-    <None Include="curso\Modulo1\Capitulo3\Capitulo3.csproj" />
-    <None Include="curso\Modulo1\Capitulo3\Program.cs" />
     <None Include="curso\Modulo1\Lista2Exercicio01\bin\Debug\Lista2Exercicio01.exe" />
     <None Include="curso\Modulo1\Lista2Exercicio01\bin\Debug\Lista2Exercicio01.exe.mdb" />
     <None Include="curso\Modulo1\Lista2Exercicio01\obj\x86\Debug\.NETFramework,Version=v4.5.AssemblyAttribute.cs" />
@@ -693,11 +675,6 @@
     <None Include="curso\modulo1capitulo4.pptx" />
     <None Include="curso\modulo1lista4.html" />
     <None Include="curso\modulo2capitulo2.pptx" />
-    <None Include="curso\Modulo1\Capitulo4\bin\Debug\Capitulo4.exe" />
-    <None Include="curso\Modulo1\Capitulo4\bin\Debug\Capitulo4.exe.mdb" />
-    <None Include="curso\Modulo1\Capitulo4\Properties\AssemblyInfo.cs" />
-    <None Include="curso\Modulo1\Capitulo4\Capitulo4.csproj" />
-    <None Include="curso\Modulo1\Capitulo4\Program.cs" />
     <None Include="curso\Modulo2\Calculadora\bin\Debug\Calculadora.dll" />
     <None Include="curso\Modulo2\Calculadora\bin\Debug\Calculadora.dll.mdb" />
     <None Include="curso\Modulo2\Calculadora\Properties\AssemblyInfo.cs" />
@@ -705,7 +682,6 @@
     <None Include="curso\Modulo2\Calculadora\Calculadora.csproj" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
-    <None Include="curso\modulo2lista3-off.html" />
     <None Include="curso\modulo2capitulo3-off.pptx" />
     <None Include="curso\modulo2respostas2.html" />
     <None Include="curso\modulo1respostas4.html" />
@@ -794,6 +770,37 @@
     <None Include="curso\Modulo2\Lista2Exercicio09\Lista2Exercicio09.csproj" />
     <None Include="curso\Modulo2\Lista2Exercicio09\Program.cs" />
     <None Include="curso\Modulo2\Modulo2\NumeroNegativoException.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio11\bin\Debug\Lista4Exercicio11.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio11\bin\Debug\Lista4Exercicio11.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio11\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio11\Lista4Exercicio11.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio11\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio12\bin\Debug\Lista4Exercicio12.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio12\bin\Debug\Lista4Exercicio12.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio12\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio12\Lista4Exercicio12.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio12\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio13\bin\Debug\Lista4Exercicio13.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio13\bin\Debug\Lista4Exercicio13.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio13\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio13\Lista4Exercicio13.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio13\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio14\bin\Debug\Lista4Exercicio14.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio14\bin\Debug\Lista4Exercicio14.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio14\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio14\Lista4Exercicio14.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio14\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio15\bin\Debug\Lista4Exercicio15.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio15\bin\Debug\Lista4Exercicio15.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio15\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio15\Lista4Exercicio15.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio15\Program.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio16\bin\Debug\Lista4Exercicio16.exe" />
+    <None Include="curso\Modulo1\Lista4Exercicio16\bin\Debug\Lista4Exercicio16.exe.mdb" />
+    <None Include="curso\Modulo1\Lista4Exercicio16\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Lista4Exercicio16\Lista4Exercicio16.csproj" />
+    <None Include="curso\Modulo1\Lista4Exercicio16\Program.cs" />
+    <None Include="curso\modulo2lista3.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

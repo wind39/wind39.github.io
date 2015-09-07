@@ -318,18 +318,149 @@ Console.ReadKey();</code></pre>
   <p>
    11) Dados <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar a soma dos números pares.
   </p>
+  <pre><code>int n, soma, x;
+
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+soma = 0;
+for (int i = 1; i &lt;= n; i++)
+{
+    Console.Write("{0} - Digite um número inteiro: ", i);
+    x = int.Parse(Console.ReadLine());
+
+    if (x % 2 == 0)
+        soma += x;
+}
+
+Console.WriteLine("A soma dos números pares da sequência é igual a {0}.", soma);
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    12) Dado <em>n</em> natural, determinar <em>n!</em>.
   </p>
+  <pre><code>int n, fatorial;
+
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+Console.Write("{0}! = {0} ", n);
+
+fatorial = n;
+for (int i = n - 1; i &gt; 1; i--)
+{
+    Console.Write("* {0} ", i);
+    fatorial *= i;
+}
+
+Console.WriteLine("* 1 = {0}", fatorial);
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    13) Dado <em>N</em> e dois números naturais <em>i</em> e <em>j</em> diferentes de 0, imprimir em ordem crescente os <em>N</em> primeiros naturais que são múltiplos de <em>i</em> ou de <em>j</em> ou de ambos. Exemplo, para <em>N</em> = 6, <em>i</em> = 2 e <em>j</em> = 3, a saída deverá ser: 0, 2, 3, 4, 6, 8.
   </p>
+  <pre><code>int n, i, j, k, cont;
+
+do
+{
+    Console.Write("Digite o valor de N: ");
+    n = int.Parse(Console.ReadLine());
+
+    if (n &lt;= 0)
+        Console.WriteLine("Erro! N precisa ser maior que zero.");
+}
+while (n &lt;= 0);
+
+do
+{
+    Console.Write("Digite o valor de I: ");
+    i = int.Parse(Console.ReadLine());
+
+    if (i &lt;= 0)
+        Console.WriteLine("Erro! I precisa ser maior que zero.");
+}
+while (i &lt;= 0);
+
+do
+{
+    Console.Write("Digite o valor de J: ");
+    j = int.Parse(Console.ReadLine());
+
+    if (j &lt;= 0)
+        Console.WriteLine("Erro! J precisa ser maior que zero.");
+}
+while (j &lt;= 0);
+
+Console.Write("0");
+cont = 1;
+k = 1;
+while (cont &lt; n)
+{
+    if (k % i == 0 || k % j == 0)
+    {
+        Console.Write(", {0}", k);
+        cont++;
+    }
+
+    k++;
+}
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    14) Dizemos que um número natural é <em>triangular</em> se ele é produto de três números naturais consecutivos. Exemplo, 120 é triangular, pois 4.5.6 = 120. Dado <em>N</em> natural, verificar se <em>N</em> é triangular.
   </p>
+  <pre><code>int n, i;
+bool achou;
+
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+achou = false;
+i = 1;
+while (i &lt; n && ! achou)
+{
+    if ((i * (i + 1) * (i + 2)) == n)
+        achou = true;
+    else
+        i++;
+}
+
+if (achou)
+    Console.WriteLine("O número {0} é triangular, pois {1}.{2}.{3} = {0}.", n, i, i+1, i+2);
+else
+    Console.WriteLine("O número {0} não é triangular.", n);
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    15) Dizemos que um número natural é <em>primo</em> se ele é divisível apenas por 1 e por ele mesmo. Dado <em>p</em> natural, verificar se <em>p</em> é primo.
   </p>
+  <pre><code>int n, i;
+bool achou;
+
+Console.Write("Digite o valor de N: ");
+n = int.Parse(Console.ReadLine());
+
+achou = false;
+i = 2;
+while (i &lt; n && !achou)
+{
+    if (n % i == 0)
+        achou = true;
+    else
+        i++;
+}
+
+if (achou)
+    Console.WriteLine("{0} não é primo, pois {1}, por exemplo, é um múltiplo de {0}.", n, i);
+else
+    Console.WriteLine("{0} é primo.", n);
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    16) Dados dois números inteiros positivos, determinar o máximo divisor comum entre eles usando o algoritmo de Euclides. Exemplo:
   </p>
@@ -339,6 +470,52 @@ Console.ReadKey();</code></pre>
   <p>
    O mdc entre 1128 e 336 é 24.
   </p>
+  <pre><code>int n1i, n2i, n1, n2;
+int resto;
+
+do
+{
+    Console.Write("Digite o primeiro número inteiro maior que zero: ");
+    n1i = int.Parse(Console.ReadLine());
+
+    if (n1i &lt;= 0)
+        Console.WriteLine("Erro! Número deve ser maior que zero.");
+}
+while (n1i &lt;= 0);
+
+do
+{
+    Console.Write("Digite o primeiro número inteiro maior que zero: ");
+    n2i = int.Parse(Console.ReadLine());
+
+    if (n2i &lt;= 0)
+        Console.WriteLine("Erro! Número deve ser maior que zero.");
+}
+while (n2i &lt;= 0);
+
+if (n2i &gt; n1i)
+{
+    n1 = n2i;
+    n2 = n1i;
+}
+else
+{
+    n1 = n1i;
+    n2 = n2i;
+}
+
+resto = n1 % n2;
+while (resto &gt; 0)
+{
+    n1 = n2;
+    n2 = resto;
+    resto = n1 % n2;
+}
+
+Console.WriteLine("O MDC entre {0} e {1} é {2}", n1i, n2i, n2);
+
+Console.ReadKey();</code></pre>
+  <hr/>
   <p>
    17) Dado <em>N</em> inteiro positivo, dizemos que <em>N</em> é <em>perfeito</em> se for igual à soma de seus divisores positivos diferentes de <em>N</em>.
    <br/>
@@ -346,6 +523,7 @@ Console.ReadKey();</code></pre>
    <br/>
    Verificar se um dado número inteiro positivo é perfeito.
   </p>
+  <hr/>
   <p>
    18) Um matemático italiano da Idade Média conseguiu estudar o número de galhos em um certo nível de uma árvore através de uma sequência de números naturais que passou a ser conhecida como <strong>sequência de Fibonacci</strong>. O <em>n-ésimo</em> número da sequência de Fibonacci <em>F<sub>n</sub></em> é dado pela seguinte fórmula de recorrência:
    <br/>
@@ -357,6 +535,7 @@ Console.ReadKey();</code></pre>
    <br/>
    Faça um programa que dado <em>n</em> calcule <em>F<sub>n</sub></em>.
   </p>
+  <hr/>
   <p>
    19) Dizemos que um número <em>i</em> é congruente módulo <em>m</em> a <em>j</em> se <em>i</em> mod <em>m</em> = <em>j</em> mod <em>m</em>.
    <br/>
@@ -364,22 +543,27 @@ Console.ReadKey();</code></pre>
    <br/>
    Dados <em>N</em>, <em>j</em> e <em>m</em> naturais não nulos, imprimir os <em>N</em> primeiros naturais congruentes a <em>j</em> módulo <em>m</em>.
   </p>
+  <hr/>
   <p>
    20) Dado um número natural na base binária, transformá-lo para a base decimal.
    <br/>
    Exemplo, dado 10010 a saída será 18, pois 1.2<sup>4</sup>+0.2<sup>3</sup>+0.2<sup>2</sup>+1.2<sup>1</sup>+0.2<sup>0</sup> = 18.
   </p>
+  <hr/>
   <p>
    21) Dado um número natural na base decimal, transformá-lo para a base binária.
    <br/>
    Exemplo, dado 18 a saída deverá ser 10010.
   </p>
+  <hr/>
   <p>
    22) Dados três números naturais, verificar se eles formam os lados de um triângulo retângulo.
   </p>
+  <hr/>
   <p>
    23) Dados três números, imprimi-los em ordem crescente.
   </p>
+  <hr/>
   <p>
    24) Qualquer número natural de quatro algarismos pode ser dividido em duas dezenas formadas pelos seus dois primeiros e dois últimos dígitos.
    <br/>
@@ -389,11 +573,13 @@ Console.ReadKey();</code></pre>
    <br/>
    Exemplo: raiz de 9801 = 99 = 98 + 01. Portanto, 9801 é um dos números a ser impresso.
   </p>
+  <hr/>
   <p>
    25) Dados <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar quantos segmentos iguais consecutivos compõem essa sequência.
    <br/>
    Exemplo: a sequência 5,2,2,3,4,4,4,4,1,1 é formada por 5 segmentos de números iguais.
   </p>
+  <hr/>
   <p>
    26) Dados um inteiro positivo <em>N</em> e uma sequência de <em>N</em> números inteiros, determinar o comprimento de um segmento crescente de comprimento máximo.
    <br/>
@@ -403,6 +589,7 @@ Console.ReadKey();</code></pre>
    <br/>
    - Na sequência 10,8,7,5,2 o comprimento de um segmento crescente máximo é 1.
   </p>
+  <hr/>
   <p>
    27) Simule a execução do programa abaixo destacando a sua saída:
   </p>

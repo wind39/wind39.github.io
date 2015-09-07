@@ -6,14 +6,17 @@ namespace Modulo2
     {
         public static void Main(string[] args)
         {
-            System.IO.StreamWriter v_writer;
+            char c;
+            int n;
 
-            v_writer = new System.IO.StreamWriter("teste.txt");
+            Console.Write("Digite um número: ");
+            n = int.Parse(Console.ReadLine());
 
-            v_writer.WriteLine("isso é um teste.");
-            v_writer.WriteLine("hehe");
+            c = (char) n;
 
-            v_writer.Close();
+            Console.WriteLine("O número {0} representa o caractere {1}.", n, c);
+
+            Console.ReadKey();
         }
     }
 }
