@@ -801,6 +801,7 @@
     <None Include="curso\Modulo1\Lista4Exercicio16\Lista4Exercicio16.csproj" />
     <None Include="curso\Modulo1\Lista4Exercicio16\Program.cs" />
     <None Include="curso\modulo2lista3.html" />
+    <None Include="curso\modulo1prova1-off.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
