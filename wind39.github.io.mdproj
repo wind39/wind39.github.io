@@ -757,11 +757,6 @@
     <None Include="curso\Modulo1\Lista4Exercicio10\Properties\AssemblyInfo.cs" />
     <None Include="curso\Modulo1\Lista4Exercicio10\Lista4Exercicio10.csproj" />
     <None Include="curso\Modulo1\Lista4Exercicio10\Program.cs" />
-    <None Include="curso\Modulo1\Testes\bin\Debug\Testes.exe" />
-    <None Include="curso\Modulo1\Testes\bin\Debug\Testes.exe.mdb" />
-    <None Include="curso\Modulo1\Testes\Properties\AssemblyInfo.cs" />
-    <None Include="curso\Modulo1\Testes\Program.cs" />
-    <None Include="curso\Modulo1\Testes\Testes.csproj" />
     <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Calculadora.dll" />
     <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Calculadora.dll.mdb" />
     <None Include="curso\Modulo2\Lista2Exercicio09\bin\Debug\Lista2Exercicio09.exe" />
@@ -802,6 +797,11 @@
     <None Include="curso\Modulo1\Lista4Exercicio16\Program.cs" />
     <None Include="curso\modulo2lista3.html" />
     <None Include="curso\modulo1prova1-off.html" />
+    <None Include="curso\Modulo1\Modulo1\bin\Debug\Modulo1.exe" />
+    <None Include="curso\Modulo1\Modulo1\bin\Debug\Modulo1.exe.mdb" />
+    <None Include="curso\Modulo1\Modulo1\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo1\Modulo1\Modulo1.csproj" />
+    <None Include="curso\Modulo1\Modulo1\Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
