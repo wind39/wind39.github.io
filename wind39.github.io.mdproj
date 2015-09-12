@@ -796,12 +796,12 @@
     <None Include="curso\Modulo1\Lista4Exercicio16\Lista4Exercicio16.csproj" />
     <None Include="curso\Modulo1\Lista4Exercicio16\Program.cs" />
     <None Include="curso\modulo2lista3.html" />
-    <None Include="curso\modulo1prova1-off.html" />
     <None Include="curso\Modulo1\Modulo1\bin\Debug\Modulo1.exe" />
     <None Include="curso\Modulo1\Modulo1\bin\Debug\Modulo1.exe.mdb" />
     <None Include="curso\Modulo1\Modulo1\Properties\AssemblyInfo.cs" />
     <None Include="curso\Modulo1\Modulo1\Modulo1.csproj" />
     <None Include="curso\Modulo1\Modulo1\Program.cs" />
+    <None Include="curso\modulo1prova1.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
