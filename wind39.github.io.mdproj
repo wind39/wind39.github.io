@@ -682,7 +682,6 @@
     <None Include="curso\Modulo2\Calculadora\Calculadora.csproj" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll" />
     <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
-    <None Include="curso\modulo2capitulo3-off.pptx" />
     <None Include="curso\modulo2respostas2.html" />
     <None Include="curso\modulo1respostas4.html" />
     <None Include="curso\Modulo1\Lista4Exercicio01\bin\Debug\Lista4Exercicio01.exe" />
@@ -802,6 +801,11 @@
     <None Include="curso\Modulo1\Modulo1\Modulo1.csproj" />
     <None Include="curso\Modulo1\Modulo1\Program.cs" />
     <None Include="curso\modulo1prova1.html" />
+    <None Include="curso\modulo2capitulo3.pptx" />
+    <None Include="curso\correcoes\m1a1_cristiano.txt" />
+    <None Include="curso\correcoes\m1a1_felipe.txt" />
+    <None Include="curso\correcoes\m1a1_jaquison.txt" />
+    <None Include="curso\correcoes\m1a1_rodrigo.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

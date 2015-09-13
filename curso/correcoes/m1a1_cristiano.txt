@@ -1,0 +1,37 @@
+Cristiano Raffi Cunha
+
+
+A1 Q1: Média Aritmética (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 2/10 (Poderia ter resolvido com um laço apenas e sem precisar armazenar os números em um vetor. No do while, poderia ter acumulado a variável SomaTotal, e criado uma variável pra contar quantos números eram diferentes de 0)
+
+Nota: (10 + 10 + 50 + 20 + 2) / 100 * 20 = 18,4
+
+
+A1 Q2: Triângulo Retângulo (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 40/50 (O enunciado exigia um número natural. Por mais que você tenha usado uint, precisava tratar com do while, pois se o usuário digitar um número negativo, ocorre uma exceção não tratada)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 40 + 20 + 10) / 100 * 40 = 36
+
+
+A1 Q3: Triângulo Retângulo Invertido (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 35/50 (O enunciado exigia um número natural. Por mais que você tenha usado uint, precisava tratar com do while, pois se o usuário digitar um número negativo, ocorre uma exceção não tratada. A impressão também tem 1 espaço a mais à esquerda, se tivesse inicializado i = 1 ao invés de i = 0, teria funcionado corretamente)
+Legibilidade: 18/20 (tem uma chave deslocada no final do código, logo abaixo do Console.ReadKey, e o Console.ReadKey também está deslocado)
+Elegância: 10/10
+
+Nota: (10 + 10 + 35 + 18 + 10) / 100 * 40 = 33,2
+
+
+Nota Final: 18,4 + 36 + 33,2 = 87,6 (parabéns!!)

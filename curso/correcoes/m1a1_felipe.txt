@@ -1,0 +1,48 @@
+Luis Felipe Thofehrn Castro
+
+
+A1 Q1: Média Aritmética (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 20 = 20
+
+
+A1 Q2: Triângulo Retângulo (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 40 = 40
+
+
+A1 Q3: Triângulo Retângulo Invertido (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 40 = 40
+
+
+A1 Q4: Triângulo Isósceles (80 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50 (mas, assim como eu, você também escreveu "retângulo" no do while, rss)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 80 = 80
+
+
+Nota Final: 20 + 40 + 40 + 80 = 180 = 100 (parabéns, nota perfeita!!)

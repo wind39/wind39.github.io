@@ -1,0 +1,26 @@
+Rodrigo Godoy
+
+
+A1 Q1: Média Aritmética (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 40/50 (O enunciado exige que sejam números reais, no caso seriam variáveis do tipo double, mas você usou variáveis do tipo inteiro)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 40 + 20 + 10) / 100 * 20 = 18
+
+
+A1 Q2: Triângulo Retângulo (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 45/50 (O enunciado exigia um número natural, que é um inteiro maior ou igual a zero. Precisava tratar com do while)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 45 + 20 + 10) / 100 * 40 = 38
+
+
+Nota Final: 18 + 38 = 56 (parabéns!!)

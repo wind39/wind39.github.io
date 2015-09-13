@@ -2,7 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Modulo2/Program.cs">
     <Files>
-      <File FileName="Modulo2/Program.cs" Line="9" Column="13" />
+      <File FileName="Modulo2/Program.cs" Line="196" Column="14" />
+      <File FileName="Modulo2/Aluno.cs" Line="43" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

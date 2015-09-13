@@ -1,0 +1,37 @@
+Jaquison Luis
+
+
+A1 Q1: Média Aritmética (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 25/50 (Para calcular a média, você está sempre dividindo por 3, mas o usuário pode digitar 1, 2, 3, 4 ou até mais números. Precisava de uma variável contadora que fosse incrementando a cada passada do laço)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 25 + 20 + 10) / 100 * 20 = 15
+
+
+A1 Q2: Triângulo Retângulo (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 45/50 (O enunciado exigia um número natural, que é um inteiro maior ou igual a zero. Precisava tratar com do while)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (10 + 10 + 45 + 20 + 10) / 100 * 40 = 38
+
+
+A1 Q3: Triângulo Retângulo Invertido (40 pontos)
+
+Pontualidade: 0/10 (recebido após às 17:00 horas)
+Compilação: 10/10
+Solução: 30/50 (O enunciado exigia um número natural, que é um inteiro maior ou igual a zero. Precisava tratar com do while. O segundo for inicializa espacamento = 6, de forma que só funciona para triângulo de altura = 7. Precisava inicializar com espacamento = numDigitado-1 para funcionar corretamente)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota: (0 + 10 + 30 + 20 + 10) / 100 * 40 = 28
+
+
+Nota Final: 15 + 38 + 28 = 81 (parabéns!!)
