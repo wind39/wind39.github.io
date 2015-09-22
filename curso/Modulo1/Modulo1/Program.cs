@@ -7,6 +7,8 @@ namespace Modulo1
         public static void Main(string[] args)
         {
             
+
+            Console.ReadKey();
         }
     }
 }

@@ -1,0 +1,399 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo II Lista 3
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo II Capítulo 3 (Respostas)</h3>
+  <hr/>
+  <p><b>DICA:</b> Alguns exercícios abaixo requerem arquivos de texto com conteúdo um pouco grande. Se você não tem um arquivo de texto grande à mão, crie um com o gerador <em><a href="http://br.lipsum.com/">Lorem Ipsum</a></em>.</p>
+  <hr/>
+  <p>
+   1) Pergunte ao usuário o nome de um arquivo e imprima seu conteúdo na tela.
+  </p>
+  <hr/>
+  <p>
+   2) Peça para o usuário digitar várias frases. Quando ele digitar "FIM", pergunte o nome do arquivo no qual ele deseja salvar suas frases. Depois escreva todas as frases que ele digitou nesse arquivo (exceto a última palavra "FIM").
+  </p>
+  <hr/>
+  <p>
+   3) Modifique o programa acima para, caso o arquivo já existir, armazenar as novas frases no final do arquivo, sem sobrescrever as frases que já existiam.
+  </p>
+  <hr/>
+  <p>
+   4) Crie uma classe <b><tt>Logger</tt></b>, que será muito útil para criar um arquivo de log de execução de procedimentos. A classe deverá ter um método <tt>Write</tt> e deverá ser usada da seguinte forma:
+  </p>
+  <pre><code>Logger l;
+l = new Logger("log.txt");
+l.Write("Esse texto está sendo incluído no log do processo.");
+l.Write("Esse outro texto também.");</code></pre>
+  <p>O método <tt>Write</tt> deverá escrever a data e hora atual antes do texto, na mesma linha. Por exemplo, o arquivo <b>log.txt</b> resultante terá o seguinte conteúdo:</p>
+  <pre><code>[28/08/2015 00:53:45] Esse texto está sendo incluído no log do processo.
+[28/08/2015 00:53:46] Esse outro texto também.</code></pre>
+  <hr/>
+  <p>
+   5) Escreva um programa que peça ao usuário o nome de um arquivo para a leitura, e também o número máximo de <em>N</em> linhas que ele deseja ler de uma única vez. Depois, o programa deve mostrar as <em>N</em> primeiras linhas e aguardar o usuário digitar qualquer tecla. Depois mostrar as <em>N</em> próximas linhas e aguardar o usuário digitar qualquer tecla, e assim por diante até o fim do arquivo.
+  </p>
+  <hr/>
+  <p>
+   6) Crie um programa que copia o conteúdo de um arquivo texto de origem para um arquivo de destino. Os nomes dos arquivos de origem e destino são informados pelo usuário.
+  </p>
+  <hr/>
+  <p>
+   7) Crie um programa que converte o conteúdo de um arquivo texto de origem para maiúscula e salva em um novo arquivo. Os nomes dos arquivos de origem e destino são informados pelo usuário.
+  </p>
+  <hr/>
+  <p>
+   8) Crie um programa que substituia uma palavra em um texto, salvando o resultado em um novo arquivo. O programa deve perguntar ao usuário 4 informações:</p>
+  <ul>
+    <li>Nome do arquivo de origem;</li>
+    <li>Nome da palavra de origem;</li>
+    <li>Nome da palavra nova;</li>
+    <li>Nome do arquivo de destino.</li>
+  </ul>
+  <hr/>
+  <p>
+   9) Escreva um programa que peça ao usuário o nome de um arquivo para a leitura, e um caractere qualquer. Depois, o programa deve mostrar ao usuário quantas vezes o caractere aparece no conteúdo do arquivo.
+  </p>
+  <hr/>
+  <p>
+   10) Escreva um programa que peça ao usuário o nome de um arquivo para a leitura. Depois, o programa deve mostrar ao usuário quantas linhas, quantos caracteres e quantas palavras o arquivo possui.
+  </p>
+  <hr/>
+  <p>
+   11) Escreva um programa que peça ao usuário o nome de um arquivo para a leitura. Depois, o programa deve criar um novo arquivo com o conteúdo do arquivo original, só que com as linhas invertidas (ou seja, a primeira linha do primeiro arquivo será a última linha do segundo arquivo).
+  </p>
+  <hr/>
+  <p>
+   12) Modifique o programa acima para inverter caracteres ao invés de linhas.
+  </p>
+  <hr/>
+  <p>
+   13) Crie um programa de cadastro de alunos (nome, idade, sexo). Crie um menu de listagem, adição, edição e remoção. Armazene o cadastro de alunos em um arquivo CSV que deverá ser usado pelo programa na próxima execução.
+  </p>
+  <hr/>
+  <p>
+   14) Modifique o programa acima para armazenar o cadastro de alunos em um arquivo binário.
+  </p>
+  <hr/>
+  <pre><code>// Aluno.cs
+using System;
+
+namespace Lista3Exercicio14
+{
+    public class Aluno
+    {
+        public string nome;
+        public int idade;
+        public char sexo;
+
+        public Aluno()
+        {
+        }
+    }
+}
+
+// ListaDeAlunos.cs
+using System;
+
+namespace Lista3Exercicio14
+{
+    public class ListaDeAlunos
+    {
+        private System.Collections.Generic.List&lt;Aluno&gt; lista;
+
+        public ListaDeAlunos()
+        {
+        }
+
+        public void LeCadastroDoArquivo()
+        {
+            System.IO.BinaryReader leitor = null;
+            Aluno a;
+            int n;
+
+            this.lista = new System.Collections.Generic.List<Aluno>();
+
+            try
+            {
+                leitor = new System.IO.BinaryReader(new System.IO.FileStream("alunos.dat", System.IO.FileMode.Open));
+
+                n = leitor.ReadInt32();
+                for (int i = 0; i &lt; n; i++)
+                {
+                    a = new Aluno();
+                    a.nome = leitor.ReadString();
+                    a.idade = leitor.ReadInt32();
+                    a.sexo = leitor.ReadChar();
+
+                    this.lista.Add(a);
+                }
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                Console.WriteLine("AVISO! Arquivo alunos.dat não foi encontrado. Cadastro começará vazio.");
+                Console.ReadKey();
+            }
+            catch (System.Exception exc)
+            {
+                Console.WriteLine("ERRO! " + exc.Message);
+                Console.ReadKey();
+            }
+            finally
+            {
+                if (leitor != null)
+                    leitor.Close();
+            }
+        }
+
+        public void SalvarCadastroEmArquivo()
+        {
+            System.IO.BinaryWriter escritor = null;
+
+            try
+            {
+                escritor = new System.IO.BinaryWriter(new System.IO.FileStream("alunos.dat", System.IO.FileMode.Create));
+
+                escritor.Write(this.lista.Count);
+
+                for (int i = 0; i &lt; this.lista.Count; i++)
+                {
+                    escritor.Write(this.lista[i].nome);
+                    escritor.Write(this.lista[i].idade);
+                    escritor.Write(this.lista[i].sexo);
+                }
+            }
+            catch (System.Exception exc)
+            {
+                Console.WriteLine("ERRO! " + exc.Message);
+                Console.ReadKey();
+            }
+            finally
+            {
+                if (escritor != null)
+                    escritor.Close();
+            }
+        }
+
+        public void Listar()
+        {
+            Console.Clear();
+            Console.WriteLine("Lista 3 Exercício 14");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine();
+
+            Console.WriteLine("Listagem de alunos cadastrados: ");
+            Console.WriteLine();
+
+            if (this.lista.Count == 0)
+                Console.WriteLine("Cadastro vazio!");
+            else
+            {
+                for (int i = 0; i &lt; this.lista.Count; i++)
+                    Console.WriteLine("Aluno: {0}, nome: {1}, idade: {2}, sexo: {3}", i+1, this.lista[i].nome, this.lista[i].idade, this.lista[i].sexo);
+            }
+        }
+
+        public void Adicionar()
+        {
+            Aluno a;
+
+            Console.Clear();
+            Console.WriteLine("Lista 3 Exercício 14");
+            Console.WriteLine("----------------------------------");
+            Console.WriteLine();
+
+            Console.WriteLine("Cadastro de novo aluno: ");
+            Console.WriteLine();
+
+            a = new Aluno();
+
+            //TODO: tratar erros de digitação do usuário (idade, sexo)
+
+            Console.Write("Digite o nome do aluno: ");
+            a.nome = Console.ReadLine();
+
+            Console.Write("Digite a idade do aluno: ");
+            a.idade = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o sexo do aluno (M/F): ");
+            a.sexo = char.Parse(Console.ReadLine());
+
+            //TODO: tratar caso em que o aluno já existe (pelo nome)
+            this.lista.Add(a);
+
+            Console.WriteLine();
+            Console.WriteLine("Aluno {0} cadastrado com sucesso!", a.nome);
+        }
+
+        public void Editar()
+        {
+            int indice;
+            string tmp;
+
+            do
+            {
+                this.Listar();
+
+                Console.WriteLine();
+                Console.Write("Escolha um aluno: ");
+                indice = int.Parse(Console.ReadLine());
+                indice -= 1;
+
+                if (indice &lt; 0 || indice &gt; this.lista.Count-1)
+                    Console.WriteLine("ERRO! Aluno {0} não existe. Favor digitar novamente. ", indice+1);
+            }
+            while (indice &lt; 0 || indice &gt; this.lista.Count-1);
+
+            Console.WriteLine();
+
+            //TODO: tratar erros de digitação do usuário (idade, sexo)
+            //TODO: tratar caso em que o aluno já existe (pelo nome)
+
+            Console.Write("Digite o novo nome [{0}]: ", this.lista[indice].nome);
+            tmp = Console.ReadLine();
+            if (tmp != "")
+                this.lista[indice].nome = tmp;
+
+            Console.Write("Digite a nova idade [{0}]: ", this.lista[indice].idade);
+            tmp = Console.ReadLine();
+            if (tmp != "")
+                this.lista[indice].idade = int.Parse(tmp);
+
+            Console.Write("Digite o novo sexo [{0}]: ", this.lista[indice].sexo);
+            tmp = Console.ReadLine();
+            if (tmp != "")
+                this.lista[indice].sexo = char.Parse(tmp);
+
+            Console.WriteLine();
+            Console.WriteLine("Aluno {0} alterado com sucesso!", this.lista[indice].nome);
+        }
+
+        public void Remover()
+        {
+            int indice;
+            string nome;
+
+            do
+            {
+                this.Listar();
+
+                Console.WriteLine();
+                Console.Write("Escolha um aluno: ");
+                indice = int.Parse(Console.ReadLine());
+                indice -= 1;
+
+                if (indice &lt; 0 || indice &gt; this.lista.Count-1)
+                    Console.WriteLine("ERRO! Aluno {0} não existe. Favor digitar novamente. ", indice+1);
+            }
+            while (indice &lt; 0 || indice &gt; this.lista.Count-1);
+
+            nome = this.lista[indice].nome;
+
+            this.lista.RemoveAt(indice);
+
+            Console.WriteLine();
+            Console.WriteLine("Aluno {0} removido com sucesso!", nome);
+        }
+    }
+}
+
+// Program.cs
+using System;
+
+namespace Lista3Exercicio14
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            ListaDeAlunos cadastro;
+            int opcao;
+
+            cadastro = new ListaDeAlunos();
+            cadastro.LeCadastroDoArquivo();
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Lista 3 Exercício 14");
+                Console.WriteLine("----------------------------------");
+                Console.WriteLine();
+
+                Console.WriteLine("1) Listar alunos cadastrados");
+                Console.WriteLine("2) Cadastrar novo aluno");
+                Console.WriteLine("3) Editar um aluno existente");
+                Console.WriteLine("4) Remover um aluno existente");
+                Console.WriteLine("5) Salvar cadastro atual e sair");
+                Console.WriteLine("6) Sair sem salvar");
+
+                Console.WriteLine();
+                Console.Write("Digite a opção desejada: ");
+
+                opcao = int.Parse(Console.ReadLine());
+
+                switch (opcao)
+                {
+                    case 1:
+                        cadastro.Listar();
+                        break;
+                    case 2:
+                        cadastro.Adicionar();
+                        break;
+                    case 3:
+                        cadastro.Editar();
+                        break;
+                    case 4:
+                        cadastro.Remover();
+                        break;
+                    case 5:
+                        cadastro.SalvarCadastroEmArquivo();
+                        break;
+                    case 6:
+                        break;
+                    default:
+                        Console.WriteLine("Erro! Opção inexistente.");
+                        break;
+                }
+
+                Console.ReadKey();
+            }
+            while (opcao != 5 && opcao != 6);
+        }
+    }
+}</code></pre>
+  <p>
+   15) Crie um programa que pergunte ao usuário o nome de um arquivo e pergunte se ele deseja criptografar ou descriptografar. O resultado será salvo em um novo arquivo.
+   <br/>
+   <b>DICA:</b> Use os métodos <tt>Encrypt</tt> e <tt>Decrypt</tt> da classe <b><tt>Spartacus.Net.Cryptor</tt></b>, da biblioteca <b><a target="_blank" href="../spartacus.html">Spartacus</a></b>.
+  </p>
+  <hr/>
+ </body>
+</html>

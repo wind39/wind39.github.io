@@ -460,7 +460,6 @@
     <None Include="curso\modulo1capitulo5-off.pptx" />
     <None Include="curso\modulo1capitulo6-off.pptx" />
     <None Include="curso\modulo1capitulo7-off.pptx" />
-    <None Include="curso\modulo1exemplos5-off.html" />
     <None Include="curso\modulo1lista5-off.html" />
     <None Include="curso\modulo1lista6-off.html" />
     <None Include="curso\modulo1lista7-off.html" />
@@ -806,6 +805,16 @@
     <None Include="curso\correcoes\m1a1_felipe.txt" />
     <None Include="curso\correcoes\m1a1_jaquison.txt" />
     <None Include="curso\correcoes\m1a1_rodrigo.txt" />
+    <None Include="curso\modulo2respostas3.html" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\bin\Debug\alunos.dat" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\bin\Debug\Lista3Exercicio14.exe" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\bin\Debug\Lista3Exercicio14.exe.mdb" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\Aluno.cs" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\Lista3Exercicio14.csproj" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\ListaDeAlunos.cs" />
+    <None Include="curso\Modulo2\Lista3Exercicio14\Program.cs" />
+    <None Include="curso\modulo1exemplos5.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
