@@ -679,8 +679,6 @@
     <None Include="curso\Modulo2\Calculadora\Properties\AssemblyInfo.cs" />
     <None Include="curso\Modulo2\Calculadora\Calculadora.cs" />
     <None Include="curso\Modulo2\Calculadora\Calculadora.csproj" />
-    <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll" />
-    <None Include="curso\Modulo2\Modulo2\bin\Debug\Calculadora.dll.mdb" />
     <None Include="curso\modulo2respostas2.html" />
     <None Include="curso\modulo1respostas4.html" />
     <None Include="curso\Modulo1\Lista4Exercicio01\bin\Debug\Lista4Exercicio01.exe" />
@@ -762,7 +760,6 @@
     <None Include="curso\Modulo2\Lista2Exercicio09\Properties\AssemblyInfo.cs" />
     <None Include="curso\Modulo2\Lista2Exercicio09\Lista2Exercicio09.csproj" />
     <None Include="curso\Modulo2\Lista2Exercicio09\Program.cs" />
-    <None Include="curso\Modulo2\Modulo2\NumeroNegativoException.cs" />
     <None Include="curso\Modulo1\Lista4Exercicio11\bin\Debug\Lista4Exercicio11.exe" />
     <None Include="curso\Modulo1\Lista4Exercicio11\bin\Debug\Lista4Exercicio11.exe.mdb" />
     <None Include="curso\Modulo1\Lista4Exercicio11\Properties\AssemblyInfo.cs" />
@@ -815,6 +812,27 @@
     <None Include="curso\Modulo2\Lista3Exercicio14\ListaDeAlunos.cs" />
     <None Include="curso\Modulo2\Lista3Exercicio14\Program.cs" />
     <None Include="curso\modulo1exemplos5.html" />
+    <None Include="curso\Modulo2\EntradaDeDados\bin\Debug\EntradaDeDados.dll" />
+    <None Include="curso\Modulo2\EntradaDeDados\bin\Debug\EntradaDeDados.dll.mdb" />
+    <None Include="curso\Modulo2\EntradaDeDados\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo2\EntradaDeDados\EntradaDeDados.csproj" />
+    <None Include="curso\Modulo2\EntradaDeDados\Variaveis.cs" />
+    <None Include="curso\Modulo2\EntradaDeDados\Vetores.cs" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\bin\Debug\EntradaDeDados.dll" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\bin\Debug\EntradaDeDados.dll.mdb" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\bin\Debug\Lista2Exercicio10.exe" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\bin\Debug\Lista2Exercicio10.exe.mdb" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\Properties\AssemblyInfo.cs" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\Lista2Exercicio10.csproj" />
+    <None Include="curso\Modulo2\Lista2Exercicio10\Program.cs" />
+    <None Include="curso\EntradaDeDados.dll" />
+    <None Include="curso\Modulo2\Modulo2\Cliente.cs" />
+    <None Include="curso\Modulo2\Modulo2\Operacao.cs" />
+    <None Include="curso\Modulo2\Modulo2\bin\Debug\clientes.dat" />
+    <None Include="curso\Modulo2\Modulo2\bin\Debug\operacoes.dat" />
+    <None Include="curso\clientes.dat" />
+    <None Include="curso\operacoes.dat" />
+    <None Include="curso\modulo2prova1-off.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

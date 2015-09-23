@@ -6,85 +6,33 @@ namespace Modulo2
     {
         public static void Main(string[] args)
         {
-            /*System.Collections.Generic.List<Aluno> cadastro;
-            Aluno a;
-            System.IO.BinaryReader r = null;
-            int n;
-
-            cadastro = new System.Collections.Generic.List<Aluno>();
-
-            try
-            {
-                r = new System.IO.BinaryReader(new System.IO.FileStream("alunos.dat", System.IO.FileMode.Open));
-
-                n = r.ReadInt32();
-                for (int i = 0; i < n; i++)
-                {
-                    a = new Aluno();
-
-                    a.nome = r.ReadString();
-                    a.idade = r.ReadInt32();
-                    a.nasc = DateTime.Parse(r.ReadString());
-                    a.ultimanota = r.ReadDouble();
-
-                    cadastro.Add(a);
-                }
-
-                for (int i = 0; i < cadastro.Count; i++)
-                    Console.WriteLine("O aluno {0} tem {1} anos, nasceu no dia {2} e a nota da última prova foi {3}.", cadastro[i].nome, cadastro[i].idade, cadastro[i].nasc.ToString("d"), cadastro[i].ultimanota);
-            }
-            catch (System.Exception exc)
-            {
-                Console.WriteLine(exc.Message);
-            }
-            finally
-            {
-                if (r != null)
-                    r.Close();
-            }*/
-
-            /*System.Collections.Generic.List<Aluno> cadastro;
-            Aluno a;
+            System.Collections.Generic.List<Cliente> clientes;
+            System.Collections.Generic.List<Operacao> operacoes;
             System.IO.BinaryWriter w = null;
 
-            cadastro = new System.Collections.Generic.List<Aluno>();
-
-            a = new Aluno(
-                "William Ivanski",
-                27,
-                new DateTime(1988, 5, 8),
-                9.2
-            );
-            cadastro.Add(a);
-
-            a = new Aluno(
-                "José Silva",
-                34,
-                new DateTime(1981, 7, 18),
-                9.8
-            );
-            cadastro.Add(a);
-
-            a = new Aluno(
-                "Pedro Silva",
-                21,
-                new DateTime(1994, 9, 8),
-                8.5
-            );
-            cadastro.Add(a);
+            clientes = new System.Collections.Generic.List<Cliente>();
+            clientes.Add(new Cliente("Mickey", 1000, 53210.95));
+            clientes.Add(new Cliente("Pateta", 1001, 14500.3));
+            clientes.Add(new Cliente("Pato Donald", 1002, 16732.0));
+            clientes.Add(new Cliente("Minnie", 1003, 12504.1));
+            clientes.Add(new Cliente("Pluto", 1004, 7450.0));
+            clientes.Add(new Cliente("Margarida", 1005, 5698.5));
+            clientes.Add(new Cliente("Tio Patinhas", 1006, 2890835.01));
+            clientes.Add(new Cliente("Professor Pardal", 1007, 49680.2));
+            clientes.Add(new Cliente("Simba", 1008, 10990.7));
+            clientes.Add(new Cliente("Alladin", 1009, 88340.8));
 
             try
             {
-                w = new System.IO.BinaryWriter(new System.IO.FileStream("alunos.dat", System.IO.FileMode.Create));
+                w = new System.IO.BinaryWriter(new System.IO.FileStream("clientes.dat", System.IO.FileMode.Create));
 
-                w.Write(cadastro.Count);
+                w.Write(clientes.Count);
 
-                for (int i = 0; i < cadastro.Count; i++)
+                for (int i = 0; i < clientes.Count; i++)
                 {
-                    w.Write(cadastro[i].nome);
-                    w.Write(cadastro[i].idade);
-                    w.Write(cadastro[i].nasc.ToString("d"));
-                    w.Write(cadastro[i].ultimanota);
+                    w.Write(clientes[i].nome);
+                    w.Write(clientes[i].numeroconta);
+                    w.Write(clientes[i].saldo);
                 }
             }
             catch (System.Exception exc)
@@ -95,76 +43,43 @@ namespace Modulo2
             {
                 if (w != null)
                     w.Close();
-            }*/
+            }
 
-            /*System.Collections.Generic.List<Aluno> cadastro;
-            Aluno a;
-            System.IO.StreamReader r = null;
-
-            cadastro = new System.Collections.Generic.List<Aluno>();
+            operacoes = new System.Collections.Generic.List<Operacao>();
+            operacoes.Add(new Operacao('D', 1000, 5000));
+            operacoes.Add(new Operacao('C', 1003, 5000));
+            operacoes.Add(new Operacao('D', 1000, 3000));
+            operacoes.Add(new Operacao('C', 1004, 3000));
+            operacoes.Add(new Operacao('D', 1001, 350));
+            operacoes.Add(new Operacao('D', 1001, 635));
+            operacoes.Add(new Operacao('D', 1001, 100));
+            operacoes.Add(new Operacao('D', 1002, 7500));
+            operacoes.Add(new Operacao('C', 1005, 7500));
+            operacoes.Add(new Operacao('D', 1005, 1200));
+            operacoes.Add(new Operacao('D', 1006, 90000));
+            operacoes.Add(new Operacao('C', 1000, 10000));
+            operacoes.Add(new Operacao('C', 1001, 10000));
+            operacoes.Add(new Operacao('C', 1002, 10000));
+            operacoes.Add(new Operacao('C', 1003, 10000));
+            operacoes.Add(new Operacao('C', 1004, 10000));
+            operacoes.Add(new Operacao('C', 1005, 10000));
+            operacoes.Add(new Operacao('C', 1007, 10000));
+            operacoes.Add(new Operacao('C', 1008, 10000));
+            operacoes.Add(new Operacao('C', 1009, 10000));
+            operacoes.Add(new Operacao('D', 1007, 2350));
 
             try
             {
-                r = new System.IO.StreamReader("alunos.csv", System.Text.Encoding.GetEncoding("iso-8859-15"));
+                w = new System.IO.BinaryWriter(new System.IO.FileStream("operacoes.dat", System.IO.FileMode.Create));
 
-                r.ReadLine();
-                while (! r.EndOfStream)
+                w.Write(operacoes.Count);
+
+                for (int i = 0; i < operacoes.Count; i++)
                 {
-                    a = new Aluno();
-                    a.LeCSV(r.ReadLine());
-                    cadastro.Add(a);
+                    w.Write(operacoes[i].tipo);
+                    w.Write(operacoes[i].numeroconta);
+                    w.Write(operacoes[i].valor);
                 }
-
-                for (int i = 0; i < cadastro.Count; i++)
-                    Console.WriteLine("O aluno {0} tem {1} anos, nasceu no dia {2} e a nota da última prova foi {3}.", cadastro[i].nome, cadastro[i].idade, cadastro[i].nasc.ToString("d"), cadastro[i].ultimanota);
-            }
-            catch (System.Exception exc)
-            {
-                Console.WriteLine(exc.Message);
-            }
-            finally
-            {
-                if (r != null)
-                    r.Close();
-            }*/
-
-            /*System.Collections.Generic.List<Aluno> cadastro;
-            Aluno a;
-            System.IO.StreamWriter w = null;
-
-            cadastro = new System.Collections.Generic.List<Aluno>();
-
-            a = new Aluno(
-                "William Ivanski",
-                27,
-                new DateTime(1988, 5, 8),
-                9.2
-            );
-            cadastro.Add(a);
-
-            a = new Aluno(
-                "José Silva",
-                34,
-                new DateTime(1981, 7, 18),
-                9.8
-            );
-            cadastro.Add(a);
-
-            a = new Aluno(
-                "Pedro Silva",
-                21,
-                new DateTime(1994, 9, 8),
-                8.5
-            );
-            cadastro.Add(a);
-
-            try
-            {
-                w = new System.IO.StreamWriter("alunos.csv", false, System.Text.Encoding.GetEncoding("iso-8859-15"));
-
-                w.WriteLine("NOME;IDADE;DATA DE NASCIMENTO;ÚLTIMA NOTA");
-                for (int i = 0; i < cadastro.Count; i++)
-                    w.WriteLine(cadastro[i].EscreveCSV());
             }
             catch (System.Exception exc)
             {
@@ -174,25 +89,6 @@ namespace Modulo2
             {
                 if (w != null)
                     w.Close();
-            }*/
-
-            System.IO.FileInfo info;
-
-            System.IO.Directory.GetLogicalDrives();
-
-            foreach (string f in System.IO.Directory.GetFiles("/home/william/Projects/Repositories/wind39.github.io/curso/Modulo2/Modulo2/bin/Debug/"))
-            {
-                info = new System.IO.FileInfo(f);
-
-                Console.WriteLine(info.Extension);
-                Console.WriteLine(info.Name);
-                Console.WriteLine(info.FullName);
-                Console.WriteLine(info.Length);
-                Console.WriteLine(info.CreationTime);
-                Console.WriteLine(info.LastAccessTime);
-                Console.WriteLine(info.LastWriteTime);
-                Console.WriteLine(info.DirectoryName);
-                Console.WriteLine();
             }
 
             Console.ReadKey();

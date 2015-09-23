@@ -205,5 +205,427 @@ namespace Lista2Exercicio09
    Crie um programa para usar essa biblioteca e utilize cada um dos exemplos acima.
   </p>
   <hr/>
+  <pre><code>// EntradaDeDados.dll - Variaveis.cs
+using System;
+
+namespace EntradaDeDados
+{
+    public class Variaveis
+    {
+        public Variaveis()
+        {
+        }
+
+        public int LeInt()
+        {
+            bool digitou_certo;
+            int valor;
+
+            do
+            {
+                Console.Write("Digite um número inteiro: ");
+                digitou_certo = int.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um número inteiro.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public int LeInt(string p_mensagem)
+        {
+            bool digitou_certo;
+            int valor;
+
+            do
+            {
+                Console.Write(p_mensagem);
+                digitou_certo = int.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um número inteiro.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public double LeDouble()
+        {
+            bool digitou_certo;
+            double valor;
+
+            do
+            {
+                Console.Write("Digite um número real: ");
+                digitou_certo = double.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um número real.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public double LeDouble(string p_mensagem)
+        {
+            bool digitou_certo;
+            double valor;
+
+            do
+            {
+                Console.Write(p_mensagem);
+                digitou_certo = double.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um número real.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public char LeChar()
+        {
+            bool digitou_certo;
+            char valor;
+
+            do
+            {
+                Console.Write("Digite um caractere: ");
+                digitou_certo = char.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um caractere.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public char LeChar(string p_mensagem)
+        {
+            bool digitou_certo;
+            char valor;
+
+            do
+            {
+                Console.Write(p_mensagem);
+                digitou_certo = char.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é um caractere.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public string LeString()
+        {
+            Console.Write("Digite um texto: ");
+            return Console.ReadLine();
+        }
+
+        public string LeString(string p_mensagem)
+        {
+            Console.Write(p_mensagem);
+            return Console.ReadLine();
+        }
+
+        public DateTime LeDateTime()
+        {
+            bool digitou_certo;
+            DateTime valor;
+
+            do
+            {
+                Console.Write("Digite uma data/hora: ");
+                digitou_certo = DateTime.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é uma data/hora.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+
+        public DateTime LeDateTime(string p_mensagem)
+        {
+            bool digitou_certo;
+            DateTime valor;
+
+            do
+            {
+                Console.Write(p_mensagem);
+                digitou_certo = DateTime.TryParse(Console.ReadLine(), out valor);
+
+                if (!digitou_certo)
+                    Console.WriteLine("Erro, valor digitado não é uma data/hora.");
+            }
+            while (!digitou_certo);
+
+            return valor;
+        }
+    }
+}
+
+// EntradaDeDados - Vetores.cs
+using System;
+using System.Collections.Generic;
+
+namespace EntradaDeDados
+{
+    public class Vetores
+    {
+        private Variaveis variaveis;
+
+        public Vetores()
+        {
+            this.variaveis = new Variaveis();
+        }
+
+        public int[] LeVetorEstaticoInt()
+        {
+            int[] vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new int[n];
+
+            for (int i = 0; i &lt; n; i++)
+                vetor[i] = this.variaveis.LeInt("Digite o elemento " + i.ToString() + ": ");
+
+            return vetor;
+        }
+
+        public double[] LeVetorEstaticoDouble()
+        {
+            double[] vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new double[n];
+
+            for (int i = 0; i &lt; n; i++)
+                vetor[i] = this.variaveis.LeDouble("Digite o elemento " + i.ToString() + ": ");
+
+            return vetor;
+        }
+
+        public char[] LeVetorEstaticoChar()
+        {
+            char[] vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new char[n];
+
+            for (int i = 0; i &lt; n; i++)
+                vetor[i] = this.variaveis.LeChar("Digite o elemento " + i.ToString() + ": ");
+
+            return vetor;
+        }
+
+        public string[] LeVetorEstaticoString()
+        {
+            string[] vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new string[n];
+
+            for (int i = 0; i &lt; n; i++)
+                vetor[i] = this.variaveis.LeString("Digite o elemento " + i.ToString() + ": ");
+
+            return vetor;
+        }
+
+        public DateTime[] LeVetorEstaticoDateTime()
+        {
+            DateTime[] vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new DateTime[n];
+
+            for (int i = 0; i &lt; n; i++)
+                vetor[i] = this.variaveis.LeDateTime("Digite o elemento " + i.ToString() + ": ");
+
+            return vetor;
+        }
+
+        public List&lt;int&gt; LeVetorDinamicoInt()
+        {
+            List&lt;int&gt; vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new List&lt;int&gt;();
+
+            for (int i = 0; i &lt; n; i++)
+                vetor.Add(this.variaveis.LeInt("Digite o elemento " + i.ToString() + ": "));
+
+            return vetor;
+        }
+
+        public List&lt;double&gt; LeVetorDinamicoDouble()
+        {
+            List&lt;double&gt; vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new List&lt;double&gt;();
+
+            for (int i = 0; i &lt; n; i++)
+                vetor.Add(this.variaveis.LeDouble("Digite o elemento " + i.ToString() + ": "));
+
+            return vetor;
+        }
+
+        public List&lt;char&gt; LeVetorDinamicoChar()
+        {
+            List&lt;char&gt; vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new List&lt;char&gt;();
+
+            for (int i = 0; i &lt; n; i++)
+                vetor.Add(this.variaveis.LeChar("Digite o elemento " + i.ToString() + ": "));
+
+            return vetor;
+        }
+
+        public List&lt;string&gt; LeVetorDinamicoString()
+        {
+            List&lt;string&gt; vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new List&lt;string&gt;();
+
+            for (int i = 0; i &lt; n; i++)
+                vetor.Add(this.variaveis.LeString("Digite o elemento " + i.ToString() + ": "));
+
+            return vetor;
+        }
+
+        public List&lt;DateTime&gt; LeVetorDinamicoDateTime()
+        {
+            List&lt;DateTime&gt; vetor;
+            int n;
+
+            n = this.variaveis.LeInt("Digite o número de elementos do vetor: ");
+
+            vetor = new List&lt;DateTime&gt;();
+
+            for (int i = 0; i &lt; n; i++)
+                vetor.Add(this.variaveis.LeDateTime("Digite o elemento " + i.ToString() + ": "));
+
+            return vetor;
+        }
+    }
+}
+
+// Teste.exe - Program.cs
+using System;
+using System.Collections.Generic;
+using EntradaDeDados;
+
+namespace Lista2Exercicio10
+{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            Variaveis variaveis;
+            int i;
+            double d;
+            char c;
+            string s;
+            DateTime t;
+            Vetores vetores;
+            int[] vei;
+            double[] ved;
+            char[] vec;
+            string[] ves;
+            DateTime[] vet;
+            List&lt;int&gt; vdi;
+            List&lt;double&gt; vdd;
+            List&lt;char&gt; vdc;
+            List&lt;string&gt; vds;
+            List&lt;DateTime&gt; vdt;
+
+            variaveis = new Variaveis();
+            vetores = new Vetores();
+
+            Console.WriteLine("Exemplo de uso da biblioteca EntradaDeDados para variáveis:");
+            Console.WriteLine();
+            i = variaveis.LeInt();
+            Console.WriteLine();
+            d = variaveis.LeDouble();
+            Console.WriteLine();
+            c = variaveis.LeChar();
+            Console.WriteLine();
+            s = variaveis.LeString();
+            Console.WriteLine();
+            t = variaveis.LeDateTime();
+            Console.WriteLine();
+
+            Console.WriteLine("Exemplo de uso da biblioteca EntradaDeDados para vetores estáticos:");
+            Console.WriteLine();
+            Console.WriteLine("Vetor de int: ");
+            vei = vetores.LeVetorEstaticoInt();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de double: ");
+            ved = vetores.LeVetorEstaticoDouble();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de char: ");
+            vec = vetores.LeVetorEstaticoChar();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de string: ");
+            ves = vetores.LeVetorEstaticoString();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de DateTime: ");
+            vet = vetores.LeVetorEstaticoDateTime();
+            Console.WriteLine();
+
+            Console.WriteLine("Exemplo de uso da biblioteca EntradaDeDados para vetores dinâmicos:");
+            Console.WriteLine();
+            Console.WriteLine("Vetor de int: ");
+            vdi = vetores.LeVetorDinamicoInt();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de double: ");
+            vdd = vetores.LeVetorDinamicoDouble();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de char: ");
+            vdc = vetores.LeVetorDinamicoChar();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de string: ");
+            vds = vetores.LeVetorDinamicoString();
+            Console.WriteLine();
+            Console.WriteLine("Vetor de DateTime: ");
+            vdt = vetores.LeVetorDinamicoDateTime();
+            Console.WriteLine();
+
+            Console.ReadKey();
+        }
+    }
+}
+</code></pre>
  </body>
 </html>

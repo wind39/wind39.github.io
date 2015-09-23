@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{F20FEEF0-5662-4DF2-864E-3EE0D2CC60E4}</ProjectGuid>
+    <ProjectGuid>{43A44B16-133A-4615-9296-53CACF921EE2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lista3Exercicio14</RootNamespace>
-    <AssemblyName>Lista3Exercicio14</AssemblyName>
+    <RootNamespace>Lista2Exercicio10</RootNamespace>
+    <AssemblyName>Lista2Exercicio10</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,8 +34,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\EntradaDeDados\EntradaDeDados.csproj">
+      <Project>{996E7CB1-C261-411B-8B63-A91CF03B9A6A}</Project>
+      <Name>EntradaDeDados</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

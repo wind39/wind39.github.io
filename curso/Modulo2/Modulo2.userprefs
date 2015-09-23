@@ -1,10 +1,10 @@
-﻿<Properties StartupItem="Lista3Exercicio14/Lista3Exercicio14.csproj">
+﻿<Properties StartupItem="Modulo2/Modulo2.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lista3Exercicio14/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Modulo2/Program.cs">
     <Files>
-      <File FileName="Lista3Exercicio14/Program.cs" Line="23" Column="62" />
-      <File FileName="Lista3Exercicio14/Aluno.cs" Line="1" Column="1" />
-      <File FileName="Lista3Exercicio14/ListaDeAlunos.cs" Line="1" Column="1" />
+      <File FileName="Modulo2/Program.cs" Line="17" Column="64" />
+      <File FileName="Modulo2/Cliente.cs" Line="19" Column="34" />
+      <File FileName="Modulo2/Operacao.cs" Line="19" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
