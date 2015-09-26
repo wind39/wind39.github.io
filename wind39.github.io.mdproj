@@ -832,7 +832,6 @@
     <None Include="curso\Modulo2\Modulo2\bin\Debug\operacoes.dat" />
     <None Include="curso\clientes.dat" />
     <None Include="curso\operacoes.dat" />
-    <None Include="curso\modulo2prova1-off.html" />
     <None Include="curso\railroad-elements.jpg" />
     <None Include="curso\trem.png" />
     <None Include="curso\trilhos_caminho.png" />
@@ -840,6 +839,7 @@
     <None Include="curso\trilhos_inicio.png" />
     <None Include="curso\trilhos_juncao.png" />
     <None Include="curso\trilhos_juncao_retorno.png" />
+    <None Include="curso\modulo2prova1.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
