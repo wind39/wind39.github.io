@@ -1,0 +1,60 @@
+﻿Cristiano Raffi Cunha
+
+
+A1 Q1: ESCRITA DE ALUNOS EM ARQUIVO .CSV (40 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Comentários: Sua solução é muito elegante, você usou propriedades ao invés de atributos públicos. Você demonstrou compreensão total sobre todos os conceitos e ferramentas ensinadas no curso até agora. A forma que você usou para abrir o arquivo para escrita foi perfeita. Porém, a função SalvarAlunos não precisava receber 3 parâmetros. Como ela faz parte da classe Aluno, no segundo for bastava chamar ListAlunos[i].SalvarAlunos().
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 40 = 40
+
+
+
+A1 Q2: LEITURA DE CLIENTES DE ARQUIVO .DAT (30 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Comentários: Perfeita a forma de abertura de arquivo binário para leitura.
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 30 = 30
+
+
+
+A1 Q3: LEITURA DE OPERAÇÕES DE ARQUIVO .DAT (30 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Comentários: Novamente, perfeita a forma de abertura de arquivo binário para leitura.
+
+Nota: (10 + 10 + 50 + 20 + 10) / 100 * 30 = 30
+
+
+
+A1 Q4: ATUALIZAÇÃO DE SALDO E ESCRITA DE CLIENTES EM ARQUIVO .DAT (80 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 20/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Comentários: Você estava indo pelo caminho correto. Criou as classes específicas para pessoas e operações, e implementou a alimentação de listas a partir dos arquivos binários. Valeria muito à pena ter terminado esse exercício e entregue mesmo com atraso, você perderia apenas os 10% de pontualidade.
+
+Nota: (10 + 10 + 20 + 20 + 10) / 100 * 80 = 56
+
+
+
+Nota Final: 40 + 30 + 30 + 56 = 156 = 100 (parabéns!!)
