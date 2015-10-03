@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 
 namespace Modulo2
 {
@@ -11,4 +11,4 @@ namespace Modulo2
             Console.ReadKey();
         }
     }
-}*/
+}

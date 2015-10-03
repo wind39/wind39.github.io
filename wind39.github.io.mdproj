@@ -837,6 +837,8 @@
     <None Include="curso\trilhos_juncao_retorno.png" />
     <None Include="curso\modulo2prova1.html" />
     <None Include="curso\correcoes\m1a2_cristiano.txt" />
+    <None Include="curso\modulo2capitulo4-off.pptx" />
+    <None Include="curso\modulo2lista4-off.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
