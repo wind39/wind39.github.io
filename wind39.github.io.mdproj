@@ -839,6 +839,14 @@
     <None Include="curso\modulo2lista4-off.html" />
     <None Include="curso\modulo1lista5.html" />
     <None Include="curso\modulo2capitulo4.pptx" />
+    <None Include="curso\certificados\assinatura.png" />
+    <None Include="curso\certificados\M1A_Cristiano.png" />
+    <None Include="curso\certificados\M1A_Cristiano.svg" />
+    <None Include="curso\certificados\M1A_Roldao.png" />
+    <None Include="curso\certificados\M1A_Roldao.svg" />
+    <None Include="curso\certificados\M1A_Vinicius.png" />
+    <None Include="curso\certificados\M1A_Vinicius.svg" />
+    <None Include="curso\certificados\modelo_certificado.svg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />
