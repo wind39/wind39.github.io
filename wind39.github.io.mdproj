@@ -847,6 +847,8 @@
     <None Include="curso\certificados\M1A_Vinicius.png" />
     <None Include="curso\certificados\M1A_Vinicius.svg" />
     <None Include="curso\certificados\modelo_certificado.svg" />
+    <None Include="curso\M2C4_AnaliseRequisitos.dia" />
+    <None Include="curso\M2C4_AnaliseRequisitos.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="spartacus\ex01\" />

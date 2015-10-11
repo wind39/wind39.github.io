@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntradaDeDados", "EntradaDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lista2Exercicio10", "Lista2Exercicio10\Lista2Exercicio10.csproj", "{43A44B16-133A-4615-9296-53CACF921EE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadastroEscola", "CadastroEscola\CadastroEscola.csproj", "{20336740-6AED-4734-9054-61FDCCACCA53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -33,6 +35,10 @@ Global
 		{1B1C6DF9-CAD5-4ADA-B42A-D1FA6D16C297}.Debug|x86.Build.0 = Debug|x86
 		{1B1C6DF9-CAD5-4ADA-B42A-D1FA6D16C297}.Release|x86.ActiveCfg = Release|x86
 		{1B1C6DF9-CAD5-4ADA-B42A-D1FA6D16C297}.Release|x86.Build.0 = Release|x86
+		{20336740-6AED-4734-9054-61FDCCACCA53}.Debug|x86.ActiveCfg = Debug|x86
+		{20336740-6AED-4734-9054-61FDCCACCA53}.Debug|x86.Build.0 = Debug|x86
+		{20336740-6AED-4734-9054-61FDCCACCA53}.Release|x86.ActiveCfg = Release|x86
+		{20336740-6AED-4734-9054-61FDCCACCA53}.Release|x86.Build.0 = Release|x86
 		{21AB542D-BF66-4EE4-BBDB-C7791609EA4B}.Debug|x86.ActiveCfg = Debug|x86
 		{21AB542D-BF66-4EE4-BBDB-C7791609EA4B}.Debug|x86.Build.0 = Debug|x86
 		{21AB542D-BF66-4EE4-BBDB-C7791609EA4B}.Release|x86.ActiveCfg = Release|x86
