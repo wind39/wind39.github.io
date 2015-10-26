@@ -74,14 +74,14 @@
                         <pre><code>cd mono-4.2.1/
 ./configure --prefix=/opt/mono
 make
-make install</code></pre>
+sudo make install</code></pre>
 						<p>5) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
 						<pre><code>ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
 						<p>6) Compile o XSP:</p>
 						<pre><code>cd ../xsp-3.8
 env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
 make
-make install</code></pre>
+sudo make install</code></pre>
 						<p>7) Verifique a versão do MONO:</p>
 						<pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
 						<p>8) Suponha que o seu projeto est&aacute; na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
