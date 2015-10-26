@@ -41,15 +41,6 @@
     <None Include="logo.ico" />
     <None Include="curso\euclides.png" />
     <None Include="sitemap.xml" />
-    <None Include="spartacus\ex01\basecadastro.db" />
-    <None Include="spartacus\ex01\imagem01.png" />
-    <None Include="spartacus\ex01\imagem02.png" />
-    <None Include="spartacus\ex01\imagem03.png" />
-    <None Include="spartacus\ex01\imagem04.png" />
-    <None Include="spartacus\ex01\imagem05.png" />
-    <None Include="spartacus\ex01\imagem06.png" />
-    <None Include="spartacus\ex02\basecadastro.mdb" />
-    <None Include="spartacus\ex02\imagem01.png" />
     <None Include="curso\background.png" />
     <None Include="images\background.jpg" />
     <None Include="spartacus\html\annotated.html" />
@@ -536,9 +527,7 @@
     <None Include="curso\M2C4_AnaliseRequisitos.dia" />
     <None Include="curso\M2C4_AnaliseRequisitos.png" />
     <None Include="curso\modulo2capitulo4.ppt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="spartacus\ex01\" />
-    <Folder Include="spartacus\ex02\" />
+    <None Include="spartacus\basecadastro.db" />
+    <None Include="blog.html" />
   </ItemGroup>
 </Project>

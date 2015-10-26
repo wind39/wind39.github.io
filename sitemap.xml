@@ -79,6 +79,22 @@
       <changefreq>daily</changefreq>
    </url>
    <url>
+      <loc>http://williamivanski.com.br/curso/modulo2lista3.html</loc>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>http://williamivanski.com.br/curso/modulo2repostas3.html</loc>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>http://williamivanski.com.br/curso/modulo2lista3.html</loc>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>http://williamivanski.com.br/curso/modulo2repostas3.html</loc>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
       <loc>http://williamivanski.com.br/modulo3.html</loc>
       <changefreq>daily</changefreq>
    </url>
@@ -88,6 +104,10 @@
    </url>
    <url>
       <loc>http://williamivanski.com.br/spartacus.html</loc>
+      <changefreq>weekly</changefreq>
+   </url>
+   <url>
+      <loc>http://williamivanski.com.br/blog.html</loc>
       <changefreq>weekly</changefreq>
    </url>
 </urlset>

@@ -1,13 +1,20 @@
-<html>
+﻿<html>
     <head>
-        <title>William Ivanski - Sobre mim</title>
+        <title>William Ivanski - Blog</title>
         
         <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
         
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />
-        
+
+        <link href="github.min.css" rel="stylesheet"/>
+        <script src="highlight.min.js">
+        </script>
+        <script>
+          hljs.initHighlightingOnLoad();
+        </script>
+
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         
         <script>
@@ -40,7 +47,7 @@
                 <li class="first"><a href="index.html" accesskey="1" title="In&iacute;cio">In&iacute;cio</a></li>
                 <li><a href="curso.html" accesskey="2" title="Curso">Curso de Programa&ccedil;&atilde;o C#</a></li>
                 <li><a href="spartacus.html" accesskey="3" title="Spartacus">Biblioteca Spartacus</a></li>
-                <li><a href="blog.html" accesskey="4" title="Blog">Blog</a></li>
+                <li><a class="current" href="blog.html" accesskey="4" title="Blog">Blog</a></li>
                 <li><a href="sobremim.html" accesskey="5" title="Sobre mim">Sobre mim</a></li>
             </ul>
         </div>
@@ -52,17 +59,45 @@
             <!-- start content -->
             <div id="content">
             
-                <div class="post">
-                    <h2 class="title">Um pouco sobre mim</h2>
+                <div id="20101026" class="post">
+                    <h2 class="title">
+                        Compilando Mono e XSP no Linux&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/blog.html"></div>
+                    </h2>
                     <div class="entry">
-                        <h3>Tentando ser uma pessoa de qualidade desde 1988.</h3>
-                        <p>Sou um curitibano que dedicou boa parte de sua vida aos estudos, e que agora procura conciliar fam&iacute;lia e trabalho da melhor forma poss&iacute;vel. Posso dizer com sinceridade que sou feliz com minha fam&iacute;lia, minha esposa, minha filha e minha profiss&atilde;o.</p>
-                        <p>Sou formado em <em>Ci&ecirc;ncia da Computa&ccedil;&atilde;o</em> pela Universidade Federal do Paran&aacute; (<a target="_blank" href="http://www.ufpr.br">UFPR</a>). Meu trabalho de conclus&atilde;o de curso foi na &aacute;rea de Vis&atilde;o Computacional, onde desenvolvi um sistema para rastreamento e armazenamento de hist&oacute;rico de partidas de xadrez utilizando <em>webcams</em> de baixa qualidade.</p>
-                        <p>Desde 2009 trabalho na empresa <a target="_blank" href="http://www.adsistem.com.br">Adsistem Sistemas Administrativos</a>, onde me especializei no desenvolvimento de relat&oacute;rios dos mais variados tipos, incluindo relat&oacute;rios gerenciais e de BI (<em>Business Intelligence</em>, ou Intelig&ecirc;ncia de Neg&oacute;cio). Tamb&eacute;m adquiri um conhecimento profundo em desenvolvimento para bancos de dados e para Web.</p>
-                        <p>Tamb&eacute;m desde 2012 trabalho na empresa <a target="_blank" href="http://www.planningservice.com.br">Planning Service Transfer Pricing</a>, onde adquiri muita experi&ecirc;ncia na parte de administra&ccedil;&atilde;o de bancos de dados, administra&ccedil;&atilde;o de redes e servidores Linux, e tamb&eacute;m como gerente de projetos de desenvolvimento.<p>
-                        <p>Minha esposa chama-se Pollyanna, e temos uma filha chamada Alice. A experi&ecirc;ncia de estar casado e ser pai &eacute; impressionante, muito mais valiosa do que qualquer diploma ou reconhecimento profissional. Sou muito grato a toda a paz, todo carinho e todo o amor que essas duas almas me proporcionam todos os dias. E com isso elas me fazem crescer, querer ser cada dia um marido melhor, um pai melhor, e tudo isso acaba se refletindo em como eu sou para a minha profiss&atilde;o e para a pr&oacute;pria sociedade.</p>
+                        <p>1) Baixe o c&oacute;digo-fonte do Mono e do XSP mais recentes <a href="http://origin-download.mono-project.com/sources/">aqui</a>.</p>
+                        <p>2) Extraia o tarball do Mono:</p>
+                        <pre><code>tar -xjvf mono-4.2.1.60.tar.bz2</code></pre>
+                        <p>3) Extraia o tarball do XSP:</p>
+                        <pre><code>tar -xzvf xsp-3.8.tar.gz</code></pre>
+                        <p>4) Compile o Mono:</p>
+                        <pre><code>cd mono-4.2.1/
+./configure --prefix=/opt/mono
+make
+make install</code></pre>
+						<p>5) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
+						<pre><code>ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
+						<p>6) Compile o XSP:</p>
+						<pre><code>cd ../xsp-3.8
+env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
+make
+make install</code></pre>
+						<p>7) Verifique a versão do MONO:</p>
+						<pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
+						<p>8) Suponha que o seu projeto est&aacute; na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
+						<pre><code>cd projeto
+env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
+						<p>9) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
                     </div>
                     <p class="meta">Curitiba, 12 de agosto de 2014.</p>
+                    <script src="https://apis.google.com/js/plusone.js">
+                    </script>
+                    <g:comments
+                        href="http://williamivanski.com.br/blog.html"
+                        width="642"
+                        first_party_property="BLOGGER"
+                        view_type="FILTERED_POSTMOD">
+                    </g:comments>
                 </div>
                 
             </div>
@@ -73,24 +108,9 @@
                 <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/113434597235835606932" data-rel="author"></div></br></br></br>
                 <ul>
                     <li>
-                        <img src="william.png" alt="William" />
-                    </li>
-                    <li>
-                        <h2>Contato</h2>
+                        <h2>Conte&uacute;do</h2>
                         <ul>
-                            <li><a href="mailto:william.ivanski@gmail.com">E-mail: william.ivanski@gmail.com</a></li>
-                            <li><a target="_blank" href="https://plus.google.com/+WilliamIvanski/about">Google+</a></li>
-                            <li><a target="_blank" href="https://twitter.com/WilliamIvanski">Twitter</a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/william.ivanski">Facebook</a></li>
-                            <li><a target="_blank" href="https://github.com/wind39">GitHub</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h2>Institui&ccedil;&otilde;es</h2>
-                        <ul>
-                            <li><a target="_blank" href="http://www.planningservice.com.br">Planning Service Transfer Pricing</a></li>
-                            <li><a target="_blank" href="http://www.adsistem.com.br">Adsistem Sistemas Administrativos</a></li>
-                            <li><a target="_blank" href="http://www.ufpr.br">Universidade Federal do Paran&aacute;</a></li>
+                            <li><a href="#20151026">Compilando Mono e XSP no Linux</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -107,3 +127,4 @@
         </div>
     </body>
 </html>
+
