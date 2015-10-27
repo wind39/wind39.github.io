@@ -65,29 +65,38 @@
                         <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/blog.html"></div>
                     </h2>
                     <div class="entry">
-                        <p>1) Baixe o c&oacute;digo-fonte do Mono e do XSP mais recentes <a target="_blank" href="http://origin-download.mono-project.com/sources/">aqui</a>.</p>
+                        <p>1) Baixe o c&oacute;digo-fonte do Mono, do XSP e da libgdiplus mais recentes <a target="_blank" href="http://origin-download.mono-project.com/sources/">aqui</a>.</p>
                         <p>2) Extraia o tarball do Mono:</p>
                         <pre><code>tar -xjvf mono-4.2.1.60.tar.bz2</code></pre>
                         <p>3) Extraia o tarball do XSP:</p>
                         <pre><code>tar -xzvf xsp-3.8.tar.gz</code></pre>
-                        <p>4) Compile o Mono:</p>
+                        <p>4) Extraia o tarball da libgdiplus:</p>
+                        <pre><code>tar -xzvf libgdiplus-3.12.tar.gz</code></pre>
+                        <p>5) Compile e instale o Mono:</p>
                         <pre><code>cd mono-4.2.1/
 ./configure --prefix=/opt/mono
 make
 sudo make install</code></pre>
-						<p>5) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
+						<p>6) Verifique a versão do MONO:</p>
+						<pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
+						<p>7) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
 						<pre><code>sudo ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
-						<p>6) Compile o XSP:</p>
+						<p>8) Compile e instale o XSP:</p>
 						<pre><code>cd ../xsp-3.8
 env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
 make
 sudo make install</code></pre>
-						<p>7) Verifique a versão do MONO:</p>
-						<pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
-						<p>8) Suponha que o seu projeto est&aacute; na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
+						<p>9) Instale a biblioteca <b>cairo</b>:</p>
+						<pre><code>sudo apt-get install libtool libcairo2-dev</code></pre>
+						<p>10) Compile e instale a libgdiplus:</p>
+						<pre><code>cd ../libgdiplus-3.12
+./configure --prefix=/opt/mono
+make
+sudo make install</code></pre>
+						<p>11) Suponha que o seu projeto est&aacute; na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
 						<pre><code>cd projeto
-env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
-						<p>9) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
+env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
+						<p>12) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
                     </div>
                     <p class="meta">Curitiba, 26 de outubro de 2015.</p>
                     <script src="https://apis.google.com/js/plusone.js">
