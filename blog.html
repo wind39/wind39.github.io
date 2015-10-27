@@ -76,7 +76,7 @@
 make
 sudo make install</code></pre>
 						<p>5) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
-						<pre><code>ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
+						<pre><code>sudo ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
 						<p>6) Compile o XSP:</p>
 						<pre><code>cd ../xsp-3.8
 env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
