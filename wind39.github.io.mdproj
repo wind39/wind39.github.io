@@ -448,7 +448,6 @@
     <None Include="modulo4.html" />
     <None Include="curso\modulo2lista1.html" />
     <None Include="curso\modulo2respostas1.html" />
-    <None Include="curso\modulo1capitulo5-off.pptx" />
     <None Include="curso\modulo1capitulo6-off.pptx" />
     <None Include="curso\modulo1capitulo7-off.pptx" />
     <None Include="curso\modulo1lista6-off.html" />
@@ -514,7 +513,6 @@
     <None Include="curso\trilhos_juncao_retorno.png" />
     <None Include="curso\modulo2prova1.html" />
     <None Include="curso\correcoes\m1a2_cristiano.txt" />
-    <None Include="curso\modulo2lista4-off.html" />
     <None Include="curso\modulo1lista5.html" />
     <None Include="curso\certificados\assinatura.png" />
     <None Include="curso\certificados\M1A_Cristiano.png" />
@@ -529,5 +527,7 @@
     <None Include="curso\modulo2capitulo4.ppt" />
     <None Include="spartacus\basecadastro.db" />
     <None Include="blog.html" />
+    <None Include="curso\modulo1capitulo5.pptx" />
+    <None Include="curso\modulo2lista4.html" />
   </ItemGroup>
 </Project>
