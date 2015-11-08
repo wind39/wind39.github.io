@@ -452,7 +452,6 @@
     <None Include="curso\modulo1capitulo7-off.pptx" />
     <None Include="curso\modulo1lista6-off.html" />
     <None Include="curso\modulo1lista7-off.html" />
-    <None Include="curso\modulo1respostas5-off.html" />
     <None Include="curso\modulo1respostas6-off.html" />
     <None Include="curso\modulo1respostas7-off.html" />
     <None Include="logo_curso.png" />
@@ -529,5 +528,6 @@
     <None Include="blog.html" />
     <None Include="curso\modulo1capitulo5.pptx" />
     <None Include="curso\modulo2lista4.html" />
+    <None Include="curso\modulo1respostas5.html" />
   </ItemGroup>
 </Project>

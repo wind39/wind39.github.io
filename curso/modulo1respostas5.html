@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Respostas 5
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+ </head>
+
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios Capítulo 5 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Dada uma sequência de <em>N</em> números, imprimi-la na ordem inversa.
+  </p>
+  <pre><code>List&lt;int&gt; vetor;
+int n;
+
+vetor = new List&lt;int&gt;();
+
+Console.Write("Quantos números? ");
+n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i &lt;= n; i++)
+{
+    Console.Write("Digite o número {0}: ", i);
+    vetor.Add(int.Parse(Console.ReadLine()));
+}
+
+Console.WriteLine("Os números que você digitou, na ordem inversa, são: ");
+
+for (int i = vetor.Count-1; i &gt;= 0; i--)
+    Console.WriteLine(vetor[i]);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   2) Dado um número <em>N</em>, imprimi-lo como uma soma de múltiplos de 10 mais a sua unidade.
+   <br/>
+   Exemplo: 472 = 400 + 70 + 2
+  </p>
+  <pre><code>List&lt;int&gt; vetor;
+string n;
+bool negativo;
+
+vetor = new List&lt;int&gt;();
+
+Console.Write("Digite um número inteiro: ");
+n = Console.ReadLine();
+
+negativo = false;
+foreach (char c in n.ToCharArray())
+{
+    if (c == '-')
+        negativo = true;
+    else
+        vetor.Add(int.Parse(c.ToString()));
+}
+vetor.Reverse();
+
+if (negativo)
+    Console.Write("{0} = -{1} - ", n, (vetor[vetor.Count-1] * Math.Pow(10, vetor.Count-1)));
+else
+    Console.Write("{0} = {1} + ", n, (vetor[vetor.Count-1] * Math.Pow(10, vetor.Count-1)));
+for (int i = vetor.Count - 2; i &gt; 0; i--)
+{
+    if (negativo)
+        Console.Write("{0} - ", (vetor[i] * Math.Pow(10, i)));
+    else
+        Console.Write("{0} + ", (vetor[i] * Math.Pow(10, i)));
+}
+Console.WriteLine("{0}", vetor[0]);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   3) Números <em>palíndromos</em> são aqueles que são lidos da direita para a esquerda da mesma maneira que da esquerda para a direita.
+   <br/>
+   Exemplo: o número 12321 é palíndromo, enquanto 123 não é.
+   <br/>
+   Dado um número <em>N</em>, informar se ele é palíndromo ou não.
+  </p>
+  <pre><code>List&lt;char&gt; vetor1, vetor2;
+string n;
+bool palindromo;
+int i;
+
+vetor1 = new List&lt;char&gt;();
+vetor2 = new List&lt;char&gt;();
+
+Console.Write("Digite um número natural: ");
+n = uint.Parse(Console.ReadLine()).ToString();
+
+foreach (char c in n.ToCharArray())
+{
+    vetor1.Add(c);
+    vetor2.Add(c);
+}
+vetor2.Reverse();
+
+palindromo = true;
+i = 0;
+while (i &lt; vetor1.Count && palindromo)
+{
+    palindromo = vetor1[i] == vetor2[i];
+    i++;
+}
+
+if (palindromo)
+    Console.WriteLine("O número {0} é palíndromo.", n);
+else
+    Console.WriteLine("O número {0} não é palíndromo.", n);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   4) Imprimir todos os números palíndromos entre 1 e 1000.
+  </p>
+  <pre><code>List&lt;char&gt; vetor1, vetor2;
+string n;
+bool palindromo;
+int i;
+
+vetor1 = new List&lt;char&gt;();
+vetor2 = new List&lt;char&gt;();
+
+for (int k = 1; k &lt;= 1000; k++)
+{
+    n = k.ToString();
+
+    foreach (char c in n.ToCharArray())
+    {
+        vetor1.Add(c);
+        vetor2.Add(c);
+    }
+    vetor2.Reverse();
+
+    palindromo = true;
+    i = 0;
+    while (i &lt; vetor1.Count && palindromo)
+    {
+        palindromo = vetor1[i] == vetor2[i];
+        i++;
+    }
+
+    if (palindromo)
+        Console.WriteLine(n);
+
+    vetor1.Clear();
+    vetor2.Clear();
+}
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   5) Tentando descobrir se um dado era viciado, um dono de cassino honesto (ha! ha! ha! ha!) o lançou <em>N</em> vezes. Dados os <em>N</em> resultados dos lançamentos, determinar o número de ocorrências de cada face.
+  </p>
+  <pre><code>int n;
+int face;
+int[] vetor;
+
+vetor = new int[7];
+
+for (int i = 0; i &lt; vetor.Length; i++)
+    vetor[i] = 0;
+
+Console.Write("Quantos lançamentos serão feitos? ");
+n = int.Parse(Console.ReadLine());
+
+for (int i = 1; i &lt;= n; i++)
+{
+    Console.Write("Digite o lançamento {0}: ", i);
+    face = int.Parse(Console.ReadLine());
+
+    if (face &lt; 1 || face &gt; 6)
+        vetor[0]++;
+    else
+        vetor[face]++;
+}
+
+Console.WriteLine();
+Console.WriteLine("Número de ocorrências de cada face:");
+
+for (int i = 1; i &lt; vetor.Length; i++)
+    Console.WriteLine("Face {0} = {1}", i, vetor[i]);
+
+Console.WriteLine("Você digitou faces inválidas {0} vezes.", vetor[0]);
+
+Console.ReadKey();</code></pre>
+  <hr/>
+  <p>
+   6) Dados dois vetores <em>X</em> e <em>Y</em>, ambos com <em>n</em> elementos, determinar o produto escalar desses vetores.
+  </p>
+  <hr/>
+  <p>
+   7) São dados dois números inteiros positivos <em>p</em> e <em>q</em>, sendo que o número de dígitos de <em>p</em> é menor ou igual ao número de dígitos de <em>q</em>. Verificar se <em>p</em> é um <em>subnúmero</em> de <em>q</em>.
+   <br/>
+   Exemplos:
+   <br/>
+   - <em>p</em> = 23, <em>q</em> = 57238, <em>p</em> é subnúmero de <em>q</em>.
+   <br/>
+   - <em>p</em> = 23, <em>q</em> = 258347, <em>p</em> não é subnúmero de <em>q</em>.
+  </p>
+  <hr/>
+  <p>
+   8) Dados dois números naturais <em>M</em> e <em>N</em>, uma frase com <em>M</em> letras e uma palavra com <em>N</em> letras, determine o número de vezes que a palavra ocorre na frase.
+   <br/>
+   Exemplo: Para <em>M</em> = 30, <em>N</em> = 3, a palavra <b>ANA</b> e a frase:
+   <br/>
+   <b>ANA E MARIANA GOSTAM DE BANANA</b>
+   <br/>
+   Temos que a palavra ocorre 4 vezes na frase.
+  </p>
+  <hr/>
+  <p>
+   9) Dada uma sequência de <em>N</em> números reais, determinar os números que compõem a sequência e o número de vezes que cada um deles ocorre na mesma.
+   <br/>
+   Exemplo: <em>N</em> = 8
+   <br/>
+   Sequência: -1.7, 3.0, 0.0, 1.5, 0.0, -1.7, 2.3, -1.7
+   <br/>
+   Saída:
+   <br/>
+   -1.7 ocorre 3 vezes
+   <br/>
+   3.0 ocorre 1 vez
+   <br/>
+   0.0 ocorre 2 vezes
+   <br/>
+   1.5 ocorre 1 vez
+   <br/>
+   2.3 ocorre 1 vez
+  </p>
+  <hr/>
+  <p>
+   10) Dados dois números naturais <em>M</em> e <em>N</em> e duas sequências ordenadas com <em>M</em> e <em>N</em> números inteiros, obter uma única sequência ordenada contendo todos os elementos das sequências originais sem repetição.
+  </p>
+  <hr/>
+  <p>
+   11) Dadas duas sequências com <em>N</em> números inteiros entre 0 e 9, interpretadas como dois números inteiros de <em>N</em> algarismos, calcular a sequência de números que representa a soma dos dois inteiros.
+  </p>
+  <hr/>
+  <p>
+   12) Calcule o valor do polinômio <em>p(x) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>n</sub>x<sup>n</sup></em> em <em>k</em> pontos distintos. São dados os valores de <em>n</em> (grau do polinômio), de <em>a<sub>0</sub>,a<sub>1</sub>,...,a<sub>n</sub></em> (coeficientes reais do polinômio), de <em>k</em> e dos pontos <em>x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub></em>.
+  </p>
+  <hr/>
+  <p>
+   13) Dado o polinômio <em>p(x) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>n</sub>x<sup>n</sup></em>, isto é, os valores de <em>n</em> e de <em>a<sub>0</sub>,a<sub>1</sub>,...,a<sub>n</sub></em>, determine os coeficientes reais da primeira derivada de <em>p(x)</em>.
+  </p>
+  <hr/>
+  <p>
+   14) Em uma classe há <em>N</em> alunos, cada um dos quais realizou <em>K</em> provas com pesos distintos. Dados <em>N</em>, <em>K</em>, os pesos das <em>K</em> provas e as notas de cada aluno, calcular a média ponderada das provas para cada aluno e a média aritmética da classe em cada uma das provas.
+  </p>
+ </body>
+</html>
