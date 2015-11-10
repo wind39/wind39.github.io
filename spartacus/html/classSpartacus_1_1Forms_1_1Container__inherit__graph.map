@@ -7,6 +7,7 @@
 <area shape="rect" id="node7" href="$classSpartacus_1_1Forms_1_1Memobox.html" title="Classe Memobox. Representa um componente em que o usuário pode digitar texto em várias linhas..." alt="" coords="252,259,435,285"/>
 <area shape="rect" id="node8" href="$classSpartacus_1_1Forms_1_1Menu.html" title="Classe Menu. Representa um componente Menu, que normalmente fica no topo de uma Janela. " alt="" coords="264,309,423,336"/>
 <area shape="rect" id="node9" href="$classSpartacus_1_1Forms_1_1Passwordbox.html" title="Classe Passwordbox. Representa um componente em que o usuário pode digitar texto em uma única linha..." alt="" coords="241,360,446,387"/>
-<area shape="rect" id="node10" href="$classSpartacus_1_1Forms_1_1Textbox.html" title="Classe Textbox. Representa um componente em que o usuário pode digitar texto em uma única linha..." alt="" coords="257,411,430,437"/>
-<area shape="rect" id="node11" href="$classSpartacus_1_1Forms_1_1Window.html" title="Classe Window. Representa uma Janela. " alt="" coords="257,461,430,488"/>
+<area shape="rect" id="node10" href="$classSpartacus_1_1Forms_1_1Progressbar.html" title="Classe Progressbar. Representa um componente que mostra o progresso de execução de alguma tarefa..." alt="" coords="245,411,441,437"/>
+<area shape="rect" id="node11" href="$classSpartacus_1_1Forms_1_1Textbox.html" title="Classe Textbox. Representa um componente em que o usuário pode digitar texto em uma única linha..." alt="" coords="257,461,430,488"/>
+<area shape="rect" id="node12" href="$classSpartacus_1_1Forms_1_1Window.html" title="Classe Window. Representa uma Janela. " alt="" coords="257,512,430,539"/>
 </map>

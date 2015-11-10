@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Spartacus
-   &#160;<span id="projectnumber">0.38.0</span>
+   &#160;<span id="projectnumber">0.40.0</span>
    </div>
   </td>
  </tr>
@@ -48,8 +48,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Métodos Públicos</a> &#124;
-<a href="#pub-attribs">Campos de Dados</a>  </div>
+<a href="#pub-methods">Métodos Públicos</a>  </div>
   <div class="headertitle">
 <div class="title">Referência da Classe Spartacus.Database.Oledb</div>  </div>
 </div><!--header-->
@@ -77,46 +76,118 @@ Métodos Públicos</h2></td></tr>
 <tr class="memitem:a151e92500d1aa88e96169201d3138b0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a151e92500d1aa88e96169201d3138b0a">Oledb</a> (string p_provider, string p_host, string p_port, string p_service, string p_user, string p_password)</td></tr>
 <tr class="memdesc:a151e92500d1aa88e96169201d3138b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Oledb.html" title="Classe Spartacus.Database.Oledb. Herda da classe Spartacus.Database.Generic. Utiliza a implementação ...">Spartacus.Database.Oledb</a>. Cria a string de conexão ao banco.  <a href="#a151e92500d1aa88e96169201d3138b0a">Mais...</a><br /></td></tr>
 <tr class="separator:a151e92500d1aa88e96169201d3138b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35ca0431cd504236e67f31c842d99c83"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a35ca0431cd504236e67f31c842d99c83">CreateDatabase</a> (string p_name)</td></tr>
+<tr class="memdesc:a35ca0431cd504236e67f31c842d99c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um banco de dados.  <a href="#a35ca0431cd504236e67f31c842d99c83">Mais...</a><br /></td></tr>
+<tr class="separator:a35ca0431cd504236e67f31c842d99c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962c60c1d2a5a9ecfe15388758e0d7cc"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a962c60c1d2a5a9ecfe15388758e0d7cc">CreateDatabase</a> ()</td></tr>
+<tr class="memdesc:a962c60c1d2a5a9ecfe15388758e0d7cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria um banco de dados.  <a href="#a962c60c1d2a5a9ecfe15388758e0d7cc">Mais...</a><br /></td></tr>
+<tr class="separator:a962c60c1d2a5a9ecfe15388758e0d7cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a8de4aa756e3a64e7947cb96e4d1af"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ae0a8de4aa756e3a64e7947cb96e4d1af">Open</a> ()</td></tr>
+<tr class="memdesc:ae0a8de4aa756e3a64e7947cb96e4d1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre a conexão com o banco de dados.  <a href="#ae0a8de4aa756e3a64e7947cb96e4d1af">Mais...</a><br /></td></tr>
+<tr class="separator:ae0a8de4aa756e3a64e7947cb96e4d1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f914652553778f6e0a683ac92ab1f87"><td class="memItemLeft" align="right" valign="top">override System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a6f914652553778f6e0a683ac92ab1f87">Query</a> (string p_sql, string p_tablename)</td></tr>
 <tr class="memdesc:a6f914652553778f6e0a683ac92ab1f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em um System.Data.DataTable.  <a href="#a6f914652553778f6e0a683ac92ab1f87">Mais...</a><br /></td></tr>
 <tr class="separator:a6f914652553778f6e0a683ac92ab1f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98ca6e4909d9d54472fdfedd8e56dc83"><td class="memItemLeft" align="right" valign="top">override System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a98ca6e4909d9d54472fdfedd8e56dc83">Query</a> (string p_sql, string p_tablename, uint p_startrow, uint p_endrow)</td></tr>
-<tr class="memdesc:a98ca6e4909d9d54472fdfedd8e56dc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos.  <a href="#a98ca6e4909d9d54472fdfedd8e56dc83">Mais...</a><br /></td></tr>
-<tr class="separator:a98ca6e4909d9d54472fdfedd8e56dc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a5c84097bc4b96ddb8de2013dbfbbf"><td class="memItemLeft" align="right" valign="top">override System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ab7a5c84097bc4b96ddb8de2013dbfbbf">Query</a> (string p_sql, string p_tablename, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress)</td></tr>
+<tr class="memdesc:ab7a5c84097bc4b96ddb8de2013dbfbbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em um System.Data.DataTable.  <a href="#ab7a5c84097bc4b96ddb8de2013dbfbbf">Mais...</a><br /></td></tr>
+<tr class="separator:ab7a5c84097bc4b96ddb8de2013dbfbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbb8f17a8971ce10322605563f2b202"><td class="memItemLeft" align="right" valign="top">override System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a0dbb8f17a8971ce10322605563f2b202">Query</a> (string p_sql, string p_tablename, uint p_startrow, uint p_endrow, out bool p_hasmoredata)</td></tr>
+<tr class="memdesc:a0dbb8f17a8971ce10322605563f2b202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos. Conexão com o banco precisa estar aberta.  <a href="#a0dbb8f17a8971ce10322605563f2b202">Mais...</a><br /></td></tr>
+<tr class="separator:a0dbb8f17a8971ce10322605563f2b202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1b77bfec24194bf2d8d5e264f6fc485"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ac1b77bfec24194bf2d8d5e264f6fc485">QueryHtml</a> (string p_sql, string p_id, string p_options)</td></tr>
+<tr class="memdesc:ac1b77bfec24194bf2d8d5e264f6fc485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em uma string HTML.  <a href="#ac1b77bfec24194bf2d8d5e264f6fc485">Mais...</a><br /></td></tr>
+<tr class="separator:ac1b77bfec24194bf2d8d5e264f6fc485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3213898f233fda7980494b532a64d9f2"><td class="memItemLeft" align="right" valign="top">override System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a3213898f233fda7980494b532a64d9f2">QueryStoredProc</a> (string p_sql, string p_tablename, string p_outparam)</td></tr>
+<tr class="memdesc:a3213898f233fda7980494b532a64d9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos a partir do cursor de saída de uma Stored Procedure.  <a href="#a3213898f233fda7980494b532a64d9f2">Mais...</a><br /></td></tr>
+<tr class="separator:a3213898f233fda7980494b532a64d9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfe60cb51ca949f93a1197c3cdf88231"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#acfe60cb51ca949f93a1197c3cdf88231">Execute</a> (string p_sql)</td></tr>
 <tr class="memdesc:acfe60cb51ca949f93a1197c3cdf88231"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa um código SQL no banco de dados.  <a href="#acfe60cb51ca949f93a1197c3cdf88231">Mais...</a><br /></td></tr>
 <tr class="separator:acfe60cb51ca949f93a1197c3cdf88231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f3ecd8fd2e1a307dc119410fb8d847"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a60f3ecd8fd2e1a307dc119410fb8d847">Execute</a> (string p_sql, bool p_verbose)</td></tr>
-<tr class="memdesc:a60f3ecd8fd2e1a307dc119410fb8d847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executa um código SQL no banco de dados.  <a href="#a60f3ecd8fd2e1a307dc119410fb8d847">Mais...</a><br /></td></tr>
-<tr class="separator:a60f3ecd8fd2e1a307dc119410fb8d847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5582b61f8c6fe5ea9da87d466180520"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ae5582b61f8c6fe5ea9da87d466180520">InsertBlock</a> (string p_table, System.Collections.ArrayList p_rows)</td></tr>
+<tr class="memdesc:ae5582b61f8c6fe5ea9da87d466180520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um bloco de linhas em uma determinada tabela.  <a href="#ae5582b61f8c6fe5ea9da87d466180520">Mais...</a><br /></td></tr>
+<tr class="separator:ae5582b61f8c6fe5ea9da87d466180520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7131081aa9dcb742321104b3a2c0c1f5"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a7131081aa9dcb742321104b3a2c0c1f5">ExecuteScalar</a> (string p_sql)</td></tr>
 <tr class="memdesc:a7131081aa9dcb742321104b3a2c0c1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando um único dado de retorno em uma string.  <a href="#a7131081aa9dcb742321104b3a2c0c1f5">Mais...</a><br /></td></tr>
 <tr class="separator:a7131081aa9dcb742321104b3a2c0c1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc269bbc726406b0912210fdc907080"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a5dc269bbc726406b0912210fdc907080">ExecuteScalar</a> (string p_sql, bool p_verbose)</td></tr>
-<tr class="memdesc:a5dc269bbc726406b0912210fdc907080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza uma consulta no banco de dados, armazenando um único dado de retorno em uma string.  <a href="#a5dc269bbc726406b0912210fdc907080">Mais...</a><br /></td></tr>
-<tr class="separator:a5dc269bbc726406b0912210fdc907080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ff9d53116b47249661319982294e2e4"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a8ff9d53116b47249661319982294e2e4">BulkInsert</a> (System.Data.DataTable p_table)</td></tr>
-<tr class="memdesc:a8ff9d53116b47249661319982294e2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere uma massa de dados. <em>p_table</em>  precisa ter o nome igual ao nome da tabela onde será inserido. Os nomes das colunas também precisam ser os mesmos.  <a href="#a8ff9d53116b47249661319982294e2e4">Mais...</a><br /></td></tr>
-<tr class="separator:a8ff9d53116b47249661319982294e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7146414cfb6574435c0d7098f40ecd7"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ac7146414cfb6574435c0d7098f40ecd7">Close</a> ()</td></tr>
+<tr class="memdesc:ac7146414cfb6574435c0d7098f40ecd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fecha a conexão com o banco de dados.  <a href="#ac7146414cfb6574435c0d7098f40ecd7">Mais...</a><br /></td></tr>
+<tr class="separator:ac7146414cfb6574435c0d7098f40ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac683b6ec54ccb565c9c780ccf8549482"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ac683b6ec54ccb565c9c780ccf8549482">DropDatabase</a> (string p_name)</td></tr>
+<tr class="memdesc:ac683b6ec54ccb565c9c780ccf8549482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleta um banco de dados.  <a href="#ac683b6ec54ccb565c9c780ccf8549482">Mais...</a><br /></td></tr>
+<tr class="separator:ac683b6ec54ccb565c9c780ccf8549482"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36827d59a6bb101b9998ed1d1c978f80"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a36827d59a6bb101b9998ed1d1c978f80">DropDatabase</a> ()</td></tr>
+<tr class="memdesc:a36827d59a6bb101b9998ed1d1c978f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deleta o banco de dados conectado atualmente.  <a href="#a36827d59a6bb101b9998ed1d1c978f80">Mais...</a><br /></td></tr>
+<tr class="separator:a36827d59a6bb101b9998ed1d1c978f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4205f12022eb8f05377ab3609942149"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ac4205f12022eb8f05377ab3609942149">Transfer</a> (string p_query, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase)</td></tr>
+<tr class="memdesc:ac4205f12022eb8f05377ab3609942149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta.  <a href="#ac4205f12022eb8f05377ab3609942149">Mais...</a><br /></td></tr>
+<tr class="separator:ac4205f12022eb8f05377ab3609942149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157081edc661bffb125ada778db46ebf"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a157081edc661bffb125ada778db46ebf">Transfer</a> (string p_query, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, out string p_log)</td></tr>
+<tr class="memdesc:a157081edc661bffb125ada778db46ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#a157081edc661bffb125ada778db46ebf">Mais...</a><br /></td></tr>
+<tr class="separator:a157081edc661bffb125ada778db46ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a222ce94d8cc868ba968b14b310b837e9"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a222ce94d8cc868ba968b14b310b837e9">Transfer</a> (string p_query, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, uint p_startrow, uint p_endrow, out bool p_hasmoredata)</td></tr>
+<tr class="memdesc:a222ce94d8cc868ba968b14b310b837e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta.  <a href="#a222ce94d8cc868ba968b14b310b837e9">Mais...</a><br /></td></tr>
+<tr class="separator:a222ce94d8cc868ba968b14b310b837e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17ecec5c98c2d3658093ff338302f9d"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#aa17ecec5c98c2d3658093ff338302f9d">Transfer</a> (string p_query, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, ref string p_log, uint p_startrow, uint p_endrow, out bool p_hasmoredata)</td></tr>
+<tr class="memdesc:aa17ecec5c98c2d3658093ff338302f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#aa17ecec5c98c2d3658093ff338302f9d">Mais...</a><br /></td></tr>
+<tr class="separator:aa17ecec5c98c2d3658093ff338302f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018c3267a0f55b321c64427bb862f036"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a018c3267a0f55b321c64427bb862f036">Transfer</a> (string p_query, string p_table, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, uint p_startrow, uint p_endrow, out bool p_hasmoredata)</td></tr>
+<tr class="memdesc:a018c3267a0f55b321c64427bb862f036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta.  <a href="#a018c3267a0f55b321c64427bb862f036">Mais...</a><br /></td></tr>
+<tr class="separator:a018c3267a0f55b321c64427bb862f036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeedfafc814e647d63a8f806d49e59e10"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#aeedfafc814e647d63a8f806d49e59e10">Transfer</a> (string p_query, string p_table, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, ref string p_log, uint p_startrow, uint p_endrow, out bool p_hasmoredata)</td></tr>
+<tr class="memdesc:aeedfafc814e647d63a8f806d49e59e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta.  <a href="#aeedfafc814e647d63a8f806d49e59e10">Mais...</a><br /></td></tr>
+<tr class="separator:aeedfafc814e647d63a8f806d49e59e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeeaa0be2f30d901e1aa3757dd49d3b"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#aafeeaa0be2f30d901e1aa3757dd49d3b">Transfer</a> (string p_query, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> p_destdatabase, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:aafeeaa0be2f30d901e1aa3757dd49d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#aafeeaa0be2f30d901e1aa3757dd49d3b">Mais...</a><br /></td></tr>
+<tr class="separator:aafeeaa0be2f30d901e1aa3757dd49d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4183dd048e2330fb4adb81c52957f976"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a4183dd048e2330fb4adb81c52957f976">TransferFromFile</a> (string p_filename, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:a4183dd048e2330fb4adb81c52957f976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#a4183dd048e2330fb4adb81c52957f976">Mais...</a><br /></td></tr>
+<tr class="separator:a4183dd048e2330fb4adb81c52957f976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833ecefa8c989bba0f807f6ad63a8e61"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a833ecefa8c989bba0f807f6ad63a8e61">TransferFromFile</a> (string p_filename, char p_separator, bool p_header, System.Text.Encoding p_encoding, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:a833ecefa8c989bba0f807f6ad63a8e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#a833ecefa8c989bba0f807f6ad63a8e61">Mais...</a><br /></td></tr>
+<tr class="separator:a833ecefa8c989bba0f807f6ad63a8e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ffa62db88edeb7f924d23ac440bdfc"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ac2ffa62db88edeb7f924d23ac440bdfc">TransferFromFile</a> (string p_filename, char p_separator, char p_delimitator, bool p_header, System.Text.Encoding p_encoding, <a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a> p_insert, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:ac2ffa62db88edeb7f924d23ac440bdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#ac2ffa62db88edeb7f924d23ac440bdfc">Mais...</a><br /></td></tr>
+<tr class="separator:ac2ffa62db88edeb7f924d23ac440bdfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2016e979876c73ab68019bae451739"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a5e2016e979876c73ab68019bae451739">TransferFromFile</a> (string p_filename, string p_newtable, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:a5e2016e979876c73ab68019bae451739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#a5e2016e979876c73ab68019bae451739">Mais...</a><br /></td></tr>
+<tr class="separator:a5e2016e979876c73ab68019bae451739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e4b8cb083350430256d68f59ead875"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a75e4b8cb083350430256d68f59ead875">TransferFromFile</a> (string p_filename, char p_separator, bool p_header, System.Text.Encoding p_encoding, string p_newtable, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:a75e4b8cb083350430256d68f59ead875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#a75e4b8cb083350430256d68f59ead875">Mais...</a><br /></td></tr>
+<tr class="separator:a75e4b8cb083350430256d68f59ead875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32d7ee2dbb9595a6c71ec42744a438d"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ab32d7ee2dbb9595a6c71ec42744a438d">TransferFromFile</a> (string p_filename, char p_separator, char p_delimitator, bool p_header, System.Text.Encoding p_encoding, string p_newtable, <a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a> p_progress, <a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a> p_error)</td></tr>
+<tr class="memdesc:ab32d7ee2dbb9595a6c71ec42744a438d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico.  <a href="#ab32d7ee2dbb9595a6c71ec42744a438d">Mais...</a><br /></td></tr>
+<tr class="separator:ab32d7ee2dbb9595a6c71ec42744a438d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5a2fd982a0dcc4dad37752bde6e19bb"><td class="memItemLeft" align="right" valign="top">override uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ad5a2fd982a0dcc4dad37752bde6e19bb">TransferToFile</a> (string p_query, string p_filename)</td></tr>
+<tr class="memdesc:ad5a2fd982a0dcc4dad37752bde6e19bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfere dados do banco de dados atual para um arquivo do Excel.  <a href="#ad5a2fd982a0dcc4dad37752bde6e19bb">Mais...</a><br /></td></tr>
+<tr class="separator:ad5a2fd982a0dcc4dad37752bde6e19bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a281bf9373ab7ccdf95554377bae35bbf"><td class="memItemLeft" align="right" valign="top">override string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a281bf9373ab7ccdf95554377bae35bbf">GetColumnNames</a> (string p_sql)</td></tr>
+<tr class="memdesc:a281bf9373ab7ccdf95554377bae35bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista os nomes de colunas de uma determinada consulta.  <a href="#a281bf9373ab7ccdf95554377bae35bbf">Mais...</a><br /></td></tr>
+<tr class="separator:a281bf9373ab7ccdf95554377bae35bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9b1a31b93bcb60b20d6af51627c6e60"><td class="memItemLeft" align="right" valign="top">override string[,]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#ae9b1a31b93bcb60b20d6af51627c6e60">GetColumnNamesAndTypes</a> (string p_sql)</td></tr>
+<tr class="memdesc:ae9b1a31b93bcb60b20d6af51627c6e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista os nomes e tipos de colunas de uma determinada consulta.  <a href="#ae9b1a31b93bcb60b20d6af51627c6e60">Mais...</a><br /></td></tr>
+<tr class="separator:ae9b1a31b93bcb60b20d6af51627c6e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSpartacus_1_1Database_1_1Generic"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSpartacus_1_1Database_1_1Generic')"><img src="closed.png" alt="-"/>&#160;Métodos Públicos herdados de <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a></td></tr>
 <tr class="memitem:a622b197eddc5c95c47c848a5820addca inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a622b197eddc5c95c47c848a5820addca">Generic</a> (string p_host, string p_port, string p_service, string p_user, string p_password)</td></tr>
 <tr class="memdesc:a622b197eddc5c95c47c848a5820addca inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>. Armazena informações de conexão que são genéricas a qualquer SGBD.  <a href="#a622b197eddc5c95c47c848a5820addca">Mais...</a><br /></td></tr>
 <tr class="separator:a622b197eddc5c95c47c848a5820addca inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a306cfc644cd54887f579d20eabc8007c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a306cfc644cd54887f579d20eabc8007c">Generic</a> (string p_host, string p_port, string p_service, string p_user, string p_password, bool p_integrated_security)</td></tr>
+<tr class="memdesc:a306cfc644cd54887f579d20eabc8007c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>. Armazena informações de conexão que são genéricas a qualquer SGBD.  <a href="#a306cfc644cd54887f579d20eabc8007c">Mais...</a><br /></td></tr>
+<tr class="separator:a306cfc644cd54887f579d20eabc8007c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae767e531163e6d35c9da13bf1a26da5b inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ae767e531163e6d35c9da13bf1a26da5b">Generic</a> (string p_dsn, string p_user, string p_password)</td></tr>
 <tr class="memdesc:ae767e531163e6d35c9da13bf1a26da5b inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>. Armazena informações de conexão que são genéricas a qualquer SGBD.  <a href="#ae767e531163e6d35c9da13bf1a26da5b">Mais...</a><br /></td></tr>
 <tr class="separator:ae767e531163e6d35c9da13bf1a26da5b inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a135fa36ed3379d3e7360a44935d3507e inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a135fa36ed3379d3e7360a44935d3507e">Generic</a> (string p_file)</td></tr>
 <tr class="memdesc:a135fa36ed3379d3e7360a44935d3507e inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>. Armazena informações de conexão que são genéricas a qualquer SGBD.  <a href="#a135fa36ed3379d3e7360a44935d3507e">Mais...</a><br /></td></tr>
 <tr class="separator:a135fa36ed3379d3e7360a44935d3507e inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036320ee4d84ab51966f58560d215a8c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a036320ee4d84ab51966f58560d215a8c">Generic</a> ()</td></tr>
+<tr class="memdesc:a036320ee4d84ab51966f58560d215a8c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>.  <a href="#a036320ee4d84ab51966f58560d215a8c">Mais...</a><br /></td></tr>
+<tr class="separator:a036320ee4d84ab51966f58560d215a8c inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7334e320e5b03d037cbe78a4d65e05d2 inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a7334e320e5b03d037cbe78a4d65e05d2">FixColumnName</a> (string p_input)</td></tr>
 <tr class="memdesc:a7334e320e5b03d037cbe78a4d65e05d2 inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fix temporário para um problema de DataColumn.ColumnName que apareceu no Mono 4  <a href="#a7334e320e5b03d037cbe78a4d65e05d2">Mais...</a><br /></td></tr>
 <tr class="separator:a7334e320e5b03d037cbe78a4d65e05d2 inherit pub_methods_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Campos de Dados</h2></td></tr>
-<tr class="memitem:a7bfa2fa4427cb9a5ae00fc0e58562ece"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Oledb.html#a7bfa2fa4427cb9a5ae00fc0e58562ece">v_connectionstring</a></td></tr>
-<tr class="memdesc:a7bfa2fa4427cb9a5ae00fc0e58562ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">String de conexão para acessar o banco.  <a href="#a7bfa2fa4427cb9a5ae00fc0e58562ece">Mais...</a><br /></td></tr>
-<tr class="separator:a7bfa2fa4427cb9a5ae00fc0e58562ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Outros membros herdados</h2></td></tr>
 <tr class="inherit_header pub_attribs_classSpartacus_1_1Database_1_1Generic"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSpartacus_1_1Database_1_1Generic')"><img src="closed.png" alt="-"/>&#160;Campos de Dados herdados de <a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a></td></tr>
 <tr class="memitem:adcf095a019d81c98b5f4c23ffe010cc4 inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#adcf095a019d81c98b5f4c23ffe010cc4">v_host</a></td></tr>
 <tr class="memdesc:adcf095a019d81c98b5f4c23ffe010cc4 inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hostname ou IP onde o banco de dados está localizado.  <a href="#adcf095a019d81c98b5f4c23ffe010cc4">Mais...</a><br /></td></tr>
@@ -133,6 +204,12 @@ Campos de Dados</h2></td></tr>
 <tr class="memitem:a7a40ef878e5d8371034ced66a7b7b2bb inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a7a40ef878e5d8371034ced66a7b7b2bb">v_password</a></td></tr>
 <tr class="memdesc:a7a40ef878e5d8371034ced66a7b7b2bb inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">A senha do usuário ou schema.  <a href="#a7a40ef878e5d8371034ced66a7b7b2bb">Mais...</a><br /></td></tr>
 <tr class="separator:a7a40ef878e5d8371034ced66a7b7b2bb inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61c1ac9363523489649c4e7267154ba inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#aa61c1ac9363523489649c4e7267154ba">v_integrated_security</a></td></tr>
+<tr class="memdesc:aa61c1ac9363523489649c4e7267154ba inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segurança integrada (suportada apenas na classe <a class="el" href="classSpartacus_1_1Database_1_1SqlServer.html" title="Classe Spartacus.Database.SqlServer. Herda da classe Spartacus.Database.Generic. Utiliza o Mono...">SqlServer</a>).  <a href="#aa61c1ac9363523489649c4e7267154ba">Mais...</a><br /></td></tr>
+<tr class="separator:aa61c1ac9363523489649c4e7267154ba inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7989bd7c3c5520ece5eb1ce722d96053 inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a7989bd7c3c5520ece5eb1ce722d96053">v_connectionstring</a></td></tr>
+<tr class="memdesc:a7989bd7c3c5520ece5eb1ce722d96053 inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="mdescLeft">&#160;</td><td class="mdescRight">String de conexão para acessar o banco.  <a href="#a7989bd7c3c5520ece5eb1ce722d96053">Mais...</a><br /></td></tr>
+<tr class="separator:a7989bd7c3c5520ece5eb1ce722d96053 inherit pub_attribs_classSpartacus_1_1Database_1_1Generic"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Classe <a class="el" href="classSpartacus_1_1Database_1_1Oledb.html" title="Classe Spartacus.Database.Oledb. Herda da classe Spartacus.Database.Generic. Utiliza a implementação ...">Spartacus.Database.Oledb</a>. Herda da classe <a class="el" href="classSpartacus_1_1Database_1_1Generic.html" title="Classe abstrata Spartacus.Database.Generic. Armazena informações de conexão que são genéricas a qualq...">Spartacus.Database.Generic</a>. Utiliza a implementação OLE DB para acessar qualquer SGBD. </p>
@@ -209,7 +286,7 @@ Campos de Dados</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Métodos</h2>
-<a class="anchor" id="a8ff9d53116b47249661319982294e2e4"></a>
+<a class="anchor" id="ac7146414cfb6574435c0d7098f40ecd7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -217,10 +294,9 @@ Campos de Dados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override void Spartacus.Database.Oledb.BulkInsert </td>
+          <td class="memname">override void Spartacus.Database.Oledb.Close </td>
           <td>(</td>
-          <td class="paramtype">System.Data.DataTable&#160;</td>
-          <td class="paramname"><em>p_table</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -231,15 +307,131 @@ Campos de Dados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Insere uma massa de dados. <em>p_table</em>  precisa ter o nome igual ao nome da tabela onde será inserido. Os nomes das colunas também precisam ser os mesmos. </p>
+<p>Fecha a conexão com o banco de dados. </p>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#adcbda447cc491c0ff262050a88d06584">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35ca0431cd504236e67f31c842d99c83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.CreateDatabase </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria um banco de dados. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_table</td><td>Tabela com os dados e definições para inserção em massa.</td></tr>
+    <tr><td class="paramname">p_name</td><td>Nome do arquivo de banco de dados a ser criado.</td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a7ca7e54d8c0a11503e5cbeb4a52f1e95">Spartacus.Database.Generic</a>.</p>
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#af452776cb4aeead0821a73ee7d43fea2">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a962c60c1d2a5a9ecfe15388758e0d7cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.CreateDatabase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cria um banco de dados. </p>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a68358bce10e4a33ba1f2b0785e2f1a8f">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac683b6ec54ccb565c9c780ccf8549482"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.DropDatabase </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleta um banco de dados. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_name</td><td>Nome do banco de dados a ser deletado.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#aafae5a4d685e388ab7f8acad86f10136">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36827d59a6bb101b9998ed1d1c978f80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.DropDatabase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deleta o banco de dados conectado atualmente. </p>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a741b99a1e995359d25b5e05cdc2087bd">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
@@ -272,65 +464,8 @@ Campos de Dados</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceções</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Database_1_1Exception.html" title="Classe Spartacus.Database.Exception. Herda da classe System.Exception. ">Spartacus.Database.Exception</a></td><td>Exceção acontece quando não for possível executar o código SQL.</td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a28f1c8821906653eb4ff1484de893d16">Spartacus.Database.Generic</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a60f3ecd8fd2e1a307dc119410fb8d847"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void Spartacus.Database.Oledb.Execute </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>p_sql</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>p_verbose</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executa um código SQL no banco de dados. </p>
-<dl class="params"><dt>Parâmetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_sql</td><td>Código SQL a ser executado no banco de dados. </td></tr>
-    <tr><td class="paramname">p_verbose</td><td>Se deve ser mostrado o código SQL no console. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceções</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Database_1_1Exception.html" title="Classe Spartacus.Database.Exception. Herda da classe System.Exception. ">Spartacus.Database.Exception</a></td><td>Exceção acontece quando não for possível executar o código SQL.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a8f089e024b201e4ab1a6e9a83a9efb5b">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
@@ -364,18 +499,12 @@ Campos de Dados</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceções</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Database_1_1Exception.html" title="Classe Spartacus.Database.Exception. Herda da classe System.Exception. ">Spartacus.Database.Exception</a></td><td>Exceção acontece quando não for possível executar o código SQL.</td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a983620fd71f520deb71ae55304b98bf6">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a5dc269bbc726406b0912210fdc907080"></a>
+<a class="anchor" id="a281bf9373ab7ccdf95554377bae35bbf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -383,16 +512,86 @@ Campos de Dados</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override string Spartacus.Database.Oledb.ExecuteScalar </td>
+          <td class="memname">override string [] Spartacus.Database.Oledb.GetColumnNames </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>p_sql</em>, </td>
+          <td class="paramname"><em>p_sql</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista os nomes de colunas de uma determinada consulta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Vetor com os nomes de colunas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sql</td><td>Consulta SQL.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ae1e4d9f6b171fc9e53aff03195d44a04">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9b1a31b93bcb60b20d6af51627c6e60"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string [,] Spartacus.Database.Oledb.GetColumnNamesAndTypes </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_sql</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lista os nomes e tipos de colunas de uma determinada consulta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Matriz com os nomes e tipos de colunas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sql</td><td>Consulta SQL.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a56f6f69fad0fa973745ce184b15b9d4c">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5582b61f8c6fe5ea9da87d466180520"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.InsertBlock </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_table</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>p_verbose</em>&#160;</td>
+          <td class="paramtype">System.Collections.ArrayList&#160;</td>
+          <td class="paramname"><em>p_rows</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -407,23 +606,43 @@ Campos de Dados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Realiza uma consulta no banco de dados, armazenando um único dado de retorno em uma string. </p>
-<dl class="section return"><dt>Retorna</dt><dd>string com o dado de retorno. </dd></dl>
+<p>Insere um bloco de linhas em uma determinada tabela. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_sql</td><td>Código SQL a ser consultado no banco de dados. </td></tr>
-    <tr><td class="paramname">p_verbose</td><td>Se deve ser mostrado o código SQL no console. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceções</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Database_1_1Exception.html" title="Classe Spartacus.Database.Exception. Herda da classe System.Exception. ">Spartacus.Database.Exception</a></td><td>Exceção acontece quando não for possível executar o código SQL.</td></tr>
+    <tr><td class="paramname">p_table</td><td>Nome da tabela a serem inseridas as linhas. </td></tr>
+    <tr><td class="paramname">p_rows</td><td>Lista de linhas a serem inseridas na tabela. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ae3e9dd9109682d7bf6ae8dbee25a0e13">Spartacus.Database.Generic</a>.</p>
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a9011657f554b8d04fdd6b6b4ddef3d8a">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0a8de4aa756e3a64e7947cb96e4d1af"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override void Spartacus.Database.Oledb.Open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Abre a conexão com o banco de dados. </p>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#aac55d387393843493efd210e8276a54a">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
@@ -468,18 +687,65 @@ Campos de Dados</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>Retorna uma System.Data.DataTable com os dados de retorno da consulta.</dd></dl>
-<dl class="exception"><dt>Exceções</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Database_1_1Exception.html" title="Classe Spartacus.Database.Exception. Herda da classe System.Exception. ">Spartacus.Database.Exception</a></td><td>Exceção acontece quando não for possível executar a consulta.</td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a23dc0eb8f4722d1adb1935044bc878ff">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a98ca6e4909d9d54472fdfedd8e56dc83"></a>
+<a class="anchor" id="ab7a5c84097bc4b96ddb8de2013dbfbbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override System.Data.DataTable Spartacus.Database.Oledb.Query </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_sql</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_tablename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza uma consulta no banco de dados, armazenando os dados de retorno em um System.Data.DataTable. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sql</td><td>Código SQL a ser consultado no banco de dados. </td></tr>
+    <tr><td class="paramname">p_tablename</td><td>Nome virtual da tabela onde deve ser armazenado o resultado, para fins de cache. </td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso da execução da consulta.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna uma System.Data.DataTable com os dados de retorno da consulta.</dd></dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a6f4e9dacb950f1e8653390e8d4186ac9">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dbb8f17a8971ce10322605563f2b202"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -508,7 +774,13 @@ Campos de Dados</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>p_endrow</em>&#160;</td>
+          <td class="paramname"><em>p_endrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>p_hasmoredata</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -523,33 +795,1132 @@ Campos de Dados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos. </p>
+<p>Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos. Conexão com o banco precisa estar aberta. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_sql</td><td>Código SQL a ser consultado no banco de dados. </td></tr>
     <tr><td class="paramname">p_tablename</td><td>Nome virtual da tabela onde deve ser armazenado o resultado, para fins de cache. </td></tr>
     <tr><td class="paramname">p_startrow</td><td>Número da linha inicial. </td></tr>
     <tr><td class="paramname">p_endrow</td><td>Número da linha final. </td></tr>
+    <tr><td class="paramname">p_hasmoredata</td><td>Indica se ainda há mais dados a serem lidos. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#aca40a7e7a0291bdb0086b358e74239b8">Spartacus.Database.Generic</a>.</p>
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a5888d45a75eee7d61fcac91c1d01f218">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Campos</h2>
-<a class="anchor" id="a7bfa2fa4427cb9a5ae00fc0e58562ece"></a>
+<a class="anchor" id="ac1b77bfec24194bf2d8d5e264f6fc485"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">string Spartacus.Database.Oledb.v_connectionstring</td>
+          <td class="memname">override string Spartacus.Database.Oledb.QueryHtml </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_sql</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>String de conexão para acessar o banco. </p>
+<p>Realiza uma consulta no banco de dados, armazenando os dados de retorno em uma string HTML. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sql</td><td>Código SQL a ser consultado no banco de dados. </td></tr>
+    <tr><td class="paramname">p_id</td><td>ID da tabela no HTML. </td></tr>
+    <tr><td class="paramname">p_options</td><td>Opções da tabela no HTML. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a2ff010832ece29859d6db30459efb0e2">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3213898f233fda7980494b532a64d9f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override System.Data.DataTable Spartacus.Database.Oledb.QueryStoredProc </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_sql</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_tablename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_outparam</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza uma consulta no banco de dados, armazenando os dados de retorno em um . Utiliza um DataReader para buscar em blocos a partir do cursor de saída de uma Stored Procedure. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_sql</td><td>Código SQL a ser consultado no banco de dados. </td></tr>
+    <tr><td class="paramname">p_tablename</td><td>Nome virtual da tabela onde deve ser armazenado o resultado, para fins de cache. </td></tr>
+    <tr><td class="paramname">p_outparam</td><td>Nome do parâmetro de saída que deve ser um REF CURSOR. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Não suportado em todos os SGBDs.</p>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a0cf5d59eac8e74a2089bb7b449d2b3f9">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4205f12022eb8f05377ab3609942149"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a55fbd93d734041885d2a77b1c48cd1cb">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a157081edc661bffb125ada778db46ebf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out string&#160;</td>
+          <td class="paramname"><em>p_log</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_log</td><td>Log de inserção.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a1eac8b31f45cfcd6394fc7ebd12994fb">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a222ce94d8cc868ba968b14b310b837e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_startrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_endrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>p_hasmoredata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_startrow</td><td>Número da linha inicial.</td></tr>
+    <tr><td class="paramname">p_endrow</td><td>Número da linha final.</td></tr>
+    <tr><td class="paramname">p_hasmoredata</td><td>Indica se ainda há mais dados a serem lidos.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a3952a382c5db42d342e7dc324a5bcd84">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa17ecec5c98c2d3658093ff338302f9d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref string&#160;</td>
+          <td class="paramname"><em>p_log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_startrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_endrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>p_hasmoredata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_log</td><td>Log de inserção.</td></tr>
+    <tr><td class="paramname">p_startrow</td><td>Número da linha inicial.</td></tr>
+    <tr><td class="paramname">p_endrow</td><td>Número da linha final.</td></tr>
+    <tr><td class="paramname">p_hasmoredata</td><td>Indica se ainda há mais dados a serem lidos.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a84cbeab3ee133edf40a2879e69c862df">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a018c3267a0f55b321c64427bb862f036"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_startrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_endrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>p_hasmoredata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_table</td><td>Nome da tabela de destino.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_startrow</td><td>Número da linha inicial.</td></tr>
+    <tr><td class="paramname">p_endrow</td><td>Número da linha final.</td></tr>
+    <tr><td class="paramname">p_hasmoredata</td><td>Indica se ainda há mais dados a serem lidos.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a50b01e619243b5bdb248dac8f8d7fb7c">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeedfafc814e647d63a8f806d49e59e10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ref string&#160;</td>
+          <td class="paramname"><em>p_log</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_startrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>p_endrow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out bool&#160;</td>
+          <td class="paramname"><em>p_hasmoredata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_table</td><td>Nome da tabela de destino.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_log</td><td>Log de inserção.</td></tr>
+    <tr><td class="paramname">p_startrow</td><td>Número da linha inicial.</td></tr>
+    <tr><td class="paramname">p_endrow</td><td>Número da linha final.</td></tr>
+    <tr><td class="paramname">p_hasmoredata</td><td>Indica se ainda há mais dados a serem lidos.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a45a5c12d43714de1f790de545c0bbd15">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aafeeaa0be2f30d901e1aa3757dd49d3b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.Transfer </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td>
+          <td class="paramname"><em>p_destdatabase</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um banco de dados de destino. Conexão com o banco de destino precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta SQL para buscar os dados no banco atual.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de destino.</td></tr>
+    <tr><td class="paramname">p_destdatabase</td><td>Conexão com o banco de destino.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a6b66f6c80026c33f9998adefd6d92348">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4183dd048e2330fb4adb81c52957f976"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de dados atual.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a4723e37023190279b2f218b0c6dc208a">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a833ecefa8c989bba0f807f6ad63a8e61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Text.Encoding&#160;</td>
+          <td class="paramname"><em>p_encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de dados atual.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ad1e7a349128234d3033b36c4319f6114">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac2ffa62db88edeb7f924d23ac440bdfc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_delimitator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Text.Encoding&#160;</td>
+          <td class="paramname"><em>p_encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td>
+          <td class="paramname"><em>p_insert</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_delimitator</td><td>Delimitador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_insert</td><td>Comando de inserção para inserir cada linha no banco de dados atual.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ac7c73ff1313fc177f9d770e9e4dde1fc">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e2016e979876c73ab68019bae451739"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_newtable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_newtable</td><td>Nome da nova tabela a ser criada no banco de dados.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#aad9f619675510fd2b29f130b51d2b4be">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75e4b8cb083350430256d68f59ead875"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Text.Encoding&#160;</td>
+          <td class="paramname"><em>p_encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_newtable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_newtable</td><td>Nome da nova tabela a ser criada no banco de dados.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#ac459a49e305ff467a1f8b5fee5b7558e">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab32d7ee2dbb9595a6c71ec42744a438d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferFromFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_delimitator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Text.Encoding&#160;</td>
+          <td class="paramname"><em>p_encoding</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_newtable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ProgressEventClass.html">Spartacus.Utils.ProgressEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSpartacus_1_1Utils_1_1ErrorEventClass.html">Spartacus.Utils.ErrorEventClass</a>&#160;</td>
+          <td class="paramname"><em>p_error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados de um arquivo Excel para o banco de dados atual. Conexão com o banco atual precisa estar aberta. Não pára a execução se der um problema num comando de inserção específico. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de origem.</td></tr>
+    <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_delimitator</td><td>Delimitador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_newtable</td><td>Nome da nova tabela a ser criada no banco de dados.</td></tr>
+    <tr><td class="paramname">p_progress</td><td>Evento de progresso.</td></tr>
+    <tr><td class="paramname">p_error</td><td>Evento de erro.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a3a8bff69e204822274d473e5be2c2d27">Spartacus.Database.Generic</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5a2fd982a0dcc4dad37752bde6e19bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override uint Spartacus.Database.Oledb.TransferToFile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_query</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfere dados do banco de dados atual para um arquivo do Excel. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Número de linhas transferidas.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_query</td><td>Consulta a ser executada no banco de dados atual para obter os dados.</td></tr>
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo de destino.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classSpartacus_1_1Database_1_1Generic.html#a683c03b35058155d8fdff946c9eaf6c4">Spartacus.Database.Generic</a>.</p>
 
 </div>
 </div>

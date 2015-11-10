@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Spartacus
-   &#160;<span id="projectnumber">0.38.0</span>
+   &#160;<span id="projectnumber">0.40.0</span>
    </div>
   </td>
  </tr>
@@ -63,12 +63,12 @@ Métodos Públicos</h2></td></tr>
 <tr class="memitem:a5f1e42a765a1af89a49a873f6d498179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a5f1e42a765a1af89a49a873f6d498179">Group</a> ()</td></tr>
 <tr class="memdesc:a5f1e42a765a1af89a49a873f6d498179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa uma nova instância da classe <a class="el" href="classSpartacus_1_1Reporting_1_1Group.html" title="Classe Group. Representa um agrupamento de dados do relatório. ">Spartacus.Reporting.Group</a>.  <a href="#a5f1e42a765a1af89a49a873f6d498179">Mais...</a><br /></td></tr>
 <tr class="separator:a5f1e42a765a1af89a49a873f6d498179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c6db24cd887c2aefc98cb04cf020c30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a2c6db24cd887c2aefc98cb04cf020c30">Build</a> (System.Data.DataTable p_table)</td></tr>
-<tr class="memdesc:a2c6db24cd887c2aefc98cb04cf020c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói dados do grupo. Percorre tabela de dados do relatório, filtrando e distinguindo os dados pela coluna do grupo.  <a href="#a2c6db24cd887c2aefc98cb04cf020c30">Mais...</a><br /></td></tr>
-<tr class="separator:a2c6db24cd887c2aefc98cb04cf020c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345c90f47427bccecafd0d45f00da3aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a345c90f47427bccecafd0d45f00da3aa">BuildCalculate</a> (System.Data.DataTable p_table)</td></tr>
-<tr class="memdesc:a345c90f47427bccecafd0d45f00da3aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói dados do grupo. Percorre tabela de dados do relatório, filtrando e distinguindo os dados pela coluna do grupo. Também calcula os valores de cada grupo, totalizando-os.  <a href="#a345c90f47427bccecafd0d45f00da3aa">Mais...</a><br /></td></tr>
-<tr class="separator:a345c90f47427bccecafd0d45f00da3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb919da0f67506807163326b35860fe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#abb919da0f67506807163326b35860fe2">Build</a> (System.Data.DataTable p_table, string p_parentgroupcolumn)</td></tr>
+<tr class="memdesc:abb919da0f67506807163326b35860fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói dados do grupo. Percorre tabela de dados do relatório, filtrando e distinguindo os dados pela coluna do grupo.  <a href="#abb919da0f67506807163326b35860fe2">Mais...</a><br /></td></tr>
+<tr class="separator:abb919da0f67506807163326b35860fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe52eb38fb67e3f191a9b9b7caf782e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a9fe52eb38fb67e3f191a9b9b7caf782e">BuildCalculate</a> (System.Data.DataTable p_table, string p_parentgroupcolumn)</td></tr>
+<tr class="memdesc:a9fe52eb38fb67e3f191a9b9b7caf782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constrói dados do grupo. Percorre tabela de dados do relatório, filtrando e distinguindo os dados pela coluna do grupo. Também calcula os valores de cada grupo, totalizando-os.  <a href="#a9fe52eb38fb67e3f191a9b9b7caf782e">Mais...</a><br /></td></tr>
+<tr class="separator:a9fe52eb38fb67e3f191a9b9b7caf782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Campos de Dados</h2></td></tr>
@@ -108,6 +108,15 @@ Campos de Dados</h2></td></tr>
 <tr class="memitem:a4d93758a02f7ab51d0e051b087441ca0"><td class="memItemLeft" align="right" valign="top">System.Collections.Generic.List&lt; System.Collections.Generic.List&lt; PDFjet.NET.Cell &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a4d93758a02f7ab51d0e051b087441ca0">v_footertemplate</a></td></tr>
 <tr class="memdesc:a4d93758a02f7ab51d0e051b087441ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modelo de renderização do rodapé do grupo.  <a href="#a4d93758a02f7ab51d0e051b087441ca0">Mais...</a><br /></td></tr>
 <tr class="separator:a4d93758a02f7ab51d0e051b087441ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1fc3e6f9a493cc797ce0e49844404b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#a7d1fc3e6f9a493cc797ce0e49844404b">v_renderedrows</a></td></tr>
+<tr class="memdesc:a7d1fc3e6f9a493cc797ce0e49844404b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de linhas da tabela de dados do grupo que já foram renderizadas.  <a href="#a7d1fc3e6f9a493cc797ce0e49844404b">Mais...</a><br /></td></tr>
+<tr class="separator:a7d1fc3e6f9a493cc797ce0e49844404b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1ee412d166a089f72be72251b7af7b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#ac1ee412d166a089f72be72251b7af7b1">v_showheadertitles</a></td></tr>
+<tr class="memdesc:ac1ee412d166a089f72be72251b7af7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica se os títulos dos campos de cabeçalho do grupo devem ser mostrados no cabeçalho de dados ou não.  <a href="#ac1ee412d166a089f72be72251b7af7b1">Mais...</a><br /></td></tr>
+<tr class="separator:ac1ee412d166a089f72be72251b7af7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8124ec641eb701caaef92ce5ad68ed1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Group.html#aa8124ec641eb701caaef92ce5ad68ed1">v_showfootertitles</a></td></tr>
+<tr class="memdesc:aa8124ec641eb701caaef92ce5ad68ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indica se os títulos dos campos de rodapé do grupo devem ser mostrados no cabeçalho de dados ou não.  <a href="#aa8124ec641eb701caaef92ce5ad68ed1">Mais...</a><br /></td></tr>
+<tr class="separator:aa8124ec641eb701caaef92ce5ad68ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Classe <a class="el" href="classSpartacus_1_1Reporting_1_1Group.html" title="Classe Group. Representa um agrupamento de dados do relatório. ">Group</a>. Representa um agrupamento de dados do relatório. </p>
@@ -138,7 +147,7 @@ Campos de Dados</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Métodos</h2>
-<a class="anchor" id="a2c6db24cd887c2aefc98cb04cf020c30"></a>
+<a class="anchor" id="abb919da0f67506807163326b35860fe2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -149,8 +158,18 @@ Campos de Dados</h2></td></tr>
           <td class="memname">void Spartacus.Reporting.Group.Build </td>
           <td>(</td>
           <td class="paramtype">System.Data.DataTable&#160;</td>
-          <td class="paramname"><em>p_table</em></td><td>)</td>
+          <td class="paramname"><em>p_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_parentgroupcolumn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -164,13 +183,14 @@ Campos de Dados</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_table</td><td>Tabela de dados do relatório.</td></tr>
+    <tr><td class="paramname">p_parentgroupcolumn</td><td>Coluna do grupo pai.</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a345c90f47427bccecafd0d45f00da3aa"></a>
+<a class="anchor" id="a9fe52eb38fb67e3f191a9b9b7caf782e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -181,8 +201,18 @@ Campos de Dados</h2></td></tr>
           <td class="memname">void Spartacus.Reporting.Group.BuildCalculate </td>
           <td>(</td>
           <td class="paramtype">System.Data.DataTable&#160;</td>
-          <td class="paramname"><em>p_table</em></td><td>)</td>
+          <td class="paramname"><em>p_table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_parentgroupcolumn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -196,6 +226,7 @@ Campos de Dados</h2></td></tr>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_table</td><td>Tabela de dados do relatório.</td></tr>
+    <tr><td class="paramname">p_parentgroupcolumn</td><td>Coluna do grupo pai.</td></tr>
   </table>
   </dd>
 </dl>
@@ -315,6 +346,20 @@ Campos de Dados</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7d1fc3e6f9a493cc797ce0e49844404b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Spartacus.Reporting.Group.v_renderedrows</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de linhas da tabela de dados do grupo que já foram renderizadas. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8c985f0be6cddc7e602ee3d0cb167cdb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -329,6 +374,20 @@ Campos de Dados</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa8124ec641eb701caaef92ce5ad68ed1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Spartacus.Reporting.Group.v_showfootertitles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica se os títulos dos campos de rodapé do grupo devem ser mostrados no cabeçalho de dados ou não. </p>
+
+</div>
+</div>
 <a class="anchor" id="aac918ded62cf2fff07c06228295939f9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -340,6 +399,20 @@ Campos de Dados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Indica se o cabeçalho do grupo deve ser mostrado ou não. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac1ee412d166a089f72be72251b7af7b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Spartacus.Reporting.Group.v_showheadertitles</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indica se os títulos dos campos de cabeçalho do grupo devem ser mostrados no cabeçalho de dados ou não. </p>
 
 </div>
 </div>

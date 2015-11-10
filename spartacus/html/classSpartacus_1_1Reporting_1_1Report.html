@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Spartacus
-   &#160;<span id="projectnumber">0.38.0</span>
+   &#160;<span id="projectnumber">0.40.0</span>
    </div>
   </td>
  </tr>
@@ -100,6 +100,9 @@ Campos de Dados</h2></td></tr>
 <tr class="memitem:a852ec5a1b9aaa894595e594cd33d5e09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a852ec5a1b9aaa894595e594cd33d5e09">v_reportid</a></td></tr>
 <tr class="memdesc:a852ec5a1b9aaa894595e594cd33d5e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Código do Relatório.  <a href="#a852ec5a1b9aaa894595e594cd33d5e09">Mais...</a><br /></td></tr>
 <tr class="separator:a852ec5a1b9aaa894595e594cd33d5e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f89ac3b3b625e4bcb6130a81e408e4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a0f89ac3b3b625e4bcb6130a81e408e4a">v_database</a></td></tr>
+<tr class="memdesc:a0f89ac3b3b625e4bcb6130a81e408e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Objeto para comunicação com o banco de dados.  <a href="#a0f89ac3b3b625e4bcb6130a81e408e4a">Mais...</a><br /></td></tr>
+<tr class="separator:a0f89ac3b3b625e4bcb6130a81e408e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35359a3acb53db8d3265e3d6497124f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpartacus_1_1Database_1_1Command.html">Spartacus.Database.Command</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a35359a3acb53db8d3265e3d6497124f2">v_cmd</a></td></tr>
 <tr class="memdesc:a35359a3acb53db8d3265e3d6497124f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comando SQL que pode possuir parâmetros entre #.  <a href="#a35359a3acb53db8d3265e3d6497124f2">Mais...</a><br /></td></tr>
 <tr class="separator:a35359a3acb53db8d3265e3d6497124f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,6 +112,9 @@ Campos de Dados</h2></td></tr>
 <tr class="memitem:a84089fdf49d60ce315a718f89a47c8b2"><td class="memItemLeft" align="right" valign="top">System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a84089fdf49d60ce315a718f89a47c8b2">v_table</a></td></tr>
 <tr class="memdesc:a84089fdf49d60ce315a718f89a47c8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tabela com os dados do relatório, após tratar tipos de colunas.  <a href="#a84089fdf49d60ce315a718f89a47c8b2">Mais...</a><br /></td></tr>
 <tr class="separator:a84089fdf49d60ce315a718f89a47c8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34561916d376dfd71ec0f3d192aff018"><td class="memItemLeft" align="right" valign="top">System.Data.DataTable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a34561916d376dfd71ec0f3d192aff018">v_rendertable</a></td></tr>
+<tr class="memdesc:a34561916d376dfd71ec0f3d192aff018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tabela com os dados do relatório, ordenada de acordo com grupo de nível 0. Usada para renderização dos detalhes.  <a href="#a34561916d376dfd71ec0f3d192aff018">Mais...</a><br /></td></tr>
+<tr class="separator:a34561916d376dfd71ec0f3d192aff018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e0785868400d716ccce1d34cd786f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSpartacus_1_1Reporting_1_1Settings.html">Spartacus.Reporting.Settings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a13e0785868400d716ccce1d34cd786f1">v_settings</a></td></tr>
 <tr class="memdesc:a13e0785868400d716ccce1d34cd786f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configurações globais e de dados do relatório.  <a href="#a13e0785868400d716ccce1d34cd786f1">Mais...</a><br /></td></tr>
 <tr class="separator:a13e0785868400d716ccce1d34cd786f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,8 +149,11 @@ Campos de Dados</h2></td></tr>
 <tr class="memdesc:a4d7ed9857d412736a3ef519a388e0445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modelo de renderização do detalhe par do relatório.  <a href="#a4d7ed9857d412736a3ef519a388e0445">Mais...</a><br /></td></tr>
 <tr class="separator:a4d7ed9857d412736a3ef519a388e0445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4afd651a8d5978dfc02c829f7f115e6"><td class="memItemLeft" align="right" valign="top">System.IO.FileStream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#aa4afd651a8d5978dfc02c829f7f115e6">v_datafile</a></td></tr>
-<tr class="memdesc:aa4afd651a8d5978dfc02c829f7f115e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista de strings para renderização do relatório.  <a href="#aa4afd651a8d5978dfc02c829f7f115e6">Mais...</a><br /></td></tr>
+<tr class="memdesc:aa4afd651a8d5978dfc02c829f7f115e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arquivo de texto contendo a matriz de renderização.  <a href="#aa4afd651a8d5978dfc02c829f7f115e6">Mais...</a><br /></td></tr>
 <tr class="separator:aa4afd651a8d5978dfc02c829f7f115e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a655d28d9959092beb425fc55489a8b61"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Reporting_1_1Report.html#a655d28d9959092beb425fc55489a8b61">v_numrowsdataheader</a></td></tr>
+<tr class="memdesc:a655d28d9959092beb425fc55489a8b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Número de linhas no cabeçalho de dados.  <a href="#a655d28d9959092beb425fc55489a8b61">Mais...</a><br /></td></tr>
+<tr class="separator:a655d28d9959092beb425fc55489a8b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Classe <a class="el" href="classSpartacus_1_1Reporting_1_1Report.html" title="Classe Report. Representa um relatório em PDF. ">Report</a>. Representa um relatório em PDF. </p>
@@ -561,6 +570,20 @@ Campos de Dados</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a0f89ac3b3b625e4bcb6130a81e408e4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSpartacus_1_1Database_1_1Generic.html">Spartacus.Database.Generic</a> Spartacus.Reporting.Report.v_database</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Objeto para comunicação com o banco de dados. </p>
+
+</div>
+</div>
 <a class="anchor" id="aa4afd651a8d5978dfc02c829f7f115e6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -571,7 +594,6 @@ Campos de Dados</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Lista de strings para renderização do relatório. </p>
 <p>Arquivo de texto contendo a matriz de renderização. </p>
 
 </div>
@@ -674,6 +696,20 @@ Campos de Dados</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a655d28d9959092beb425fc55489a8b61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Spartacus.Reporting.Report.v_numrowsdataheader</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Número de linhas no cabeçalho de dados. </p>
+
+</div>
+</div>
 <a class="anchor" id="aeab91eb89315dd18ff97b538c85e9715"></a>
 <div class="memitem">
 <div class="memproto">
@@ -713,6 +749,20 @@ Campos de Dados</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Objeto que gerencia eventos de progresso do processamento. </p>
+
+</div>
+</div>
+<a class="anchor" id="a34561916d376dfd71ec0f3d192aff018"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">System.Data.DataTable Spartacus.Reporting.Report.v_rendertable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tabela com os dados do relatório, ordenada de acordo com grupo de nível 0. Usada para renderização dos detalhes. </p>
 
 </div>
 </div>
@@ -772,8 +822,9 @@ Campos de Dados</h2></td></tr>
 
 </div>
 </div>
-<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes arquivos:<ul>
 <li>Spartacus.Reporting.Report.cs</li>
+<li>Spartacus.Reporting.ReportXML.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

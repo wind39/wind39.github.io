@@ -18,7 +18,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Spartacus
-   &#160;<span id="projectnumber">0.38.0</span>
+   &#160;<span id="projectnumber">0.40.0</span>
    </div>
   </td>
  </tr>
@@ -89,8 +89,11 @@ Métodos Públicos</h2></td></tr>
 <tr class="memitem:aae0c2b5d9c92d17f1e3aab8db2d1a2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Utils_1_1Excel.html#aae0c2b5d9c92d17f1e3aab8db2d1a2b9">Import</a> (string p_filename, char p_separator, bool p_header, System.Text.Encoding p_encoding)</td></tr>
 <tr class="memdesc:aae0c2b5d9c92d17f1e3aab8db2d1a2b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importa todas as planilhas de um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a> para várias System.Data.DataTable dentro de um System.Data.DataSet.  <a href="#aae0c2b5d9c92d17f1e3aab8db2d1a2b9">Mais...</a><br /></td></tr>
 <tr class="separator:aae0c2b5d9c92d17f1e3aab8db2d1a2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2faee2292c271b28bdeadc1440542c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Utils_1_1Excel.html#ad2faee2292c271b28bdeadc1440542c6">Import</a> (string p_filename, char p_separator, char p_delimitator, bool p_header, System.Text.Encoding p_encoding)</td></tr>
+<tr class="memdesc:ad2faee2292c271b28bdeadc1440542c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importa todas as planilhas de um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a> para várias System.Data.DataTable dentro de um System.Data.DataSet.  <a href="#ad2faee2292c271b28bdeadc1440542c6">Mais...</a><br /></td></tr>
+<tr class="separator:ad2faee2292c271b28bdeadc1440542c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a997049bd2f27e5a5b53750a5ee3f41c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Utils_1_1Excel.html#a997049bd2f27e5a5b53750a5ee3f41c0">Import</a> (System.Collections.ArrayList p_filelist)</td></tr>
-<tr class="memdesc:a997049bd2f27e5a5b53750a5ee3f41c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importa uma lista de arquivos <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a>. A lista pode conter arquivos XLSX ou CSV, e pode ser misturado.  <a href="#a997049bd2f27e5a5b53750a5ee3f41c0">Mais...</a><br /></td></tr>
+<tr class="memdesc:a997049bd2f27e5a5b53750a5ee3f41c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Importa uma lista de arquivos <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a>. A lista pode conter arquivos XLSX, CSV ou DBF, e pode ser misturado.  <a href="#a997049bd2f27e5a5b53750a5ee3f41c0">Mais...</a><br /></td></tr>
 <tr class="separator:a997049bd2f27e5a5b53750a5ee3f41c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eb6e251fb7e7ed38a13778842f87c7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSpartacus_1_1Utils_1_1Excel.html#a5eb6e251fb7e7ed38a13778842f87c7b">Export</a> (string p_filename)</td></tr>
 <tr class="memdesc:a5eb6e251fb7e7ed38a13778842f87c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exporta todas as System.Data.DataTable dentro de um System.Data.DataSet para um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a>.  <a href="#a5eb6e251fb7e7ed38a13778842f87c7b">Mais...</a><br /></td></tr>
@@ -363,7 +366,7 @@ Campos de Dados</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">p_filename</td><td>Nome do arquivo XLSX ou CSV a ser exportado.</td></tr>
     <tr><td class="paramname">p_templatename</td><td>Nome do arquivo XLSX a ser usado como template.</td></tr>
-    <tr><td class="paramname">p_markupname</td><td>Se deve substituir o markup do cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_replacemarkup</td><td>Se deve substituir o markup do cabeçalho ou não.</td></tr>
   </table>
   </dd>
 </dl>
@@ -506,7 +509,7 @@ Campos de Dados</h2></td></tr>
 <p>Importa todas as planilhas de um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a> para várias System.Data.DataTable dentro de um System.Data.DataSet. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_filename</td><td>Nome do arquivo XLSX ou CSV a ser importado.</td></tr>
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo XLSX, CSV ou DBF a ser importado.</td></tr>
   </table>
   </dd>
 </dl>
@@ -566,8 +569,78 @@ Campos de Dados</h2></td></tr>
 <p>Importa todas as planilhas de um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a> para várias System.Data.DataTable dentro de um System.Data.DataSet. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p_filename</td><td>Nome do arquivo XLSX ou CSV a ser importado.</td></tr>
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo CSV a ser importado.</td></tr>
     <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
+    <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classSpartacus_1_1Utils_1_1Exception.html" title="Classe Spartacus.Utils.Exception. Herda da classe System.Exception. ">Spartacus.Utils.Exception</a></td><td>Exceção acontece quando não conseguir ler o arquivo de origem, ou quando ocorrer qualquer problema na SejExcel.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad2faee2292c271b28bdeadc1440542c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Spartacus.Utils.Excel.Import </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>p_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_separator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>p_delimitator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>p_header</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">System.Text.Encoding&#160;</td>
+          <td class="paramname"><em>p_encoding</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Importa todas as planilhas de um arquivo <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a> para várias System.Data.DataTable dentro de um System.Data.DataSet. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_filename</td><td>Nome do arquivo CSV a ser importado.</td></tr>
+    <tr><td class="paramname">p_separator</td><td>Separador de campos do arquivo CSV.</td></tr>
+    <tr><td class="paramname">p_delimitator</td><td>Delimitador de campos do arquivo CSV.</td></tr>
     <tr><td class="paramname">p_header</td><td>Se deve considerar a primeira linha como cabeçalho ou não.</td></tr>
     <tr><td class="paramname">p_encoding</td><td>Codificação para leitura do arquivo CSV.</td></tr>
   </table>
@@ -604,7 +677,7 @@ Campos de Dados</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Importa uma lista de arquivos <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a>. A lista pode conter arquivos XLSX ou CSV, e pode ser misturado. </p>
+<p>Importa uma lista de arquivos <a class="el" href="classSpartacus_1_1Utils_1_1Excel.html" title="Classe Excel. Manipulação de arquivos CSV e XLSX. ">Excel</a>. A lista pode conter arquivos XLSX, CSV ou DBF, e pode ser misturado. </p>
 <dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_filelist</td><td>Lista de nomes de arquivos.</td></tr>

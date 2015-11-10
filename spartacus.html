@@ -53,6 +53,77 @@
             <!-- start content -->
             <div id="content">
 
+            	<div class="post">
+                    <h2 class="title">
+                        Lan&ccedil;ada vers&atilde;o 0.40.0 da Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/spartacus.html"></div></br>
+                    </h2>
+                    <div class="entry">
+                        <p>Segue lista de mudan&ccedil;as:</p>
+                        <ul>
+                            <li><b>Geral</b></li>
+                                <ul>
+                                    <li>Spartacus.Net.Cryptor movido para namespace Spartacus.Utils</li>
+                                    <li>Removido namespace Spartacus.Net</li>
+                                    <li>DLLs C# s&atilde;o mescladas na mesma DLL com ILRepack. Isso quer dizer que voc&ecirc; n&atilde;o precisar&aacute; mais referenciar v&aacute;rias DLLs, apenas a Spartacus.dll</li>
+                                    <li>Criado <a href="https://www.nuget.org/packages/Spartacus">pacote NuGet para Spartacus</a></li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Utils</b></li>
+                                <ul>
+                                    <li>Removidas depend&ecirc;ncias a WindowsBase.dll e PresentationCore.dll</li>
+                                    <li>Implementado m&eacute;todo Spartacus.Utils.Excel.ImportDBF</li>
+                                    <li>Suporte a f&oacute;rmulas com m&uacute;ltiplos ranges (por exemplo, SOMASE)</li>
+                                    <li>Altura e largura m&aacute;ximas para imagens em arquivos XLSX</li>
+                                    <li>C&eacute;lulas ocultas em templates XLSX continuam ocultas no relat&oacute;rio XLSX</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Database</b></li>
+                                <ul>
+                                    <li>Implementados v&aacute;rios m&eacute;todos Transfer, para transferir dados de um banco de dados para outro</li>
+                                    <li>Implementados m&eacute;todos transfer que transferem blocos de dados</li>
+                                    <li>Implementada classe Spartacus.Database.Memory que gerencia um banco de dados relacional em mem&oacute;ria</li>
+                                    <li>Implementados m&eacute;todos GetColumnNames e GetColumnNamesAndTypes</li>
+                                    <li>Implementado m&eacute;todo Spartacus.Database.Oracle.QueryStoredProc</li>
+                                    <li>Implementada classe Spartacus.Database.SqlServer para acessar bancos de dados Microsoft SQL Server</li>
+                                    <li>Removida classe Spartacus.Database.FirebirdEmbed</li>
+                                    <li>Spartacus.Database.Oracle agora &eacute; C# puro e n&atilde;o precisa do Oracle Instant Client (usando Oracle.ManagedDataAcess.Client)</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Reporting:</b></li>
+                                <ul>
+                                    <li>Spartacus.Reporting.Field agora possui op&ccedil;&atilde;o para campo em branco</li>
+                                    <li>Op&ccedil;&atilde;o para renderizar t&iacute;tulos de grupos no cabe&ccedil;alho de dados</li>
+                                    <li>Op&ccedil;&atilde;o para ocultar o cabe&ccedil;alho de dados</li>
+                                    <li>HtmlDecode em campos n&atilde;o-num&eacute;ricos</li>
+                                    <li>Fontes podem ser configuradas em campos espec&iacute;ficos</li>
+                                    <br/>
+                                </ul>
+                            <li><b>Spartacus.Forms</b></li>
+                            	<ul>
+                            		<li>Op&ccedil;&atilde;o para preencher Spartacus.Forms.Grid a partir de um DataTable</li>
+                            		<li>Op&ccedil;&atilde;o para habilitar ou desabilitar os Spartacus.Forms.Buttons</li>
+                            		<br/>
+                            	</ul>
+                           	<li><b>Ferramentas</b></li>
+                           		<ul>
+                           			<li>Implementado Spartacus.Tools.ReportManager</li>
+                           		</ul>
+                            <br/>
+                            <li>E muito mais otimiza&ccedil;&otilde;es e corre&ccedil;&otilde;es de bugs.</li>
+                        </ul>
+                    </div>
+                    <p class="meta">Curitiba, 6 de maio de 2015.</p>
+                    <script src="https://apis.google.com/js/plusone.js">
+                    </script>
+                    <g:comments
+                        href="http://williamivanski.com.br/spartacus.html"
+                        width="642"
+                        first_party_property="BLOGGER"
+                        view_type="FILTERED_POSTMOD">
+                    </g:comments>
+                </div>
+
                 <div class="post">
                     <h2 class="title">
                         Lan&ccedil;ada vers&atilde;o 0.38.0 da Biblioteca Spartacus&nbsp;&nbsp;&nbsp;
@@ -85,7 +156,7 @@
                                     <li>Incorporado c&oacute;digo-fonte da EPPlus 4.0.4 para corrigir um bug NullReferenceException na classe ExcelRangeBase.</li>
                                     <br/>
                                 </ul>
-                            <li><b>Spartacus.Reporting:</b></li>
+                            <li><b>Spartacus.Reporting</b></li>
                                 <ul>
                                     <li>Suporte a bordas no cabe&ccedil;alho e rodap&eacute; do relat&oacute;rio;</li>
                                     <li>Objetos de texto agora podem ser centralizados;</li>
@@ -246,8 +317,9 @@
                         <ul>
                             <li><a href="https://github.com/wind39/spartacus">Projeto no GitHub</a></li>
                             <li><a href="https://github.com/wind39/spartacus/releases">Todas as Releases no GitHub</a></li>
-                            <li><a href="spartacus/Spartacus-0.38.0.zip">Download vers&atilde;o 0.38.0</a></li>
                             <li><a href="https://github.com/wind39/spartacus/wiki">Wiki no GitHub</a></li>
+                            <li><a href="https://www.nuget.org/packages/Spartacus">Pacote NuGet</a></li>
+                            <li><a href="spartacus/Spartacus.dll">Download vers&atilde;o 0.40.0</a></li>
                             <li><a href="spartacus/html/index.html">Documenta&ccedil;&atilde;o Online</a></li>
                         </ul>
                     </li>
