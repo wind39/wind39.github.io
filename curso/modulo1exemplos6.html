@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Exemplos 6
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+ </head>
+
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Exemplos Capítulo 6</h3>
+  <hr/>
+  <p>
+   1) Vetor Estático
+  </p>
+  <pre><code>// declaracao
+int[] vetor;
+
+// alocacao
+vetor = new int[10];
+
+// atribuicao de um unico elemento
+vetor[0] = 50;
+vetor[1] = 150;
+
+// atribuicao ou leitura
+for (int i = 0; i &lt; vetor.Length; i++)
+    vetor[i] = 0;
+
+// somente leitura
+foreach (int elem in vetor)
+    Console.WriteLine(elem);</code></pre>
+  <hr/>
+  <p>
+   2) Vetor Dinâmico
+  </p>
+  <pre><code>// declaracao
+System.Collections.Generic.List&lt;int&gt; vetor;
+
+// alocacao
+vetor = new System.Collections.Generic.List&lt;int&gt;();
+
+// atribuicao de um unico elemento
+vetor.Add(50);
+vetor[0] = 150;
+vetor.Add(250);
+vetor[1] = 350;
+
+// atribuicao ou leitura
+for (int i = 0; i &lt; vetor.Count; i++)
+    vetor[i] = 0;
+
+// somente leitura
+foreach (int elem in vetor)
+    Console.WriteLine(elem);</code></pre>
+    <hr/>
+    <p>
+     3) Matriz Estática
+    </p>
+    <pre><code>// declaracao
+int[,] matriz;
+
+// alocacao
+matriz = new int[15,10];
+
+// atribuicao de um unico elemento
+matriz[0,0] = 50;
+matriz[0,1] = 150;
+matriz[1,0] = 250;
+matriz[1,1] = 350;
+
+// atribuicao ou leitura
+for (int i = 0; i &lt; 15; i++)
+    for (int j = 0; j &lt; 10; j++)
+        matriz[i, j] = 0;
+
+// somente leitura
+foreach (int elem in matriz)
+    Console.WriteLine(elem);</code></pre>
+    <hr/>
+    <p>
+     4) Matriz Esparsa
+    </p>
+    <pre><code>// declaracao
+int[][] matriz;
+
+// alocacao
+matriz = new int[5][];
+matriz[0] = new int[8];
+matriz[1] = new int[3];
+matriz[2] = new int[5];
+matriz[3] = new int[20];
+matriz[4] = new int[100];
+
+// atribuicao de um unico elemento
+matriz[0][0] = 50;
+matriz[0][1] = 150;
+matriz[1][0] = 250;
+matriz[1][1] = 350;
+
+// atribuicao ou leitura
+for (int i = 0; i &lt; matriz.Length; i++)
+    for (int j = 0; j &lt; matriz[i].Length; j++)
+        matriz[i][j] = 0;
+
+// somente leitura
+foreach (int[] linha in matriz)
+    foreach (int elem in linha)
+        Console.WriteLine(elem);</code></pre>
+    <hr/>
+    <p>
+     5) Matriz Dinâmica
+    </p>
+    <pre><code>// declaracao
+System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;int&gt;&gt; matriz;
+
+// alocacao
+matriz = new System.Collections.Generic.List&lt;System.Collections.Generic.List&lt;int&gt;&gt;();
+matriz.Add(new System.Collections.Generic.List&lt;int&gt;());
+matriz.Add(new System.Collections.Generic.List&lt;int&gt;());
+matriz.Add(new System.Collections.Generic.List&lt;int&gt;());
+matriz.Add(new System.Collections.Generic.List&lt;int&gt;());
+matriz.Add(new System.Collections.Generic.List&lt;int&gt;());
+
+// atribuicao de um unico elemento
+matriz[0].Add(50);
+matriz[0][0] = 150;
+matriz[0].Add(250);
+matriz[0][1] = 350;
+matriz[1].Add(450);
+matriz[1][0] = 550;
+matriz[1].Add(650);
+matriz[1][1] = 750;
+
+// atribuição ou leitura
+for (int i = 0; i &lt; matriz.Count; i++)
+    for (int j = 0; j &lt; matriz[i].Count; j++)
+        matriz[i][j] = 0;
+
+// somente leitura
+foreach (System.Collections.Generic.List&lt;int&gt; linha in matriz)
+    foreach (int elem in linha)
+        Console.WriteLine(elem);</code></pre>
+ </body>
+</html>
