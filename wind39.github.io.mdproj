@@ -130,5 +130,12 @@
     <None Include="curso\modulo2capitulo5-off.ppt" />
     <None Include="curso\modulo1exemplos6.html" />
     <None Include="curso\modulo1lista6.html" />
+    <None Include="curso\modulo2lista5.html" />
+    <None Include="curso\modulo2lista5exercicio01.png" />
+    <None Include="curso\modulo2lista5exercicio02.png" />
+    <None Include="curso\modulo2lista5exercicio03.png" />
+    <None Include="curso\modulo2lista5exercicio04_1.png" />
+    <None Include="curso\modulo2lista5exercicio04_2.png" />
+    <None Include="curso\modulo2prova2-off.html" />
   </ItemGroup>
 </Project>
