@@ -132,12 +132,12 @@
     <None Include="curso\modulo2lista5exercicio03.png" />
     <None Include="curso\modulo2lista5exercicio04_1.png" />
     <None Include="curso\modulo2lista5exercicio04_2.png" />
-    <None Include="curso\modulo2prova2-off.html" />
     <None Include="curso\modulo2capitulo5.ppt" />
     <None Include="curso\modulo1respostas6.html" />
     <None Include="curso\agenda.ico" />
     <None Include="curso\modulo1capitulo7.ppt" />
     <None Include="curso\modulo1lista7.html" />
     <None Include="curso\modulo1prova2.html" />
+    <None Include="curso\modulo2prova2.html" />
   </ItemGroup>
 </Project>

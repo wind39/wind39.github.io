@@ -1,10 +1,8 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupItem="wind39.github.io.mdproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="curso/modulo1prova2-off.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="modulo1.html">
     <Files>
-      <File FileName="modulo1.html" Line="172" Column="34" />
-      <File FileName="curso/modulo1prova1.html" Line="57" Column="7" />
-      <File FileName="curso/modulo1prova2-off.html" Line="77" Column="8" />
+      <File FileName="modulo1.html" Line="177" Column="91" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
