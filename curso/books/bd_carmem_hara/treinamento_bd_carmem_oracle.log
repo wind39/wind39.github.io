@@ -1,0 +1,31 @@
+;;; 
+Export: Release 11.2.0.2.0 - Production on Tue Dec 15 14:34:11 2015
+
+Copyright (c) 1982, 2009, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Starting "CURSO"."SYS_EXPORT_SCHEMA_01":  userid=curso/********@XE directory=DATA_PUMP_DIR dumpfile=treinamento_bd_carmem_oracle.dmp logfile=treinamento_bd_carmem_oracle.log schemas=curso 
+Estimate in progress using BLOCKS method...
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+Total estimation using BLOCKS method: 512 KB
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+. . exported "CURSO"."ALUNO"                             7.773 KB      24 rows
+. . exported "CURSO"."COMPANHIA"                         5.914 KB       3 rows
+. . exported "CURSO"."COMPRA"                            6.328 KB       4 rows
+. . exported "CURSO"."DISCIPLINA"                        7.304 KB      21 rows
+. . exported "CURSO"."MATRICULA"                         6.070 KB      21 rows
+. . exported "CURSO"."PESSOA"                            5.890 KB       4 rows
+. . exported "CURSO"."PRODUTO"                           6.390 KB       4 rows
+. . exported "CURSO"."PROFESSOR"                         6.320 KB      15 rows
+Master table "CURSO"."SYS_EXPORT_SCHEMA_01" successfully loaded/unloaded
+******************************************************************************
+Dump file set for CURSO.SYS_EXPORT_SCHEMA_01 is:
+  /u01/app/oracle/admin/XE/dpdump/treinamento_bd_carmem_oracle.dmp
+Job "CURSO"."SYS_EXPORT_SCHEMA_01" successfully completed at 14:34:28
