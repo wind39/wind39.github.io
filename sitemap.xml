@@ -104,10 +104,14 @@
    </url>
    <url>
       <loc>http://williamivanski.com.br/spartacus.html</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
    </url>
    <url>
       <loc>http://williamivanski.com.br/blog.html</loc>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
+   </url>
+   <url>
+      <loc>http://williamivanski.com.br/omnidb.html</loc>
+      <changefreq>daily</changefreq>
    </url>
 </urlset>

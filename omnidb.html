@@ -1,6 +1,6 @@
 ﻿<html>
     <head>
-        <title>William Ivanski - Blog</title>
+        <title>William Ivanski - Spartacus</title>
         
         <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
 
@@ -8,14 +8,7 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="keywords" content="" />
         <meta name="description" content="" />
-
-        <link href="github.min.css" rel="stylesheet"/>
-        <script src="highlight.min.js">
-        </script>
-        <script>
-          hljs.initHighlightingOnLoad();
-        </script>
-
+        
         <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
         
         <script>
@@ -48,8 +41,8 @@
                 <li class="first"><a href="index.html" accesskey="1" title="In&iacute;cio">In&iacute;cio</a></li>
                 <li><a href="curso.html" accesskey="2" title="Curso">Curso de Programa&ccedil;&atilde;o C#</a></li>
                 <li><a href="spartacus.html" accesskey="3" title="Spartacus">Spartacus</a></li>
-                <li><a href="omnidb.html" accesskey="4" title="OmniDB">OmniDB</a></li>
-                <li><a class="current" href="blog.html" accesskey="5" title="Blog">Blog</a></li>
+                <li><a class="current" href="omnidb.html" accesskey="4" title="OmniDB">OmniDB</a></li>
+                <li><a href="blog.html" accesskey="5" title="Blog">Blog</a></li>
                 <li><a href="sobremim.html" accesskey="6" title="Sobre mim">Sobre mim</a></li>
             </ul>
         </div>
@@ -60,51 +53,23 @@
         
             <!-- start content -->
             <div id="content">
-            
-                <div id="20151026" class="post">
+
+            	<div class="post">
                     <h2 class="title">
-                        Compilando Mono e XSP no Linux&nbsp;&nbsp;&nbsp;
-                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/blog.html"></div>
+                        OmniDB agora suporta Microsoft SQL Server&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/omnidb.html"></div></br>
                     </h2>
                     <div class="entry">
-                        <p>1) Baixe o c&oacute;digo-fonte do Mono, do XSP e da libgdiplus mais recentes <a target="_blank" href="http://origin-download.mono-project.com/sources/">aqui</a>.</p>
-                        <p>2) Extraia o tarball do Mono:</p>
-                        <pre><code>tar -xjvf mono-4.2.1.60.tar.bz2</code></pre>
-                        <p>3) Extraia o tarball do XSP:</p>
-                        <pre><code>tar -xzvf xsp-3.8.tar.gz</code></pre>
-                        <p>4) Extraia o tarball da libgdiplus:</p>
-                        <pre><code>tar -xzvf libgdiplus-3.12.tar.gz</code></pre>
-                        <p>5) Compile e instale o Mono:</p>
-                        <pre><code>cd mono-4.2.1/
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-						<p>6) Verifique a versão do MONO:</p>
-						<pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
-						<p>7) A compila&ccedil;&atilde;o do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das vers&otilde;es mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padr&atilde;o do Mono:</p>
-						<pre><code>sudo ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
-						<p>8) Compile e instale o XSP:</p>
-						<pre><code>cd ../xsp-3.8
-env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
-make
-sudo make install</code></pre>
-						<p>9) Instale a biblioteca <b>cairo</b>:</p>
-						<pre><code>sudo apt-get install libtool libcairo2-dev</code></pre>
-						<p>10) Compile e instale a libgdiplus:</p>
-						<pre><code>cd ../libgdiplus-3.12
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-						<p>11) Suponha que o seu projeto est&aacute; na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
-						<pre><code>cd projeto
-env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
-						<p>12) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
+                        <p>Voc&ecirc; pediu, n&oacute;s atendemos! Hoje estamos felizes em anunciar que o OmniDB agora suporta Microsoft SQL Server.</p>
+                        <p>As conex&otilde;es com SQL Server funcionam como no PostgreSQL, em que &eacute; necess&aacute;rio se conectar a um schema espec&iacute;fico. Por&eacute;m, no SQL server, se deixar o schema em branco, o OmniDB se conectar&aacute; automaticamente ao schema padr&atilde;o "dbo".</p>
+                        <p>Estamos aguardando ansiosamente pelo retorno da comunidade. Enquanto isso estamos arrega&ccedil;ando as mangas e corrigindo pequenos bugs, melhorando a interface com o usu&aacute;rio e adicionando novas funcionalidades e suporte a novos SGBDs.</p>
+                        <p>Fique ligado para novidades!</p>
                     </div>
-                    <p class="meta">Curitiba, 26 de outubro de 2015.</p>
+                    <p class="meta">Curitiba, 26 de fevereiro de 2016.</p>
                     <script src="https://apis.google.com/js/plusone.js">
                     </script>
                     <g:comments
-                        href="http://williamivanski.com.br/blog.html"
+                        href="http://williamivanski.com.br/omnidb.html"
                         width="642"
                         first_party_property="BLOGGER"
                         view_type="FILTERED_POSTMOD">
@@ -119,9 +84,13 @@ env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PAT
                 <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/113434597235835606932" data-rel="author"></div></br></br></br>
                 <ul>
                     <li>
-                        <h2>Conte&uacute;do</h2>
+                        <h2><a href="omnidb.html">OmniDB</a></h2>
                         <ul>
-                            <li><a href="#20151026">Compilando Mono e XSP no Linux</a></li>
+                            <li><a href="http://www.omnidb.com.br/pt_download.html">Download</a></li>
+                            <li><a href="http://www.omnidb.com.br/pt_index.html">Site</a></li>
+                            <li><a href="http://www.omnidb.com.br/omnidb-manualdousuario.pdf">Manual em PDF</a></li>
+                            <li><a href="http://www.omnidb.com.br/blog">Blog oficial (em ingl&ecirc;s)</a></li>
+                            <li><a href="http://forum.omnidb.com.br">F&oacute;rum (em ingl&ecirc;s)</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -138,4 +107,3 @@ env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PAT
         </div>
     </body>
 </html>
-

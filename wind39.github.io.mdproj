@@ -139,5 +139,6 @@
     <None Include="curso\modulo1lista7.html" />
     <None Include="curso\modulo1prova2.html" />
     <None Include="curso\modulo2prova2.html" />
+    <None Include="omnidb.html" />
   </ItemGroup>
 </Project>
