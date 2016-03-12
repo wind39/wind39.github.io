@@ -53,8 +53,6 @@
     <None Include="curso\modulo1capitulo3.pptx" />
     <None Include="github.min.css" />
     <None Include="highlight.min.js" />
-    <None Include="curso\books\bd_carmem_hara\banco_treinamento.dmp" />
-    <None Include="curso\books\bd_carmem_hara\banco_treinamento.log" />
     <None Include="curso\books\bd_carmem_hara\exercicio_locadora.pdf" />
     <None Include="curso\books\bd_carmem_hara\exercicio_modelagem.pdf" />
     <None Include="curso\books\bd_carmem_hara\exercicio2.pdf" />
@@ -142,5 +140,34 @@
     <None Include="omnidb.html" />
     <None Include="curso\modulo3capitulo1.pptx" />
     <None Include="curso\modulo3capitulo2.pptx" />
+    <None Include="curso\compras.xlsx" />
+    <None Include="curso\escola.xlsx" />
+    <None Include="curso\lugares.xlsx" />
+    <None Include="curso\northwind.db" />
+    <None Include="curso\modulo3lista2.html" />
+    <None Include="curso\books\apostila_banco_de_dados.pdf" />
+    <None Include="curso\books\postgresqldba01.pdf" />
+    <None Include="curso\books\bd_carmem_hara\create_user_oracle.sql" />
+    <None Include="curso\books\bd_carmem_hara\treinamento_bd_carmem_oracle.dmp" />
+    <None Include="curso\books\bd_carmem_hara\treinamento_bd_carmem_oracle.log" />
+    <None Include="curso\certificados\M1_Cristiano.png" />
+    <None Include="curso\certificados\M1_Cristiano.svg" />
+    <None Include="curso\certificados\M1_Felipe.png" />
+    <None Include="curso\certificados\M1_Felipe.svg" />
+    <None Include="curso\certificados\M1_Jaquison.png" />
+    <None Include="curso\certificados\M1_Jaquison.svg" />
+    <None Include="curso\certificados\M1_Rodrigo.png" />
+    <None Include="curso\certificados\M1_Rodrigo.svg" />
+    <None Include="curso\certificados\M2_Cristiano.png" />
+    <None Include="curso\certificados\M2_Cristiano.svg" />
+    <None Include="curso\certificados\M2_Rodrigo.png" />
+    <None Include="curso\certificados\M2_Rodrigo.svg" />
+    <None Include="curso\certificados\M2_Roldao.png" />
+    <None Include="curso\certificados\M2_Roldao.svg" />
+    <None Include="curso\M3C2_Almoxarifado.dia" />
+    <None Include="curso\M3C2_Almoxarifado.png" />
+    <None Include="curso\M3C2_DER.dia" />
+    <None Include="curso\M3C2_DER.png" />
+    <None Include="curso\OmniDB-1.2.zip" />
   </ItemGroup>
 </Project>
