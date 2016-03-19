@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/MigrateDB.aspx" hash="1e02a6995" filehash="29c7ad247c24" flags="110000" assembly="App_Web_1ctlzq4z" type="ASP.migratedb_aspx">
+    <filedeps>
+        <filedep name="/MigrateDB.aspx" />
+    </filedeps>
+</preserve>
