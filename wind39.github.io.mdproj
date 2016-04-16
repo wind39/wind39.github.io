@@ -168,6 +168,6 @@
     <None Include="curso\M3C2_Almoxarifado.png" />
     <None Include="curso\M3C2_DER.dia" />
     <None Include="curso\M3C2_DER.png" />
-    <None Include="curso\OmniDB-1.2.zip" />
+    <None Include="curso\modulo3respostas2.html" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,205 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Lista 2
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo III Capítulo 2 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Baixe o banco de dados <a href="lugares.db">lugares.db</a> e o descreva na forma algébrica. Em seguida, desenhe o seu DER.
+  </p>
+  <p>
+   Forma algébrica:
+  </p>
+  <ul>
+   <li>PAISES (Codigo, Nome)</li>
+   <li>ESTADOS (Codigo, Sigla, Nome)</li>
+   <li>MUNICIPIOS (CodigoEstado, Sigla, Nome)</li>
+  </ul>
+  <p>
+   DER:
+  </p>
+  <img src="modulo3lista2resposta01.png" alt="DER" />
+  <hr/>
+  <p>
+   2) Baixe o arquivo <a href="compras.xlsx">compras.xlsx</a>. Desenhe o DER, descreva na forma algébrica e crie o banco de dados em SQLite usando o OmniDB.
+  </p>
+  <p>
+   <a href="compras.db">Baixar banco de dados</a>. Forma algébrica:
+  </p>
+  <ul>
+   <li>companhia (cnome, valoracao, pais)</li>
+   <li>pessoa (nomepess, tel, cidade)</li>
+   <li>produto (pnome, preco, categoria, fabricante)</li>
+   <li>compra (comprador, vendedor, loja, produto)</li>
+  </ul>
+  <p>DER:</p>
+  <img src="modulo3lista2resposta02.png" alt="DER" />
+  <hr/>
+  <p>
+   3) Baixe o arquivo <a href="escola.xlsx">escola.xlsx</a>. Desenhe o DER, descreva na forma algébrica e crie o banco de dados em SQLite usando o OmniDB.
+  </p>
+  <hr/>
+  <p>
+   4) Baixe o banco de dados <a href="northwind.db">northwind.db</a> e o descreva na forma algébrica. Em seguida, desenhe o seu DER.
+  </p>
+  <hr/>
+  <p>
+   5) Construa um DER e crie em SQLite o banco de dados para uma companhia de seguros de automóveis com um conjunto de clientes, onde cada um possui um certo número de automóveis. Os dados do cliente são código, nome, RG, CPF, endereço e telefone. Do carro deve-se armazenar a placa, código RENAVAN, fabricante, modelo e ano. Associado a cada automóvel há um histórico de ocorrências. Cada ocorrência deve ter um número (único), data, local e descrição.
+  </p>
+  <p><a href="exercicio05.db">Baixar banco de dados</a>. DER:</p>
+  <img src="modulo3lista2resposta05.png" alt="DER" />
+  <hr/>
+  <p>
+   6) Construa um DER e crie em SQLite o banco de dados de uma clínica, conforme abaixo:
+  </p>
+  <ul>
+   <li>cada médico que trabalha na clínica é identificado pelo seu CRM, nome, data de admissão e salário;</li>
+   <li>para todo paciente internado na clínica são cadastrados alguns dados pessoais: código, nome, RG, CPF, endereço e telefone para contato;</li>
+   <li>um paciente tem sempre um médico responsável, com um horário de visita diário predeterminado;</li>
+   <li>pacientes estão sempre internados em quartos individuais que são identificados por um número e está em um andar na clínica.</li>
+  </ul>
+  <hr/>
+  <p>
+   7) Você foi convidado a elaborar um banco de dados para uma empresa de consultoria que deseja registrar informações sobre seus projetos e consultores. De acordo com o solicitado pelo seu cliente, para cada projeto você deverá armazenar o código, nome e endereço da empresa que solicitou o projeto, o número do projeto, a data de início e término do projeto, o valor do projeto, o número, nome, número do documento de identidade e especialização dos consultores que participaram do projeto, as horas que trabalharam em cada projeto e a função que exerceu (líder ou membro). Note que uma mesma empresa pode solicitar diversos projetos e um mesmo consultor pode trabalhar em diversos projetos. Elabore o DER deste banco de dados e crie-o em SQLite utilizando o OmniDB. Elabore o nome dos campos de maneira a deixar claro que informação está sendo armazenada no mesmo.
+  </p>
+  <hr/>
+  <p>
+   8) Você foi convidado a elaborar um banco de dados para uma pequena companhia aérea que deseja registrar informações sobre seus vôos e clientes. De acordo com o solicitado pelo seu cliente, para cada vôo você deverá armazenar o nome, o número do registro e a data de validade do registro do piloto que realizou o vôo, o número do vôo, a hora de partida e de chegada do vôo, o local de partida e de destino do vôo, o nome, número do documento de identidade, número do documento de identidade, telefone e endereço dos clientes que estavam presentes, o número da cadeira em que estavam sentados e a quantidade de bagagens que cada cliente despachou. Note que um mesmo piloto pode fazer diferentes vôos e um mesmo cliente pode voar diversas vezes. Elabore o DER deste banco de dados e crie-o em SQLite utilizando o OmniDB. Elabore o nome dos campos de maneira a deixar claro que informação está sendo armazenada no mesmo.
+  </p>
+  <p><a href="exercicio08.db">Baixar banco de dados</a>. DER:</p>
+  <img src="modulo3lista2resposta08.png" alt="DER" />
+  <hr/>
+  <p>
+   9) Você foi convidado a elaborar um banco de dados para uma loja de material de escritório que deseja registrar informações sobre vendas de materiais. De acordo com o solicitado pela loja, para cada venda você deverá armazenar o código, CNPJ, nome e endereço do cliente para o qual fez a venda, o número da nota fiscal, a data da venda, o valor do desconto concedido, o endereço de entrega e o código, nome, descrição e preço de tabela dos materiais que foram vendidos, as quantidades vendidas com os preços praticados para cada tipo de material. Note que para um mesmo cliente a loja pode realizar várias vendas, e um mesmo tipo de material pode ser vendido várias vezes. Elabore o DER deste banco de dados e crie-o em SQLite utilizando o OmniDB. Elabore o nome dos campos de maneira a deixar claro que informação está sendo armazenada no mesmo.
+  </p>
+  <hr/>
+  <p>
+   10) Desenhe o DER e crie em SQLite um banco de dados para atender à seguinte situação:
+  </p>
+  <ul>
+   <li>Quero criar um banco de dados para organizar os meus CDs;</li>
+   <li>Um CD possui um título e diversas músicas;</li>
+   <li>Toda música possui um título e uma duração;</li>
+   <li>Uma música pode ter sido composta por um ou mais compositores;</li>
+   <li>Uma música pode ter sido interpretada por um ou mais cantores;</li>
+   <li>Existem cantores que também são compositores (e vice-versa).</li>
+  </ul>
+  <hr/>
+  <p>
+   11) Desenhe o DER e crie em SQLite um banco de dados para atender à seguinte situação:
+  </p>
+  <ul>
+   <li>A ACME é uma indústria localizada em uma pequena cidade do interior;</li>
+   <li>Na ACME todo funcionário está lotado em um departamento. Cada departamento faz parte de uma diretoria. Uma diretoria controla diversos departamentos;</li>
+   <li>No cadastro do funcionários estão cadastrados todos os seus dependentes. Como a cidade é pequena, alguns dependentes de funcionários também são funcionários, e a ACME precisa registrar esses casos.</li>
+  </ul>
+  <hr/>
+  <p>
+   12) Desenhe o DER e crie em SQLite um banco de dados para atender à seguinte situação:
+  </p>
+  <ul>
+   <li>Uma construtora desenvolve projetos de grande porte;</li>
+   <li>Esta empresa está organizada em departamentos, sendo que cada projeto é sempre coordenado por um departamento;</li>
+   <li>Os departamentos possuem empregados que podem ser chefes. Embora um empregado pertença sempre a um departamento, ele pode ser alocado a projetos de outros departamentos.</li>
+  </ul>
+  <hr/>
+  <p>
+   13) Construa um DER e crie em SQLite o banco de dados para uma empresa contendo tipo de produto, fornecedor, cliente, venda e loja. Suponha que:
+  </p>
+  <ul>
+   <li>um tipo de produto pode ser fornecido por vários fornecedores e um fornecedor pode fornecer vários tipos de produto;</li>
+   <li>a venda a um cliente pode conter vários tipos de produto e um tipo de produto pode fazer parte de várias vendas;</li>
+   <li>a venda a um cliente é realizada em uma das lojas da empresa;</li>
+   <li>cada produto numa venda tem preço e quantidade;</li>
+   <li>cada venda tem número da nota fiscal, data e valor total;</li>
+   <li>cada tipo de produto tem código, nome e descrição;</li>
+   <li>cada cliente tem código, nome e endereço;</li>
+   <li>cada fornecedor tem código, nome, CNPJ e endereço;</li>
+   <li>cada loja tem código, nome e CNPJ.</li>
+  </ul>
+  <hr/>
+  <p>
+   14) Desenhe o DER e crie o banco de dados em SQLite utilizando OmniDB de um modelo de votação eleitoral. Indique as chaves primárias, chaves estrangeiras e cardinalidades entre as entidades. Segue abaixo o modelo na forma algébrica:
+  </p>
+  <ul>
+   <li><b>Politicos</b> (codigoPolitico, nome, partido)</li>
+   <li><b>País</b> (codigoPais, nome, codigoPresidente, codigoVicePresidente)</li>
+   <li><b>Senadores</b> (codigoSenador)</li>
+   <li><b>DeputadosFederais</b> (codigoDepFederal)</li>
+   <li><b>Estados</b> (codigoEstado, codigoPais, nome, UF, codigoGovernador, codigoViceGovernador)</li>
+   <li><b>DeputadosEstaduais</b> (codigoDepEstadual)</li>
+   <li><b>Cidades</b> (codigoCidade, codigoEstado, nome, codigoPrefeito, codigoVicePrefeito)</li>
+   <li><b>Vereadores</b> (codigoVereador)</li>
+   <li><b>ZonasEleitorais</b> (codigoZona, codigoCidade)</li>
+   <li><b>Eleitores</b> (codigoEleitor, codigoZona)</li>
+  </ul>
+  <hr/>
+  <p>
+   15) Desenhe um DER e crie o banco de dados em SQLite que represente as informações sobre uma gravadora e seus músicos descrita abaixo:
+  </p>
+  <ul>
+   <li>Cada músico tem um identificador, CPF, nome, endereço e telefone.</li>
+   <li>Cada instrumento usado na gravadora tem um código identificador, um nome (guitarra, sintetizador), um tipo (sopro, corda, percussão) e uma data de compra.</li>
+   <li>Cada álbum gravado tem um título, data dos direitos autorais, um formado (CD, MP3) e um identificador de álbum.</li>
+   <li>Cada música gravada tem um título e diversos autores.</li>
+   <li>Cada músico pode tocar diversos instrumentos musicais, e cada instrumento pode ser tocado por diversos músicos.</li>
+   <li>Cada álbum tem um conjunto de músicas, mas nenhuma música pode aparecer em mais de um álbum.</li>
+   <li>Cada música é tocada por um ou mais músicos e cada músico pode tocar em diversas músicas.</li>
+   <li>Cada álgum tem exatamente um músico que é seu produtor. Um músico pode produzir diversos álbuns.</li>
+  </ul>
+  <hr/>
+  <p>
+   16) Construa um DER e crie o banco de dados em SQLite que modele a rede de farmácias descrita abaixo:
+  </p>
+  <ul>
+   <li>a empresa mantém um registro de clientes contendo RG, nome, endereço e idade;</li>
+   <li>os médicos cadastrados são identificados pelo RG. Para cada médico, são mantidos o nome, especialidade e anos de experiência;</li>
+   <li>cada laboratório farmacêutico é identificado pelo nome e tem um telefone;</li>
+   <li>para cada remédio, são mantidos o nome comercial e a fórmula. Cada remédio é produzido por um determinado laboratório farmacêutico, e o nome comercial identifica o remédio. Se um laboratório é removido do cadastro, não há necessidade de manter o cadastro dos seus produtos;</li>
+   <li>cada farmácia da rede tem um nome, endereço e telefone;</li>
+   <li>cada cliente tem um médico cadastrado que é seu responsável; cada médico tem pelo menos um paciente;</li>
+   <li>cada farmácia da rede vende diversos remédios e tem um preço para cada um; um remédio pode ser vendido em diversas farmácias e seu preço pode variar de uma farmácia para outra;</li>
+   <li>médicos prescrevem remédios para seus pacientes (clientes da rede); um médico pode prescrever um ou mais remédios para diversos pacientes, e um paciente pode obter prescrições de diversos médicos; cada prescrição tem uma data e uma quantidade associada a cada remédio. Assuma que, se um médico prescrever o mesmo remédio para o mesmo paciente mais de uma vez, somente as informações da última prescrição precisam ser guardadas.</li>
+  </ul>
+  <hr/>
+  <p>
+   17) Construa um DER e crie o banco de dados em SQLite que modele a aplicação bancária descrita abaixo:
+  </p>
+  <ul>
+   <li>Um banco é organizado em agências. Cada agência é localizada em uma cidade e identificada por um nome único. O banco controla os fundos de cada uma das agências.</li>
+   <li>Os clientes do banco são identificados pelo número do seu CPF. O banco mantém dados como nome, rua e cidade do cliente. Os clientes podem possuir contas e contrair empréstimos. O cliente pode estar associado a um gerente, que cuida de seus negócios ou atua como um agente de empréstimos.</li>
+   <li>Os empregados do banco também são identificados por meio do número do seu CPF. A administração do banco mantém o nome e o número do telefone de cada um de seus funcionários, os nomes de seus dependentes e o CPF do seu gerente. O banco também possui a data de contratação do funcionário e, com isso, seu tempo de trabalho.</li>
+   <li>O banco oferece dois tipos de contas: conta poupança e conta corrente. As contas correntes podem possuir mais de um correntista e um correntista pode possuir mais de uma conta. Cada conta possui um único número. O banco controla o saldo de cada conta, assim como a data mais recente de acesso a essa conta. Por outro lado, cada conta poupança possui a taxa de juros associada, assim como são também registrados os excessos nos limites da conta corrente.</li>
+   <li>Um empréstimo originado em uma agência em particular pode ter sido obtido por um ou mais clientes. Um empréstimo é identificado por um número único. Para cada empréstimo o banco mantém o montante emprestado, assim como os pagamentos das parcelas. Embora o número da parcela de um empréstimo não identifique de modo único um pagamento específico dentre os muitos realizados no banco, o número da parcela identifica um pagamento efetuado para um empréstimo em particular. A data e o montante são registrados no pagamento de cada parcela.</li>
+  </ul>
+ </body>
+</html>
