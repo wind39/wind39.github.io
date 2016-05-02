@@ -61,6 +61,49 @@
             <!-- start content -->
             <div id="content">
             
+                <div id="20160502" class="post">
+                    <h2 class="title">
+                        Conectando ao wifi pelo terminal&nbsp;&nbsp;&nbsp;
+                        <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/blog.html"></div>
+                    </h2>
+                    <div class="entry">
+                        <p>O primeiro passo &eacute; criar um arquivo de configura&ccedil;&atilde;o para cada rede wifi que voc&ecirc; quiser se conectar. Supondo que voc&ecirc; queira se conectar a uma rede chamada <em>Casa</em>, senha <em>1234567890</em>:</p>
+                        <pre><code>sudo wpa_passphrase Casa 1234567890 > casa.conf</code></pre>
+                        <p>O comando acima criar&aacute; um arquivo chamado <tt>casa.conf</tt>, com o seguinte conte&uacute;do:</p>
+                        <pre><code>network={
+        ssid="Casa"
+        #psk="1234567890"
+        psk=e10582b72cc038f24090b69e18ce04595f978e8c07a9ec339116d4d1289062ba
+}</code></pre>
+                        <p>Note que a linha psk que est&aacute; comentada &eacute; opcional e voc&ecirc; poder&aacute; remover se n&atilde;o quiser que outras pessoas descubram a senha da sua rede.</p>
+                        <p>Em seguida crie um arquivo chamado <tt>wireless.sh</tt> e cole o seguinte conte&uacute;do:</p>
+                        <pre><code>#! /bin/bash
+
+echo "Desbloqueando rfkill..."
+rfkill unblock all
+
+echo "Ativando interface wlan0..."
+ifconfig wlan0 up
+
+echo "Rodando wpa_supplicant em background..."
+wpa_supplicant -B -iwlan0 -c$1
+
+echo "Obtendo IP..."
+dhclient wlan0</code></pre>
+                        <p>Rode o script:</p>
+                        <pre><code>sudo ./wireless.sh casa.conf</code></pre>
+                    </div>
+                    <p class="meta">Curitiba, 2 de maio de 2016.</p>
+                    <script src="https://apis.google.com/js/plusone.js">
+                    </script>
+                    <g:comments
+                        href="http://williamivanski.com.br/blog.html"
+                        width="642"
+                        first_party_property="BLOGGER"
+                        view_type="FILTERED_POSTMOD">
+                    </g:comments>
+                </div>
+            
                 <div id="20151026" class="post">
                     <h2 class="title">
                         Compilando Mono e XSP no Linux&nbsp;&nbsp;&nbsp;
@@ -121,7 +164,8 @@ env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PAT
                     <li>
                         <h2>Conte&uacute;do</h2>
                         <ul>
-                            <li><a href="#20151026">Compilando Mono e XSP no Linux</a></li>
+                            <li><a href="#20160502">02/05/2016 - Conectando ao wifi pelo terminal</a></li>
+                            <li><a href="#20151026">26/10/2015 - Compilando Mono e XSP no Linux</a></li>
                         </ul>
                     </li>
                 </ul>
