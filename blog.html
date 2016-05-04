@@ -79,6 +79,9 @@
                         <p>Em seguida crie um arquivo chamado <tt>wireless.sh</tt> e cole o seguinte conte&uacute;do:</p>
                         <pre><code>#! /bin/bash
 
+echo "Matando wpa_supplicant..."
+killall wpa_supplicant
+
 echo "Desbloqueando rfkill..."
 rfkill unblock all
 
