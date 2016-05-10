@@ -116,7 +116,6 @@
     <None Include="curso\M2C4_AnaliseRequisitos.dia" />
     <None Include="curso\M2C4_AnaliseRequisitos.png" />
     <None Include="curso\modulo2capitulo4.ppt" />
-    <None Include="spartacus\basecadastro.db" />
     <None Include="blog.html" />
     <None Include="curso\modulo1capitulo5.pptx" />
     <None Include="curso\modulo2lista4.html" />
@@ -185,9 +184,9 @@
     <None Include="curso\modulo3lista2resposta08.png" />
     <None Include="curso\modulo3lista2resposta09.png" />
     <None Include="curso\modulo3lista2resposta10.png" />
-    <None Include="curso\modulo3lista3-off.html" />
     <None Include="curso\OmniDB-1.3.zip" />
     <None Include="curso\SchoolRegister.tgz" />
     <None Include="curso\testimonials.txt" />
+    <None Include="curso\modulo3lista3.html" />
   </ItemGroup>
 </Project>
