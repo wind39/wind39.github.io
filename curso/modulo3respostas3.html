@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Lista 3
+  </title>
+  <link href="../github.min.css" rel="stylesheet"/>
+  <script src="../highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo III Capítulo 3 (Respostas)</h3>
+  <hr/>
+  <p>
+   <b>COMPRAS:</b> Baixe o banco de dados <a href="compras.db">compras.db</a> para resolver os exercícios de 1 a 12. As respostas serão consultas SQL, e não o retorno das consultas em si.
+  </p>
+  <p>
+   1) Encontre o nome das pessoas que compraram produtos eletrônicos.
+  </p>
+  <pre><code>select c.comprador
+from compra c
+inner join produto p
+        on p.pnome = c.produto
+where p.categoria = 'eletronicos'</code></pre>
+  <p>
+   2) Encontre o nome das pessoas que compraram produtos japoneses.
+  </p>
+  <pre><code>select c.comprador
+from companhia co
+inner join produto p
+        on p.fabricante = co.cnome
+inner join compra c
+        on c.produto = p.pnome
+where co.pais = 'Japao'</code></pre>
+  <p>
+   3) Encontre o nome das pessoas que compraram produtos japoneses e vivem em Curitiba.
+  </p>
+  <pre><code>select c.comprador
+from companhia co
+inner join produto p
+        on p.fabricante = co.cnome
+inner join compra c
+        on c.produto = p.pnome
+inner join pessoa pe
+        on pe.nomepess = c.comprador
+where co.pais = 'Japao'
+  and pe.cidade = 'Curitiba'</code></pre>
+  <p>
+   4) Encontre o nome das pessoas que compraram E venderam alguma coisa. 
+  </p>
+  <p>
+   5) Encontre o nome das pessoas que compraram produtos de "Pedro" ou produtos fabricados por uma companhia com valor de ação maior que $50.
+  </p>
+  <p>
+   6) Encontre o nome das pessoas que compraram produtos japoneses, mas que não compraram produtos brasileiros.
+  </p>
+  <p>
+   7) Encontre o nome das pessoas que compraram produtos japoneses e brasileiros.
+  </p>
+  <p>
+   8) Encontre o nome e a cidade onde moram as pessoas que são as únicas moradoras desta cidade cadastradas no sistema.
+  </p>
+  <p>
+   9) Encontre o nome das pessoas que tenham outros moradores da mesma cidade cadastrados no sistema.
+  </p>
+  <p>
+   10) Para cada vendedor, escreva seu nome e a soma das vendas realizadas.
+  </p>
+  <p>
+   11) Para cada comprador, escreva seu nome e a média de compras realizadas por categoria de produto.
+  </p>
+  <p>
+   12) Para cada categoria de produto, obter seu nome, sua média de preços, maior e menor preço.
+  </p>
+  <hr/>
+  <p>
+   <b>ESCOLA:</b> Baixe o banco de dados <a href="escola.db">escola.db</a> para resolver os exercícios de 13 a 24. As respostas serão consultas SQL, e não o retorno das consultas em si.
+  </p>
+  <p>
+   13) Encontre o nome de todos os alunos do segundo ano que estão matriculados em uma disciplina ministrada pela professora "Ivana S.".
+  </p>
+  <p>
+   14) Encontre a idade do aluno mais velho que seja do curso de "História" ou que esteja matriculado em uma disciplina ministrada por "Ivana S.".
+  </p>
+  <p>
+   15) Encontre o nome das disciplinas que estejam alocadas na sala "R128" ou que tenham mais de 5 alunos matriculados.
+  </p>
+  <p>
+   16) Encontre o nome dos alunos matriculados em disciplinas que tenham horários que coincidem.
+  </p>
+  <p>
+   17) Encontre o nome dos professores que lecionam em todas as salas utilizadas por alguma disciplina.
+  </p>
+  <p>
+   18) Encontre o nome dos professores cuja soma total de alunos matriculados em suas disciplinas seja menor que 5.
+  </p>
+  <p>
+   19) Para alunos de cada ano (independente do curso), escreva o ano e a média de idade dos alunos daquele ano.
+  </p>
+  <p>
+   20) Para alunos de cada, exceto do ano 2, escreva o ano e a média de idade dos alunos daquele ano.
+  </p>
+  <p>
+   21) Para cada professor que leciona disciplinas somente na sala "R128", escreva o nome do professor e a quantidade de disciplinas que ele leciona.
+  </p>
+  <p>
+   22) Encontre o nome dos alunos matriculados na quantidade máxima de disciplinas. Ou seja, se algum aluno está matriculado em 5 disciplinas e não existe nenhum outro que esteja matriculado em mais de 5 disciplinas, a consulta deve retornar todos os alunos matriculados em 5 disciplinas.
+  </p>
+  <p>
+   23) Encontre o nome dos alunos que não estão matriculados em nenhuma disciplina.
+  </p>
+  <p>
+   24) Para cada idade de aluno, encontre o ano em que se encontra a maioria dos alunos naquela idade. Por exemplo, se a maioria dos alunos com 18 anos está no segundo ano, a consulta deve retornar (18,2).
+  </p>
+ </body>
+</html>

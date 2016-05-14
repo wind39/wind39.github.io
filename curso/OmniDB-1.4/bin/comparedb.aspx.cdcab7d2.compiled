@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/CompareDB.aspx" hash="1e02a6995" filehash="fffff78edcf97809" flags="110000" assembly="App_Web_thr5mksk" type="ASP.comparedb_aspx">
+    <filedeps>
+        <filedep name="/CompareDB.aspx" />
+    </filedeps>
+</preserve>

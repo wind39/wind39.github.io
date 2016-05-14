@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<preserve resultType="3" virtualPath="/Connections.aspx" hash="1e02a6995" filehash="4551f79b82af" flags="110000" assembly="App_Web_thr5mksk" type="ASP.connections_aspx">
+    <filedeps>
+        <filedep name="/Connections.aspx" />
+    </filedeps>
+</preserve>

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="3" virtualPath="/MainDB.aspx" hash="1e02a6995" filehash="fffff87541002512" flags="110000" assembly="App_Web_df33wje2" type="ASP.maindb_aspx">
-    <filedeps>
-        <filedep name="/MainDB.aspx" />
-    </filedeps>
-</preserve>

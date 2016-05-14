@@ -188,5 +188,6 @@
     <None Include="curso\SchoolRegister.tgz" />
     <None Include="curso\testimonials.txt" />
     <None Include="curso\modulo3lista3.html" />
+    <None Include="curso\modulo3respostas3.html" />
   </ItemGroup>
 </Project>
