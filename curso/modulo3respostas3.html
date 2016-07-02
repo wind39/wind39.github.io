@@ -70,30 +70,146 @@ where co.pais = 'Japao'
   <p>
    4) Encontre o nome das pessoas que compraram E venderam alguma coisa. 
   </p>
+  <pre><code>select c.comprador
+from compra c
+inner join compra v
+        on c.comprador = v.vendedor</code></pre>
   <p>
    5) Encontre o nome das pessoas que compraram produtos de "Pedro" ou produtos fabricados por uma companhia com valor de ação maior que $50.
   </p>
+  <pre><code>--versão inicial
+select x.comprador
+from compra x
+where x.vendedor = 'Pedro'
+union
+select x.comprador
+from companhia c
+inner join produto p
+        on p.fabricante = c.cnome
+inner join compra x
+        on x.produto = p.pnome
+where c.valoracao > 50
+
+-- versão otimizada
+select x.comprador
+from companhia c
+inner join produto p
+        on p.fabricante = c.cnome
+inner join compra x
+        on x.produto = p.pnome
+where c.valoracao > 50
+   or x.vendedor = 'Pedro'</code></pre>
   <p>
    6) Encontre o nome das pessoas que compraram produtos japoneses, mas que não compraram produtos brasileiros.
   </p>
+  <pre><code>select x.comprador
+from companhia c
+inner join produto p
+        on p.fabricante = c.cnome
+inner join compra x
+        on x.produto = p.pnome
+where c.pais = 'Japao'
+except
+select x.comprador
+from companhia c
+inner join produto p
+        on p.fabricante = c.cnome
+inner join compra x
+        on x.produto = p.pnome
+where c.pais = 'Brasil'</code></pre>
   <p>
    7) Encontre o nome das pessoas que compraram produtos japoneses e brasileiros.
   </p>
+  <pre><code>select b.comprador
+from (
+    select x.comprador
+    from companhia c
+    inner join produto p
+            on p.fabricante = c.cnome
+    inner join compra x
+            on x.produto = p.pnome
+    where c.pais = 'Japao'
+) j
+inner join (
+    select x.comprador
+    from companhia c
+    inner join produto p
+            on p.fabricante = c.cnome
+    inner join compra x
+            on x.produto = p.pnome
+    where c.pais = 'Brasil'
+) b
+on b.comprador = j.comprador</code></pre>
   <p>
    8) Encontre o nome e a cidade onde moram as pessoas que são as únicas moradoras desta cidade cadastradas no sistema.
   </p>
+  <pre><code>-- versão inicial
+select t.*
+from pessoa t
+where t.cidade in (
+    select cidade
+    from (
+        select p.cidade,
+               count(*) as num_moradores
+        from pessoa p
+        group by p.cidade
+        having count(*) = 1
+    ) x
+)
+
+-- versão otimizada
+select t.nomepess
+from pessoa t
+inner join (
+    select p.cidade,
+           count(*) as num_moradores
+    from pessoa p
+    group by p.cidade
+    having count(*) = 1
+) x
+on x.cidade = t.cidade</code></pre>
   <p>
    9) Encontre o nome das pessoas que tenham outros moradores da mesma cidade cadastrados no sistema.
   </p>
+  <pre><code>select t.nomepess
+from pessoa t
+inner join (
+    select p.cidade,
+           count(*) as num_moradores
+    from pessoa p
+    group by p.cidade
+    having count(*) > 1
+) x
+on x.cidade = t.cidade</code></pre>
   <p>
    10) Para cada vendedor, escreva seu nome e a soma das vendas realizadas.
   </p>
+  <pre><code>select c.vendedor,
+       sum(p.preco) as total_vendas
+from compra c
+inner join produto p
+        on p.pnome = c.produto
+group by c.vendedor</code></pre>
   <p>
    11) Para cada comprador, escreva seu nome e a média de compras realizadas por categoria de produto.
   </p>
+  <pre><code>select c.comprador,
+       p.categoria,
+       avg(p.preco) as media_compras
+from compra c
+inner join produto p
+        on p.pnome = c.produto
+group by c.comprador,
+         p.categoria</code></pre>
   <p>
    12) Para cada categoria de produto, obter seu nome, sua média de preços, maior e menor preço.
   </p>
+  <pre><code>select p.categoria,
+       avg(p.preco) as media,
+       max(p.preco) as maior,
+       min(p.preco) as menor
+from produto p
+group by p.categoria</code></pre>
   <hr/>
   <p>
    <b>ESCOLA:</b> Baixe o banco de dados <a href="escola.db">escola.db</a> para resolver os exercícios de 13 a 24. As respostas serão consultas SQL, e não o retorno das consultas em si.
