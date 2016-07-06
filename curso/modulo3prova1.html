@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <title>
-   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo I Avaliação 1
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Avaliação 1
   </title>
   <link href="../css/github.min.css" rel="stylesheet"/>
   <script src="../js/highlight.min.js">
@@ -31,7 +31,7 @@
  <body>
   <h1>Curso de Programação C#</h1>
   <h2>William Ivanski</h2>
-  <h3>Módulo I Avaliação 1</h3>
+  <h3>Módulo III Avaliação 1</h3>
   <hr/>
   <p>
    <b>0) INSTRUÇÕES</b>
@@ -39,56 +39,93 @@
    <ul>
     <li>Leia atentamente os <a target="_blank" href="../curso.html#criterios">critérios para avaliação</a>.</li>
     <li>Não é necessário resolver todas as questões. Cada questão tem um valor em pontos. Escolha quais questões resolver, para que a soma dos pontos seja igual ou superior a 100 pontos. A pontuação máxima é 100 pontos.</li>
-    <li>Ao concluir cada exercício, mande a pasta do projeto compactada ou apenas o código-fonte para <a href="mailto:william.ivanski@gmail.com">william.ivanski@gmail.com</a>. Inclua seu nome no assunto ou no corpo do e-mail para que eu possa identificá-lo.</li>
+    <li>Ao concluir cada exercício, mande o código SQL para <a href="mailto:william.ivanski@gmail.com">william.ivanski@gmail.com</a>. Inclua seu nome no assunto ou no corpo do e-mail para que eu possa identificá-lo.</li>
    </ul>
   <hr/>
   <p>
-   <b>1) MÉDIA ARITMÉTICA (20 pontos)</b>
+   <b>1) (5 pontos)</b> Obtenha o título e diretor dos filmes do gênero romance.
   </p>
   <p>
-   Escreva um programa que solicite ao usuário uma sequência de números reais. O usuário poderá digitar quantos números reais quiser; quando quiser parar de digitar, o usuário digitará 0 (zero). Então, o programa deverá mostrar a média aritmética dos valores digitados pelo usuário (exceto o número zero, que não deverá ser contabilizado na média).
+    <table border=1>
+      <tr><th>titulo</th><th>diretor</th></tr>
+      <tr><td>Antes do Por do Sol</td><td>Richard Linklater</td></tr>
+      <tr><td>Antes do Amanhecer</td><td>Richard Linklater</td></tr>
+    </table>
   </p>
   <hr/>
   <p>
-   <b>2) TRIÂNGULO RETÂNGULO (40 pontos)</b> 
+   <b>2) (8 pontos)</b> Obtenha o código e nome do cliente do qual 'Joao Nogueira' é dependente.
   </p>
   <p>
-   Escreva um programa que solicite ao usuário o valor de <em>N</em>, um número natural. <em>N</em> será a altura do triângulo retângulo a ser desenhado na tela pelo seu programa, usando apenas o caractere <em>*</em> (asterisco). Por exemplo, para <em>N = 7</em>, o programa deverá imprimir:
+    <table border=1>
+      <tr><th>codcli</th><th>nome</th></tr>
+      <tr><td>20</td><td>Maria Nogueira</td></tr>
+    </table>
   </p>
-  <pre><code>*
-**
-***
-****
-*****
-******
-*******</code></pre>
   <hr/>
   <p>
-   <b>3) TRIÂNGULO RETÂNGULO INVERTIDO (40 pontos)</b> 
+   <b>3) (8 pontos)</b> Obtenha o título dos filmes estrelados por 'George Clooney'.
   </p>
   <p>
-   Escreva um programa que solicite ao usuário o valor de <em>N</em>, um número natural. <em>N</em> será a altura do triângulo retângulo a ser desenhado na tela pelo seu programa, usando apenas o caractere <em>*</em> (asterisco). Por exemplo, para <em>N = 7</em>, o programa deverá imprimir:
+    <table border=1>
+      <tr><th>titulo</th></tr>
+      <tr><td>Boa Noite e Boa Sorte</td></tr>
+      <tr><td>Doze Homens e Outro Segredo</td></tr>
+    </table>
   </p>
-  <pre><code>      *
-     **
-    ***
-   ****
-  *****
- ******
-*******</code></pre>
   <hr/>
   <p>
-   <b>4) TRIÂNGULO ISÓSCELES (80 pontos)</b> 
+   <b>4) (9 pontos)</b> Obtenha o título dos filmes estrelados por 'George Clooney' <b>ou</b> 'Brad Pitt'.
   </p>
   <p>
-   Escreva um programa que solicite ao usuário o valor de <em>N</em>, um número natural. <em>N</em> será a altura do triângulo isósceles a ser desenhado na tela pelo seu programa, usando apenas o caractere <em>*</em> (asterisco). Por exemplo, para <em>N = 7</em>, o programa deverá imprimir:
+    <table border=1>
+      <tr><th>titulo</th></tr>
+      <tr><td>Boa Noite e Boa Sorte</td></tr>
+      <tr><td>Doze Homens e Outro Segredo</td></tr>
+    </table>
   </p>
-  <pre><code>      *
-     ***
-    *****
-   *******
-  *********
- ***********
-*************</code></pre>
+  <hr/>
+  <p>
+   <b>5) (15 pontos)</b> Obtenha o título dos filmes atualmente locados pelo cliente 10.
+  </p>
+  <p>
+    <table border=1>
+      <tr><th>titulo</th></tr>
+      <tr><td>Antes do Por do Sol</td></tr>
+      <tr><td>Antes do Amanhecer</td></tr>
+    </table>
+  </p>
+  <hr/>
+  <p>
+   <b>6) (25 pontos)</b> Obtenha o código dos filmes que ainda não foram locados pelo cliente 'Maria Nogueira'.
+  </p>
+  <p>
+    <table border=1>
+      <tr><th>cod</th></tr>
+      <tr><td>121</td></tr>
+      <tr><td>157</td></tr>
+      <tr><td>163</td></tr>
+    </table>
+  </p>
+  <hr/>
+  <p>
+   <b>7) (30 pontos)</b> Obtenha o nome dos clientes que já locaram filmes do gênero drama, mas que nunca locaram filmes do gênero ação.
+  </p>
+  <p>
+    <table border=1>
+      <tr><th>nome</th></tr>
+      <tr><td>Maria Nogueira</td></tr>
+    </table>
+  </p>
+  <hr/>
+  <p>
+   <b>8) (80 pontos)</b> Obtenha o código dos clientes que já locaram todos os filmes do gênero romance.
+  </p>
+  <p>
+    <table border=1>
+      <tr><th>codcli</th></tr>
+      <tr><td>10</td></tr>
+    </table>
+  </p>
  </body>
 </html>
