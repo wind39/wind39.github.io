@@ -1,0 +1,80 @@
+Cristiano Raffi Cunha
+
+A1 Q1 (5 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 5 = 5
+
+
+A1 Q2 (8 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 8 = 8
+
+
+A1 Q3 (8 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 8 = 8
+
+
+A1 Q4 (9 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 20/50 (O certo era usar "where t.nome = 'George Clooney' or t.nome = 'Brad Pitt'" ou ainda "where t.nome in ('George Clooney', 'Brad Pitt'. Da forma como vc fez, filtrou apenas por George Clooney. O SQLite admite OR daquela forma mas a sintaxe é errada e não funciona do jeito esperado.)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 20 + 20 + 10) / 100 * 9 = 6,3
+
+
+A1 Q5 (15 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 20/50 (O certo era usar "l.dtadev is null" ao invés de "NOT l.dtadev = ''. Da forma como você fez, está trazendo os filmes que foram locados e já devolvidos, e não os que estão com a data de devolução ainda não preenchida.)
+Legibilidade: 10/20 (Procure não usar NOT, a menos que seja realmente necessário. Ao invés de NOT igual, use diferente, que é mais fácil de entender.)
+Elegância: 10/10
+
+Nota = (10 + 10 + 20 + 10 + 10) / 100 * 15 = 9
+
+
+A1 Q7 (30 pontos)
+
+Pontualidade: 10/10
+Compilação: 0/10 (A execução gera erro de sintaxe.)
+Solução: 20/50 (A consulta deveria ter 2 partes separadas por um "except". A primeira parte estava pronta. A segunda parte era igual, e era só trocar "drama" por "acao")
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 0 + 20 + 20 + 10) / 100 * 30 = 18
+
+
+A1 Q8 (80 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 0/50 (Ainda faltava bastante a ser elaborado para poder responder essa questão.)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 0 + 20 + 10) / 100 * 80 = 40
+
+
+Nota Final: 5 + 8 + 8 + 6,3 + 9 + 18 + 40 = 94,3 (parabéns!!)

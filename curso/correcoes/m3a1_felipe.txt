@@ -1,0 +1,93 @@
+Luis Felipe Thofehrn Castro
+
+A1 Q1 (5 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 20 + 10) / 100 * 5 = 4,5
+
+
+A1 Q2 (8 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 20 + 10) / 100 * 8 = 7,2
+
+
+A1 Q3 (8 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 20 + 10) / 100 * 8 = 7,2
+
+
+A1 Q4 (9 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 5/10 (O uso do "union" é conceitualmente correto para "or", mas você poderia ter usado "or" mesmo, ficaria mais rápida a execução e mais enxuto o código. Mas nesse caso também seria necessário um "distinct".)
+
+Nota = (0 + 10 + 50 + 20 + 5) / 100 * 9 = 7,65
+
+
+A1 Q5 (15 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 15/20 (O parênteses não era necessário nesse caso.)
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 15 + 10) / 100 * 15 = 12,75
+
+
+A1 Q6 (25 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 20 + 10) / 100 * 25 = 22,5
+
+
+A1 Q7 (30 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 50 + 20 + 10) / 100 * 30 = 27
+
+
+A1 Q8 (80 pontos)
+
+Pontualidade: 0/10
+Compilação: 10/10
+Solução: 10/50 (A consulta pede o código dos clientes que tivessem locado TODOS os filmes de romance. Existem 2 filmes de romance, e por coincidência o cliente 10 locou os 2. Mas se o cliente 10 tivesse locado apenas 1 filme de romance, a sua consulta também retornaria o cliente 10, incorretamente.)
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (0 + 10 + 10 + 20 + 10) / 100 * 80 = 40
+
+
+Nota Final: 4,5 + 7,2 + 7,2 + 7,65 + 12,75 + 22,5 + 27 + 40 = 128,8 = 100 (parabéns!!)
+
+Dica: Use ' como delimitador de string, ao invés de ". SQLite entende ", mas em alguns SGBDs pode dar erro.
