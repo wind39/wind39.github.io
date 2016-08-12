@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Lista 4
+  </title>
+  <link href="../css/github.min.css" rel="stylesheet"/>
+  <script src="../js/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo III Capítulo 4</h3>
+  <hr/>
+  <p>
+   1)
+    <b>Cadastro de aluno</b>. Solicite ao usuário os seguintes valores:
+   </p>
+   <ul>
+    <li>Nome (string)
+    <li>Idade (int)
+    <li>Sexo (char)
+    <li>Nota média final (double)
+   </ul>
+  <p>
+   Armazene os valores em um banco de dados SQLite chamado <b>alunos.db</b>, com uma única tabela chamada <b>alunos</b>. Se o banco não existir, seu programa deve criá-lo.
+  </p>
+  <hr/>
+  <p>
+   2) <b>Cadastro interativo de alunos</b>. Altere o exercício anterior para que o programa fique interativo, isto é, crie um menu de listagem, adição, edição e remoção.
+  </p>
+  <hr/>
+  <p>
+   3) <b>Cadastro gráfico de alunos</b>. Altere o exercício anterior para que o programa utilize interface gráfica. O programa deve ser composto de:
+  </p>
+  <ul>
+   <li>Janela principal, contendo um grid mostrando os alunos, e 3 botões: Adicionar, Editar e Remover;</li>
+   <li>Janela de aluno, contendo as informações dos alunos. Deve ser usada a mesma janela para inserção e edição de alunos;</li>
+   <li>Popup perguntando se o usuário tem certeza que deseja excluir o aluno selecionado no grid.</li>
+  </ul>
+  <hr/>
+  <p>
+   4) <b>Cadastro gráfico de alunos com exportar</b> Altere o exercício anterior, incluindo um botão "Excel", que deverá salvar o cadastro completo dos alunos em um arquivo XLSX.
+  </p>
+  <hr/>
+  <p>
+   5) <b>Cadastro gráfico de alunos com relatório PDF</b> Altere o exercício anterior, incluindo um botão "PDF", que deverá salvar o cadastro completo dos alunos em um relatório PDF.
+  </p>
+  <hr/>
+  <p>
+   6) <b>Cotações</b>. Entre na <a href="http://www4.bcb.gov.br/pec/taxas/batch/cotacaomoedas.asp?id=txtodas">página oficial de cotações de moedas do Banco Central do Brasil</a>. Faça o download do arquivo CSV contendo as cotações do dia. Crie um banco de dados SQLite chamado <b>cotacoes.db</b> com uma única tabela:
+  </p>
+  <pre><code>create table cotacoes
+{
+    dia        text,
+    codmoeda   integer,
+    tipomoeda  text,
+    siglamoeda text,
+    taxacompra real,
+    taxavenda  real,
+    parcompra  real,
+    parvenda   real
+}</code></pre>
+  <p>
+   Escreva um programa em C# em modo texto que receba o nome do arquivo CSV como parâmetro e insira todas as cotações na tabela <b>cotacoes</b>. Observe que os números no arquivo CSV estão com separador decimal <tt>','</tt>, sendo que para a inserção o separador precisa ser <tt>'.'</tt>.
+  </p>
+  <p>
+   Se você quiser deixar seu programa ainda mais completo, inclua no seu banco de dados o <a href="http://www4.bcb.gov.br/pec/taxas/batch/tabmoedas.asp?id=tabmoeda">cadastro oficial de moedas do Banco Central do Brasil</a>.
+  </p>
+  <hr/>
+  <p>
+   7) <b>Cotações com download</b>. Altere o exercício anterior para que seu programa faça o download do arquivo CSV com as cotações do dia.
+  </p>
+  <hr/>
+  <p>
+   8) <b>Cotações com download e relatório em PDF</b>. Altere o exercício anterior para que seu programa gere um relatório em PDF com as cotações do dia.
+  </p>
+  <hr/>
+  <p>
+   9) <b>Salvar consultas em Excel</b> Crie um programa em modo texto que receba como parâmetro um banco de dados SQLite. Seu programa deve pedir ao usuário que digite uma consulta SQL. Em seguida, seu programa deve executar a consulta no banco de dados, e salvar o resultado da consulta em um arquivo XLSX.
+  </p>
+  <hr/>
+  <p>
+   10) <b>Salvar consultas em Excel (gráfico)</b> Crie um programa semelhante ao do exercício anterior, mas com uma interface gráfica. Seu programa deve ter uma janela com os seguintes elementos:
+  </p>
+  <ul>
+   <li>Seletor de arquivos, para o usuário selecionar qual arquivo de banco de dados SQLite (*.db);</li>
+   <li>Campo de texto grande, para o usuário digitar a consulta SQL;</li>
+   <li>Grid par exibir o resultado da consulta;</li>
+   <li>Botão para exportar para arquivo Excel.</li>
+  </ul>
+ </body>
+</html>
