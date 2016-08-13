@@ -229,6 +229,22 @@ where p.nomeprof = 'Ivana Silva'</code></pre>
   <p>
    14) Encontre a idade do aluno mais velho que seja do curso de "História" ou que esteja matriculado em uma disciplina ministrada por "Ivana S.".
   </p>
+  <pre><code>select max(idade)
+from (
+select a.idade
+from aluno a
+where a.curso = 'Historia'
+union
+select a.idade
+from professor p
+inner join disciplina d
+        on d.idprof = p.idprof
+inner join matricula m
+        on m.nomedisc = d.nome
+inner join aluno a
+        on a.numalu = m.numalu
+where p.nomeprof = 'Ivana Silva'
+)</code></pre>
   <p>
    15) Encontre o nome das disciplinas que estejam alocadas na sala "R128" ou que tenham mais de 5 alunos matriculados.
   </p>
