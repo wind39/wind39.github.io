@@ -23,13 +23,19 @@
     ga('create', 'UA-54648306-2', 'auto');
     ga('send', 'pageview');
 </script>
-
-<script src="https://apis.google.com/js/platform.js" async defer>
-    {lang: 'pt-BR'}
-</script>
 </head>
 
 <body class="home page page-template-default mh-right-sb">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="mh-wrapper">
     <header class="mh-header">
         <div class="header-wrap clearfix">
@@ -66,7 +72,7 @@
     <div class="mh-section mh-group">
 	<div id="main-content" class="mh-content">
             <h1 class="page-title">Dicas &#038; Blog</h1>
-            <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br/blog.html"></div>
+            <div class="fb-like" data-href="http://williamivanski.com.br/blog.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
             <article class="content-list clearfix post type-post status-publish format-standard has-post-thumbnail hentry">
                 <div class="content-thumb content-list-thumb">
                     <a href="blog/post20160502.html"><img class="alignleft" src="blog/img20160502.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" /></a>
