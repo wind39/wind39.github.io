@@ -24,9 +24,14 @@
     ga('send', 'pageview');
 </script>
 
-<script src="https://apis.google.com/js/platform.js" async defer>
-    {lang: 'pt-BR'}
-</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </head>
 
 <body class="home page page-template-default mh-right-sb">
@@ -66,7 +71,7 @@
     <div class="mh-section mh-group">
 	<div id="main-content" class="mh-content">
             <!--<h1 class="page-title">Seja bem-vindo!</h1>-->
-            <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://williamivanski.com.br"></div>
+            <div class="fb-like" data-href="http://williamivanski.com.br/index.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
             <article class="page type-page status-publish hentry">
             <header class="entry-header"></header>
             <div class="entry-content clearfix">
