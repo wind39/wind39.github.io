@@ -75,49 +75,31 @@
     </header>
     <div class="mh-section mh-group">
 	<div id="main-content" class="mh-content">
-            <h1 class="page-title">Compilando Mono e XSP no Linux</h1>
-            <div class="fb-like" data-href="http://williamivanski.com.br/post20151026.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            <h1 class="page-title">Corrigindo ou removendo painéis no KDE Plasma 5</h1>
+            <div class="fb-like" data-href="http://williamivanski.com.br/post20160905.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
             <article class="page type-page status-publish hentry">
             <header class="entry-header"></header>
             <div class="entry-content clearfix">
                 <p>
-                    <img class="alignleft" src="img20151026.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" />
-                    1) Baixe o código-fonte do Mono, do XSP e da libgdiplus mais recentes <a target="_blank" rel="noopener noreferrer" href="http://download.mono-project.com/sources/">aqui</a>.
+                    <img class="alignleft" src="img20160905.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" />
+                    Abra o arquivo <b><tt>~/.config/plasma-org.kde.plasma.desktop-appletsrc</tt></b> no seu editor favorito:
                 </p>
-                <p>2) Extraia o tarball do Mono:</p>
-                <pre><code>tar -xjvf mono-4.2.1.60.tar.bz2</code></pre>
-                <p>3) Extraia o tarball do XSP:</p>
-                <pre><code>tar -xzvf xsp-3.8.tar.gz</code></pre>
-                <p>4) Extraia o tarball da libgdiplus:</p>
-                <pre><code>tar -xzvf libgdiplus-3.12.tar.gz</code></pre>
-                <p>5) Compile e instale o Mono:</p>
-                <pre><code>cd mono-4.2.1/
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-                <p>6) Verifique a versão do MONO:</p>
-                <pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
-                <p>7) A compilação do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das versões mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padrão do Mono:</p>
-                <pre><code>sudo ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
-                <p>8) Compile e instale o XSP:</p>
-                <pre><code>cd ../xsp-3.8
-env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
-make
-sudo make install</code></pre>
-                <p>9) Instale a biblioteca <b>cairo</b>:</p>
-                <pre><code>sudo apt-get install libtool libcairo2-dev</code></pre>
-                <p>10) Compile e instale a libgdiplus:</p>
-                <pre><code>cd ../libgdiplus-3.12
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-                <p>11) Suponha que o seu projeto está na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
-                <pre><code>cd projeto
-env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
-                <p>12) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
+                <pre><code>vim ~/.config/plasma-org.kde.plasma.desktop-appletsrc</code></pre>
+                <p>Procure por <b><tt>panel</tt></b>. Você verá algo assim:</p>
+                <pre><code>[Containments][914]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=0
+location=4
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image</code></pre>
+                <p>Normalmente, o que você precisa é trocar a tela em que o painel aparece (ou se o painel não está apararecendo, você quer que o painel aparece na tela principal). O atributo para isso é <b><tt>lastScreen</tt></b>. A tela principal do seu computador normalmente é igual a <b><tt>0</tt></b>.</p>
+                <p>Em outras situações, você pode querer remover um painel extra que você adicionou por engano e não está aparecendo, por exemplo. Para remover um painel, note o cabeçalho: <b><tt>[Containments][914]</tt></b> (o número <b><tt>914</tt></b> pode ser diferente pra você). Você precisará remover todas as seções que começam com esse cabeçalho, pois todas elas são itens que pertencem ao painel em questão.</p>
+                <p>Após alterar, salve o arquivo e reinicie o computador.</p>
             </article>
             <hr class="mh-separator">
-            <div class="fb-comments" data-href="http://williamivanski.com.br/post20151026.html" data-numposts="5"></div>
+            <div class="fb-comments" data-href="http://williamivanski.com.br/post20160905.html" data-numposts="5"></div>
         </div>
 	<aside class="mh-sidebar">
             <div class="sb-widget clearfix">
