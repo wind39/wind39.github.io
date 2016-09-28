@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>William Ivanski</title>
+<link rel="shortcut icon" type="image/x-icon" href="../img/logo.ico" />
+
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,700,300|PT+Serif:400,400italic,700,700italic' type='text/css' media='all' />
+<link rel='stylesheet' href='../css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' href='../css/style.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='../js/jquery.js'></script>
+<script type='text/javascript' src='../js/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='../js/scripts.js'></script>
+
+<link href="../css/github.min.css" rel="stylesheet"/>
+<script src="../js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-54648306-2', 'auto');
+    ga('send', 'pageview');
+</script>
+</head>
+
+<body class="home page page-template-default mh-right-sb">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="mh-wrapper">
+    <header class="mh-header">
+        <div class="header-wrap clearfix">
+            <a href="index.html" title="William Ivanski" rel="home">
+                <div class="logo-wrap" role="banner">
+                    <div class="logo">
+                        <h1 class="logo-title">William Ivanski</h1>
+                        <h2 class="logo-tagline">Desenvolvendo código de qualidade desde 2006</h2>
+                    </div>
+                </div>
+            </a>
+	</div>
+	<div class="header-menu clearfix">
+            <nav class="main-nav clearfix">
+                <div class="menu">
+                    <ul>
+                        <li class="page_item current_page_item"><a href="../index.html">Sobre mim</a></li>
+                        <li class="page_item page_item_has_children"><a href="../curso.html">Curso de Programação C#</a>
+                            <ul class='children'>
+                                <li class="page_item"><a href="../modulo1.html">Módulo I: C# Básico</a></li>
+                                <li class="page_item"><a href="../modulo2.html">Módulo II: C# Intermediário</a></li>
+                                <li class="page_item"><a href="../modulo3.html">Módulo III: Bancos de Dados</a></li>
+                                <li class="page_item"><a href="../modulo4.html">Módulo IV: C# Avançado</a></li>
+                            </ul>
+                        </li>
+                        <li class="page_item"><a href="../blog.html">Dicas &#038; Blog</a></li>
+                        <li class="page_item"><a href="../spartacus.html">Spartacus</a></li>
+                        <li class="page_item"><a target="_blank" rel="noopener noreferrer" href="http://www.omnidb.com.br/pt_index.aspx">OmniDB</a></li>
+                    </ul>
+                </div>
+            </nav>
+	</div>
+    </header>
+    <div class="mh-section mh-group">
+	<div id="main-content" class="mh-content">
+            <h1 class="page-title">Corrigindo bug "ASP.NET add-in not found" do MonoDevelop no Ubuntu 16.04</h1>
+            <div class="fb-like" data-href="http://williamivanski.com.br/blog/post20160928.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            <article class="page type-page status-publish hentry">
+            <header class="entry-header"></header>
+            <div class="entry-content clearfix">
+                <p>
+                    <img class="alignleft" src="img20160928.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" />
+                    Primeiro, você precisa adicionar a chave GPG e o repositório de pacotes do projeto Mono ao seu sistema, conforme instruções <a target="_blank" rel="noopener noreferrer" href="http://www.mono-project.com/docs/getting-started/install/linux/#debian-ubuntu-and-derivatives">aqui</a>.
+                </p>
+				<p>
+					Depois, você precisa "pinar" o pacote para não instalar do repositório do Ubuntu, que oferece uma versão mais alta. Como root, abra o arquivo <b><tt>/etc/apt/preferences</tt></b> e inclua o seguinte conteúdo:
+				</p>
+                <pre><code>Package: monodevelop
+Pin: origin archive.ubuntu.com
+Pin-Priority: -1</code></pre>
+				<p>Salve e rode:</p>
+				<pre><code>sudo apt update
+sudo apt install monodevelop=5.10.0.871-0xamarin2</code></pre>
+            </article>
+            <hr class="mh-separator">
+            <div class="fb-comments" data-href="http://williamivanski.com.br/post20160928.html" data-numposts="5"></div>
+        </div>
+	<aside class="mh-sidebar">
+            <div class="sb-widget clearfix">
+                <h4 class="widget-title"><span>Conteúdo</span></h4>
+                <ul class="mh-rp-widget widget-list">
+					<li class="rp-widget-item"><a href="post20160928.html">Corrigindo bug "ASP.NET add-in not found" do MonoDevelop no Ubuntu 16.04</a></li>
+                    <li class="rp-widget-item"><a href="post20160905.html">Corrigindo ou removendo painéis no KDE Plasma 5</a></li>
+                    <li class="rp-widget-item"><a href="post20160502.html">Conectando ao wifi pelo terminal</a></li>
+                    <li class="rp-widget-item"><a href="post20151026.html">Compilando Mono e XSP no Linux</a></li>
+                </ul>
+            </div>
+            <div class="sb-widget clearfix">
+                <h4 class="widget-title"><span>Contato</span></h4>
+                <a href="mailto:william.ivanski@gmail.com"><img src="../img/email.png" alt="email" /></a>
+                <a href="https://www.github.com/wind39" target="_blank" rel="noopener noreferrer"><img src="../img/github.png" alt="github" /></a>
+                <a href="https://www.twitter.com/WilliamIvanski" target="_blank" rel="noopener noreferrer"><img src="../img/twitter.png" alt="twitter" /></a>
+                <a href="https://plus.google.com/+WilliamIvanski" target="_blank" rel="noopener noreferrer"><img src="../img/googleplus.png" alt="googleplus" /></a>
+                <a href="https://www.facebook.com/william.ivanski" target="_blank" rel="noopener noreferrer"><img src="../img/facebook.png" alt="facebook" /></a>
+            </div>
+        </aside>
+    </div>
+</div>
+<footer class="mh-footer">
+    <div class="wrapper-inner">
+	<p class="copyright">Esta <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Dataset" rel="dct:type">obra</span> de <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">William Ivanski</span> está licenciada com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Atribuição 4.0 Internacional</a></p>
+    </div>
+</footer>
+</body>
+</html>
