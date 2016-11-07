@@ -52,15 +52,53 @@
   <p>
    5) Crie um script <b><tt>.sh</tt></b> ou <b><tt>.bat</tt></b> para realizar o backup do banco <b><tt>employees</tt></b> com <em>pg_dump</em>. Agende o backup para ser feito todos os dias às 01:00 hrs, e devem ser mantidas cópias dos últimos 30 dias.
   </p>
+  <hr/>
   <p>
-   6) Instale o pg_activity.
+   6) Execute a consulta abaixo no banco <b><tt>employees</tt></b>:
   </p>
+  <pre><code>select dept_name from departments</code></pre>
   <p>
-   7) Instale o pgbench. Crie um banco de dados com 1 milhão de registros na maior tabela. Rode um experimento com 50 conexões simultâneas e 150 transações por conexão.
-  </p>
-  <p>
-   8) Instale o pgbadger e rode-o. Visualise as consultas do experimento do exercício anterior na página web gerada.
+   Usando <b><tt>nesting</tt></b>, converta os valores retornados em uma única string com os valores separados por vírgula.
   </p>
   <hr/>
+  <p>
+   7) Instale o pg_activity.
+  </p>
+  <hr/>
+  <p>
+   8) Instale o pgbench. Crie um banco de dados com 1 milhão de registros na maior tabela. Rode um experimento com 50 conexões simultâneas e 150 transações por conexão.
+  </p>
+  <hr/>
+  <p>
+   9) Instale o pgbadger e rode-o. Visualise as consultas do experimento do exercício anterior na página web gerada.
+  </p>
+  <hr/>
+  <p>
+   10) Reescreva a consulta abaixo usando CTEs:
+  </p>
+  <pre><code>select s.from_date,
+       s.to_date,
+       s.salary
+from departments d
+inner join dept_emp de
+        on de.dept_no = d.dept_no
+inner join employees e
+        on e.emp_no = de.emp_no
+inner join salaries s
+        on s.emp_no = e.emp_no
+where d.dept_name = 'Finance'
+  and e.first_name = 'Georg'
+  and e.last_name = 'Matzke'
+order by s.from_date</code></pre>
+  <hr/>
+  <p>
+   11) Dada a consulta do exercício anterior, utilize <b><tt>explain</tt></b> para analisar o plano de execução. Responsa às seguintes perguntas:
+  </p>
+  <ul>
+   <li>a) Qual o custo total previsto para executar a consulta?</li>
+   <li>b) Qual é o gargalo?</li>
+   <li>c) Faz sentido criar um índice? Em qual(is) coluna(s)?</li>
+   <li>d) Se você criou o índice proposto no item b), rode o explain novamente. O custo total previsto reduziu? Para quanto?</li>
+  </ul>
  </body>
 </html>
