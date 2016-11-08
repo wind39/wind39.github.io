@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Avaliação 2
+  </title>
+  <link href="../css/github.min.css" rel="stylesheet"/>
+  <script src="../js/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Módulo III Avaliação 1</h3>
+  <hr/>
+  <p>
+   <b>0) INSTRUÇÕES</b>
+  </p>
+   <ul>
+    <li>Leia atentamente os <a target="_blank" href="../curso.html#criterios">critérios para avaliação</a>.</li>
+    <li>Não é necessário resolver todas as questões. Cada questão tem um valor em pontos. Escolha quais questões resolver, para que a soma dos pontos seja igual ou superior a 100 pontos. A pontuação máxima é 100 pontos.</li>
+    <li>Ao concluir cada exercício, mande sua resposta para <a href="mailto:william.ivanski@gmail.com">william.ivanski@gmail.com</a>. Inclua seu nome no assunto ou no corpo do e-mail para que eu possa identificá-lo.</li>
+   </ul>
+  <hr/>
+  <p><b>ATENÇÃO!! Para esta prova, você precisará do banco de dados <a href="avaliacao.dmp">avaliacao.dmp</a></b>. Crie um banco vazio no PostgreSQL no seu computador e restaure usando <b><tt>pg_restore</tt></b>.</p>
+  <hr/>
+  <p>
+   <b>1) (15 pontos)</b> Implemente a função <b><tt>fnc_login</tt></b>:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Conferir existência do jogador e se a senha informada é igual à cadastrada.</li>
+   <li><b>Parâmetros:</b> p_login text, p_senha text</li>
+   <li><b>Retorno:</b> (integer) id do jogador se conseguiu logar, -1 se o usuário não existe e -2 se o usuário existe mas a senha está errada.</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>2) (20 pontos)</b> Implemente a função <b><tt>fnc_criar_partida</tt></b>:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Permite ao jogador que acabou de logar, criar uma nova partida no servidor de sua escolha.</li>
+   <li><b>Parâmetros:</b> p_servidor integer, p_jogador integer</li>
+   <li><b>Retorno:</b> (integer) id da partida se conseguiu criar, -1 se o número máximo de partidas simultâneas do servidor atingiu o limite.</li>
+   <li><b>Observações:</b> Deve inserir uma partida preenchendo somente os campos situacao = 'E', id_servidor e jogador1.</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>3) (20 pontos)</b> Implemente a função <b><tt>fnc_entrar_em_partida</tt></b>:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Permite ao jogador que acabou de logar, entrar em uma partida que foi criada por outro jogador e está em espera (E).</li>
+   <li><b>Parâmetros:</b> p_partida integer, p_jogador integer</li>
+   <li><b>Retorno:</b> (integer) id da partida se conseguiu entrar, -1 se a partida não estiver em espera (E)</li>
+   <li><b>Observações:</b> O segundo jogador a entrar deve ser preenchido no campo jogador2, o terceiro no campo jogador3, e o quarto no campo jogador4. Se a função preencheu o campo jogador4, deve iniciar a partida, ou seja, atualizar a situação para em andamento (A).</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>4) (15 pontos)</b> Implemente o procedimento <b><tt>prc_encerrar_partida</tt></b>:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Encerrar uma partida, ou seja, mudar a situação de em andamento (A) para finalizada (F). Também informa o pódio da partida (posição de cada jogador).</li>
+   <li><b>Parâmetros:</b> p_partida integer, p_primeiro integer, p_segundo integer, p_terceiro integer, p_quarto integer</li>
+   <li><b>Retorno:</b> void</li>
+   <li><b>Observações:</b> Este procedimento também deve atualizar a pontuação dos jogadores (primeiro lugar = +5 pontos, segundo lugar = +2 pontos e terceiro lugar = +1 ponto).</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>5) (10 pontos)</b> Implemente uma consulta SQL com as seguintes características:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Mostrar ao jogador que acabou de logar, os servidores disponíveis e a carga de cada um, para que o jogador escolha em qual servidor quer entrar.</li>
+   <li><b>Colunas:</b> nome do servidor, número de partidas em espera (E) e número de partidas em andamento (A).</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>6) (20 pontos)</b> Implemente uma consulta SQL com as seguintes características:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Permitir ao jogador que acabou de logar, visualizar todas as partidas em espera ou em andamento.</li>
+   <li><b>Colunas:</b> id do servidor, nome do servidor, id da partida, situação da partida, data/hora de início da partida, duração da partida, login do jogador 1, login do jogador 2, login do jogador 3, login do jogador 4, login do jogador que tirou em primeiro lugar, login do jogador que tirou em segundo lugar, login do jogador que tirou em terceiro lugar, login do jogador que tirou em último lugar</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>7) (20 pontos)</b> Implemente uma consulta SQL com as seguintes características:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Mostrar a listagem de partidas finalizadas (F) que o jogador 9 ("Talos") participou, e qual foi a sua posição em cada partida.</li>
+   <li><b>Colunas:</b> id da partida, situação da partida, data/hora de início da partida, duração da partida, login do jogador 1, login do jogador 2, login do jogador 3, login do jogador 4, posição do jogador 9 na partida</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>8) (10 pontos)</b> Melhore o desempenho da consulta SQL da questão anterior através da criação de um ou mais índices. Informe o nome do(s) índice(s), em qual(is) coluna(s) de qual(is) tabela(s). Informe também o custo previsto total do explain antes e depois da criação do(s) índice(s).
+  </p>
+  <hr/>
+  <p>
+   <b>9) (5 pontos)</b> Implemente uma consulta SQL com as seguintes características:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Mostrar a listagem completa de jogadores, ordenada pela sua pontuação em ordem decrescente.</li>
+   <li><b>Colunas:</b> id do jogador, login do jogador, pontuação total do jogador</li>
+  </ul>
+  <hr/>
+  <p>
+   <b>10) (45 pontos)</b> Implemente uma consulta SQL com as seguintes características:
+  </p>
+  <ul>
+   <li><b>Objetivo:</b> Mostrar a listagem de jogadores que participaram de partidas nos últimos 30 dias e a soma da pontuação obtida nessas partidas, ordenada em ordem decrescente.</li>
+   <li><b>Colunas:</b> id do jogador, login do jogador, pontuação total do jogador, pontuação do jogador nos últimos 30 dias</li>
+  </ul>
+  <hr/>
+ </body>
+</html>
