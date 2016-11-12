@@ -75,49 +75,46 @@
     </header>
     <div class="mh-section mh-group">
 	<div id="main-content" class="mh-content">
-            <h1 class="page-title">Compilando Mono e XSP no Linux</h1>
-            <div class="fb-like" data-href="http://williamivanski.com.br/post20151026.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            <h1 class="page-title">Instalando PostgreSQL 9.5 ou 9.6 no Debian Jessie</h1>
+            <div class="fb-like" data-href="http://williamivanski.com.br/blog/post20161111.html" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
             <article class="page type-page status-publish hentry">
             <header class="entry-header"></header>
             <div class="entry-content clearfix">
                 <p>
-                    <img class="alignleft" src="img20151026.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" />
-                    1) Baixe o código-fonte do Mono, do XSP e da libgdiplus mais recentes <a target="_blank" rel="noopener noreferrer" href="http://download.mono-project.com/sources/">aqui</a>.
+                    <img class="alignleft" src="img20161111.png" alt="William Ivanski" sizes="(max-width: 260px) 100vw, 260px" data-recalc-dims="1" />
+                    Você deve saber que o Debian Jessie oferece o PostgreSQL 9.4 no seu repositório padrão. Mas é possível instalar o PostgreSQL 9.5 ou até mesmo o 9.6 no seu Debian.
                 </p>
-                <p>2) Extraia o tarball do Mono:</p>
-                <pre><code>tar -xjvf mono-4.2.1.60.tar.bz2</code></pre>
-                <p>3) Extraia o tarball do XSP:</p>
-                <pre><code>tar -xzvf xsp-3.8.tar.gz</code></pre>
-                <p>4) Extraia o tarball da libgdiplus:</p>
-                <pre><code>tar -xzvf libgdiplus-3.12.tar.gz</code></pre>
-                <p>5) Compile e instale o Mono:</p>
-                <pre><code>cd mono-4.2.1/
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-                <p>6) Verifique a versão do MONO:</p>
-                <pre><code>env PATH=/opt/mono/bin:$PATH mono --version</code></pre>
-                <p>7) A compilação do XSP procura pelo <b>gmcs</b>, o compilador .NET 2.0 do Mono. Mas esse compilador foi removido das versões mais recentes do Mono. Podemos resolver isso criando um link do <b>gmcs</b> apontando para o <b>mcs</b>, o compilador padrão do Mono:</p>
-                <pre><code>sudo ln -s /opt/mono/bin/mcs /opt/mono/bin/gmcs</code></pre>
-                <p>8) Compile e instale o XSP:</p>
-                <pre><code>cd ../xsp-3.8
-env PKG_CONFIG_PATH=/opt/mono/lib/pkgconfig PATH=/opt/mono/bin:$PATH ./configure --prefix=/opt/mono --with-runtime=/opt/mono/bin/mono
-make
-sudo make install</code></pre>
-                <p>9) Instale a biblioteca <b>cairo</b>:</p>
-                <pre><code>sudo apt-get install libtool libcairo2-dev</code></pre>
-                <p>10) Compile e instale a libgdiplus:</p>
-                <pre><code>cd ../libgdiplus-3.12
-./configure --prefix=/opt/mono
-make
-sudo make install</code></pre>
-                <p>11) Suponha que o seu projeto está na pasta <b>projeto</b>. Para rodar o seu aplicativo ASP.NET com XSP:</p>
-                <pre><code>cd projeto
-env PATH=/opt/mono/bin:$PATH LD_LIBRARY_PATH=.:bin:/opt/mono/lib:$LD_LIBRARY_PATH xsp4 --port 9090</code></pre>
-                <p>12) Agora basta abrir o navegador e digitar 127.0.0.1:9090 para visualizar seu aplicativo ASP.NET rodando.</p>
+				<p>
+					O primeiro passo é garantir que o seu Debian está atualizado. Como root, rode:
+				</p>
+				<pre><code>apt update
+apt upgrade</code></pre>
+				<p>
+					Agora abra o arquivo <b><tt>/etc/apt/sources.list</tt></b> com o seu editor de texto favorito e inclua o seguinte conteúdo:
+				</p>
+                <pre><code># PostgreSQL repository
+deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main</code></pre>
+				<p>Salve e rode:</p>
+				<pre><code>wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add -
+apt update
+apt install postgresql-9.5 # ou postgresql-9.6</code></pre>
+				<p>Para fazer o PostgreSQL iniciar no boot:</p>
+				<pre><code>update-rc.d postgresql defaults</code></pre>
+				<p>Não esqueça de alterar a senha do usuário <b>postgres</b>:</p>
+				<pre>su postgres
+psql
+\password postgres
+\q
+exit</pre>
+				<p>Se você quer acessar o PostgreSQL de outro computador, abra o arquivo <b><tt>/etc/postgresql/9.5/main/postgresql.conf</tt></b> e altere o seguinte parâmetro:</p>
+				<pre><code>listen_addresses = '*'</code></pre>
+				<p>Agora abra o arquivo <b><tt>/etc/postgresql/9.5/main/pg_hba.conf</tt></b> e adicione a seguinte linha:</p>
+				<pre><code>host all all 192.168.0.0/24 md5</code></pre>
+				<p>Por último, rode o comando abaixo como root para reiniciar o PostgreSQL:</p>
+				<pre><code>service postgresql restart</code></pre>
             </article>
             <hr class="mh-separator">
-            <div class="fb-comments" data-href="http://williamivanski.com.br/blog/post20151026.html" data-numposts="5"></div>
+            <div class="fb-comments" data-href="http://williamivanski.com.br/post20161111.html" data-numposts="5"></div>
         </div>
 	<aside class="mh-sidebar">
             <div class="sb-widget clearfix">
