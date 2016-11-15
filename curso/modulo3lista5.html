@@ -100,5 +100,37 @@ order by s.from_date</code></pre>
    <li>c) Faz sentido criar um índice? Em qual(is) coluna(s)?</li>
    <li>d) Se você criou o índice proposto no item c), rode o explain novamente. O custo total previsto reduziu? Para quanto?</li>
   </ul>
+  <hr/>
+  <p>
+   12) Crie uma tabela chamada <b><tt>aluno</tt></b> da seguinte maneira:
+  </p>
+  <pre><code>create table alunos
+(
+    id serial,
+    nome text,
+    sexo char,
+    nasc timestamp
+)</code></pre>
+  <p>Crie uma função em linguagem SQL chamada <b><tt>fnc_insere_aluno</tt></b>, que recebe como parâmetro o nome, o sexo e a data de nascimento. Essa função deve retornar o código do aluno inserido.</p>
+  <hr/>
+  <p>
+   13) Altere a função do exercício anterior para ser em linguagem PL/SQL.
+  </p>
+  <hr/>
+  <p>
+   14) Crie um procedimento em linguagem PL/SQL chamado <b><tt>prc_remove_aluno</tt></b>.
+  </p>
+  <hr/>
+  <p>
+   15) Crie uma função em linguagem PL/SQL chamada <b><tt>fnc_remove_aluno</tt></b>, que recebe como parâmetro o código do aluno. A função deve retornar 0, caso o aluno tenha sido removido, e -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
+  <hr/>
+  <p>
+   16) Crie uma função em linguagem PL/SQL chamada <b><tt>fnc_altera_aluno</tt></b>, que recebe como parâmetro o código do aluno, o novo nome, o novo sexo e a nova data de nascimento. A função deve retornar 0, caso o aluno tenha sido alterado, e -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
+  <hr/>
+  <p>
+   17) Cria uma função em linguagem PL/SQL chamada <b><tt>fnc_idade_aluno</tt></b>, que recebe como parâmetro o código do aluno. A função deve retornar a idade do aluno (integer), ou -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
  </body>
 </html>
