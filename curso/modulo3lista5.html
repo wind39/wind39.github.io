@@ -132,5 +132,13 @@ order by s.from_date</code></pre>
   <p>
    17) Cria uma função em linguagem PL/SQL chamada <b><tt>fnc_idade_aluno</tt></b>, que recebe como parâmetro o código do aluno. A função deve retornar a idade do aluno (integer), ou -1, caso o código passado como parâmetro não exista na tabela de alunos.
   </p>
+  <hr/>
+  <p>
+   18) Conforme vimos em aula, é possível extrair os milisegundos de um timestamp, vide exemplo:
+  </p>
+  <pre><code>select ((extract(second from '12/11/2016 10:00:30.900150'::timestamp) - floor(extract(second from '12/11/2016 10:00:30.900150'::timestamp))) * 1000) as a</code></pre>
+  <p>
+   Escreva uma função em linguagem PL/SQL chamada <b><tt>fnc_milisegundos</tt></b>, que recebe como parâmetro uma string representando um timestamp e retorna o valor real em milisegundos.
+  </p>
  </body>
 </html>
