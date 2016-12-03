@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Curso de Programa&ccedil;&atilde;o C# - M&oacute;dulo III Respostas 5
+  </title>
+  <link href="../css/github.min.css" rel="stylesheet"/>
+  <script src="../js/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <style type="text/css">
+   body{font:16px Helvetica,Arial,sans-serif;line-height:1.4;color:#333;word-wrap:break-word;background-color:#fff;padding:10px 15px}strong{font-weight:700}h1{font-size:2em;margin:.67em 0;text-align:center}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h1,h2,h3,h4,h5,h6{font-weight:700;position:relative;margin-top:15px;margin-bottom:15px;line-height:1.1}h1,h2{border-bottom:1px solid #eee}hr{height:0;margin:15px 0;overflow:hidden;background:0 0;border:0;border-bottom:1px solid #ddd}a{color:#4183C4}a.absent{color:#c00}ol,ul{padding-left:15px;margin-left:5px}ol{list-style-type:lower-roman}table{padding:0}table tr{border-top:1px solid #ccc;background-color:#fff;margin:0;padding:0}table tr:nth-child(2n){background-color:#aaa}table tr th{font-weight:700;border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}table tr td :first-child,table tr th :first-child{margin-top:0}table tr td:last-child,table tr th :last-child{margin-bottom:0}img{max-width:100%}code{padding:0 5px;background-color:#d3d3d3}blockquote{padding: 0 15px;border-left:4px solid #ccc}
+  </style>
+  
+ <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-54648306-2', 'auto');
+ ga('send', 'pageview');
+ </script>
+
+ <script src="https://apis.google.com/js/platform.js" async defer>
+   {lang: 'pt-BR'}
+ </script>
+ </head>
+ <body>
+  <h1>Curso de Programação C#</h1>
+  <h2>William Ivanski</h2>
+  <h3>Lista de Exercícios M&oacute;dulo III Capítulo 5 (Respostas)</h3>
+  <hr/>
+  <p>
+   1) Instale o PostgreSQL no seu computador ou em uma máquina virtual. Versões recomendadas: 9.4, 9.5 ou 9.6. Sistema operacional recomendado: Linux.
+  </p>
+  <hr/>
+  <p>
+   2) Baixe o arquivo <a href="compras.db">compras.db</a> e converta este banco de dados de SQLite para PostgreSQL em um banco novo chamado <b><tt>compras</tt></b>. Neste banco, rode as consultas SQL que são as respostas dos exercícios 1 a 12 da <a href="modulo3lista3.html">Lista 3.3</a>.
+  </p>
+  <hr/>
+  <p>
+   3) Baixe o arquivo <a href="escola.db">escola.db</a> e converta este banco de dados de SQLite para PostgreSQL em um banco novo chamado <b><tt>escola</tt></b>. Neste banco, rode as consultas SQL que são as respostas dos exercícios 13 a 24 da <a href="modulo3lista3.html">Lista 3.3</a>.
+  </p>
+  <hr/>
+  <p>
+   4) Crie um banco de dados chamado <b><tt>employees</tt></b>. Baixe o arquivo <a href="employees.dmp">employees.dmp</a> e use <em>pg_restore</em> para restaurar nesse banco de dados.
+  </p>
+  <hr/>
+  <p>
+   5) Crie um script <b><tt>.sh</tt></b> ou <b><tt>.bat</tt></b> para realizar o backup do banco <b><tt>employees</tt></b> com <em>pg_dump</em>. Agende o backup para ser feito todos os dias às 01:00 hrs, e devem ser mantidas cópias dos últimos 30 dias.
+  </p>
+  <hr/>
+  <p>
+   6) Execute a consulta abaixo no banco <b><tt>employees</tt></b>:
+  </p>
+  <pre><code>select dept_name from departments</code></pre>
+  <p>
+   Usando <b><tt>nesting</tt></b>, converta os valores retornados em uma única string com os valores separados por vírgula.
+  </p>
+  <hr/>
+  <pre><code>select array_to_string(array(select dept_name from departments), ', ')</code></pre>
+  <hr/>
+  <p>
+   7) Instale o pg_activity.
+  </p>
+  <hr/>
+  <p>
+   8) Instale o pgbench. Crie um banco de dados com 1 milhão de registros na maior tabela. Rode um experimento com 50 conexões simultâneas e 150 transações por conexão.
+  </p>
+  <hr/>
+  <p>
+   9) Instale o pgbadger e rode-o. Visualise as consultas do experimento do exercício anterior na página web gerada.
+  </p>
+  <hr/>
+  <p>
+   10) Reescreva a consulta abaixo usando CTEs:
+  </p>
+  <pre><code>select s.from_date,
+       s.to_date,
+       s.salary
+from departments d
+inner join dept_emp de
+        on de.dept_no = d.dept_no
+inner join employees e
+        on e.emp_no = de.emp_no
+inner join salaries s
+        on s.emp_no = e.emp_no
+where d.dept_name = 'Finance'
+  and e.first_name = 'Georg'
+  and e.last_name = 'Matzke'
+order by s.from_date</code></pre>
+  <hr/>
+  <pre><code>with dep as (
+select * from departments where dept_name = 'Finance'
+),
+emp as (
+select * from employees where first_name = 'Georg' and last_name = 'Matzke'
+)
+select s.from_date,
+       s.to_date,
+       s.salary
+from dep d
+inner join dept_emp de
+        on de.dept_no = d.dept_no
+inner join emp e
+        on e.emp_no = de.emp_no
+inner join salaries s
+        on s.emp_no = e.emp_no
+order by s.from_date</code></pre>
+  <hr/>
+  <p>
+   11) Dada a consulta do exercício anterior, utilize <b><tt>explain</tt></b> para analisar o plano de execução. Responsa às seguintes perguntas:
+  </p>
+  <ul>
+   <li>a) Qual o custo total previsto para executar a consulta? <b>6904</b></li>
+   <li>b) Qual é o gargalo? <b>Seq Scan na tabela employees, filtrando por first_name e last_name</b></li>
+   <li>c) Faz sentido criar um índice? Em qual(is) coluna(s)? <b>first_name e last_name</b></li>
+   <li>d) Se você criou o índice proposto no item c), rode o explain novamente. O custo total previsto reduziu? Para quanto? <b>18</b></li>
+  </ul>
+  <hr/>
+  <p>
+   12) Crie uma tabela chamada <b><tt>aluno</tt></b> da seguinte maneira:
+  </p>
+  <pre><code>create table alunos
+(
+    id serial,
+    nome text,
+    sexo char,
+    nasc timestamp
+)</code></pre>
+  <p>Crie uma função em linguagem SQL chamada <b><tt>fnc_insere_aluno</tt></b>, que recebe como parâmetro o nome, o sexo e a data de nascimento. Essa função deve retornar o código do aluno inserido.</p>
+  <hr/>
+  <pre><code>CREATE OR REPLACE FUNCTION fnc_insere_alunoSQL(Text, CHAR, TIMESTAMP)
+    returns INTEGER
+    language SQL
+AS $$
+    INSERT INTO alunos (nome, sexo, nasc) VALUES($1, $2, $3);
+   SELECT MAX(id) FROM alunos;
+$$</code></pre>
+  <hr/>
+  <p>
+   13) Altere a função do exercício anterior para ser em linguagem PL/SQL.
+  </p>
+  <hr/>
+  <pre><code>create or replace function fnc_insere_aluno(p_Nome text,p_Sexo char,p_DataDeNascimento timestamp)
+returns bigint
+as $$
+declare
+    v_saida bigint;
+begin
+    insert into alunos (nome, sexo, nasc)
+    values(p_Nome, p_Sexo, p_DataDeNascimento);
+    select max(id) into v_saida from alunos;
+    return v_saida;
+end;
+$$
+language plpgsql;</code></pre>
+  <hr/>
+  <p>
+   14) Crie um procedimento em linguagem PL/SQL chamado <b><tt>prc_remove_aluno</tt></b>.
+  </p>
+  <hr/>
+  <pre><code>create or replace function prc_remove_aluno(p_id integer)
+returns void
+language plpgsql 
+as $$
+begin
+    delete from alunos
+    where alunos.id = p_id;
+end;
+$$</code></pre>
+  <hr/>
+  <p>
+   15) Crie uma função em linguagem PL/SQL chamada <b><tt>fnc_remove_aluno</tt></b>, que recebe como parâmetro o código do aluno. A função deve retornar 0, caso o aluno tenha sido removido, e -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
+  <hr/>
+  <pre><code>create or replace function fnc_remove_aluno(p_id bigint)
+returns integer
+language plpgsql 
+AS $function$
+declare
+    v_saida integer;
+begin
+    
+    if((select count(*) from alunos where id = p_id) > 0) then
+    delete from alunos
+    where alunos.id = p_id;
+    v_saida := 0;
+    else
+    v_saida := -1;
+    end if;
+    
+    return v_saida;
+end;
+$function$</code></pre>
+  <hr/>
+  <p>
+   16) Crie uma função em linguagem PL/SQL chamada <b><tt>fnc_altera_aluno</tt></b>, que recebe como parâmetro o código do aluno, o novo nome, o novo sexo e a nova data de nascimento. A função deve retornar 0, caso o aluno tenha sido alterado, e -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
+  <hr/>
+  <pre><code>Create or replace function fnc_altera_aluno(p_Id bigint, p_Nome text, p_Sexo char, p_Data timestamp)
+    returns integer
+    language plpgsql
+as $$
+declare
+    v_saida int;
+begin
+    if((select count(*) from alunos where id = p_Id) <> 0) then
+        update alunos set nome = p_Nome, 
+                          sexo = P_Sexo,
+                          nasc = P_Data
+        where id = p_Id;
+        
+        v_saida:= 0;
+    else
+        v_saida := -1;
+    end if;
+    return v_saida; 
+end;
+$$</code></pre>
+  <hr/>
+  <p>
+   17) Cria uma função em linguagem PL/SQL chamada <b><tt>fnc_idade_aluno</tt></b>, que recebe como parâmetro o código do aluno. A função deve retornar a idade do aluno (integer), ou -1, caso o código passado como parâmetro não exista na tabela de alunos.
+  </p>
+  <hr/>
+  <pre><code>create or replace function fnc_idade_aluno (p_id bigint)
+    Returns integer
+    language plpgsql
+as $$
+declare
+    v_saida integer;
+    v_DataNasc timestamp;
+begin
+    if((select count(*) from alunos where id = p_id) > 0) then
+        v_DataNasc := (select nasc from alunos where id = p_id);
+        v_saida := (select extract(year from age(V_DataNasc::timestamp)));
+    else
+        v_saida := -1;
+    end if;
+    return v_saida;
+end;</code></pre>
+  <hr/>
+  <p>
+   18) Conforme vimos em aula, é possível extrair os milisegundos de um timestamp, vide exemplo:
+  </p>
+  <pre><code>select ((extract(second from '12/11/2016 10:00:30.900150'::timestamp) - floor(extract(second from '12/11/2016 10:00:30.900150'::timestamp))) * 1000) as a</code></pre>
+  <p>
+   Escreva uma função em linguagem PL/SQL chamada <b><tt>fnc_milisegundos</tt></b>, que recebe como parâmetro uma string representando um timestamp e retorna o valor real em milisegundos.
+  </p>
+  <hr/>
+  <pre><code>create or replace function fnc_milisegundos(p_string text)
+returns double precision
+language plpgsql as
+$$
+declare
+  v_saida double precision;
+begin
+  v_saida := (select ((extract(second from p_string::timestamp) - floor(extract(second from p_string::timestamp))) * 1000));
+  return v_saida;
+end;
+$$</code></pre>
+ </body>
+</html>
