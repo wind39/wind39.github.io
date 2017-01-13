@@ -1,0 +1,62 @@
+Cristiano Raffi Cunha
+
+A2 Q1 (15 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 15 = 15
+
+
+A2 Q2 (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 20 = 20
+
+Comentários: Bem observado sobre o campo início!
+
+
+A2 Q3 (20 pontos)
+
+Pontualidade: 10/10
+Compilação: 0/10
+Solução: 40/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 0 + 40 + 20 + 10) / 80 * 20 = 16
+
+Comentários: A função não compila porque não se pode fazer select dentro de length. E além disso, os campos de jogador são integer, e a função length só aceita text como parâmetro. Comentei os ifs com problema e coloquei ifs funcionais embaixo, veja: https://ghostbin.com/paste/h98td
+
+
+A2 Q4 (15 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 15 = 15
+
+
+A2 Q9 (5 pontos)
+
+Pontualidade: 10/10
+Compilação: 10/10
+Solução: 50/50
+Legibilidade: 20/20
+Elegância: 10/10
+
+Nota = (10 + 10 + 50 + 20 + 10) / 100 * 5 = 5
+
+
+Nota Final: 15 + 20 + 16 + 15 + 5 = 71 (parabéns!!)
