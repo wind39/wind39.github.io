@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>PostgreSQL 9.3 - Comunidade Brasileira de PostgreSQL</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/postgresql-93.html">
+
+        <meta name="author" content="eulerto" />
+        <meta name="keywords" content="postgres,9.3" />
+        <meta name="description" content="9 DE SETEMBRO DE 2013: O Grupo de Desenvolvimento Global do PostgreSQL anuncia o lançamento do PostgreSQL 9.3, a última versão do líder mundial em sistema de banco de dados relacionais de código aberto. Esta versão expande a confiabilidade, disponibilidade e habilidade em integrar com outros bancos de dados …" />
+
+        <meta property="og:site_name" content="Comunidade Brasileira de PostgreSQL" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="PostgreSQL 9.3"/>
+        <meta property="og:url" content="/postgresql-93.html"/>
+        <meta property="og:description" content="9 DE SETEMBRO DE 2013: O Grupo de Desenvolvimento Global do PostgreSQL anuncia o lançamento do PostgreSQL 9.3, a última versão do líder mundial em sistema de banco de dados relacionais de código aberto. Esta versão expande a confiabilidade, disponibilidade e habilidade em integrar com outros bancos de dados …"/>
+        <meta property="article:published_time" content="2013-09-09" />
+            <meta property="article:section" content="Início" />
+            <meta property="article:tag" content="postgres" />
+            <meta property="article:tag" content="9.3" />
+            <meta property="article:author" content="eulerto" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/css/custom.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="/images/logo.png" width="64x64"/> Comunidade Brasileira de PostgreSQL            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="../category/inicio.html">Início</a></li>
+                    <li><a href="../pages/sobre-o-postgresql.html">Sobre</a></li>
+                    <li><a href="../pages/downloads.html">Downloads</a></li>
+                    <li><a href="../pages/documentacao.html">Documentação</a></li>
+                    <li><a href="../category/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/suporte.html">Suporte</a></li>
+                    <li><a href="../pages/participe.html">Participe!</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/postgresql-93.html"
+                       rel="bookmark"
+                       title="Permalink to PostgreSQL 9.3">
+                        PostgreSQL 9.3
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2013-09-09T10:47:00-03:00"> 09/09/2013 10:47</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="/author/eulerto.html"><i class="fa fa-user"></i> eulerto</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/postgres.html">postgres</a>
+        /
+	<a href="/tag/93.html">9.3</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>9 DE SETEMBRO DE 2013: O Grupo de Desenvolvimento Global do PostgreSQL anuncia o lançamento do PostgreSQL 9.3, a última versão do líder mundial em sistema de banco de dados relacionais de código aberto. Esta versão expande a confiabilidade, disponibilidade e habilidade em integrar com outros bancos de dados. Usuários já estão descobrindo que eles podem desenvolver aplicações utilizando a versão 9.3 que antes não teriam sido possíveis.</p>
+<p>"PostgreSQL 9.3 fornece funcionalidades que como um desenvolvedor de aplicações eu posso utilizar imediatamente: melhor suporte a JSON, indexação de expressões regulares e facilidade em federalizar bancos de dados com adaptador de dados externos. Não tenho ideia de como conclui projetos sem a 9.3", disse Jonathan S. Katz, CTO da VenueBook.</p>
+<h2>Gravação de Dados Externos</h2>
+<p>A versão 9.3 torna os adaptadores de dados externos graváveis, permitindo a troca de dados bidirecional entre sistemas. Ambientes complexos de TI atuais envolvem múltiplos bancos de dados e fontes de dados semi-estruturados, e o PostgreSQL ajuda você a integrá-los em uma pilha coerente. O projeto também lançou o postgres_fdw, um conector de federação PostgreSQL-a-PostgreSQL escrita/leitura de alto desempenho.</p>
+<p>"Adaptadores de dados externos graváveis nos permitem ligar e testar perfeitamente várias alternativas de fonte de dados, o que nos permite atender às diferentes necessidades rapidamente e desenvolver protótipos inteligentemente", explicou Lee Holloway, co-fundador e engenheiro líder na CloudFlare. "É emocionante conceber e lançar novos armazenamentos de dados (incluindo nossos internos experimentais escritos em Go) e, em seguida, vê-los ler, escrever e até mesmo transacionar mutuamente".</p>
+<h2>Maior Confiabilidade e Disponibilidade</h2>
+<p>"Postgres tem sido a minha escolha favorita pela sua conhecida estabilidade, robustez, coerência forte, segurança, ACID e conformidade com o SQL", disse Pascal Bouchareine, diretor de pesquisa e desenvolvimento na Gandi.net. "Estou especialmente animado para ouvir mais sobre a transferência rápida em caso de falha que vem na 9.3".</p>
+<p>Esta nova versão inclui funcionalidades para melhorar e estender as conhecidas confiabilidade e disponibilidade do PostgreSQL:</p>
+<ul>
+<li>Verificações de Páginas de Dados: ajuda administradores a detectar rapidamente discos com falhas e hardware ruim que corrompe dados</li>
+<li>Transferência Rápida em Caso de Falha: permite transferências abaixo de um segundo do principal para réplica, suportando disponibilidade "a nível de operadora"</li>
+<li>Remasterização de Réplicas: reconfiguração mais fácil e mais rápida de réplicas cascateadas após transferência em caso de falha</li>
+</ul>
+<h2>Funcionalidades para Desenvolvedores</h2>
+<p>Tal como acontece todo lançamento anual, o PostgreSQL 9.3 inclui muitas funcionalidades que tornam o trabalho com PostgreSQL mais fácil, mais flexível e mais divertido para desenvolvedores de aplicações, administradores e arquitetos. Essas funcionalidades incluem:</p>
+<ul>
+<li>Métodos construtores e extratores adicionais para JSON</li>
+<li>Visões automaticamente atualizáveis</li>
+<li>pg_dump paralelo para acelerar cópias de seguranças em grandes bancos de dados</li>
+<li>Junções laterais</li>
+</ul>
+<p>Além disso, processos de trabalho em segundo plano definidos pelo usuário no PostgreSQL 9.3 permitem que desenvolvedores escrevam gerenciadores de tarefas, manipuladores de requisições, processadores paralelos, ferramentas de enfileiramento e outros aplicativos auxiliares que possibilitam que o PostgreSQL seja um coordenador de carga de trabalho. Um exemplo disto já lançado é o Mongres, um processo de trabalhado em segundo plano que aceita consultas do MongoDB, as interpreta e passa para o PostgreSQL.</p>
+<h2>Sobre PostgreSQL</h2>
+<p>PostgreSQL é um sistema de banco de dados líder de código aberto, com uma comunidade global de milhares de usuários e colaboradores e dezenas de empresas e organizações. O Projeto PostgreSQL foi construído ao longo de 25 anos de engenharia, iniciando na Universidade da Califórnia, Berkeley, e tem um ritmo inigualável de desenvolvimento hoje. Conjunto de funcionalidades maduras do PostgreSQL não só se igualam aos principais sistemas de bancos de dados proprietários, mas os supera em funcionalidades avançadas, extensibilidade, segurança e estabilidade. Saiba mais sobre o PostgreSQL e participe da nossa comunidade em <a href="http://www.postgresql.org/">PostgreSQL.org</a>.</p>
+<h2>Detalhes das Funcionalidades</h2>
+<p>Para explicações sobre as funcionalidades acima e outras, visite as seguintes páginas:</p>
+<ul>
+<li><a href="http://www.postgresql.org/docs/9.3/static/release-9-3.html">Notas de Lançamento</a></li>
+<li><a href="http://www.postgresql.org/docs/9.3/static/index.html">Documentação 9.3</a></li>
+<li><a href="http://wiki.postgresql.org/wiki/What%27s_new_in_PostgreSQL_9.3">O Que Há de Novo no PostgreSQL 9.3 (Inglês)</a></li>
+<li><a href="http://www.postgresql.org/about/featurematrix">Matriz de Funcionalidades (Inglês)</a></li>
+<li><a href="https://github.com/umitanuki/mongres">Mongres: emulador MongoDB para PostgreSQL</a></li>
+<li><a href="http://blog.cloudflare.com/kyoto_tycoon_with_postgresql">Kyoto Tycoon FDW para PostgreSQL por CloudFlare</a></li>
+<li><a href="https://wiki.postgresql.org/wiki/Foreign_data_wrappers">Lista de outros Adaptadores de Dados Externos</a></li>
+</ul>
+<h2>Onde Baixar</h2>
+<ul>
+<li><a href="http://www.postgresql.org/download">Páginas de downloads</a> com links para instaladores e ferramentas para Windows, Linux, OSX, BSD e Solaris.</li>
+<li><a href="http://www.postgresql.org/ftp/source/v9.3.0">Código Fonte</a></li>
+<li><a href="http://pgxn.org/">Rede de Extensões do PostgreSQL</a></li>
+<li><a href="http://www.postgresql.org/download/product-categories">Softwares Relacionados e Comerciais</a></li>
+</ul>
+<h2>Documentação</h2>
+<p>Documentação HTML e man pages são instalados com o PostgreSQL, mas fique a vontade para navegar, pesquisar e comentar na nossa vasta <a href="http://www.postgresql.org/docs/9.3/interactive">documentação online</a> interativa.</p>
+<h2>Licença</h2>
+<p>PostgreSQL usa a <a href="http://www.postgresql.org/about/license">Licença PostgreSQL</a>, uma licença "tolerante" estilo BSD. Essa <a href="http://www.opensource.org/licenses/postgresql">Licença certificada pela OSI</a> é amplamente reconhecida como flexível e ideal para negócios, uma vez que ela não restringe o uso do PostgreSQL com aplicações comerciais e proprietárias. Juntamente com apoio de várias empresas e a propriedade pública do código, nossa licença torna o PostgreSQL muito popular entre empresas que desejam incorporar um banco de dados em seus produtos sem medo de taxas, aprisionamento tecnológico ou mudanças nos termos da licença.</p>
+<h2>Contatos</h2>
+<p>Páginas na Web</p>
+<ul>
+<li><a href="http://www.postgresql.org/">Página do PostgreSQL</a></li>
+<li><a href="http://www.postgresql.org.br/">Comunidade Brasileira de PostgreSQL</a></li>
+</ul>
+<p>Informação à Imprensa</p>
+<p>Brasil
+Euler Taveira de Oliveira
+<a href="br@postgresql.org">br@postgresql.org</a>
++55 63 84594598</p>
+<p>Para contato em outras regiões, visite <a href="http://www.postgresql.org/about/press/contact">nossa lista de contatos internacionais</a>.</p>
+<h2>Empresas Citadas e Texto Completo das Citações</h2>
+<p><strong>VenueBook</strong></p>
+<blockquote>
+<p>"PostgreSQL 9.3 fornece funcionalidades que como um desenvolvedor de aplicações eu posso utilizar imediatamente: melhor suporte a JSON, indexação de expressões regulares e facilidade em federalizar bancos de dados com adaptador de dados externos. Não tenho ideia de como conclui projetos sem a 9.3", disse Jonathan S. Katz, CTO da VenueBook</p>
+</blockquote>
+<p><a href="http://venuebook.com/">VenueBook</a> é um solução de gerenciamento de eventos na nuvem que ajuda a gerenciar todo ciclo do evento em um só lugar. Nós fornecemos software que possibilita gerentes de locais a preparar e aprovar contratos, cardápios e processar todos pagamentos online. Diferentemente de outros sistemas no mercado que apenas o ajudam a gerenciar eventos, nós também simplificamos a interação e agendamento com o planejador. Contato (somente inglês): <a href="info@venuebook.com">info@venuebook.com</a>, +1 646-543-8368</p>
+<p><strong>CloudFlare</strong></p>
+<blockquote>
+<p>"CloudFlare está orgulhosa em incluir o PostgreSQL 9.3 na sua caixa de ferramentas que proporcionam aceleração e segurança a milhões de sites. Ele fornece a extensibilidade e personalização que precisamos para ser ágil e escalável na camada de dados. Adaptadores de dados externos graváveis nos permitem ligar e testar perfeitamente várias alternativas de fonte de dados, o que nos permite atender às diferentes necessidades rapidamente e desenvolver protótipos inteligentemente. É emocionante conceber e lançar novos armazenamentos de dados (incluindo nossos internos experimentais escritos em Go) e, em seguida, vê-los ler, escrever e até mesmo transacionar mutuamente."</p>
+<p>"Acoplar adaptadores de dados externos com a noção de visões materializadas e junções laterais para consulta; e processos de trabalho em segundo plano para monitoramento, rende ao PostgreSQL uma armadura verdadeiramente poderosa que pretendemos usar e crescer com ele. CloudFlare está entusiasmada por ter esta joia em nossa caixa de ferramentas", disse Lee Holloway, co-fundador e engenheiro líder da CloudFlare.</p>
+</blockquote>
+<p><a href="http://www.cloudflare.com/">CloudFlare, Inc.</a> faz sites duas vezes mais rápidos, os protege de ataques, garante que eles estejam sempre online e os torna simples de adicionar aplicativos web com apenas um clique. CloudFlare turbina sites independente do tamanho ou plataforma sem a necessidade de adicionar hardware, instalar software ou alterar uma linha de código. A comunidade CloudFlare se torna mais sólida à medida que cresce; cada novo site torna a rede mais inteligente. Graças a nossa fantástica tecnologia, a cada mês centenas de milhões de pessoas experimentam uma Internet melhor, mais rápida e mais segura. CloudFlare foi reconhecida pelo Fórum Econômico Mundial como um pioneiro tecnológico, chamado de a Mais Inovadora Empresa de Tecnologia de Rede e Internet no ano de 2011 e 2012 pelo Jornal Wall Street e ranqueada entre as 50 mais inovadoras empresas do mundo em 2012 pela Fast Company. CloudFlare localiza-se em São Francisco, Califórnia, USA. Contato (somente em inglês): <a href="press@cloudflare.com">press@cloudflare.com</a>, +1 (650) 485-1399</p>
+<p><strong>Gandi.net</strong></p>
+<blockquote>
+<p>"Nós estamos acompanhando replicação e estamos muito interessados nas melhorias recentes desta funcionalidade. Estou especialmente animado para ouvir mais sobre a transferência rápida em caso de falha que vem na 9.3. Estamos utilizando o postgresql para a plataforma IAAS/PAAS na Gandi e recentemente internamente desenvolvendo um dos nossos sistemas em produção que armazena/computa/envia milhões de registros diariamente com facilidade."</p>
+<p>"Postgres tem sido a minha escolha favorita pela sua conhecida estabilidade/robustez/coerência forte/segurança/ACID e conformidade com o SQL. Agora que está se modernizando, fazendo bom uso do sistema operacional, estamos observando grandes melhorias de desempenho e mais facilidade na administração de uma instalação à prova de falhas. É o melhor banco de dados relacional de missão crítica disponível no mercado", disse Pascal Bouchareine, diretor de pesquisa e desenvolvimento da Gandi.</p>
+</blockquote>
+<p><a href="http://www.gandi.net/">GANDI.net</a> foi uma das primeiras empresas de registro de domínio aprovada pelo ICANN para domínios .COM, .NET, .ORG, .BIZ, .INFO, .NAME, .BE, .FR e .EU na França. Agora ela oferece mais de 200 extensões de domínios e continua a aumentar essa lista regularmente. Gandi considera-se uma empresa de registro de domínios ética em uma indústria que tem algumas práticas 'desonestas'. Ela valoriza os direitos e a privacidade dos clientes acima de tudo e busca defender isso sempre que possível. Contato em inglês: Thomas Stocking e em francês: Nicolas Lhuillery. Telefone: +1 410.429.7402.</p>
+<h2>Suporte Corporativo</h2>
+<p>O PostgreSQL conta com o apoio de várias empresas, que patrocinam desenvolvedores, fornecem hospedagem e nos dão apoio financeiro. Veja nossa <a href="http://www.postgresql.org/about/sponsors/">página de patrocinadores</a> para ver alguns desses apoiadores do projeto.</p>
+<p>Existe também uma grande comunidade de <a href="http://www.postgresql.org/support/professional_support">empresas oferecendo suporte ao PostgreSQL</a>, de consultores individuais a empresas multinacionais.</p>
+<p><a href="http://www.postgresql.org/about/donate">Doações</a> são aceitas de bom grado.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 admin
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>

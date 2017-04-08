@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>PostgreSQL 8.4 lançado - Comunidade Brasileira de PostgreSQL</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link href="/images/favicon.ico" rel="icon">
+
+<link rel="canonical" href="/postgresql-84-lancado.html">
+
+        <meta name="author" content="eulerto" />
+        <meta name="keywords" content="postgresql,versão,8.4" />
+        <meta name="description" content="O Grupo de Desenvolvimento Global do PostgreSQL lançou a versão 8.4, continuando o rápido desenvolvimento do banco de dados de código aberto mais avançado do mundo. Esta versão contém várias melhorias para tornar a administração, consulta e programação de bancos de dados PostgreSQL mais fáceis do que nunca. Com …" />
+
+        <meta property="og:site_name" content="Comunidade Brasileira de PostgreSQL" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="PostgreSQL 8.4 lançado"/>
+        <meta property="og:url" content="/postgresql-84-lancado.html"/>
+        <meta property="og:description" content="O Grupo de Desenvolvimento Global do PostgreSQL lançou a versão 8.4, continuando o rápido desenvolvimento do banco de dados de código aberto mais avançado do mundo. Esta versão contém várias melhorias para tornar a administração, consulta e programação de bancos de dados PostgreSQL mais fáceis do que nunca. Com …"/>
+        <meta property="article:published_time" content="2009-07-01" />
+            <meta property="article:section" content="Início" />
+            <meta property="article:tag" content="postgresql" />
+            <meta property="article:tag" content="versão" />
+            <meta property="article:tag" content="8.4" />
+            <meta property="article:author" content="eulerto" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/css/custom.css" rel="stylesheet">
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+<img class="img-responsive pull-left gap-right" src="/images/logo.png" width="64x64"/> Comunidade Brasileira de PostgreSQL            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="../category/inicio.html">Início</a></li>
+                    <li><a href="../pages/sobre-o-postgresql.html">Sobre</a></li>
+                    <li><a href="../pages/downloads.html">Downloads</a></li>
+                    <li><a href="../pages/documentacao.html">Documentação</a></li>
+                    <li><a href="../category/eventos.html">Eventos</a></li>
+                    <li><a href="../pages/suporte.html">Suporte</a></li>
+                    <li><a href="../pages/participe.html">Participe!</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/postgresql-84-lancado.html"
+                       rel="bookmark"
+                       title="Permalink to PostgreSQL 8.4 lançado">
+                        PostgreSQL 8.4 lançado
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2009-07-01T15:00:00-03:00"> 01/07/2009 15:00</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="/author/eulerto.html"><i class="fa fa-user"></i> eulerto</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/postgresql.html">postgresql</a>
+        /
+	<a href="/tag/versao.html">versão</a>
+        /
+	<a href="/tag/84.html">8.4</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>O Grupo de Desenvolvimento Global do PostgreSQL lançou a versão 8.4, continuando o rápido desenvolvimento do banco de dados de código aberto mais avançado do mundo. Esta versão contém várias melhorias para tornar a administração, consulta e programação de bancos de dados PostgreSQL mais fáceis do que nunca. Com 293 modificações entre novos recursos e melhorias na versão 8.4, existem agora mais motivos para escolher o PostgreSQL para o seu próximo projeto.</p>
+<p>As mudanças mais numerosas no PostgreSQL 8.4 são ferramentas e comandos para administração e monitoramento novos ou melhorados. Cada usuário tem sua funcionalidade favorita que tornará o seu dia-a-dia com o PostgreSQL mais fácil e produtivo.</p>
+<p>Entre as melhorias mais populares estão:</p>
+<ul>
+<li><strong>Restauração Paralela de Bases de Dados</strong>, aumentando a velocidade de recuperação de cópia de segurança (backup) em até 8 vezes;</li>
+<li><strong>Permissões por Coluna</strong>, permitindo um controle mais granular de dados sigilosos;</li>
+<li><strong>Suporte a Configuração Regional por Banco de Dados</strong>, tornando o PostgreSQL mais útil em ambientes com múltiplos idiomas;</li>
+<li><strong>Upgrades In-place</strong> com o pg_migrator beta, permitindo migrações da 8.3 para a 8.4 sem tirar o banco do ar por muito tempo;</li>
+<li><strong>Novas Ferramentas de Monitoramento de Consultas</strong>, dando aos administradores mais detalhes sobre a atividade das consultas.</li>
+</ul>
+<h2>Lista de Funcionalidades</h2>
+<p>A versão 8.4 tem um número de novas funcionalidades sem precedentes. Nós criamos páginas adicionais para catalogá-las:</p>
+<ul>
+<li><a href="http://www.postgresql.org/about/press/features84/">Lista completa de funcionalidades (em Inglês)</a></li>
+<li><a href="http://www.postgresql.org/about/featurematrix">Matriz de Funcionalidades (em Inglês)</a></li>
+<li><a href="http://www.postgresql.org/docs/8.4/static/release-8-4.html">Notas de Lançamento</a></li>
+</ul>
+<h2>Downloads</h2>
+<ul>
+<li><a href="https://www.postgresql.org.br/download">Página de Downloads</a>, com links para instaladores e ferramentas.</li>
+<li><a href="https://www.postgresql.org.br/ftp/source/v8.4.0">Código Fonte</a></li>
+<li><a href="https://www.postgresql.org.br/download/windows">Instaladores para Windows</a></li>
+<li><a href="https://www.postgresql.org.br/download/linux">Instaladores para Linux</a> e repositórios de pacotes</li>
+<li><a href="https://www.postgresql.org.br/download/solaris">Pacotes para Solaris</a></li>
+<li><a href="https://www.postgresql.org.br/download/macosx">Instaladores para Mac OSX</a></li>
+<li><a href="https://www.postgresql.org.br/download/freebsd">Ports para FreeBSD</a></li>
+<li><a href="http://pgfoundry.org/projects/pg-migrator/">Projeto pg_migrator</a></li>
+<li><a href="http://www.pgfoundry.org/">Componentes Adicionais</a></li>
+<li><a href="http://www.postgresql.org/download/product-categories">Software que Trabalha com o PostgreSQL e Software Comercial</a></li>
+</ul>
+<h2>Documentação</h2>
+<p>Documentação e páginas de manual são instaladas com o PostgreSQL, mas fique à vontade para navegar, pesquisar e comentar na nossa compreensiva e interativa <a href="https://www.postgresql.org.br/docs/8.4/interactive">documentação online</a>.</p>
+<h2>Licença</h2>
+<p>O PostgreSQL usa a <a href="https://www.postgresql.org.br/about/licence">licença BSD</a>, que requer apenas que o código fonte licenciado mantenha seu direito de cópia e informação da licença. Esta <a href="http://www.opensource.org/licenses/bsd-license.php">licença certificada pela OSI</a> é amplamente vista como flexível e amigável à empresas, já que ela não restringe o uso do PostgreSQL com aplicações comerciais e proprietárias. Juntamente com suporte de múltiplas empresas e propriedade pública do código, a licença BSD torna o PostgreSQL muito popular com fabricantes que querem anexar um banco de dados com seus próprios produtos sem medo de ônus financeiro, prisão à um só fabricante, ou mudanças nos termos de licenças.</p>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 admin
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
